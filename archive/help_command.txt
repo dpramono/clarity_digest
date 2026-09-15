@@ -1,0 +1,8 @@
+pgrep -f jupyter-lab
+
+# Prozess-ID (PID) finden:
+pgrep -f jupyter-lab
+
+# (Gibt die Nummer des Prozesses zurück, z. B. 12345)
+# Prozess beenden:
+kill 12345
