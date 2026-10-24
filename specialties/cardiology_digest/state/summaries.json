@@ -1,0 +1,1687 @@
+{
+  "42727946": {
+    "summary": "This population-level retrospective cohort study investigated and prioritised potentially inappropriate prescribing cascades in community-dwelling older adults using health administrative data from Ontario, Canada. The source population included 2 297 942 community-dwelling individuals aged 66 years or older alive on 1 January 2022, of whom 54.3% were female. Sixty-five potentially inappropriate prescribing cascades identified through a 2025 international expert Delphi consensus were evaluated. For each cascade, the analytic cohort comprised incident users of the initial and subsequent drug combination during the accrual period. Prescribing cascades were prioritised if they met three criteria: initial drug population prevalence ≥5%, cascade incidence ≥1%, and an adjusted sequence ratio >1, with the lower limit of the 95% confidence interval above each threshold. Out of 65 evaluated cascades, 24 (37%) met all three prioritisation criteria. Cardiovascular drugs represented the most prevalent initial drug class among the prioritised cascades, with class prevalence ranging from 19.0% to 65.9%. The highest incidence cascades were iron supplement to laxative at 11.9% (95% CI 11.7% to 12.1%), hydroxymethylglutaryl coenzyme A reductase inhibitor to pain reliever at 10.9% (95% CI 10.7% to 11%), and cholinesterase inhibitor to sleep agent at 10.3% (95% CI 9.9% to 10.7%). The strongest temporal associations measured by adjusted sequence ratios were observed for corticosteroid to antipsychotic (2.55, 95% CI 2.47 to 2.64), laxative to antidiarrheal (2.53, 95% CI 2.43 to 2.65), and cholinesterase inhibitor to antiemetic drug treatment (2.24, 95% CI 1.90 to 2.65). Adjusted sequence ratios were generally consistent across sex strata, except for the selective serotonin reuptake inhibitor or serotonin-norepinephrine reuptake inhibitor to overactive bladder drug cascade, which showed a stronger association in males (1.21, 95% CI 1.10 to 1.33) than in females (1.02, 95% CI 0.96 to 1.09). Specific study limitations were not described in the abstract. The authors conclude that this prioritised list of 24 potentially inappropriate prescribing cascades could inform prescribing and deprescribing initiatives and policy development to improve drug safety in older adults at individual patient and population levels.",
+    "relation_evidence": "Prescribing cascades represent a recognised mechanism of potential adverse drug events and polypharmacy in geriatric populations. This study provides population-level epidemiological quantification of the prevalence, incidence, and sequence asymmetry for expert-identified cascades.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that the prioritised list of 24 potentially inappropriate prescribing cascades could inform prescribing and deprescribing initiatives as well as policy development to improve drug safety in older adults at individual patient and population levels.",
+    "key_numbers": {
+      "design": "Population level retrospective cohort study",
+      "n": "2297942",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Cascades meeting prioritisation criteria",
+          "value": "24 of 65 (37%)"
+        },
+        {
+          "label": "Initial cardiovascular drug class prevalence range",
+          "value": "19.0% to 65.9%"
+        },
+        {
+          "label": "Iron supplement to laxative cascade incidence",
+          "value": "11.9% (95% CI 11.7% to 12.1%)"
+        },
+        {
+          "label": "HMG-CoA reductase inhibitor to pain reliever cascade incidence",
+          "value": "10.9% (95% CI 10.7% to 11%)"
+        },
+        {
+          "label": "Corticosteroid to antipsychotic adjusted sequence ratio",
+          "value": "2.55 (95% CI 2.47 to 2.64)"
+        },
+        {
+          "label": "Laxative to antidiarrheal adjusted sequence ratio",
+          "value": "2.53 (95% CI 2.43 to 2.65)"
+        }
+      ]
+    }
+  },
+  "42742182": {
+    "summary": "Transthyretin amyloid cardiomyopathy (ATTR-CM) therapies comprise transthyretin (TTR) gene silencers and TTR stabilizers. The role of adding TTR gene silencers to background stabilizer therapy is unknown, and the effects of silencer treatment in the absence of stabilizer use remain unclear. This prespecified secondary analysis of the phase 3 CARDIO-TTRansform trial evaluated the efficacy and safety of eplontersen according to baseline TTR stabilizer use. The study included 1,432 patients with ATTR-CM, comprising 135 female patients (9.4%) and 1,297 male patients (90.6%). Participants were randomized 1:1 to receive the antisense oligonucleotide eplontersen at 45 mg every 4 weeks or placebo for up to 140 weeks. At baseline, 57% of patients were taking TTR stabilizers. In the overall trial, treatment with eplontersen did not significantly reduce the primary composite endpoint. The primary endpoint was defined as a composite of cardiovascular mortality and recurrent cardiovascular events. Baseline stabilizer use significantly modified the treatment effect on the primary endpoint (P for interaction = 0.017). Among patients not receiving stabilizers at baseline, eplontersen significantly reduced the primary endpoint compared with placebo (RR 0.71, 95% CI, 0.54-0.93, P = 0.012). In contrast, no benefit was observed in patients receiving baseline stabilizers (RR 1.14, 95% CI, 0.85-1.53, P = 0.39). The safety profile of eplontersen was reported as favorable irrespective of baseline stabilizer use. Specific study limitations were not detailed in the abstract. The authors conclude that eplontersen showed clinically meaningful benefit in patients not on background stabilizers but provided no additional clinical benefit in those on background stabilizer therapy.",
+    "relation_evidence": "Current management options for ATTR-CM encompass TTR stabilizers and TTR gene silencers, though evidence regarding concurrent dual-mechanism therapy remains limited. This study evaluates whether clinical outcomes with TTR silencer therapy differ depending on background TTR stabilizer treatment.",
+    "relation_guidelines": "Heart failure guidelines discuss disease-modifying treatments for ATTR-CM, but the optimal approach regarding combination versus monotherapy with stabilizers and silencers remains an evolving area of investigation. These findings describe treatment effect modification by baseline stabilizer use in ATTR-CM.",
+    "authors_conclusion": "The authors conclude that eplontersen demonstrated a clinically meaningful benefit compared with placebo among patients not receiving background stabilizers, but provided no additional clinical benefit in those on background stabilizer therapy.",
+    "key_numbers": {
+      "design": "Phase 3, randomized controlled trial (secondary analysis)",
+      "n": "1432",
+      "followup": "up to 140 weeks",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Baseline stabilizer use",
+          "value": "57%"
+        },
+        {
+          "label": "Primary endpoint treatment-by-stabilizer interaction",
+          "value": "Pinteraction = 0.017"
+        },
+        {
+          "label": "Primary endpoint in patients without baseline stabilizers",
+          "value": "RR 0.71 (95% CI, 0.54-0.93, P = 0.012)"
+        },
+        {
+          "label": "Primary endpoint in patients with baseline stabilizers",
+          "value": "RR 1.14 (95% CI, 0.85-1.53, P = 0.39)"
+        },
+        {
+          "label": "Female participants",
+          "value": "9.4% (n=135)"
+        },
+        {
+          "label": "Male participants",
+          "value": "90.6% (n=1297)"
+        }
+      ]
+    }
+  },
+  "42720269": {
+    "summary": "Exercise stress echocardiography is recommended as an alternative to invasive testing for diagnosing heart failure with preserved ejection fraction (HFpEF), though an evidence-based operational framework guiding its application remains lacking. The study evaluated patients presenting with chronic unexplained dyspnoea who underwent invasive haemodynamic exercise testing with simultaneous echocardiography. The investigators tested whether current diagnostic algorithms, including H2FPEF, HFA-PEFF, and HFpEF-ABA scores, could be enhanced when combined with exercise echocardiography. They also evaluated whether incorporating resting left atrial (LA) compliance, defined as LA reservoir strain divided by E/e', could improve diagnostic triage using separate cut points optimizing sensitivity and specificity. Findings were subsequently validated in an international multicentre cohort. Among the primary cohort of 482 evaluated patients, 386 were diagnosed with HFpEF and 96 with non-cardiac dyspnoea. Diagnostic sensitivity to detect HFpEF was 55% to 60% and accuracy was 61% to 67% using individual scores with currently recommended exercise echocardiography. Adding abnormal resting LA compliance to exercise echocardiography increased sensitivity to 84% to 85%, though the false-positive rate rose to 31% to 43%. The investigators established optimized separate cut points using either exercise E/e' ≥ 13.8 or resting LA compliance ≤1.6% to rule in HFpEF. Rule-out criteria required both exercise E/e' < 7.2 and resting LA compliance >4.4%, with remaining patients classified as indeterminate. This optimized classification strategy improved diagnostic sensitivity to 95% to 99% among definitively classified patients. Furthermore, this approach reduced the proportion of patients requiring invasive exercise testing from approximately 60% to approximately 30%. These diagnostic findings were replicated in the multicentre, international validation cohort. The authors report that adding LA strain imaging with optimized rule-in or rule-out values improves diagnostic triage while identifying patients who still require invasive testing.",
+    "relation_evidence": "Diagnostic evaluation of HFpEF often involves non-invasive scoring systems and stress testing alongside gold-standard invasive haemodynamic assessments. This study provides comparative diagnostic accuracy data for existing clinical scores, exercise echocardiography, and resting left atrial compliance against invasive exercise haemodynamics.",
+    "relation_guidelines": "Current guidelines evaluate exercise stress echocardiography as a non-invasive diagnostic alternative in suspected HFpEF. The study findings refine this approach by evaluating the diagnostic sensitivity of existing algorithms and describing a tiered rule-in and rule-out framework incorporating left atrial compliance.",
+    "authors_conclusion": "The authors conclude that currently used non-invasive approaches to HFpEF diagnosis have inadequate sensitivity, indicating that exercise echocardiography cannot supplant invasive testing. They further conclude that adding LA strain imaging with optimized rule-in or rule-out values improves diagnostic triage by expanding non-invasive classifications while identifying patients who still require invasive testing.",
+    "key_numbers": {
+      "design": "Multicentre validation study with invasive haemodynamic exercise testing and echocardiography",
+      "n": "482",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Sensitivity of individual scores with standard exercise echo",
+          "value": "55%-60%"
+        },
+        {
+          "label": "Accuracy of individual scores with standard exercise echo",
+          "value": "61%-67%"
+        },
+        {
+          "label": "Sensitivity after adding resting LA compliance",
+          "value": "84%-85%"
+        },
+        {
+          "label": "False-positive rate after adding resting LA compliance",
+          "value": "31%-43%"
+        },
+        {
+          "label": "Sensitivity among definitively classified patients (optimized cut points)",
+          "value": "95%-99%"
+        },
+        {
+          "label": "Patients requiring invasive testing (standard vs optimized)",
+          "value": "~60% to ~30%"
+        }
+      ]
+    }
+  },
+  "42717875": {
+    "summary": "Cardiac sarcoidosis can lead to severe adverse clinical outcomes, but large-scale data regarding real-world management, recurrence, and long-term prognosis have been limited due to disease rarity and diagnostic challenges. The nationwide multicenter retrospective MYSTICS registry evaluated the management patterns and clinical outcomes of patients with cardiac sarcoidosis. The registry enrolled 2366 consecutive patients, of whom 1852 patients newly diagnosed between 2012 and 2021 were included in the primary analysis. Patients were stratified into four diagnostic groups: definite cardiac sarcoidosis, probable cardiac sarcoidosis, presumed systemic sarcoidosis, and presumed isolated cardiac sarcoidosis. The primary end point was a composite of all-cause death, heart failure hospitalization, or fatal ventricular arrhythmic events. The secondary end point was disease recurrence. Advanced cardiac imaging utilization was high, with cardiac magnetic resonance performed in 64% and 18F-fluorodeoxyglucose positron emission tomography performed in 82% of patients. A clinical diagnosis without histological evidence was made in 974 patients (53%). Over a median follow-up of 5.1 years, the primary composite outcome occurred in 519 patients (28%, corresponding to 6.4 per 100 patient-years). The four diagnostic phenotypes displayed differing clinical trajectories, with the definite and presumed isolated cardiac sarcoidosis groups showing high incidences of the primary end point, fatal ventricular arrhythmic events, heart failure hospitalizations, and cardiovascular death. Immunosuppressive therapy was administered to 89% of patients. Recurrence occurred during steroid tapering in 291 patients (18%, 4.1 per 100 patient-years), with an overall 5-year recurrence rate of 17.0%. Disease recurrence was significantly associated with an increased risk of subsequently reaching the primary composite end point (hazard ratio, 1.38 [95% CI, 1.00-1.89]; P=0.048). The authors conclude that clinical presentation and prognosis differ based on histological confirmation and the presence or absence of extracardiac lesions.",
+    "relation_evidence": "This large nationwide registry expands existing observational evidence by providing longitudinal data on diagnostic imaging patterns, phenotype-specific event rates, and the incidence of recurrence during immunosuppressive therapy tapering in cardiac sarcoidosis.",
+    "relation_guidelines": "Heart failure and cardiomyopathy guidelines emphasize advanced cardiac imaging and phenotype characterization for inflammatory cardiomyopathies; these registry findings describe the real-world diagnostic distribution and long-term recurrence risks relevant to those clinical frameworks.",
+    "authors_conclusion": "The authors conclude that clinical presentation and prognosis differ depending on the presence or absence of extracardiac lesions and histological evidence, emphasizing the necessity of recognizing the specific characteristics of each phenotype in managing cardiac sarcoidosis.",
+    "key_numbers": {
+      "design": "Multicenter retrospective registry",
+      "n": "1852",
+      "followup": "Median 5.1 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Primary composite end point (5.1-year median follow-up)",
+          "value": "28% (n=519, 6.4/100 patient-years)"
+        },
+        {
+          "label": "18F-FDG PET utilization rate",
+          "value": "82%"
+        },
+        {
+          "label": "Cardiac magnetic resonance utilization rate",
+          "value": "64%"
+        },
+        {
+          "label": "Clinical diagnosis without histological evidence",
+          "value": "53% (n=974)"
+        },
+        {
+          "label": "5-year CS recurrence rate",
+          "value": "17.0% (n=291, 18% during tapering)"
+        },
+        {
+          "label": "Primary outcome HR following disease recurrence",
+          "value": "1.38 (95% CI, 1.00-1.89; P=0.048)"
+        }
+      ]
+    }
+  },
+  "42749293": {
+    "summary": "Non-sustained ventricular tachycardia (NSVT) is recognized as a risk factor for sudden cardiac death (SCD) in patients with hypertrophic cardiomyopathy (HCM). However, the specific characteristics of NSVT episodes have not been thoroughly evaluated for risk stratification. This retrospective, multicentre study aimed to assess the prognostic value of NSVT characteristics, particularly coupling intervals, in HCM. A total of 2625 HCM patients were included, and 2584 patients were analysed, with a mean age of 49.6 ± 15.2 years and 62.4% male representation. Twenty-four-hour Holter recordings were evaluated for NSVT presence, frequency, duration, and coupling intervals. Over a median follow-up period of 4.4 years, NSVT was detected in 320 patients (12.4%). The primary endpoint of SCD occurred in 64 patients (2.5%). Secondary endpoints of cardiovascular death and all-cause death occurred in 159 patients (6.2%) and 221 patients (8.6%), respectively. Among the evaluated characteristics, the second coupling interval was the strongest predictor of adverse outcomes, with an optimal cut-off value of 394 ms. Frequency and duration of NSVT were not found to be prognostic. A second coupling interval < 394 ms was associated with a significantly increased risk of SCD (HR 8.36, 95% CI 4.33-16.12, P < 0.001), cardiovascular death (HR 3.64, 95% CI 2.07-6.37, P < 0.001), and all-cause death (HR 3.26, 95% CI 1.97-5.41, P < 0.001) compared with no NSVT, whereas a second coupling interval ≥ 394 ms was not. Replacing generic NSVT with malignant NSVT defined by a short second coupling interval significantly improved SCD risk algorithms. The authors conclude that detailed dissection of NSVT characteristics may refine risk prediction in HCM.",
+    "relation_evidence": "Existing evidence broadly recognizes the presence of non-sustained ventricular tachycardia as an established predictor of sudden cardiac death in hypertrophic cardiomyopathy. This study provides observational data indicating that specific electrophysiological properties, specifically the second coupling interval, differentiate the prognostic impact of NSVT episodes.",
+    "relation_guidelines": "Current clinical practice guidelines incorporate the binary presence of non-sustained ventricular tachycardia into sudden cardiac death risk assessment tools for hypertrophic cardiomyopathy. These study findings refine this approach by evaluating whether specific Holter-derived metrics, such as coupling intervals, further stratify arrhythmic risk.",
+    "authors_conclusion": "The authors conclude that a short second coupling interval of NSVT poses a higher SCD risk in HCM than a long one, and that detailed dissection of NSVT characteristics may improve decision-making for implantable cardioverter-defibrillator implantation in HCM.",
+    "key_numbers": {
+      "design": "Retrospective, multicentre study",
+      "n": "2584",
+      "followup": "Median 4.4 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "NSVT prevalence",
+          "value": "12.4% (n=320)"
+        },
+        {
+          "label": "Sudden cardiac death rate",
+          "value": "2.5% (n=64)"
+        },
+        {
+          "label": "Cardiovascular death rate",
+          "value": "6.2% (n=159)"
+        },
+        {
+          "label": "All-cause death rate",
+          "value": "8.6% (n=221)"
+        },
+        {
+          "label": "Optimal second coupling interval cut-off",
+          "value": "394 ms"
+        },
+        {
+          "label": "SCD risk for second coupling interval < 394 ms vs no NSVT",
+          "value": "HR 8.36 (95% CI 4.33-16.12, P < 0.001)"
+        }
+      ]
+    }
+  },
+  "42743346": {
+    "summary": "Cardiogenic shock remains associated with high short-term mortality despite contemporary advances in clinical care. The association between institutional cardiac capability and patient outcomes, particularly among transferred patients and after adjusting for acute instability, remains incompletely defined. This study evaluated the association between hierarchical hospital cardiac capabilities and in-hospital mortality using a latent measure of acute physiological severity. Data were obtained from the National Inpatient Sample between 2016 and 2022. Hospitals were categorized into five hierarchical tiers ranging from non-percutaneous coronary intervention facilities (tier 1) to heart transplant or durable left ventricular assist device centers (tier 5). Generalized structural equation modeling was applied to assess the relationship between hospital tier and mortality. The model incorporated a latent Acute Severity construct comprising mechanical ventilation, cardiac arrest, and acute kidney and liver injury to account for clinical instability. The study analyzed an estimated 1,177,180 cardiogenic shock hospitalizations, the majority of which occurred at cardiac surgical and transplant or durable left ventricular assist device centers. Crude mortality declined in a stepwise manner from 64.4% in non-percutaneous coronary intervention hospitals to 36.5% in transplant and left ventricular assist device centers. Following adjustment, higher hospital tiers were independently associated with lower mortality compared with tier 1 facilities. Transfer-in status was associated with higher overall mortality (odds ratio 1.36, 95% CI 1.30-1.43). However, this transfer-related risk was attenuated at cardiac surgical and transplant or left ventricular assist device centers. The authors concluded that higher hospital capability independently associates with lower mortality and mitigates transfer-associated risk in cardiogenic shock.",
+    "relation_evidence": "Cardiogenic shock management has increasingly emphasized centralized networks to optimize access to advanced circulatory and surgical support. This large observational study adds structured epidemiological evidence regarding the relationship between institutional tiers, acute physiological severity, and the mitigation of transfer-associated mortality risks.",
+    "relation_guidelines": "Current heart failure guidelines describe the organization of cardiogenic shock care within regionalized hub-and-spoke networks. These findings align descriptively with guideline concepts regarding early identification, triage, and transfer of complex shock patients to specialized centers offering comprehensive mechanical circulatory and surgical capabilities.",
+    "authors_conclusion": "The authors conclude that higher hospital cardiac capability is independently associated with lower mortality among patients with cardiogenic shock, and that advanced centers attenuate transfer-associated risk, supporting regionalized hub-and-spoke systems with early referral to high-capability centers.",
+    "key_numbers": {
+      "design": "Retrospective observational study (National Inpatient Sample, 2016-2022)",
+      "n": "1177180",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Crude mortality in non-PCI centers (tier 1)",
+          "value": "64.4%"
+        },
+        {
+          "label": "Crude mortality in transplant/LVAD centers (tier 5)",
+          "value": "36.5%"
+        },
+        {
+          "label": "Adjusted mortality OR, Tier 2 vs Tier 1",
+          "value": "0.43 (95% CI, 0.38-0.48)"
+        },
+        {
+          "label": "Adjusted mortality OR, Tier 4 vs Tier 1",
+          "value": "0.34 (95% CI, 0.30-0.38)"
+        },
+        {
+          "label": "Adjusted mortality OR, Tier 5 vs Tier 1",
+          "value": "0.36 (95% CI, 0.31-0.41)"
+        },
+        {
+          "label": "Mortality OR for transfer-in status",
+          "value": "1.36 (95% CI, 1.30-1.43)"
+        }
+      ]
+    }
+  },
+  "42741831": {
+    "summary": "Disruption of MYBPC3 precursor mRNA splicing represents a frequent genetic cause of hypertrophic cardiomyopathy (HCM). In silico prediction tools typically prioritize variants distant from canonical splice sites with lower efficiency, leaving some elusive variants undetected in patients classified as genotype-negative. The investigators evaluated a previously unreported deep-intronic variant, MYBPC3 c.2308+227G>A, identified by massively parallel sequencing in genotype-negative HCM patients from Salamanca, Spain. Despite an initial benign prediction by SpliceAI with a delta score of 0.03, its recurrent identification prompted detailed genetic, clinical, family, functional splicing, and haplotype evaluations. Across the study, 35 unrelated probands and 46 relatives from 27 families were identified, yielding 81 confirmed carriers. Among these carriers, 56 individuals (69%) met diagnostic criteria for HCM, with a mean age of 53±15 years and 66% being male. Estimated cumulative disease penetrance by age 60 years was 81% in women and 96% in men. A combined logarithm of the odds score of 5.51 across 20 informative families demonstrated significant cosegregation. Clinical follow-up of probands demonstrated no significant differences in heart failure, arrhythmic events, atrial fibrillation, or mortality compared to cohorts with other pathogenic MYBPC3 variants. Functional assays in blood and cardiac tissue demonstrated that the variant promotes the use of pre-existing cryptic donor (c.2308+299) and acceptor (c.2309-580) splice sites. This mechanism generates two misspliced mRNAs with partial intron retention or cryptic exon inclusion that encode truncated proteins. SpliceVault analysis confirmed these cryptic sites are the leading natural unannotated missplicing events in intron 23, and haplotype reconstruction supported an ancient founder effect. The authors conclude that MYBPC3 c.2308+227G>A is a pathogenic splice-altering variant that causes HCM by amplifying natural background missplicing events.",
+    "relation_evidence": "Pathogenic variants disrupting canonical splicing in MYBPC3 are established causes of hypertrophic cardiomyopathy, but routine diagnostics frequently overlook non-canonical deep-intronic variants. This study demonstrates that deep-intronic variants can act by amplifying natural, low-level background missplicing rather than creating novel canonical motifs.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that MYBPC3 c.2308+227G>A is a pathogenic splice-altering variant that causes hypertrophic cardiomyopathy by amplifying natural missplicing events, expanding the recognized mechanisms of deep-intronic pathogenicity in genetically unresolved cases.",
+    "key_numbers": {
+      "design": "Genetic and functional cohort and family cosegregation study",
+      "n": "81",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Confirmed c.2308+227G>A carriers",
+          "value": "81 (35 probands, 46 relatives across 27 families)"
+        },
+        {
+          "label": "Carriers meeting HCM diagnostic criteria",
+          "value": "56/81 (69%)"
+        },
+        {
+          "label": "Cumulative penetrance at age 60 years",
+          "value": "81% in women and 96% in men"
+        },
+        {
+          "label": "Combined LOD score (20 informative families)",
+          "value": "5.51"
+        },
+        {
+          "label": "SpliceAI predicted benign delta score",
+          "value": "0.03"
+        }
+      ]
+    }
+  },
+  "42740647": {
+    "summary": "Transthyretin cardiac amyloidosis (ATTR-CM) is an underdiagnosed and severe cardiomyopathy in older adults. The prospective single-center IMPACT study sought to describe the prevalence of ATTR-CM among cardiology inpatients with left ventricular hypertrophy (LVH) and to identify clinical and imaging parameters associated with its diagnosis. Consecutive patients aged 60 years or older admitted to cardiology with echocardiographic LVH (wall thickness of 12 mm or greater) were enrolled, irrespective of etiology. Exclusion criteria comprised known amyloidosis, prior heart transplantation, or contraindications to scintigraphy. All included patients underwent immunologic testing and technetium-99m scintigraphy. A diagnosis of ATTR-CM was established by cardiac uptake of Perugini grade 2 or greater in the absence of significant monoclonal gammopathy. Multivariable logistic regression was utilized to determine independent associations, and receiver-operating characteristic curve analysis evaluated diagnostic performance. Between October 2021 and June 2023, ATTR-CM was identified in 29 of 400 patients (7.3%). Multivariable analysis demonstrated that basal longitudinal strain (OR 0.84, 95% CI 0.74-0.95), non-sinus rhythm (OR 3.85, 95% CI 1.30-11.11), bilateral carpal tunnel syndrome (OR 3.48, 95% CI 1.09-11.14), and history of stroke (OR 8.67, 95% CI 2.65-28.34) were independently associated with ATTR-CM. Basal longitudinal strain exhibited the highest discrimination for ATTR-CM with an area under the curve of 0.81. Over a median follow-up of 3.31 years, all-cause mortality did not significantly differ between patients with ATTR-CM and those without ATTR-CM (p=0.137). The authors conclude that systematic screening in this population identified a substantial prevalence of ATTR-CM, and that basal longitudinal strain may assist in prioritizing diagnostic testing in routine practice.",
+    "relation_evidence": "ATTR-CM is an established cause of heart failure and increased wall thickness in older patients that has historically been suspected primarily via clinical red flags. These findings add prospective observational data regarding the diagnostic yield of systematic scintigraphy and immunologic screening within a minimally selected inpatient cohort with left ventricular hypertrophy.",
+    "relation_guidelines": "Current heart failure and cardiomyopathy guidelines highlight the role of non-biopsy diagnostic pathways combining bone scintigraphy, light-chain assessment, and echocardiographic strain evaluation in patients with unexplained left ventricular hypertrophy. This study provides supportive descriptive data on the prevalence of ATTR-CM and the discriminative value of basal longitudinal strain in this clinical context.",
+    "authors_conclusion": "The authors conclude that systematic screening identified a substantial prevalence of ATTR-CM in a minimally selected cardiology population with left ventricular hypertrophy. They state that basal longitudinal strain may help prioritize diagnostic testing in routine practice to facilitate earlier identification and management.",
+    "key_numbers": {
+      "design": "Prospective single-center study",
+      "n": "400",
+      "followup": "3.31 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "ATTR-CM prevalence",
+          "value": "7.3% (29/400)"
+        },
+        {
+          "label": "Basal longitudinal strain association",
+          "value": "OR 0.84 (95% CI 0.74-0.95)"
+        },
+        {
+          "label": "Non-sinus rhythm association",
+          "value": "OR 3.85 (95% CI 1.30-11.11)"
+        },
+        {
+          "label": "Bilateral carpal tunnel syndrome association",
+          "value": "OR 3.48 (95% CI 1.09-11.14)"
+        },
+        {
+          "label": "History of stroke association",
+          "value": "OR 8.67 (95% CI 2.65-28.34)"
+        },
+        {
+          "label": "BLS diagnostic discrimination (AUC)",
+          "value": "0.81"
+        }
+      ]
+    }
+  },
+  "42747844": {
+    "summary": "Asymptomatic carotid artery stenosis has been associated with diminished cognition in observational studies, but the cognitive effect of revascularization remained unclear. The CREST-2 randomized clinical trials evaluated whether carotid revascularization improves cognitive function in patients aged 35 years or older with 70% or greater asymptomatic carotid stenosis. The study comprised two parallel multicenter trials: carotid stenting plus intensive medical management (CAS + IMM) versus IMM alone, and carotid endarterectomy plus IMM (CEA + IMM) versus IMM alone. Across 146 clinical sites, 2165 of 2366 study patients (91.5%) participated in cognitive assessments between December 2014 and July 2024. The CAS trial included 1078 patients (529 CAS + IMM; 549 IMM alone) and the CEA trial included 1087 patients (543 CEA + IMM; 544 IMM alone). The mean participant age was 70.1 years (SD, 7.7), and 37.8% were female. Centrally administered, treatment-blinded telephone assessments evaluated five cognitive domains before treatment and annually up to 4 years. Over a mean follow-up of 2.24 years (SD, 1.09), 4954 cognitive test batteries were completed. The prespecified primary endpoint was the fully adjusted composite z score at 4 years, with a minimal clinically important difference defined as 0.50 SD. In the CAS trial, the adjusted 4-year composite z score was 0.22 (95% CI, 0.13 to 0.30) with CAS + IMM versus 0.18 (95% CI, 0.09 to 0.27) with IMM alone (between-group difference, 0.03 [95% CI, -0.09 to 0.15]). In the CEA trial, the adjusted 4-year composite z score was 0.25 (95% CI, 0.17 to 0.33) with CEA + IMM versus 0.23 (95% CI, 0.15 to 0.32) with IMM alone (between-group difference, 0.02 [95% CI, -0.09 to 0.14]). No significant differences were observed between revascularization plus medical management versus IMM alone for any individual cognitive test. Adverse events and study limitations were not described in the abstract. The authors conclude that carotid revascularization with CAS or CEA plus IMM did not significantly improve cognition compared with IMM alone up to 4 years.",
+    "relation_evidence": "Asymptomatic carotid artery disease has recognized epidemiological associations with cognitive impairment. These randomized findings from CREST-2 provide comparative evidence demonstrating that adding carotid revascularization to intensive medical management does not improve mid-term cognitive outcomes.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in patients with severe asymptomatic carotid artery stenosis, revascularization with either CAS or CEA plus intensive medical management, compared with intensive medical management alone, did not significantly improve cognitive function at up to 4 years of follow-up.",
+    "key_numbers": {
+      "design": "Randomized clinical trials, multicenter, outcome-blinded",
+      "n": "2165",
+      "followup": "mean 2.24 (SD, 1.09) years (up to 4 years)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "CAS trial: 4-year adjusted composite z score difference (CAS+IMM vs IMM)",
+          "value": "0.03 (95% CI, -0.09 to 0.15)"
+        },
+        {
+          "label": "CEA trial: 4-year adjusted composite z score difference (CEA+IMM vs IMM)",
+          "value": "0.02 (95% CI, -0.09 to 0.14)"
+        },
+        {
+          "label": "Cognitive assessment participation",
+          "value": "2165 / 2366 (91.5%)"
+        },
+        {
+          "label": "Mean age",
+          "value": "70.1 years (SD, 7.7)"
+        },
+        {
+          "label": "Female participants",
+          "value": "37.8%"
+        },
+        {
+          "label": "Total cognitive test batteries administered",
+          "value": "4954"
+        }
+      ]
+    }
+  },
+  "42747372": {
+    "summary": "Recent societal guidelines provide a Class I recommendation for intracoronary imaging (ICI)-guided percutaneous coronary intervention (PCI) in complex or left main coronary artery disease, although some recent trials have not shown benefit. This study sought to re-evaluate the efficacy of ICI-guided PCI versus angiography-guided PCI and to examine heterogeneity across trials. A systematic search of PubMed, Embase, Cochrane Central, and ClinicalTrials.gov was conducted through June 3, 2026, for randomized controlled trials (RCTs) in the drug-eluting stent era. Analytical methods included direct comparison meta-analyses, mixed treatment comparison meta-analyses, trial sequential analyses, fragility analyses, and Bayesian meta-analyses. Meta-regression evaluated heterogeneity using stent length, stent diameter, difference in postdilatation percentage between groups, publication year, and geographic location. The meta-analysis included 28 RCTs encompassing 24,634 patients with a mean age of 64.8 years, 75.9% male, and a mean follow-up of 22 months. Compared with angiography-guided PCI, ICI-guided PCI reduced target lesion failure (RR: 0.72; 95% CI: 0.61-0.85; I2 = 61%). ICI-guided PCI also reduced cardiac mortality (RR: 0.73; 95% CI: 0.58-0.91; I2 = 5%) and myocardial infarction (RR: 0.86; 95% CI: 0.75-0.97; I2 = 0%). Target vessel revascularization (RR: 0.69; 95% CI: 0.57-0.83; I2 = 41%) and stent thrombosis (RR: 0.55; 95% CI: 0.40-0.76; I2 = 0%) were lower with ICI guidance. All-cause mortality was significantly reduced with ICI guidance (RR: 0.82; 95% CI: 0.70-0.96; I2 = 0%). Trial sequential analysis confirmed evidence for at least a 20% reduction across all evaluated outcomes with ICI-guided PCI. The fragility index ranged from 9 to 50, and the posterior probability for benefit exceeded 99% for all outcomes. Differences across trials in geography and lesion characteristics accounted for most between-trial variance with a residual tau of 0. The authors conclude that ICI-guided PCI is associated with significantly reduced cardiovascular events compared with angiography-guided PCI.",
+    "relation_evidence": "This study aggregates updated evidence from randomized controlled trials evaluating intracoronary imaging guidance compared to angiography guidance during drug-eluting stent implantation. It contextualizes conflicting results from recent individual trials by pooling data and assessing sources of trial heterogeneity.",
+    "relation_guidelines": "The study abstract notes that recent societal guidelines provide a Class I recommendation for intracoronary imaging-guided PCI in complex or left main coronary artery disease. The meta-analysis findings of reduced clinical endpoints are consistent with these guideline recommendations.",
+    "authors_conclusion": "The authors conclude that after accounting for modifier effects from recent studies, ICI-guided PCI was associated with significantly reduced cardiovascular events compared with angiography-guided PCI. They further conclude that geographic heterogeneity across trials was present mainly for target vessel revascularization and explained in large part by differences in lesion characteristics and procedural technique.",
+    "key_numbers": {
+      "design": "Meta-analysis of 28 RCTs",
+      "n": "24634",
+      "followup": "mean 22 months",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Target lesion failure",
+          "value": "RR: 0.72 (95% CI: 0.61-0.85; I2 = 61%)"
+        },
+        {
+          "label": "Cardiac mortality",
+          "value": "RR: 0.73 (95% CI: 0.58-0.91; I2 = 5%)"
+        },
+        {
+          "label": "Myocardial infarction",
+          "value": "RR: 0.86 (95% CI: 0.75-0.97; I2 = 0%)"
+        },
+        {
+          "label": "Target vessel revascularization",
+          "value": "RR: 0.69 (95% CI: 0.57-0.83; I2 = 41%)"
+        },
+        {
+          "label": "Stent thrombosis",
+          "value": "RR: 0.55 (95% CI: 0.40-0.76; I2 = 0%)"
+        },
+        {
+          "label": "All-cause mortality",
+          "value": "RR: 0.82 (95% CI: 0.70-0.96; I2 = 0%)"
+        }
+      ]
+    }
+  },
+  "42747834": {
+    "summary": "Cerebral hemodynamic impairment in patients with asymptomatic internal carotid artery (ICA) stenosis is associated with reduced cognition, but whether revascularization improves cognitive outcomes in these patients remains uncertain. The CREST-H substudy of the multicenter phase 3 CREST-2 randomized clinical trial evaluated whether cognitive benefit from revascularization of high-grade asymptomatic ICA stenosis varies based on baseline cerebral hemodynamic impairment. The study enrolled adults aged 35 to 86 years without dementia who had an eighth-grade education or higher and unilateral asymptomatic ICA stenosis of at least 70%. Participants were enrolled between January 2018 and July 2024 at 61 sites in North America, with follow-up extending to July 2025. Baseline hemodynamic impairment was assessed using magnetic resonance or computed tomographic perfusion imaging to measure interhemispheric delayed time-to-peak (TTP) contrast arrival. Participants were allocated to carotid revascularization (endarterectomy or stenting) plus intensive medical management (IMM) versus IMM alone. The primary outcome was the difference in composite cognitive z score over 1 year derived from 5 cognitive tests. The primary analysis tested for an interaction between treatment assignment and degree of baseline hemodynamic impairment among participants with reduced baseline cognition (cognitive z score ≤-1.0 SD). Of 392 participants enrolled (mean age, 71 years; 32% female), 291 had complete data after excluding 61 for missing baseline imaging and 40 for missing cognitive examinations or covariates. Among 51 participants with baseline reduced cognition, 25 received revascularization and 26 received IMM alone. Cognitive z scores in the revascularization group changed from -1.36 (SD 0.51) at baseline to -1.17 (SD 0.47) at 1 year, compared with -1.34 (SD 0.83) at baseline to -1.01 (SD 0.97) at 1 year in the IMM alone group. The primary analysis showed no significant difference in cognition by treatment group over 1 year after adjusting for covariates (adjusted difference in cognitive z score, -0.15 SD [95% CI, -0.54 to 0.24]). The interaction between treatment group and baseline hemodynamic status was not statistically significant (β estimate = 0.018 [95% CI, -0.025 to 0.061]; P = .40). Adverse events and safety endpoints were not reported in the abstract.",
+    "relation_evidence": "Whether restoring cerebral perfusion via carotid revascularization improves cognitive function in asymptomatic carotid artery disease has long been debated. This randomized substudy directly examined this hypothesis across varying degrees of baseline hemodynamic compromise.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that there was no differential effect of revascularization vs IMM alone on cognition over 1 year by cerebral hemodynamic status among those with baseline reduced cognition, suggesting that revascularization does not improve cognitive dysfunction by restoring cerebral flow in chronic asymptomatic carotid stenosis.",
+    "key_numbers": {
+      "design": "Multicenter phase 3 randomized clinical trial substudy",
+      "n": "392",
+      "followup": "1 year",
+      "primary_endpoint": {
+        "name": "Composite cognitive z score difference over 1 year in participants with baseline cognitive z score ≤-1.0 SD",
+        "arm1_label": "Revascularization + IMM",
+        "arm1_value": "Mean (SD): baseline -1.36 (0.51), 1 year -1.17 (0.47)",
+        "arm2_label": "IMM alone",
+        "arm2_value": "Mean (SD): baseline -1.34 (0.83), 1 year -1.01 (0.97)",
+        "effect": "Adjusted difference -0.15 SD (95% CI, -0.54 to 0.24); interaction β = 0.018 (95% CI, -0.025 to 0.061; P = .40)"
+      },
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Participants screened and enrolled",
+          "value": "607 screened from 2485 in CREST-2; 392 enrolled"
+        },
+        {
+          "label": "Participants with complete data",
+          "value": "291 (61 excluded for missing imaging, 40 for missing cognitive/covariates)"
+        },
+        {
+          "label": "Cohort with reduced baseline cognition",
+          "value": "51 participants (25 revascularization, 26 IMM alone)"
+        },
+        {
+          "label": "Treatment × hemodynamic status interaction",
+          "value": "β estimate = 0.018 (95% CI, -0.025 to 0.061; P = .40)"
+        },
+        {
+          "label": "Adjusted cognitive z score difference over 1 year",
+          "value": "-0.15 SD (95% CI, -0.54 to 0.24)"
+        }
+      ]
+    }
+  },
+  "42751771": {
+    "summary": "Drug-coated balloons have demonstrated superiority over conventional balloon angioplasty in coronary in-stent restenosis. The influence of chronic kidney disease on outcomes following drug-coated balloon angioplasty for in-stent restenosis is not well described. This post hoc analysis of the AGENT IDE trial was conducted to evaluate the efficacy and safety of drug-coated balloons versus balloon angioplasty according to renal status. The study evaluated patients with chronic kidney disease, defined as an estimated glomerular filtration rate <60 mL/min per 1.73 m2, and those without renal impairment. The primary outcome was target lesion failure through 2 years, defined as a composite of ischemia-driven target lesion revascularization, target vessel myocardial infarction, or cardiac death. Outcomes were analyzed using time-to-first-event and recurrent event methods through 2 years of follow-up. Of the 406 patients randomized to drug-coated balloons, 149 (25%) had chronic kidney disease with a mean estimated glomerular filtration rate of 47.3±9.2 mL/min per 1.73 m2. Patients with chronic kidney disease were older and had higher rates of multivessel disease and congestive heart failure than those without renal impairment. No significant differences were observed regarding clinical presentation, Mehran in-stent restenosis patterns, or technical success. At 2 years, target lesion failure occurred in 23.6% with drug-coated balloons versus 30.0% with balloon angioplasty in the chronic kidney disease cohort (hazard ratio, 0.70 [95% CI, 0.35-1.39]). In patients without chronic kidney disease, 2-year target lesion failure occurred in 28.1% with drug-coated balloons versus 34.9% with balloon angioplasty (hazard ratio, 0.74 [95% CI, 0.52-1.05]; P for interaction = 0.90). The treatment effect of drug-coated balloons in the recurrent events analysis was also not influenced by baseline renal function. Study limitations were not reported in the abstract. The authors conclude that the benefit of drug-coated balloons compared with balloon angioplasty for in-stent restenosis was consistent regardless of chronic kidney disease status.",
+    "relation_evidence": "Drug-coated balloon angioplasty is established as a treatment option for coronary in-stent restenosis. This post hoc trial analysis provides descriptive comparative data showing consistent relative treatment effects of paclitaxel-coated balloons versus conventional balloon angioplasty across chronic kidney disease strata.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that among patients undergoing intervention for in-stent restenosis, the benefit of drug-coated balloons versus balloon angioplasty was consistent irrespective of baseline chronic kidney disease status. They also conclude that baseline renal function did not influence outcomes in the recurrent event analysis.",
+    "key_numbers": {
+      "design": "Post hoc analysis of RCT",
+      "n": "406",
+      "followup": "2 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "2-year TLF in CKD (DCB vs BA)",
+          "value": "23.6% vs 30.0% (HR 0.70 [95% CI, 0.35-1.39])"
+        },
+        {
+          "label": "2-year TLF without CKD (DCB vs BA)",
+          "value": "28.1% vs 34.9% (HR 0.74 [95% CI, 0.52-1.05])"
+        },
+        {
+          "label": "Interaction P-value for 2-year TLF",
+          "value": "PInt=0.90"
+        },
+        {
+          "label": "CKD prevalence in DCB cohort",
+          "value": "149 of 406 (25%)"
+        },
+        {
+          "label": "Mean eGFR in CKD group",
+          "value": "47.3±9.2 mL/min per 1.73 m2"
+        }
+      ]
+    }
+  },
+  "42735969": {
+    "summary": "Patients with diabetes are recognized to be at elevated risk for adverse events following percutaneous coronary intervention (PCI) relative to patients without diabetes. This study aimed to investigate the impact of diabetes and complex coronary lesions on clinical outcomes after PCI guided by optical coherence tomography (OCT) versus angiography over a 2-year follow-up period. Within the randomized ILUMIEN IV trial, participants were categorized into groups with diabetes (n = 1,044) and without diabetes (n = 1,443). The trial compared OCT-guided PCI against angiography-guided PCI. The prespecified clinical endpoints evaluated in this analysis were target vessel failure (TVF) and serious major adverse cardiovascular events (MACE). Following adjustment for baseline clinical and angiographic differences, diabetic patients had significantly higher 2-year TVF rates than nondiabetic patients (9.9% vs 6.3%; adjusted HR: 1.48; 95% CI: 1.09-2.02; P = 0.01). Adjusted 2-year rates of serious MACE were also significantly higher in patients with diabetes compared to those without diabetes (5.3% vs 2.7%; adjusted HR: 1.77; 95% CI: 1.14-2.76; P = 0.01). This increased risk associated with diabetes was consistent across subgroups with and without complex lesions for both TVF (Pinteraction = 0.22) and serious MACE (Pinteraction = 0.14). The highest absolute 2-year event rates occurred among patients who had both diabetes and complex lesions. In the overall randomized cohort, procedural guidance with OCT did not demonstrate a significant reduction in TVF or serious MACE compared with angiography guidance. The lack of relative difference between OCT and angiography guidance was consistent regardless of diabetes status (Pinteraction = 0.41 for TVF; Pinteraction = 0.20 for serious MACE). Furthermore, the comparison between OCT guidance and angiography guidance was not modified by the presence of complex lesions. Specific study limitations were not detailed in the abstract. The authors concluded that diabetic patients maintain an increased risk of adverse clinical outcomes following PCI compared to nondiabetic patients, even when OCT guidance is utilized.",
+    "relation_evidence": "Existing literature establishes diabetes mellitus as an independent risk factor for post-PCI adverse events and target vessel failure. This study provides randomized trial data evaluating whether procedural optimization using OCT guidance modifies this risk profile in diabetic patients with or without complex lesions.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in the large-scale ILUMIEN IV trial, patients with diabetes remained at increased risk for adverse events after PCI compared with nondiabetic patients despite the use of OCT procedural guidance. They further conclude that patients with diabetes and complex lesions were at particularly high risk for adverse outcomes after PCI.",
+    "key_numbers": {
+      "design": "RCT",
+      "n": "2487",
+      "followup": "2 years",
+      "primary_endpoint": {
+        "name": "Target vessel failure (TVF), 2 years",
+        "arm1_label": "Diabetes (n = 1,044)",
+        "arm1_value": "9.9%",
+        "arm2_label": "No diabetes (n = 1,443)",
+        "arm2_value": "6.3%",
+        "effect": "Adjusted HR: 1.48 (95% CI: 1.09-2.02; P = 0.01)"
+      },
+      "secondary": [
+        {
+          "name": "Serious MACE, 2 years",
+          "arm1": "5.3%",
+          "arm2": "2.7%",
+          "effect": "Adjusted HR: 1.77 (95% CI: 1.14-2.76; P = 0.01)"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "2-year TVF (Diabetes vs No diabetes)",
+          "value": "9.9% vs 6.3% (adjusted HR: 1.48; 95% CI: 1.09-2.02; P = 0.01)"
+        },
+        {
+          "label": "2-year Serious MACE (Diabetes vs No diabetes)",
+          "value": "5.3% vs 2.7% (adjusted HR: 1.77; 95% CI: 1.14-2.76; P = 0.01)"
+        },
+        {
+          "label": "TVF interaction by complex lesions",
+          "value": "Pinteraction = 0.22"
+        },
+        {
+          "label": "Serious MACE interaction by complex lesions",
+          "value": "Pinteraction = 0.14"
+        },
+        {
+          "label": "OCT vs angiography TVF interaction by diabetes status",
+          "value": "Pinteraction = 0.41"
+        },
+        {
+          "label": "OCT vs angiography Serious MACE interaction by diabetes status",
+          "value": "Pinteraction = 0.20"
+        }
+      ]
+    }
+  },
+  "42717907": {
+    "summary": "In-stent restenosis (ISR) remains an important etiology of repeat revascularization despite developments in drug-eluting stent technology. Contemporary adoption patterns and clinical outcomes of adjunctive plaque-modification strategies for ISR have not been completely characterized. This study evaluated national trends and in-hospital outcomes of ISR percutaneous coronary intervention (PCI) treated with adjunctive plaque-modification devices compared with conventional plain old balloon angioplasty. Data were analyzed from the National Cardiovascular Data Registry CathPCI Registry for all ISR PCI procedures performed between July 2009 and June 2024. Adjunctive ISR therapy was defined as the use of excimer laser atherectomy, intravascular lithotripsy, cutting or scoring balloon angioplasty, or rotational or orbital atherectomy with or without stent implantation. Conventional plain old balloon angioplasty was defined as balloon angioplasty with or without stent placement and no adjunctive devices. The study population included 1,065,354 ISR admissions encompassing 1,182,599 lesions. Overall, adjunctive devices were utilized in 26.5% of cases, with usage rising from 20.8% in the first quarter of 2018 to 40.7% by the second quarter of 2024. Intravascular lithotripsy exhibited the most rapid adoption, reaching 16.1% of ISR cases within 4 years of its introduction in the United States. Multivariable logistic regression clustered by operator showed that adjunctive therapy was associated with higher odds of in-hospital mortality (odds ratio, 1.25 [95% CI, 1.19-1.31]) and myocardial infarction (odds ratio, 1.30 [95% CI, 1.24-1.35]). Adjunctive therapy was also associated with increased odds of in-hospital bleeding (odds ratio, 1.29 [95% CI, 1.26-1.33]) and stroke (odds ratio, 1.11 [95% CI, 1.02-1.22]). Recurrent ISR represented 14.3% of cases, was more frequently managed with adjunctive therapy than initial ISR (34.2% versus 25.0%), and demonstrated lower absolute complication rates. The authors conclude that ISR remains a major contributor to PCI volume, adoption of adjunctive devices has risen sharply, and associated higher in-hospital event rates likely reflect lesion complexity.",
+    "relation_evidence": "The study provides nationwide observational evidence on the evolving real-world procedural patterns and in-hospital outcomes of adjunctive plaque-modification techniques for in-stent restenosis in the United States.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in-stent restenosis remains a major contributor to percutaneous coronary intervention volume and that the use of adjunctive plaque-modification devices, particularly intravascular lithotripsy, has risen sharply. They further note that the higher in-hospital event rates associated with adjunctive therapy likely reflect underlying lesion complexity.",
+    "key_numbers": {
+      "design": "Retrospective national registry analysis",
+      "n": "1065354",
+      "followup": "In-hospital",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Overall adjunctive device utilization",
+          "value": "26.5%"
+        },
+        {
+          "label": "Adjunctive device use trend",
+          "value": "20.8% (2018 Q1) to 40.7% (2024 Q2)"
+        },
+        {
+          "label": "Intravascular lithotripsy adoption",
+          "value": "16.1% within 4 years of US introduction"
+        },
+        {
+          "label": "In-hospital mortality (adjunctive vs conventional)",
+          "value": "OR 1.25 (95% CI, 1.19-1.31)"
+        },
+        {
+          "label": "In-hospital myocardial infarction (adjunctive vs conventional)",
+          "value": "OR 1.30 (95% CI, 1.24-1.35)"
+        },
+        {
+          "label": "In-hospital bleeding (adjunctive vs conventional)",
+          "value": "OR 1.29 (95% CI, 1.26-1.33)"
+        }
+      ]
+    }
+  },
+  "42735974": {
+    "summary": "This study evaluated 5-year clinical outcomes in patients with severe native aortic stenosis who underwent transcatheter aortic valve replacement (TAVR) with contemporary balloon-expandable valves (BEVs) according to bicuspid versus tricuspid leaflet morphology. Between August 2015 and December 2023, a total of 3,393 patients were evaluated and grouped by valve anatomy. To adjust for baseline differences between groups, a 1:1 propensity score-matched analysis was performed, yielding 515 matched pairs. Patients were followed for a median duration of 1,511 days (Q1-Q3: 937 to 1,825 days). The primary endpoint of all-cause mortality at 5 years demonstrated no statistically significant difference between the bicuspid and tricuspid cohorts (13.2% vs 13.7%; P = 0.384). Heart failure rehospitalization at 5 years was documented in 8.5% of bicuspid patients and 6.8% of tricuspid patients (P = 0.622). Rates of stroke at 5 years were 2.4% in the bicuspid group and 2.6% in the tricuspid group (P = 0.618). Aortic valve reintervention at 5 years occurred in 0.7% versus 1.6% of patients, respectively (P = 0.706). In-hospital mortality was 0.8% in the bicuspid group and 1.0% in the tricuspid group (P = 0.738). Ascending aortic growth rates did not significantly differ between groups (0.37 mm/y vs 0.31 mm/y; P = 0.578). Echocardiographic hemodynamics through 5 years showed mean transvalvular gradients of 12.0 mm Hg versus 11.5 mm Hg (P = 0.863) and effective orifice areas of 1.35 cm2 versus 1.50 cm2 (P = 0.084). Moderate or greater paravalvular leak was observed in 3.9% of bicuspid and 5.6% of tricuspid patients (P = 0.578). The authors conclude that long-term clinical outcomes, valve performance, and ascending aortic growth rates were not significantly different between propensity-matched bicuspid and tricuspid patients receiving contemporary BEVs.",
+    "relation_evidence": "Transcatheter aortic valve replacement is widely utilized for severe tricuspid aortic stenosis, while bicuspid morphology has historically represented an anatomically complex subset with less long-term comparative data. This study adds 5-year comparative observational data regarding contemporary balloon-expandable TAVR performance and clinical endpoints across these two anatomical phenotypes.",
+    "relation_guidelines": "Current valvular heart disease guidelines highlight that bicuspid aortic valve anatomy requires careful anatomical assessment by the Heart Team when determining the approach to intervention. These findings provide observational data describing 5-year clinical and hemodynamic parity following balloon-expandable TAVR in matched bicuspid and tricuspid cohorts.",
+    "authors_conclusion": "The authors conclude that in propensity score-matched patients undergoing TAVR with contemporary BEVs, long-term clinical outcomes, valve performance, and ascending aortic growth rates showed no statistically significant differences between bicuspid and tricuspid groups.",
+    "key_numbers": {
+      "design": "1:1 propensity score-matched cohort study",
+      "n": "3393 (515 matched pairs)",
+      "followup": "median 1511 days (Q1-Q3: 937-1825 days)",
+      "primary_endpoint": {
+        "name": "All-cause mortality at 5-year follow-up",
+        "arm1_label": "Bicuspid",
+        "arm1_value": "13.2%",
+        "arm2_label": "Tricuspid",
+        "arm2_value": "13.7%",
+        "effect": "P = 0.384"
+      },
+      "secondary": [
+        {
+          "name": "Heart failure rehospitalization at 5 years",
+          "arm1": "8.5%",
+          "arm2": "6.8%",
+          "effect": "P = 0.622"
+        },
+        {
+          "name": "Stroke at 5 years",
+          "arm1": "2.4%",
+          "arm2": "2.6%",
+          "effect": "P = 0.618"
+        },
+        {
+          "name": "Aortic valve reintervention at 5 years",
+          "arm1": "0.7%",
+          "arm2": "1.6%",
+          "effect": "P = 0.706"
+        },
+        {
+          "name": "In-hospital death",
+          "arm1": "0.8%",
+          "arm2": "1.0%",
+          "effect": "P = 0.738"
+        },
+        {
+          "name": "Moderate or greater paravalvular leak",
+          "arm1": "3.9%",
+          "arm2": "5.6%",
+          "effect": "P = 0.578"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Ascending aortic growth rate (Bicuspid vs Tricuspid)",
+          "value": "0.37 mm/y vs 0.31 mm/y (P = 0.578)"
+        },
+        {
+          "label": "Mean transvalvular gradient through 5 years (Bicuspid vs Tricuspid)",
+          "value": "12.0 mm Hg vs 11.5 mm Hg (P = 0.863)"
+        },
+        {
+          "label": "Effective orifice area through 5 years (Bicuspid vs Tricuspid)",
+          "value": "1.35 cm2 vs 1.50 cm2 (P = 0.084)"
+        },
+        {
+          "label": "5-year all-cause mortality (Bicuspid vs Tricuspid)",
+          "value": "13.2% vs 13.7% (P = 0.384)"
+        }
+      ]
+    }
+  },
+  "42735971": {
+    "summary": "Surgical bailout during transcatheter aortic valve replacement (TAVR) may be required to manage emergent procedural complications. In the context of debates regarding performing TAVR in hospitals without in-hospital cardiac surgery support, this study analyzed national trends and clinical outcomes of TAVR bailout. The cohort comprised Medicare beneficiaries who underwent TAVR between 2016 and 2024. The study evaluated annual trends in bailout rates, with a primary outcome of 30-day mortality. In addition, multivariable multilevel hierarchical modeling was used to assess the impact of hospital surgical aortic valve replacement (SAVR) volume on bailout mortality. Overall, surgical bailout occurred in 0.56% of TAVRs (2,240 of 400,862 procedures). The annual incidence of surgical bailout decreased from 0.92% (261/28,430) in 2016 to 0.40% (216/54,301) in 2024 (P < 0.001). The median follow-up duration was 952 days (interquartile range: 414 to 1,615 days). The 30-day mortality rate among patients requiring TAVR bailout was 26.3% (588/2,240). Landmark analysis demonstrated higher mortality among patients with bailout compared to those without bailout up to 1 year after TAVR (P < 0.001), whereas mortality was similar after 1 year (P = 0.53). When evaluated across low-, intermediate-, and high-volume SAVR centers, 30-day mortality rates were 27% (102/383), 29% (163/566), and 25% (322/1,291), respectively (P = 0.28). Specific procedural causes of bailout and abstract-level limitations were not detailed. The authors conclude that while bailout incidence is declining, short-term mortality remains high, supporting the ongoing need for cardiac surgical support in TAVR centers.",
+    "relation_evidence": "Established observational evidence indicates that emergent surgical conversion during TAVR is rare but carries significant perioperative mortality. This study provides contemporary national data showing a declining rate of bailout over time alongside persistent early mortality risks.",
+    "relation_guidelines": "Current valvular heart disease guidelines highlight the role of multidisciplinary Heart Teams and the presence of on-site cardiac surgical infrastructure for TAVR programs. The reported incidence of life-threatening complications requiring surgical bailout and its associated early mortality descriptively align with existing guideline recommendations regarding surgical backup.",
+    "authors_conclusion": "The authors conclude that the annual incidence of TAVR surgical bailout is decreasing, though short-term mortality remains high, while 1-year survivors exhibit long-term mortality comparable to patients without bailout. They conclude that these data support the need for continued cardiac surgical support in TAVR centers to manage emergent complications.",
+    "key_numbers": {
+      "design": "Retrospective database analysis",
+      "n": "400862",
+      "followup": "Median 952 days (IQR: 414-1,615 days)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Overall TAVR bailout incidence",
+          "value": "0.56% (2,240/400,862)"
+        },
+        {
+          "label": "Annual incidence trend (2016 vs 2024)",
+          "value": "0.92% (261/28,430) vs 0.40% (216/54,301), P < 0.001"
+        },
+        {
+          "label": "30-day mortality of TAVR bailout",
+          "value": "26.3% (588/2,240)"
+        },
+        {
+          "label": "Mortality landmark analysis (<=1 year vs >1 year)",
+          "value": "P < 0.001 vs P = 0.53"
+        },
+        {
+          "label": "30-day mortality by SAVR volume (Low vs Intermediate vs High)",
+          "value": "27% (102/383) vs 29% (163/566) vs 25% (322/1,291), P = 0.28"
+        }
+      ]
+    }
+  },
+  "42734596": {
+    "summary": "The long-term clinical outcomes of the self-expanding intra-annular Portico transcatheter aortic valve are not fully established. This study reports 5-year outcomes from the multicenter PORTICO IDE randomized controlled trial. The study enrolled patients with severe symptomatic aortic stenosis who were at high or extreme surgical risk. Participants were randomized 1:1 to transcatheter aortic valve replacement with the self-expanding intra-annular study valve or Food and Drug Administration-approved commercially available valves (CAVs). The comparator CAV group comprised balloon-expandable or self-expanding supra-annular platforms. A total of 750 eligible patients were randomized, including 381 assigned to the study valve and 369 to CAVs. The study cohort had a mean age of 83 years, and 52.7% of the patients were female. At 5 years, the composite rate of all-cause mortality or stroke was similar between the study valve and CAV cohorts (55.6% vs 51.3%, P = 0.42). Cardiovascular mortality was 33.4% in the study valve group versus 25.8% in the CAV group (P = 0.06). Naïve permanent pacemaker implantation occurred in 36.6% of patients in the study valve group compared with 20.3% in the CAV group (P < 0.0001). At 5 years, the mean transvalvular gradient was lower in the study valve arm than in the CAV arm (7.2 ± 3.0 mm Hg vs 9.5 ± 6.5 mm Hg, P = 0.008). The effective valve area at 5 years was comparable between both groups (1.78 ± 0.45 cm2 vs 1.71 ± 0.51 cm2, P = 0.40). The authors conclude that the self-expanding intra-annular transcatheter valve demonstrated 5-year overall survival, stroke rates, and valve function similar to commercially available platforms in this patient population.",
+    "relation_evidence": "Long-term randomized follow-up through 5 years provides comparative durability and clinical outcome data among distinct transcatheter heart valve designs in patients at high or extreme surgical risk.",
+    "relation_guidelines": "These findings contribute 5-year comparative performance, hemodynamic, and pacemaker implantation data for transcatheter heart valves evaluated within the broader clinical framework of valvular heart disease guidelines.",
+    "authors_conclusion": "The authors conclude that in patients at high or extreme surgical risk, TAVR with the self-expanding intra-annular transcatheter heart valve had similar 5-year overall survival, stroke rates, and valve function compared with commercially available valves.",
+    "key_numbers": {
+      "design": "Multicenter randomized controlled trial (1:1)",
+      "n": "750",
+      "followup": "5 years",
+      "primary_endpoint": null,
+      "secondary": [
+        {
+          "name": "5-year all-cause mortality or stroke",
+          "arm1": "55.6%",
+          "arm2": "51.3%",
+          "effect": "P = 0.42"
+        },
+        {
+          "name": "Cardiovascular mortality at 5 years",
+          "arm1": "33.4%",
+          "arm2": "25.8%",
+          "effect": "P = 0.06"
+        },
+        {
+          "name": "Naïve permanent pacemaker implantation at 5 years",
+          "arm1": "36.6%",
+          "arm2": "20.3%",
+          "effect": "P < 0.0001"
+        },
+        {
+          "name": "Mean transvalvular gradient at 5 years",
+          "arm1": "7.2 ± 3.0 mm Hg",
+          "arm2": "9.5 ± 6.5 mm Hg",
+          "effect": "P = 0.008"
+        },
+        {
+          "name": "Valve area at 5 years",
+          "arm1": "1.78 ± 0.45 cm2",
+          "arm2": "1.71 ± 0.51 cm2",
+          "effect": "P = 0.40"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "5-year all-cause mortality or stroke (study valve vs CAV)",
+          "value": "55.6% vs 51.3% (P = 0.42)"
+        },
+        {
+          "label": "Cardiovascular mortality at 5 years (study valve vs CAV)",
+          "value": "33.4% vs 25.8% (P = 0.06)"
+        },
+        {
+          "label": "Naïve permanent pacemaker implantation at 5 years (study valve vs CAV)",
+          "value": "36.6% vs 20.3% (P < 0.0001)"
+        },
+        {
+          "label": "Mean transvalvular gradient at 5 years (study valve vs CAV)",
+          "value": "7.2 ± 3.0 vs 9.5 ± 6.5 mm Hg (P = 0.008)"
+        },
+        {
+          "label": "Valve area at 5 years (study valve vs CAV)",
+          "value": "1.78 ± 0.45 vs 1.71 ± 0.51 cm2 (P = 0.40)"
+        }
+      ]
+    }
+  },
+  "42723622": {
+    "summary": "This study evaluated the impact of initial transcatheter aortic valve (TAV) type on clinical outcomes following redo-TAVR or surgical TAVR-explant for TAVR failure. The authors compared reintervention outcomes between failed balloon-expandable valves (BEV) and failed self-expanding valves (SEV). Data were derived from 553 patients across 29 centers in the international EXPLANTORREDO-TAVR registry who underwent reintervention during a separate admission from the index procedure between May 2009 and February 2022. Patients with mechanically expanding valves and those requiring explantation for endocarditis were excluded from the analysis. The comparative cohort included 158 patients (41.4%) with failed-BEV and 224 patients (58.6%) with failed-SEV. The mean age at reintervention was 75.5±9.3 years, and 40.6% of the cohort were female. Failed-BEV had significantly higher rates of structural valve deterioration (73.4% versus 46.1%, P<0.001) and prosthesis-patient mismatch (12.3% versus 5.5%, P=0.022) compared with failed-SEV. In contrast, failed-SEV demonstrated a higher frequency of paravalvular leak (41.1% versus 18.2%, P<0.001). Time-to-reintervention was significantly longer in the failed-BEV group than in the failed-SEV group (41.8 versus 19.7 months, P<0.001). Reintervention modalities were similarly distributed between failed-BEV and failed-SEV (redo-TAVR 54.4% versus 53.6%; TAVR-explant 45.6% versus 46.4%; P=0.92), with cross-platform redo-TAVR favored in both groups (P=0.016). Mortality did not differ between failed-BEV and failed-SEV at 30 days (8.7% versus 8.0%, P=0.85) or at 1 year (24.3% versus 21.5%, P=0.65). Risk-adjusted 3-year cumulative mortality was also comparable between groups when stratified by redo-TAVR (adjusted HR 1.15 [0.61-2.20]) and TAVR-explant (adjusted HR 0.84 [0.46-1.54]). The authors conclude that while mechanisms of failure and timing differed by initial valve type, initial valve type did not affect reintervention strategy or post-reintervention survival.",
+    "relation_evidence": "The study adds multicenter observational evidence characterizing differences in modes of valve failure, reintervention timing, and post-reintervention outcomes between balloon-expandable and self-expanding transcatheter aortic valves.",
+    "relation_guidelines": "The findings provide descriptive observational data on reintervention outcomes for failed transcatheter aortic valves, refining current understanding of failure mechanisms without contradicting existing valvular heart disease guidelines.",
+    "authors_conclusion": "The authors conclude that failed-BEV and failed-SEV showed distinct failure mechanisms and timing of reintervention, but initial valve type did not impact reintervention strategy or survival after redo-TAVR or TAVR-explant.",
+    "key_numbers": {
+      "design": "Multicenter international registry",
+      "n": "553",
+      "followup": "1 year (with 3-year mortality analysis)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "30-day mortality (failed-BEV vs failed-SEV)",
+          "value": "8.7% vs 8.0% (P=0.85)"
+        },
+        {
+          "label": "1-year mortality (failed-BEV vs failed-SEV)",
+          "value": "24.3% vs 21.5% (P=0.65)"
+        },
+        {
+          "label": "Time-to-reintervention (failed-BEV vs failed-SEV)",
+          "value": "41.8 vs 19.7 months (P<0.001)"
+        },
+        {
+          "label": "Structural valve deterioration (failed-BEV vs failed-SEV)",
+          "value": "73.4% vs 46.1% (P<0.001)"
+        },
+        {
+          "label": "Paravalvular leak (failed-BEV vs failed-SEV)",
+          "value": "18.2% vs 41.1% (P<0.001)"
+        },
+        {
+          "label": "Reintervention strategy (redo-TAVR vs explant)",
+          "value": "54.4% vs 45.6% (failed-BEV) and 53.6% vs 46.4% (failed-SEV) (P=0.92)"
+        }
+      ]
+    }
+  },
+  "42723620": {
+    "summary": "The presence of tricuspid regurgitation (TR) may affect prognosis in patients with primary mitral regurgitation. This study investigated the impact of concomitant TR on clinical outcomes among patients with primary mitral regurgitation undergoing mitral transcatheter edge-to-edge repair (M-TEER). The PRIME-MR registry evaluated 3083 patients with severe primary mitral regurgitation treated with M-TEER across 25 international sites between 2008 and 2022. The analysis was restricted to patients who achieved successful M-TEER procedures, defined as post-procedural mitral regurgitation of moderate or less. Patients were stratified into two cohorts according to baseline TR severity: TR moderate or less (TR≤Mod) versus TR severe or greater (TR≥Sev). A total of 2155 patients met the inclusion criteria, consisting of 421 patients (20%) with TR≥Sev and 1734 patients (80%) with TR≤Mod. At baseline, patients in the TR≥Sev group had a higher prevalence of New York Heart Association class III/IV symptoms, shorter 6-minute walk distance, higher NT-proBNP levels, higher creatinine, higher pulmonary artery pressures, atrial fibrillation, and greater diuretic use compared to the TR≤Mod group. The primary endpoint was 2-year all-cause mortality, which occurred in 29.6% of the TR≥Sev group versus 19.6% of the TR≤Mod group (Plog-rank < 0.0001). Two-year heart failure hospitalization rates were also significantly higher in the TR≥Sev group at 21.1% compared to 16.8% in the TR≤Mod group (PGray = 0.018). On multivariable analysis, baseline TR≥Sev was an independent predictor of 2-year all-cause mortality (adjusted hazard ratio, 2.01 [95% CI, 1.35-3.00]; P < 0.001). Although TR severity decreased in 30% of patients with baseline TR≥Sev after successful M-TEER, residual TR≥Sev remained associated with higher 2-year mortality than TR≤Mod (30.4% versus 19.9%; Plog-rank = 0.0037). Study limitations and specific safety adverse event counts were not reported in the abstract. The authors conclude that baseline severe TR is present in one-fifth of primary mitral regurgitation patients undergoing M-TEER and is independently associated with increased 2-year all-cause mortality despite procedural success.",
+    "relation_evidence": "Concomitant tricuspid regurgitation is well recognized as a marker of advanced hemodynamic compromise in left-sided valvular disease, though its specific trajectory and prognostic role following transcatheter repair for primary mitral regurgitation have been less extensively characterized in large multicenter registries.",
+    "relation_guidelines": "These findings are consistent with valvular heart disease guidelines that emphasize the prognostic significance of concomitant right-sided heart involvement and tricuspid regurgitation in patients undergoing left-sided transcatheter valve interventions.",
+    "authors_conclusion": "The authors conclude that 20% of patients with primary mitral regurgitation had severe TR at baseline, that TR severity improved in 30% of these patients after successful M-TEER, and that baseline severe TR was independently associated with increased 2-year all-cause mortality.",
+    "key_numbers": {
+      "design": "Multicenter international registry",
+      "n": "2155",
+      "followup": "2 years",
+      "primary_endpoint": {
+        "name": "2-year all-cause mortality",
+        "arm1_label": "TR≥Sev",
+        "arm1_value": "29.6%",
+        "arm2_label": "TR≤Mod",
+        "arm2_value": "19.6%",
+        "effect": "aHR 2.01 (95% CI, 1.35-3.00); P<0.001 (Plog-rank<0.0001)"
+      },
+      "secondary": [
+        {
+          "name": "2-year heart failure hospitalization",
+          "arm1": "21.1%",
+          "arm2": "16.8%",
+          "effect": "PGray=0.018"
+        },
+        {
+          "name": "2-year mortality with residual TR≥Sev vs TR≤Mod",
+          "arm1": "30.4%",
+          "arm2": "19.9%",
+          "effect": "Plog-rank=0.0037"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Baseline severe TR prevalence",
+          "value": "20% (n=421 of 2155)"
+        },
+        {
+          "label": "2-year all-cause mortality (TR≥Sev vs TR≤Mod)",
+          "value": "29.6% vs 19.6% (Plog-rank<0.0001)"
+        },
+        {
+          "label": "Adjusted HR for 2-year mortality with baseline TR≥Sev",
+          "value": "2.01 (95% CI, 1.35-3.00; P<0.001)"
+        },
+        {
+          "label": "2-year heart failure hospitalization (TR≥Sev vs TR≤Mod)",
+          "value": "21.1% vs 16.8% (PGray=0.018)"
+        },
+        {
+          "label": "TR improvement after successful M-TEER in baseline TR≥Sev",
+          "value": "30%"
+        },
+        {
+          "label": "2-year mortality in residual TR≥Sev vs TR≤Mod",
+          "value": "30.4% vs 19.9% (Plog-rank=0.0037)"
+        }
+      ]
+    }
+  },
+  "42720641": {
+    "summary": "Echocardiographic cutoffs to define right ventricular dysfunction in secondary tricuspid regurgitation have been proposed by the Tricuspid Valve Academic Research Consortium and the American Society of Echocardiography, but these thresholds have lacked clinical validation. This study evaluated the prognostic value of these proposed thresholds for right ventricular function parameters in a large real-world cohort. The study included consecutive patients with at least moderate-to-severe secondary tricuspid regurgitation. Right ventricular function was assessed using tricuspid annular plane systolic excursion, fractional area change, right ventricular global longitudinal strain, and right ventricular free wall longitudinal strain. The primary study outcome was a composite of all-cause mortality and heart failure hospitalization, censored for tricuspid valve intervention. A total of 1,550 patients were included, with a mean age of 69 ± 13 years and 50% men. Over a median follow-up of 22 months (interquartile range: 3 to 63 months), 703 patients (45%) reached the composite endpoint. Univariable Cox analyses demonstrated that all proposed cutoffs were associated with clinical outcomes. After multivariable adjustment, right ventricular strain parameters remained the primary parameters significantly associated with the composite endpoint. A stepwise combined grading scheme using tricuspid annular plane systolic excursion and right ventricular free wall longitudinal strain exhibited the strongest association with the outcome. Independent associations with the endpoint were observed across mild, moderate, and severe grades of dysfunction for both the TVARC criteria (P < 0.001) and the ASE criteria (P < 0.005). Safety events and study limitations were not specified in the abstract. The authors conclude that the proposed cutoffs demonstrate prognostic value in significant secondary tricuspid regurgitation, and combining tricuspid annular plane systolic excursion with right ventricular free wall longitudinal strain provides an exploratory framework for risk stratification.",
+    "relation_evidence": "Right ventricular function is an established determinant of clinical outcomes in patients with significant tricuspid regurgitation. These findings validate standardized cutoffs proposed by international societies in a large real-world cohort, highlighting the incremental prognostic utility of strain parameters over conventional measures.",
+    "relation_guidelines": "Current valvular heart disease guidelines describe the importance of multiparametric right ventricular assessment for risk stratification in secondary tricuspid regurgitation. The study findings refine this approach by demonstrating that integrating longitudinal strain with conventional echocardiographic parameters correlates with clinical outcomes.",
+    "authors_conclusion": "The authors conclude that the TVARC and ASE cutoffs for right ventricular dysfunction demonstrate prognostic value in patients with significant secondary tricuspid regurgitation. They further state that combining tricuspid annular plane systolic excursion and right ventricular free wall longitudinal strain may provide a pragmatic, exploratory framework for patient risk stratification.",
+    "key_numbers": {
+      "design": "Observational cohort study",
+      "n": "1550",
+      "followup": "22 months (median; Q1-Q3: 3-63 months)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Study population",
+          "value": "1,550 patients (mean age: 69 ± 13 years, 50% men)"
+        },
+        {
+          "label": "Median follow-up",
+          "value": "22 months (Q1-Q3: 3-63 months)"
+        },
+        {
+          "label": "Composite endpoint (all-cause mortality or HF hospitalization)",
+          "value": "45% (n = 703)"
+        },
+        {
+          "label": "TVARC dysfunction grades association with endpoint",
+          "value": "P < 0.001"
+        },
+        {
+          "label": "ASE dysfunction grades association with endpoint",
+          "value": "P < 0.005"
+        }
+      ]
+    }
+  },
+  "42717919": {
+    "summary": "The JenaValve Trilogy Transcatheter Heart Valve System is a CE-marked device designed for the treatment of symptomatic aortic regurgitation. This study evaluated procedural characteristics and clinical outcomes in all-comers patients with symptomatic aortic regurgitation undergoing transfemoral transcatheter aortic valve replacement with the Trilogy valve. The investigation was conducted as a multicenter retrospective analysis of patients treated between June 2021 and June 2025 at eight European centers. Clinical and procedural outcomes were defined in accordance with Valve Academic Research Consortium-3 criteria. The study cohort comprised 363 patients with a median age of 81 years (interquartile range, 75-84) and 45% female representation. Baseline median European System for Cardiac Operative Risk Evaluation II was 3.4%, and median left ventricular ejection fraction was 50%. Transfemoral access was utilized in 359 patients (99%), and technical success was documented in 98%. Valve embolization occurred in five patients, managed with a second valve in two, surgical intervention in two, and valve-in-valve reintervention in one. Two additional technical failures occurred due to hemodynamic instability and a vascular complication. At hospital discharge, 86% of patients presented with none or trace regurgitant leakage, with a mean transvalvular gradient of 4 mm Hg. New permanent pacemaker implantation was required in 22% of patients, while in-hospital mortality was 0.3%. At 30-day follow-up, 88% of patients were classified as New York Heart Association functional class I or II. Kaplan-Meier estimated all-cause mortality rates were 4.1% at 6 months, 7.0% at 1 year, 15.8% at 2 years, and 25.9% at 3 years. The authors conclude that the device demonstrated high procedural success and favorable hemodynamic performance in this patient cohort.",
+    "relation_evidence": "Transcatheter treatment of pure native aortic regurgitation has historically presented technical challenges due to the absence of annular calcification. This study adds multicenter observational outcome and hemodynamic performance data for a dedicated transcatheter valve system evaluated in a real-world cohort with up to 3 years of follow-up.",
+    "relation_guidelines": "Current valvular heart disease guidelines describe transcatheter aortic valve implantation as an option primarily in carefully selected patients with severe aortic regurgitation who are considered unsuitable for surgery. These observational findings describe procedural and midterm outcomes with a dedicated device in this specific clinical context.",
+    "authors_conclusion": "The authors conclude that transfemoral transcatheter aortic valve replacement with the Trilogy valve demonstrated high procedural success and favorable hemodynamic valve performance. They note that these findings are encouraging and suggest a potential role for the device in patients with symptomatic aortic regurgitation who are unsuitable for surgery.",
+    "key_numbers": {
+      "design": "Multicenter retrospective analysis",
+      "n": "363",
+      "followup": "Up to 3 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Technical success",
+          "value": "98%"
+        },
+        {
+          "label": "In-hospital mortality",
+          "value": "0.3%"
+        },
+        {
+          "label": "Permanent pacemaker implantation",
+          "value": "22%"
+        },
+        {
+          "label": "Discharge none or trace leakage",
+          "value": "86%"
+        },
+        {
+          "label": "1-year all-cause mortality (KM)",
+          "value": "7.0%"
+        },
+        {
+          "label": "3-year all-cause mortality (KM)",
+          "value": "25.9%"
+        }
+      ]
+    }
+  },
+  "42735966": {
+    "summary": "This meta-analysis investigated the efficacy and safety of ultrashort (≤1 month) dual antiplatelet therapy (DAPT) followed by antiplatelet monotherapy compared with standard-duration DAPT in patients with acute coronary syndrome (ACS) undergoing percutaneous coronary intervention (PCI). The authors conducted a systematic review and meta-analysis of randomized controlled trials published up to February 15, 2026. The study included 10 randomized trials encompassing a total of 29,232 patients. The primary outcomes evaluated were major adverse cardiac and cerebrovascular events (MACCE), major bleeding, and net adverse clinical events (NACE). Prespecified subgroup analyses were performed by ethnicity (East Asian vs non-East Asian) and abbreviation strategy (intensive vs moderate). Intensive abbreviation was defined as ≤1-week DAPT or clopidogrel/aspirin monotherapy, whereas moderate abbreviation was defined as ≥2-week DAPT followed by ticagrelor/prasugrel monotherapy. Across all 10 trials, ultrashort DAPT did not significantly increase MACCE risk overall compared with standard DAPT (HR: 1.06; 95% CI: 0.93-1.20; P = 0.38). Subgroup findings showed a higher MACCE risk in patients with ST-segment elevation myocardial infarction (STEMI), but not in those with non-ST-segment elevation ACS (NSTE-ACS). Ultrashort DAPT significantly reduced the risk of major bleeding (HR: 0.47; 95% CI: 0.35-0.64; P < 0.00001). A net clinical benefit was observed with ultrashort DAPT regarding NACE (HR: 0.83; 95% CI: 0.72-0.97; P = 0.02). The reduction in major bleeding was significantly more pronounced in East Asian patients (HR: 0.35; 95% CI: 0.25-0.49) than in non-East Asian patients (HR: 0.63; 95% CI: 0.43-0.93; P for interaction = 0.02). The abbreviation strategy significantly modified outcomes (P for interaction = 0.003), with intensive abbreviation increasing MACCE risk (HR: 1.37; 95% CI: 1.11-1.69; P = 0.003), whereas moderate abbreviation showed no significant difference (HR: 0.96; 95% CI: 0.85-1.08; P = 0.47). Study limitations were not explicitly reported in the abstract. The authors conclude that ultrashort DAPT reduces bleeding without increasing overall ischemic events in ACS patients undergoing PCI, though ischemic risk varied by clinical presentation and abbreviation strategy.",
+    "relation_evidence": "The study adds to existing literature on antiplatelet de-escalation by pooling randomized trials evaluating abbreviated DAPT regimens followed by single antiplatelet therapy in ACS patients treated with PCI. It provides comparative evidence on ischemic and bleeding outcomes across patient subsets, including East Asian populations and distinct monotherapy strategies.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in patients with ACS undergoing PCI, ultrashort DAPT reduced bleeding without increasing ischemic events overall, although a signal of increased MACCE was observed in STEMI but not in NSTE-ACS. They further state that bleeding reduction was greater in East Asians, while ≤1-week DAPT or clopidogrel/aspirin monotherapy may increase ischemic risk.",
+    "key_numbers": {
+      "design": "Systematic review and meta-analysis of randomized controlled trials",
+      "n": "29232",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "MACCE risk (ultrashort vs standard DAPT)",
+          "value": "HR: 1.06; 95% CI: 0.93-1.20; P = 0.38; I2 = 24%"
+        },
+        {
+          "label": "Major bleeding (ultrashort vs standard DAPT)",
+          "value": "HR: 0.47; 95% CI: 0.35-0.64; P < 0.00001; I2 = 44%"
+        },
+        {
+          "label": "Net adverse clinical event (NACE)",
+          "value": "HR: 0.83; 95% CI: 0.72-0.97; P = 0.02; I2 = 61%"
+        },
+        {
+          "label": "Major bleeding in East Asians",
+          "value": "HR: 0.35; 95% CI: 0.25-0.49; P < 0.00001; I2 = 0%"
+        },
+        {
+          "label": "MACCE with intensive abbreviation",
+          "value": "HR: 1.37; 95% CI: 1.11-1.69; P = 0.003; I2 = 0%"
+        },
+        {
+          "label": "MACCE with moderate abbreviation",
+          "value": "HR: 0.96; 95% CI: 0.85-1.08; P = 0.47; I2 = 0%"
+        }
+      ]
+    }
+  },
+  "42717865": {
+    "summary": "Myocardial infarction with nonobstructive coronary arteries (MINOCA) accounts for 6% to 15% of acute coronary syndromes and disproportionately affects women. Although coronary culprit lesions are present in 45% of patients with MINOCA, multivessel optical coherence tomography (OCT) is infrequently performed in practice. This study evaluated whether interventional cardiologists can identify coronary arteries containing culprit lesions using invasive coronary angiography in women with MINOCA. The study population included 64 women with MINOCA who had a coronary culprit lesion identified by multivessel OCT. A dedicated core laboratory confirmed and localized OCT-defined culprit lesions using angiographic coregistration. Two interventional cardiologists blinded to OCT findings independently reviewed invasive coronary angiography before and after review of ECG and transthoracic echocardiography to identify the culprit vessel. The cohort had a median age of 64 years, and 97% presented with non-ST-segment elevation myocardial infarction. OCT-defined culprit lesions were localized most frequently in the left anterior descending artery (50.8%) and right coronary artery (35.4%). At least 1 interventional cardiologist correctly identified the culprit artery in 54.7% of patients (95% CI, 42.6%-66.3%). Both interventional cardiologists identified the culprit artery in 28.1% of patients (95% CI, 18.6%-40.1%). The addition of ECG and transthoracic echocardiography data did not improve diagnostic accuracy (P=0.40 and P=0.97, respectively). In subgroup findings, culprit arteries were identified by at least 1 cardiologist in 87.5% of plaque rupture cases, whereas only 11% of circumflex lesions were identified. Safety outcomes, adverse events, and specific study limitations were not described in the abstract. The authors conclude that interventional cardiologists could not reliably identify culprit arteries using coronary angiography in women with MINOCA, even with complementary ECG and echocardiographic information.",
+    "relation_evidence": "Coronary culprit lesions are recognized to occur in a substantial subset of patients with MINOCA, where intracoronary imaging often reveals underlying mechanisms such as plaque rupture or erosion. These findings provide descriptive evidence on the diagnostic limitations of standalone invasive angiography for localizing culprit vessels in this population.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that interventional cardiologists could not reliably identify culprit arteries using coronary angiography in women with MINOCA, even after ECG and transthoracic echocardiography review. They state that these findings suggest invasive angiography alone should not guide vessel selection for intracoronary imaging and support multivessel imaging when evaluating MINOCA.",
+    "key_numbers": {
+      "design": "Blinded diagnostic evaluation study",
+      "n": "64",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Culprit artery identified by at least 1 cardiologist",
+          "value": "54.7% (95% CI, 42.6%-66.3%)"
+        },
+        {
+          "label": "Culprit artery identified by both cardiologists",
+          "value": "28.1% (95% CI, 18.6%-40.1%)"
+        },
+        {
+          "label": "Identification rate in plaque rupture cases",
+          "value": "87.5%"
+        },
+        {
+          "label": "Identification rate of circumflex lesions",
+          "value": "11%"
+        },
+        {
+          "label": "OCT-defined culprit lesion location (LAD / RCA)",
+          "value": "50.8% / 35.4%"
+        }
+      ]
+    }
+  },
+  "42747370": {
+    "summary": "Prospective data regarding the long-term prognostic value and warranty periods of functional cardiac imaging in stable chest pain remain limited. This study evaluated the comparative long-term prognostic utility of stress cardiac magnetic resonance (CMR) and single-photon emission computed tomography (SPECT) using the CE-MARC trial cohort. The original CE-MARC trial enrolled 752 patients presenting with suspected angina. The present analysis included 652 patients (86.9% of recruited participants) who had completed both CMR and SPECT and had available long-term follow-up. Participants were monitored for major adverse cardiovascular events (MACE), comprising cardiovascular death, myocardial infarction, and unplanned coronary revascularization. The warranty period was defined as the time interval during which patients with a normal test result remained 97.5% free of MACE. Over a median follow-up of 15.5 years (interquartile range: 12.4 to 16.6 years), 40 cardiovascular deaths (6.1%) occurred in the cohort. Additionally, 29 patients (4.4%) experienced a myocardial infarction and 47 patients (7.2%) underwent unplanned coronary revascularization. After adjustment for cardiovascular risk factors, an abnormal stress CMR remained a strong independent predictor of MACE (hazard ratio: 2.74; 95% CI: 1.70 to 4.42; P < 0.001). Patients with a normal scan had an observed warranty period of 6.8 years for stress CMR compared with 5.1 years for SPECT. Multivariable regression identified age, smoking, and diabetes as key modifiers associated with a reduced warranty period following a normal result. Specific study limitations were not reported in the abstract. The authors conclude that stress CMR provides robust long-term prognostic information with an operational warranty period of almost 7 years following a normal scan.",
+    "relation_evidence": "Functional imaging modalities including stress CMR and SPECT are established diagnostic tools for evaluating stable coronary artery disease. These findings provide comparative long-term empirical data on the duration of low cardiovascular risk associated with normal scan results over extended follow-up.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in patients with stable chest pain, stress CMR is a strong, independent predictor of hard cardiovascular events and provides a warranty period of almost 7 years for a normal scan.",
+    "key_numbers": {
+      "design": "Prospective cohort study",
+      "n": "652",
+      "followup": "Median 15.5 years (Q1-Q3: 12.4-16.6 years)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Cardiovascular death",
+          "value": "6.1% (n=40)"
+        },
+        {
+          "label": "Myocardial infarction",
+          "value": "4.4% (n=29)"
+        },
+        {
+          "label": "Unplanned coronary revascularization",
+          "value": "7.2% (n=47)"
+        },
+        {
+          "label": "Abnormal CMR MACE risk (adjusted)",
+          "value": "HR: 2.74 (95% CI: 1.70-4.42; P < 0.001)"
+        },
+        {
+          "label": "Warranty period for normal stress CMR",
+          "value": "6.8 years"
+        },
+        {
+          "label": "Warranty period for normal SPECT",
+          "value": "5.1 years"
+        }
+      ]
+    }
+  },
+  "42745612": {
+    "summary": "Chronic coronary disease is a complex condition in which non-invasive imaging plays a central role in diagnosis, risk stratification, follow-up, and management. An understanding of contemporary clinical practice guidelines is critical to appropriate test selection, avoidance of low-value testing, and individualized patient care. This review compares contemporary European Society of Cardiology guidelines and American College of Cardiology/American Heart Association guidelines regarding non-invasive imaging for chronic coronary disease and chronic coronary syndromes. The review identifies that the European and American guidelines are broadly concordant in supporting clinical likelihood assessment prior to testing. Both guideline frameworks support the selective use of coronary computed tomography angiography (CCTA) and functional imaging modalities. Both guidelines also agree on the avoidance of routine surveillance testing in clinically stable patients. Despite these similarities, the review outlines several key distinctions between the two documents. The European guideline provides a more prescriptive diagnostic algorithm for suspected chronic coronary syndromes that uses pre-test likelihood thresholds to guide deferral of testing, CCTA, functional imaging, and invasive angiography. In contrast, the American guideline is more focused on established chronic coronary disease, symptom change, functional decline, and whether testing will alter clinical management. Furthermore, the European guideline assigns a stronger early role to CCTA, particularly in low-to-moderate likelihood patients. The European guideline also provides more explicit high-risk anatomic and ischemic imaging thresholds. Additionally, the guidelines differ in their positioning of exercise electrocardiography. The documents also diverge in their diagnostic evaluation of angina or ischemia with non-obstructive coronary arteries, microvascular angina, and vasospastic angina. The authors conclude that the latest ESC guideline is more diagnosis-forward and algorithmic, whereas the ACC/AHA guideline is more management-forward and symptom-driven, potentially influencing imaging selection, repeat testing, and the evaluation of non-obstructive coronary syndromes.",
+    "relation_evidence": "Non-invasive imaging modalities, including CCTA and functional testing, represent established tools in the evaluation of chronic coronary syndromes across clinical practice. Comparative analyses describe how differing guideline frameworks conceptualize pre-test probability, diagnostic thresholds, and the indications for anatomical versus functional testing.",
+    "relation_guidelines": "The review directly analyzes and contrasts the diagnostic pathways, imaging selection criteria, and procedural positioning within the ESC and ACC/AHA guidelines for chronic coronary disease and syndromes.",
+    "authors_conclusion": "The authors conclude that the latest ESC guideline remains more diagnosis-forward and algorithmic, whereas the ACC/AHA guideline is more management-forward and symptom-driven. They state that these differences may influence imaging selection, repeat testing, and the evaluation of non-obstructive coronary syndromes.",
+    "key_numbers": {
+      "design": "Guideline review and comparative analysis",
+      "n": null,
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Guideline concordance",
+          "value": "Support for pre-test clinical likelihood assessment, selective CCTA and functional imaging, and avoidance of routine surveillance testing in stable patients"
+        },
+        {
+          "label": "ESC diagnostic approach",
+          "value": "Prescriptive diagnostic algorithm using pre-test likelihood thresholds for deferral, CCTA, functional imaging, and invasive angiography"
+        },
+        {
+          "label": "ACC/AHA diagnostic approach",
+          "value": "Focus on established disease, symptom change, functional decline, and whether testing will alter management"
+        },
+        {
+          "label": "Role of CCTA in ESC guidelines",
+          "value": "Stronger early role in low-to-moderate likelihood patients, with more high-risk anatomic and ischemic imaging thresholds"
+        },
+        {
+          "label": "Additional areas of divergence",
+          "value": "Positioning of exercise electrocardiography and diagnostic evaluation of ANOCA/INOCA, microvascular angina, and vasospastic angina"
+        }
+      ]
+    }
+  },
+  "42747817": {
+    "summary": "Whether frailty modifies the benefit-risk balance of glucagon-like peptide-1 receptor agonists in adults with cardiovascular disease and overweight or obesity remains uncertain. This secondary analysis of the SELECT randomized clinical trial evaluated the efficacy and safety of semaglutide according to baseline frailty status. The study included 17,604 adults with established cardiovascular disease, a body mass index of 27 or higher, and no diabetes. A 31-item frailty index (FI) based on the Rockwood cumulative deficit approach categorized participants into not frail (FI ≤0.210; 31%), more frail (FI 0.211-0.310; 47%), and most frail (FI ≥0.311; 22%). Participants were randomized to receive semaglutide 2.4 mg once weekly or placebo. The primary composite outcome was cardiovascular death, nonfatal myocardial infarction, and nonfatal stroke, the incidence of which increased with higher baseline FI. Semaglutide demonstrated consistent primary outcome effects across FI categories: hazard ratio (HR) 0.84 (95% CI, 0.65-1.07) for FI ≤0.210, HR 0.70 (95% CI, 0.59-0.82) for FI 0.211-0.310, and HR 0.92 (95% CI, 0.76-1.10) for FI ≥0.311 (P = .09 for interaction; P = .30 for continuous FI interaction). Semaglutide also reduced composite heart failure outcomes (P = .82 for interaction), all-cause hospitalization (P = .71 for interaction), and all-cause mortality (P = .28 for interaction) regardless of FI category. Health-related quality-of-life improvements assessed by EQ-5D-5L scores appeared larger with higher FI (P = .02 for interaction). Between baseline and week 104, FI category was more likely to improve (OR, 2.46; 95% CI, 1.80-3.37) and less likely to worsen (OR, 0.47; 95% CI, 0.34-0.65) with semaglutide versus placebo. Hazard ratios for adverse events leading to permanent discontinuation appeared lower among participants with higher baseline FI (P < .001 for interaction). The authors concluded that semaglutide showed beneficial effects on clinical outcomes without detectable heterogeneity by baseline FI, with greater quality-of-life improvements in participants with higher frailty.",
+    "relation_evidence": "In adults with established cardiovascular disease and overweight or obesity, GLP-1 receptor agonists have demonstrated cardiovascular risk reductions. This post hoc trial analysis provides descriptive evidence on the consistency of clinical outcomes, safety, and health-related quality of life across varying baseline frailty strata.",
+    "relation_guidelines": "Current cardiovascular guidelines address cardiovascular prevention and risk reduction in overweight and obese populations. These findings descriptively refine understanding regarding the treatment profile of GLP-1 receptor agonists in patients with varying degrees of frailty.",
+    "authors_conclusion": "The authors conclude that semaglutide demonstrated beneficial effects on a broad range of clinical outcomes in SELECT without detectable heterogeneity by baseline frailty index, with benefits on health-related quality of life appearing greater with higher frailty index.",
+    "key_numbers": {
+      "design": "Secondary analysis of a randomized clinical trial",
+      "n": "17604",
+      "followup": "104 weeks",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Primary outcome (FI ≤0.210)",
+          "value": "HR 0.84 (95% CI, 0.65-1.07)"
+        },
+        {
+          "label": "Primary outcome (FI 0.211-0.310)",
+          "value": "HR 0.70 (95% CI, 0.59-0.82)"
+        },
+        {
+          "label": "Primary outcome (FI ≥0.311)",
+          "value": "HR 0.92 (95% CI, 0.76-1.10)"
+        },
+        {
+          "label": "FI category improvement at week 104",
+          "value": "OR 2.46 (95% CI, 1.80-3.37)"
+        },
+        {
+          "label": "FI category worsening at week 104",
+          "value": "OR 0.47 (95% CI, 0.34-0.65)"
+        },
+        {
+          "label": "Permanent discontinuation due to AE interaction",
+          "value": "P < .001"
+        }
+      ]
+    }
+  },
+  "42743912": {
+    "summary": "Evidence suggests that higher whole-grain intake is associated with lower cardiometabolic disease risks, although underlying mechanisms remain unclear. The authors performed a random-effects meta-analysis of randomized trials to evaluate the effects of whole grains on cardiometabolic risk factors. Mean differences with 95% confidence intervals were estimated per 48 g/day increment of whole grains in dry weight, equivalent to approximately 90 g or 3 servings of fresh weight. The analysis included 87 trials across 101 publications. Each 48 g/day increment of whole-grain intake was associated with a reduction in body weight of -0.20 kg (95% CI: -0.31 to -0.09; n = 41) with high certainty. Reductions with high certainty were also observed for waist circumference (-0.22 cm; 95% CI: -0.39 to -0.06; n = 27) and total cholesterol (-0.10 mmol/L; 95% CI: -0.13 to -0.07; n = 54). Interleukin-6 was reduced by -0.12 pg/mL (95% CI: -0.23 to -0.00; n = 12) with high certainty. Moderate certainty evidence demonstrated reductions in low-density lipoprotein cholesterol of -0.07 mmol/L (95% CI: -0.10 to -0.05; n = 52) and triglycerides of -0.04 mmol/L (95% CI: -0.06 to -0.02; n = 52). Reductions with moderate certainty were also noted for fasting plasma glucose (-0.03 mmol/L; 95% CI: -0.06 to -0.00; n = 44) and systolic blood pressure (-0.82 mmHg; 95% CI: -1.49 to -0.15; n = 32). Non-linear analyses indicated the greatest effects occurred at 60-100 g/day for most outcomes, whereas a few outcomes showed maximal effects at higher intakes up to 180-220 g/day. Safety outcomes and adverse events were not reported in the abstract. Study limitations noted by the authors include varying certainty of evidence across outcomes and sparse data at higher intake levels limiting firm conclusions regarding dose thresholds. The authors conclude that whole-grain consumption improves multiple cardiometabolic risk factors, with larger effects generally observed at 60-100 g/day.",
+    "relation_evidence": "Higher whole-grain consumption has been broadly associated in nutritional epidemiology with lower rates of cardiovascular disease and type 2 diabetes. This study synthesizes randomized trial data to quantify the effect size and dose-response relationship of whole-grain intake on intermediate cardiometabolic markers.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that whole-grain intake was associated with improvements in multiple cardiometabolic risk factors, with larger effects generally observed at intakes of approximately 60-100 g/day. They also note that evidence certainty varied across outcomes and that sparse data at higher intakes limit firm conclusions regarding dose thresholds.",
+    "key_numbers": {
+      "design": "Random-effects meta-analysis of randomized trials",
+      "n": "87 trials (101 publications)",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Body weight (MD per 48 g/day)",
+          "value": "-0.20 kg (95% CI: -0.31 to -0.09; n = 41)"
+        },
+        {
+          "label": "Waist circumference (MD per 48 g/day)",
+          "value": "-0.22 cm (95% CI: -0.39 to -0.06; n = 27)"
+        },
+        {
+          "label": "Total cholesterol (MD per 48 g/day)",
+          "value": "-0.10 mmol/L (95% CI: -0.13 to -0.07; n = 54)"
+        },
+        {
+          "label": "LDL cholesterol (MD per 48 g/day)",
+          "value": "-0.07 mmol/L (95% CI: -0.10 to -0.05; n = 52)"
+        },
+        {
+          "label": "Systolic blood pressure (MD per 48 g/day)",
+          "value": "-0.82 mmHg (95% CI: -1.49 to -0.15; n = 32)"
+        },
+        {
+          "label": "Interleukin-6 (MD per 48 g/day)",
+          "value": "-0.12 pg/mL (95% CI: -0.23 to -0.00; n = 12)"
+        }
+      ]
+    }
+  },
+  "42727977": {
+    "summary": "This population-based cohort study evaluated the generalisability of cardiovascular disease risk predictor effects across populations from a high-income country versus a non-high-income country. The investigators derived comparable risk prediction equations and explored strategies to improve prediction accuracy across different settings. Primary prevention cohorts of individuals aged 30 to 74 years with diabetes and no prior cardiovascular disease were identified from electronic health records in New Zealand and China. Sex-specific five-year equations incorporating 16 predictors were derived using standardised methods to predict first cardiovascular events. Between 2004 and 2018, the New Zealand cohort included 47,958 participants who experienced 5622 (11.7%) first cardiovascular disease events. Between 2010 and 2018, the Chinese cohort comprised 46,558 participants with 3650 (7.8%) first cardiovascular disease events. Hazard ratios for most predictors were similar between countries, but the hazard ratio for age differed markedly. Specifically, among women, the hazard ratio for age per 10 years was 1.61 (95% confidence interval 1.51 to 1.71) in New Zealand versus 2.51 (95% confidence interval 2.32 to 2.72) in China. When New Zealand equations were applied to the Chinese cohort, standard recalibration did not improve calibration, resulting in expected to observed ratios of 0.938 in men and 0.809 in women. Replacing New Zealand age coefficients with Chinese age coefficients improved model calibration, yielding expected to observed ratios of 1.027 in men and 1.025 in women. The authors noted that applying equations derived from high-income countries to non-high-income populations with diabetes can lead to systematic errors primarily related to age effect differences.",
+    "relation_evidence": "Cardiovascular risk prediction tools developed in high-income settings are commonly transported to other populations using simple recalibration. This study demonstrates that standard recalibration may be insufficient when key predictor hazard ratios, particularly for age, vary significantly across different international populations.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that applying cardiovascular disease risk prediction equations derived from high-income countries to populations with diabetes from non-high-income countries may introduce systematic errors driven by differences in the effect of age, and that updating key predictor coefficients, particularly age, represents a feasible strategy to improve accuracy.",
+    "key_numbers": {
+      "design": "Population based cohort study",
+      "n": "94516",
+      "followup": "5 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "First CVD events in New Zealand cohort (2004-2018)",
+          "value": "11.7% (5622/47 958)"
+        },
+        {
+          "label": "First CVD events in Chinese cohort (2010-2018)",
+          "value": "7.8% (3650/46 558)"
+        },
+        {
+          "label": "Age HR per 10 years in women (NZ vs China)",
+          "value": "1.61 (95% CI 1.51 to 1.71) vs 2.51 (95% CI 2.32 to 2.72)"
+        },
+        {
+          "label": "Expected to observed ratio after standard recalibration in China (men vs women)",
+          "value": "0.938 vs 0.809"
+        },
+        {
+          "label": "Expected to observed ratio after replacing age coefficients (men vs women)",
+          "value": "1.027 vs 1.025"
+        }
+      ]
+    }
+  },
+  "42726053": {
+    "summary": "Arrhythmogenic cardiomyopathy (ACM) is a genetic heart disorder characterized by fibrofatty replacement of ventricular myocardium, sustained ventricular arrhythmia (VA), and elevated risk of sudden death. Current clinical guidelines restrict high-intensity aerobic exercise and competitive sports in individuals with ACM or at risk due to pathogenic or likely-pathogenic (P/LP) gene variants. However, the clinical impact of strength-based exercise on arrhythmic risk remains poorly understood. This study sought to evaluate the risk of VA in individuals with ACM and/or P/LP ACM gene variants exposed to strength-based exercise. Participants were identified from the Johns Hopkins ARVC Registry. Exercise exposure was assessed via telephone from age 10 through follow-up. The study stratified participants into four groups: dual athletes, endurance athletes, strength athletes, and sedentary individuals. Kaplan-Meier survival curves were used to visualize the impact of endurance versus strength exercise on VA risk. Cox proportional hazards regression models were performed to test independent associations between strength exercise and VA. The study enrolled 355 individuals with a median age of 34 years. Distribution across exercise categories comprised 55% dual athletes, 26% sedentary individuals, 12% endurance athletes, and 7% strength athletes. The overall lifetime risk of VA was higher in individuals with increased aerobic exercise (dual plus endurance athletes) compared to those without (strength athletes plus sedentary participants). No significant difference in VA risk was observed between dual versus endurance athletes, nor between strength athletes versus sedentary individuals. Furthermore, multivariable Cox regression analysis showed no association between strength training and VA, whereas the risk associated with endurance exercise was significant.",
+    "relation_evidence": "Extensive prior evidence has linked high-intensity endurance and aerobic sports to disease progression and ventricular arrhythmias in arrhythmogenic cardiomyopathy. This study contributes observational data specifically differentiating the arrhythmic risk profile of strength-based exercise from aerobic endurance disciplines in this population.",
+    "relation_guidelines": "While current guidelines restrict high-intensity aerobic exercise and competitive sports in individuals with ACM or pathogenic gene variants, recommendations regarding strength-based training have remained less clearly defined. The present findings describe observational registry data regarding the lack of association between strength exercise and sustained ventricular arrhythmias.",
+    "authors_conclusion": "The authors conclude that their study found no association between strength exercise and the risk of sustained ventricular arrhythmia. They state that these findings support individualized risk stratification and shared decision-making in ACM care, while highlighting the need for additional studies to guide recommendations.",
+    "key_numbers": {
+      "design": "Retrospective registry-based cohort study",
+      "n": "355",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Median age of cohort",
+          "value": "34 years"
+        },
+        {
+          "label": "Dual athletes proportion",
+          "value": "55%"
+        },
+        {
+          "label": "Sedentary participants proportion",
+          "value": "26%"
+        },
+        {
+          "label": "Endurance athletes proportion",
+          "value": "12%"
+        },
+        {
+          "label": "Strength athletes proportion",
+          "value": "7%"
+        },
+        {
+          "label": "Association of strength training with VA",
+          "value": "No association (multivariable Cox regression)"
+        }
+      ]
+    }
+  },
+  "42758309": {
+    "summary": "The study addresses the diagnostic yield of different atrial fibrillation (AF) screening methodologies and evaluates how patient characteristics influence detection rates. The authors note that AF screening may reduce adverse outcomes through the early initiation of preventive treatment. To examine this question, the investigators conducted an individual participant data meta-analysis across 12 European and North American study cohorts. Statistical analysis was performed using generalized linear mixed models with a random intercept at the study level. The meta-analysis included a total of 34,165 participants who were screened for AF. The mean age of the overall population was 73.4 ± 7.5 years, and 53.5% of the participants were female. The overall screening yield increased progressively with more intensive diagnostic approaches. Single-timepoint screening demonstrated an AF detection yield of 0.83% (95% CI: 0.24–2.87). Intermittent screening, defined as repeated single-timepoint assessments, resulted in a detection yield of 5.06% (95% CI: 3.55–7.17). Short-term continuous monitoring (≤30 days) had a yield of 4.81% (95% CI: 3.79–6.08), whereas long-term continuous monitoring (>30 days) reached a yield of 30.39% (95% CI: 28.06–32.84). Detection was associated with advanced age, male sex, hypertension, and heart failure. Significant interactions were observed between screening approach and age, sex, heart failure, CHADS2 score, and NT-proBNP levels, with risk factors having a stronger influence on single-timepoint screening than on more intensive methods. The authors indicate that further studies assessing clinical outcomes following screening are needed and currently underway.",
+    "relation_evidence": "Screening for atrial fibrillation encompasses diverse modalities ranging from single-timepoint evaluations to prolonged continuous rhythm monitoring. This meta-analysis provides comparative yield estimates across these modalities, demonstrating higher diagnostic rates with extended monitoring durations and specific clinical risk profiles.",
+    "relation_guidelines": "Current cardiology guidelines discuss opportunistic and systematic screening approaches for atrial fibrillation in targeted populations based on age and clinical risk factors. These findings refine the evidence base by quantifying how specific modalities and risk factor profiles alter diagnostic yield.",
+    "authors_conclusion": "The authors conclude that AF screening yield varies substantially by patient characteristics and screening approach, with advanced age, male sex, and heart failure independently associated with greater detection, particularly in single-timepoint screening. They state that these findings support tailoring the screening approach to the individual target population in clinical practice.",
+    "key_numbers": {
+      "design": "Individual participant data meta-analysis of 12 study cohorts",
+      "n": "34165",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Single-timepoint screening yield",
+          "value": "0.83% [95% CI: 0.24-2.87]"
+        },
+        {
+          "label": "Intermittent screening yield",
+          "value": "5.06% [95% CI: 3.55-7.17]"
+        },
+        {
+          "label": "Short-term continuous monitoring (≤30 days) yield",
+          "value": "4.81% [95% CI: 3.79-6.08]"
+        },
+        {
+          "label": "Long-term continuous monitoring (>30 days) yield",
+          "value": "30.39% [95% CI: 28.06-32.84]"
+        },
+        {
+          "label": "Mean age",
+          "value": "73.4 ± 7.5 years"
+        },
+        {
+          "label": "Female sex proportion",
+          "value": "53.5%"
+        }
+      ]
+    }
+  },
+  "42758310": {
+    "summary": "Early rhythm control improves cardiovascular outcomes in patients with atrial fibrillation, but its effectiveness in patients with cancer remains unclear. This secondary analysis of the EAST-AFNET 4 trial evaluated the effects of cancer history on early rhythm control outcomes. The study compared patients with and without a history of cancer, including individuals with active malignancy and those in remission. Cancer history status was available for 2779 of 2789 trial participants (99.6%). A history of cancer was present in 216 of 2779 patients (7.8%), of whom 19 had active cancer. Baseline characteristics of patients with cancer included a mean age of 73 years, 44% women (n = 95), and a mean CHA2DS2-VASc score of 3.5. The primary outcome was a composite of cardiovascular death, stroke, or hospitalization for worsening heart failure or acute coronary syndrome. Safety outcomes encompassed a composite of death, stroke, and serious adverse events related to rhythm control, alongside sinus rhythm maintenance at 24 months. Over a follow-up of up to 8.6 years, early rhythm control reduced the primary composite outcome in patients with and without cancer history (p for interaction = .23). Rates of sinus rhythm at 24 months were high in both cohorts (84.9% with cancer vs 81.8% without cancer; p for interaction = .60). In patients with a cancer history, a safety signal emerged, with safety outcomes occurring in 36 of 116 patients (31%; 22 deaths) assigned to early rhythm control versus 20 of 100 patients (20%; 18 deaths) assigned to usual care (p for interaction = .055). The authors noted that this hypothesis-generating finding may represent the play of chance. The authors conclude that early rhythm control appears effective in patients with atrial fibrillation and cancer history but may carry reduced safety, warranting further investigation.",
+    "relation_evidence": "The main EAST-AFNET 4 trial demonstrated cardiovascular outcome benefits with early rhythm control across broad atrial fibrillation populations. This secondary analysis contextualizes those findings within the specific subgroup of patients with a history of malignancy, identifying comparable efficacy but a potential safety signal.",
+    "relation_guidelines": "Current atrial fibrillation guidelines address early rhythm control strategies for prognostic and symptomatic management. These subgroup findings refine the understanding of rhythm control in cancer survivors and patients with active cancer, though no specific guideline modifications are directly established from this post hoc analysis.",
+    "authors_conclusion": "The authors conclude that early rhythm control therapy appears effective in patients with atrial fibrillation and a history of cancer but may be less safe than in patients without cancer in this hypothesis-generating analysis, which warrants further research.",
+    "key_numbers": {
+      "design": "Secondary subgroup analysis of a randomized controlled trial",
+      "n": "2779",
+      "followup": "Up to 8.6 years",
+      "primary_endpoint": null,
+      "secondary": [
+        {
+          "name": "Sinus rhythm at 24 months",
+          "arm1": "84.9% (cancer)",
+          "arm2": "81.8% (no cancer)",
+          "effect": "pinteraction = .60"
+        },
+        {
+          "name": "Safety outcome in cancer history subgroup",
+          "arm1": "31% (36/116)",
+          "arm2": "20% (20/100)",
+          "effect": "pinteraction = .055"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Cancer history prevalence",
+          "value": "7.8% (216/2779)"
+        },
+        {
+          "label": "Active cancer prevalence",
+          "value": "19 patients"
+        },
+        {
+          "label": "Mean age in cancer subgroup",
+          "value": "73 years"
+        },
+        {
+          "label": "Mean CHA2DS2-VASc in cancer subgroup",
+          "value": "3.5"
+        },
+        {
+          "label": "Primary outcome interaction p-value",
+          "value": "pinteraction = .23"
+        }
+      ]
+    }
+  },
+  "42757920": {
+    "summary": "The background of this study addresses the increasing prevalence of atrial fibrillation (AF) alongside shifts in cardiovascular risk factors, AF detection, and oral anticoagulant use, which may have altered the epidemiology of AF-related stroke. The authors note that population-based data on long-term trends remain limited. The study utilized mandatory nationwide registry data from the Atrial Fibrillation in Norway (AFNOR) study spanning the period from 2001 to 2021. Incident stroke cases were defined as the first hospitalization or death due to stroke among individuals aged 15 years or older. Direct standardization was employed to calculate age-standardized incidence rates. Negative binomial regression was used to estimate sex- and age-adjusted incidence rate ratios (IRR). Across the study period, a total of 227 575 incident strokes were identified. Of these incident strokes, 66 795 (29.4%) were AF-related, showing an increase in the proportion of AF-related strokes from 22% in 2001 to 31% in 2021. Non-anticoagulated individuals accounted for 69% of all AF-related ischemic strokes. The overall incidence rate of AF-related ischemic strokes remained stable, shifting from 67.8 per 100 000 person-years in 2001 to 68.4 in 2021 (IRR=1.01; 95% CI, 1.00-1.03), while increasing specifically among individuals aged 15 to 64 years. In contrast, the incidence rate of non-AF ischemic strokes declined from 204.4 to 130.8 (IRR=0.98; 95% CI, 0.97-0.99). For intracerebral hemorrhage, the incidence of AF-related cases in individuals aged 75 years or older increased, driven by anticoagulated patients. The incidence of non-AF intracerebral hemorrhage decreased over the study timeframe (IRR=0.98; 95% CI, 0.97-0.99). No specific study limitations were reported in the abstract.",
+    "relation_evidence": "Existing epidemiological evidence indicates that stroke prevention strategies and anticoagulation patterns have evolved over recent decades alongside changing AF prevalence. This nationwide population-based study provides long-term trend data demonstrating divergent incidence trajectories between AF-related and non-AF strokes across different age groups.",
+    "relation_guidelines": "The findings reflect established clinical guideline principles emphasizing oral anticoagulation for stroke prevention in atrial fibrillation and the structured assessment of bleeding risk in elderly populations. They also describe real-world epidemiological patterns relevant to guideline focus areas on AF detection and anticoagulation adherence.",
+    "authors_conclusion": "The authors conclude that the favorable decline in ischemic stroke incidence from 2001 to 2021 did not include AF-related strokes, with increases observed in AF-related ischemic strokes in younger age groups and AF-related intracerebral hemorrhage in older anticoagulated patients. They state that these findings underscore the need for improved strategies for AF detection and stroke prevention, particularly in younger populations, and greater attention towards management of bleeding risk among older, anticoagulated individuals.",
+    "key_numbers": {
+      "design": "Mandatory nationwide registry study",
+      "n": "227575",
+      "followup": "2001-2021",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Total incident strokes",
+          "value": "227 575"
+        },
+        {
+          "label": "AF-related strokes (% of total)",
+          "value": "66 795 (29.4%), increasing from 22% to 31% during 2001-2021"
+        },
+        {
+          "label": "AF-related ischemic strokes in non-anticoagulated individuals",
+          "value": "69%"
+        },
+        {
+          "label": "Incidence rate of AF-related ischemic strokes (2001 to 2021)",
+          "value": "67.8 to 68.4 per 100 000 person-years (IRR=1.01; 95% CI, 1.00-1.03)"
+        },
+        {
+          "label": "Incidence rate of non-AF ischemic strokes (2001 to 2021)",
+          "value": "204.4 to 130.8 (IRR=0.98; 95% CI, 0.97-0.99)"
+        },
+        {
+          "label": "Incidence rate ratio for non-AF intracerebral hemorrhage",
+          "value": "IRR=0.98 (95% CI, 0.97-0.99)"
+        }
+      ]
+    }
+  },
+  "42755708": {
+    "summary": "Pulsed field ablation (PFA) represents an expanding modality for atrial fibrillation (AF) catheter ablation, though lesion durability and recurrence patterns during redo procedures require further characterization. This study was conducted as a substudy of the FRANCE PFA national exhaustive multicentric registry. The authors analyzed 145 patients with arrhythmia recurrence who underwent repeat ablation procedures with three-dimensional electroanatomical mapping following an index AF ablation. Detailed data regarding initial PFA applications were evaluated to assess recurrence types, durable pulmonary vein isolation (PVI) rates, and linear block durability. Documented recurrent arrhythmias comprised AF in 58%, atrial tachycardia in 28%, and typical atrial flutter in 8% of cases. AF recurrence was significantly less frequent when the initial ablation targeted extra-PV areas compared to when it did not (45% versus 71%; P=0.01). When PVI alone was performed, AF was also less frequent when using a 35-mm diameter catheter compared to standard sizing (50% versus 77%; P=0.01). Complete durable PVI across all veins was observed in 42% of patients, with individual PV durability rates ranging from 69% to 76%. Durable roof/posterior wall block was observed in 62% of patients, whereas durable mitral isthmus block was achieved in 31%. The rate of durable PVI increased with the number of applications (P<0.05), reaching 84% when more than 12 applications were delivered. Similarly, durable roof/posterior wall block rates increased to 88% with more than 16 applications (P<0.01). Mitral isthmus block durability remained low at 31% and was not significantly associated with the number of PFA applications. Safety endpoints and complications were not detailed in the abstract. The authors concluded that higher application numbers yielded high rates of durable PVI and roof/posterior wall block, whereas mitral isthmus durability remained poor using the pentaspline PFA catheter.",
+    "relation_evidence": "The study provides observational insights into lesion durability and arrhythmia mechanisms during repeat electroanatomical mapping following pulsed field ablation for atrial fibrillation.",
+    "relation_guidelines": "Current AF guidelines establish pulmonary vein isolation as the cornerstone of rhythm control ablation, and these findings descriptively refine understanding regarding pulsed field lesion durability and extra-pulmonary vein lesion sets.",
+    "authors_conclusion": "The authors conclude that in patients undergoing redo procedures after an initial AF ablation using the pentaspline PFA catheter, AF was less frequently observed when ablation lesions extended beyond the PVs, high rates of durable PVI (>12 applications) and roof/posterior wall block (>16 applications) were achieved with higher application counts, and long-term durability of mitral isthmus block remained poor.",
+    "key_numbers": {
+      "design": "Substudy of a national exhaustive multicentric registry",
+      "n": "145",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Recurrent arrhythmia distribution",
+          "value": "AF 58%, atrial tachycardia 28%, typical atrial flutter 8%"
+        },
+        {
+          "label": "AF recurrence: extra-PV ablation vs without",
+          "value": "45% vs 71% (P=0.01)"
+        },
+        {
+          "label": "AF recurrence with 35-mm catheter for PVI only",
+          "value": "50% vs 77% (P=0.01)"
+        },
+        {
+          "label": "Complete durable PVI rate overall",
+          "value": "42% (69% to 76% for each separate PV)"
+        },
+        {
+          "label": "Durable PVI with >12 PFA applications",
+          "value": "84% (P<0.05)"
+        },
+        {
+          "label": "Durable roof/PW block with >16 PFA applications",
+          "value": "88% (P<0.01)"
+        }
+      ]
+    }
+  },
+  "42760106": {
+    "summary": "Identifying patients with left-sided infective endocarditis (LSIE) who benefit from surgical intervention or present prohibitive operative risk remains a clinical challenge. Currently, no widely validated risk models exist to estimate early 30-day mortality across the broader LSIE population, including medically treated patients. This study aimed to develop and externally validate the European Infective Endocarditis (EURO-ENDO) risk score for predicting 30-day mortality in LSIE. The prospective, multicentre ESC-EURObservational Research Programme EURO-ENDO registry included 2171 patients diagnosed with LSIE according to ESC 2015 criteria. Multivariable logistic regression was used to evaluate clinical, biological, microbiological, and imaging variables, followed by internal bootstrap validation. External validation was conducted in an independent temporal cohort of 377 consecutive patients with LSIE from two tertiary centres in Barcelona between 2019 and 2024. Among 2140 registry patients in the final analysis, 254 (11.9%) died within 30 days. Eleven variables independently predicted 30-day mortality: previous stroke/transient ischaemic attack, previous cardiac surgery, heart failure or cardiogenic shock, creatinine >2 mg/dL, vegetations >10 mm, severe regurgitation, abscess, negative blood cultures, Staphylococcus aureus infection, absence of surgical indication, and surgical indication without intention to operate. The model achieved an AUROC of 0.763, Hosmer-Lemeshow p=0.825, and Brier score of 0.09 in the development dataset. In the external cohort, 48 of 377 patients (12.7%) died within 30 days. External validation demonstrated an AUROC of 0.799 (95% CI 0.730 to 0.868), a calibration slope of 1.017, and an expected-to-observed ratio of 1.124. The authors concluded that the model reliably predicts individualised 30-day mortality during initial evaluation.",
+    "relation_evidence": "Risk stratification in infective endocarditis has historically relied on surgical risk scores or smaller cohort models that do not universally account for medically treated patients. This study adds a dedicated, externally validated prognostic model derived from a large international prospective registry across the full spectrum of left-sided infective endocarditis.",
+    "relation_guidelines": "The findings align with clinical guidelines that emphasise multidisciplinary Endocarditis Team evaluation and early risk stratification based on clinical, microbiological, and echocardiographic features in left-sided infective endocarditis.",
+    "authors_conclusion": "The authors conclude that the EURO-ENDO risk score, incorporating 11 variables available during initial diagnostic evaluation, accurately predicts individualised 30-day mortality in patients with LSIE and may support early risk stratification, multidisciplinary endocarditis team discussions, and clinical decision-making.",
+    "key_numbers": {
+      "design": "Prospective multicentre registry with internal bootstrap and external temporal validation",
+      "n": "2517 (2140 derivation, 377 validation)",
+      "followup": "30 days",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "30-day mortality (derivation cohort)",
+          "value": "11.9% (254/2140)"
+        },
+        {
+          "label": "AUROC in derivation cohort",
+          "value": "0.763"
+        },
+        {
+          "label": "30-day mortality (external validation cohort)",
+          "value": "12.7% (48/377)"
+        },
+        {
+          "label": "AUROC in external validation cohort",
+          "value": "0.799 (95% CI 0.730 to 0.868)"
+        },
+        {
+          "label": "Calibration slope (external validation cohort)",
+          "value": "1.017"
+        },
+        {
+          "label": "Expected-to-observed ratio (external validation)",
+          "value": "1.124"
+        }
+      ]
+    }
+  },
+  "42757917": {
+    "summary": "Transcatheter mitral valve replacement (TMVR) using the Sapien transcatheter heart valve is utilized for high-risk patients with failed mitral bioprosthetic valves or prior surgical mitral valve repairs. Differences in anatomy and procedural complexity between valve-in-valve TMVR (ViV-TMVR) and valve-in-ring TMVR (ViR-TMVR) may influence clinical outcomes. The authors performed a systematic review searching OVID Medline, Embase, SCOPUS, Web of Science, and Cochrane for studies published between 2015 and 2022 comparing both techniques. Eight studies encompassing 1947 patients were analyzed, comprising 1435 patients receiving ViV-TMVR and 512 receiving ViR-TMVR. Patients undergoing ViV-TMVR were older and had a higher baseline comorbidity burden than those receiving ViR-TMVR. The primary endpoint was 30-day all-cause mortality, evaluated using random-effects models. Secondary endpoints included in-hospital mortality, stroke, acute kidney injury, major bleeding, reintervention, left ventricular outflow tract obstruction, and device embolization. No significant difference was observed between groups in 30-day mortality (OR: 0.70 [95% CI: 0.47-1.05]; I2=0%) or in-hospital mortality (OR: 1.05 [95% CI: 0.34-3.21]; I2=3%). Rates of stroke, major bleeding, and device embolization also did not differ significantly between ViV-TMVR and ViR-TMVR. However, ViV-TMVR was associated with a significantly lower rate of left ventricular outflow tract obstruction (OR: 0.30 [95% CI: 0.18-0.51]). Additionally, ViV-TMVR was associated with reduced rates of reintervention (OR: 0.19 [95% CI: 0.13-0.30]) and acute kidney injury (OR: 0.51 [95% CI: 0.29-0.90]), without significant heterogeneity. Study limitations were not detailed in the abstract. The authors concluded that these findings may inform patient selection and procedural planning for transcatheter mitral valve interventions.",
+    "relation_evidence": "Transcatheter mitral valve replacement represents a therapeutic option for patients with failed surgical bioprostheses or prior mitral valve annuloplasty rings who are at high surgical risk. This pooled analysis summarizes comparative procedural and 30-day outcomes between ViV-TMVR and ViR-TMVR cohorts.",
+    "relation_guidelines": "Current valvular heart disease guidelines address transcatheter mitral interventions in high-risk patients with failed previous surgical mitral valve repairs or bioprosthetic valves. These findings provide pooled comparative data regarding procedural risks such as left ventricular outflow tract obstruction and reintervention across these two anatomical settings.",
+    "authors_conclusion": "The authors conclude that compared with ViR-TMVR, ViV-TMVR was associated with lower rates of left ventricular outflow tract obstruction, reintervention, and acute kidney injury, whereas mortality and other major complications were comparable.",
+    "key_numbers": {
+      "design": "Systematic review and meta-analysis of 8 studies",
+      "n": "1947",
+      "followup": "30 days",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "30-day all-cause mortality",
+          "value": "OR: 0.70 [95% CI: 0.47-1.05]; I2=0%"
+        },
+        {
+          "label": "In-hospital mortality",
+          "value": "OR: 1.05 [95% CI: 0.34-3.21]; I2=3%"
+        },
+        {
+          "label": "Left ventricular outflow tract obstruction",
+          "value": "OR: 0.30 [95% CI: 0.18-0.51]"
+        },
+        {
+          "label": "Reintervention",
+          "value": "OR: 0.19 [95% CI: 0.13-0.30]"
+        },
+        {
+          "label": "Acute kidney injury",
+          "value": "OR: 0.51 [95% CI: 0.29-0.90]"
+        },
+        {
+          "label": "Analyzed cohort breakdown",
+          "value": "ViV-TMVR: 1435; ViR-TMVR: 512"
+        }
+      ]
+    }
+  },
+  "42757916": {
+    "summary": "Evidence comparing intermediate-term outcomes of transcatheter aortic valve implantation (TAVI) versus surgical aortic valve replacement (SAVR) in patients with concomitant heart failure and chronic kidney disease remains limited. This retrospective study utilized data from the TriNetX Global Collaborative Network between January 2020 and December 2025. The study population included adults with heart failure and chronic kidney disease undergoing either TAVI or SAVR. Patients with redo procedures, history of endocarditis, prior heart transplant, ventricular assist device placement, or concomitant valve surgery were excluded. Before matching, the cohort included 9575 patients who underwent TAVI and 1233 who underwent SAVR. Propensity score matching across 21 covariates yielded 1034 matched patients in each procedural group. The primary outcome was all-cause death evaluated over 2 years of follow-up using Cox proportional hazards models. Secondary outcomes comprised acute myocardial infarction, ischemic stroke, acute kidney injury, and all-cause hospitalization. During follow-up, TAVI was associated with a higher mortality rate compared with SAVR (hazard ratio [HR], 1.56 [95% CI, 1.21-2.01]). Conversely, TAVI was associated with a lower risk of acute kidney injury compared with SAVR (HR, 0.69 [95% CI, 0.60-0.80]). Risks of acute myocardial infarction (HR, 1.12 [95% CI, 0.87-1.44]), ischemic stroke (HR, 1.11 [95% CI, 0.85-1.45]), and all-cause hospitalization (HR, 0.90 [95% CI, 0.81-1.00]) did not show statistically significant differences between groups. Sensitivity analyses across alternative modeling strategies demonstrated directionally consistent results. The study abstract did not report specific post-hoc subgroup analyses or unmeasured confounding limitations.",
+    "relation_evidence": "The comparative effectiveness of TAVI versus SAVR across complex subgroups with combined cardiorenal disease has been an area of ongoing investigation. These findings contribute observational data on intermediate-term survival and renal outcomes in this specific multimorbid population.",
+    "relation_guidelines": "Current valvular heart disease guidelines weigh procedural risks, surgical risk scores, and patient comorbidities when evaluating patients for TAVI versus SAVR. These observational findings describe procedural trade-offs between mortality and renal complications in patients with concomitant heart failure and chronic kidney disease.",
+    "authors_conclusion": "The authors conclude that in this contemporary-era cohort of patients with heart failure and chronic kidney disease, SAVR was associated with a lower mortality rate, whereas TAVI was associated with less acute kidney injury, suggesting important trade-offs between procedural strategies in high-risk cardiorenal populations.",
+    "key_numbers": {
+      "design": "Retrospective propensity score-matched study",
+      "n": "10808 (2068 matched)",
+      "followup": "2 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "All-cause death (TAVI vs SAVR)",
+          "value": "HR, 1.56 [95% CI, 1.21-2.01]"
+        },
+        {
+          "label": "Acute kidney injury (TAVI vs SAVR)",
+          "value": "HR, 0.69 [95% CI, 0.60-0.80]"
+        },
+        {
+          "label": "Acute myocardial infarction (TAVI vs SAVR)",
+          "value": "HR, 1.12 [95% CI, 0.87-1.44]"
+        },
+        {
+          "label": "Ischemic stroke (TAVI vs SAVR)",
+          "value": "HR, 1.11 [95% CI, 0.85-1.45]"
+        },
+        {
+          "label": "All-cause hospitalization (TAVI vs SAVR)",
+          "value": "HR, 0.90 [95% CI, 0.81-1.00]"
+        }
+      ]
+    }
+  },
+  "42757893": {
+    "summary": "Traditional occluders for atrial septal defect have limitations, including incomplete endothelialization and challenges in achieving transseptal puncture following implantation. The novel ReAces occluder was designed to address these two specific clinical concerns. This multicenter, randomized, parallel-controlled, noninferiority clinical trial evaluated the efficacy and safety of the ReAces device compared with a traditional Amplatzer-like occluder. A total of 126 patients with atrial septal defects were enrolled and randomized in the study. Sixty-two patients received the ReAces device, while 64 patients were implanted with a traditional occluder. The primary outcome of the investigation was the complete closure rate evaluated at 12 months post-implantation. At the 12-month follow-up, complete closure occurred in 98.4% of patients (61/62) in the trial group and 98.4% of patients (63/64) in the control group. These closure rates demonstrated statistical noninferiority with a 95% confidence interval of -4.4% to 4.3%. Regarding safety, no severe adverse events occurred during the 12 months of follow-up, with the exception of one case of device dislodgement in the trial group. At 12 months, the thickness of the central region of the ReAces device was significantly lower than that of the traditional device (6.8±3.7 mm versus 12.2±5.2 mm, P<0.0001). Additionally, the trial group demonstrated a significantly lower Migraine Disability Assessment score at 1-month follow-up compared to the control group (0.4±2.4 versus 1.4±4.1, P=0.042). The proportion of patients with a nonzero Migraine Disability Assessment score at 1 month was also significantly lower in the trial group (5.6% versus 18.2%, P=0.042). Specific trial limitations were not stated in the abstract. The authors concluded that the efficacy of ReAces was noninferior to that of a traditional occluder, while providing a thinner central region and lower 1-month migraine disability scores.",
+    "relation_evidence": "Transcatheter closure using Amplatzer-like occluders represents established management for anatomically suitable atrial septal defects. This trial adds randomized comparative evidence evaluating a novel device design intended to modify device thickness and address post-procedural migraine symptoms.",
+    "relation_guidelines": "Current clinical practice guidelines support transcatheter device closure as a standard approach for secundum atrial septal defects with suitable anatomy. These findings provide comparative device-specific noninferiority data without altering established guideline-directed indications for transcatheter defect closure.",
+    "authors_conclusion": "The authors conclude that the efficacy of ReAces was noninferior to that of a traditional Amplatzer-like occluder for transcatheter atrial septal defect closure. They also conclude that ReAces had a thinner central region during follow-up and a lower Migraine Disability Assessment score at 1-month follow-up.",
+    "key_numbers": {
+      "design": "Multicenter, randomized, parallel-controlled, noninferiority clinical trial",
+      "n": "126",
+      "followup": "12 months",
+      "primary_endpoint": {
+        "name": "Complete closure rate at 12 months post implantation",
+        "arm1_label": "ReAces",
+        "arm1_value": "98.4% (61/62)",
+        "arm2_label": "Traditional occluder",
+        "arm2_value": "98.4% (63/64)",
+        "effect": "95% CI, -4.4% to 4.3%"
+      },
+      "secondary": [
+        {
+          "name": "Thickness of the central region at 12-month follow-up",
+          "arm1": "6.8±3.7 mm",
+          "arm2": "12.2±5.2 mm",
+          "effect": "P<0.0001"
+        },
+        {
+          "name": "Migraine Disability Assessment score at 1-month follow-up",
+          "arm1": "0.4±2.4",
+          "arm2": "1.4±4.1",
+          "effect": "P=0.042"
+        },
+        {
+          "name": "Proportion of patients with nonzero Migraine Disability Assessment score at 1-month follow-up",
+          "arm1": "5.6%",
+          "arm2": "18.2%",
+          "effect": "P=0.042"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "ReAces 12-month complete closure rate",
+          "value": "98.4% (61/62)"
+        },
+        {
+          "label": "Traditional occluder 12-month complete closure rate",
+          "value": "98.4% (63/64)"
+        },
+        {
+          "label": "12-month central region thickness (ReAces vs traditional)",
+          "value": "6.8±3.7 mm vs 12.2±5.2 mm (P<0.0001)"
+        },
+        {
+          "label": "1-month Migraine Disability Assessment score (ReAces vs traditional)",
+          "value": "0.4±2.4 vs 1.4±4.1 (P=0.042)"
+        },
+        {
+          "label": "1-month nonzero Migraine Disability Assessment score rate (ReAces vs traditional)",
+          "value": "5.6% vs 18.2% (P=0.042)"
+        },
+        {
+          "label": "Severe adverse events during 12 months",
+          "value": "1 case of device dislodgement in the trial group"
+        }
+      ]
+    }
+  },
+  "42757942": {
+    "summary": "The background of this study notes that the impact of the left internal mammary artery (LIMA)-to-left anterior descending artery (LAD) anastomotic location on graft patency remains uncertain. To evaluate this question, investigators conducted a secondary analysis of data from the PATENCY (Graft Patency Between no-touch Vein Harvesting Technique and Conventional Approach in Coronary Artery Bypass Graft Surgery) trial. The study population comprised 1597 patients with isolated proximal LAD lesions who underwent coronary artery bypass grafting. The relative anastomotic site (RAS) of the LIMA-LAD anastomosis was quantified using postoperative coronary computed tomography angiography. RAS was defined as the ratio of anastomotic height to heart height. The primary end point of the study was LIMA occlusion at 3 years. The secondary end point was major adverse cardiac events. Multivariable logistic regression was used to evaluate the association between RAS and 3-year LIMA occlusion. Cox proportional hazards regression was used to evaluate associations with time-to-event clinical outcomes. An exploratory RAS threshold was identified at 46%. A distal anastomosis (RAS >46%) was associated with a significantly lower 3-year LIMA occlusion rate compared with a proximal anastomosis (RAS ≤46%) (2.3% versus 6.3%; adjusted odds ratio, 0.37 [95% CI, 0.20-0.68]; P=0.002). At 3 years, major adverse cardiac event rates were similar between groups (3.4% versus 4.4%; adjusted hazard ratio, 0.68 [95% CI, 0.40-1.15]; P=0.16). The authors conclude that a more distal LIMA-LAD anastomotic location may be associated with a lower risk of graft occlusion at 3 years in patients with isolated proximal LAD disease and noted that further prospective validation is warranted.",
+    "relation_evidence": "Surgical revascularization of the left anterior descending artery using the left internal mammary artery is an established standard in coronary bypass surgery. This analysis provides observational data regarding how the anatomical height of the anastomosis relates to 3-year graft patency.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that in patients with isolated proximal LAD disease, a more distal LIMA-LAD anastomotic location may be associated with a lower risk of graft occlusion at 3 years, noting that further prospective validation is warranted.",
+    "key_numbers": {
+      "design": "Secondary analysis of trial data",
+      "n": "1597",
+      "followup": "3 years",
+      "primary_endpoint": {
+        "name": "LIMA occlusion at 3 years",
+        "arm1_label": "Distal anastomosis (RAS >46%)",
+        "arm1_value": "2.3%",
+        "arm2_label": "Proximal anastomosis (RAS ≤46%)",
+        "arm2_value": "6.3%",
+        "effect": "adjusted odds ratio, 0.37 [95% CI, 0.20-0.68]; P=0.002"
+      },
+      "secondary": [
+        {
+          "name": "Major adverse cardiac events at 3 years",
+          "arm1": "3.4%",
+          "arm2": "4.4%",
+          "effect": "adjusted hazard ratio, 0.68 [95% CI, 0.40-1.15]; P=0.16"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Exploratory RAS threshold",
+          "value": "46%"
+        },
+        {
+          "label": "3-year LIMA occlusion with distal anastomosis (RAS >46%)",
+          "value": "2.3%"
+        },
+        {
+          "label": "3-year LIMA occlusion with proximal anastomosis (RAS ≤46%)",
+          "value": "6.3%"
+        },
+        {
+          "label": "Adjusted OR for 3-year LIMA occlusion",
+          "value": "0.37 [95% CI, 0.20-0.68]; P=0.002"
+        },
+        {
+          "label": "3-year MACE (distal vs proximal)",
+          "value": "3.4% vs 4.4% (aHR 0.68 [95% CI, 0.40-1.15]; P=0.16)"
+        }
+      ]
+    }
+  },
+  "42757900": {
+    "summary": "This cohort study evaluated the real-world effectiveness of evolocumab in reducing major adverse cardiovascular events among US adults with atherosclerotic cardiovascular disease. Patients who initiated evolocumab between 2017 and 2023 were identified using the Komodo Healthcare Map database. At day 75 post-initiation, designated as the index date, individuals were classified into treated and nontreated cohorts. The treated group included patients who remained on evolocumab, whereas the nontreated group comprised patients who discontinued therapy prior to day 75. Patients were followed until outcome occurrence, treatment discontinuation or reinitiation, insurance disenrollment, database termination, or death. The primary outcome was a composite of myocardial infarction, stroke, or coronary revascularization. The secondary outcome was a composite of myocardial infarction, stroke, or cardiovascular disease death. Four-year cumulative incidence, risk ratios, and 95% confidence intervals were estimated using inverse probability of treatment and censoring weighting. Negative control outcomes were evaluated prior to comparative analyses to assess potential residual confounding. Following weighting, baseline characteristics were balanced between the treated group (n=87 102) and the nontreated group (n=24 609). At 4 years of follow-up, treated patients exhibited a 20% lower risk of the primary composite outcome compared with nontreated patients (RR, 0.80; 95% CI, 0.73–0.86). For the secondary composite outcome at 4 years, treated patients had a 29% lower risk compared with nontreated patients (RR, 0.71; 95% CI, 0.64–0.78). Specific adverse events and safety endpoints were not described in the abstract. The authors concluded that evolocumab use was associated with significant reductions in major adverse cardiovascular events in routine clinical practice.",
+    "relation_evidence": "Randomized controlled trials have established that evolocumab reduces major adverse cardiovascular events in secondary prevention populations. This observational analysis adds large-scale real-world data evaluating outcomes associated with continued evolocumab therapy in routine practice.",
+    "relation_guidelines": "Clinical practice guidelines recommend PCSK9 inhibitors for patients with atherosclerotic cardiovascular disease who require additional lipid-lowering therapy. The reported findings are consistent with guideline-directed secondary prevention strategies utilizing PCSK9 inhibitors.",
+    "authors_conclusion": "The authors conclude that in a large, diverse, real-world population with atherosclerotic cardiovascular disease, evolocumab use was associated with significant reductions in major adverse cardiovascular events, supporting the effectiveness of guideline-recommended PCSK9 inhibitor therapy in routine clinical practice.",
+    "key_numbers": {
+      "design": "Cohort study",
+      "n": "111711",
+      "followup": "4 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Treated cohort sample size",
+          "value": "87 102"
+        },
+        {
+          "label": "Nontreated cohort sample size",
+          "value": "24 609"
+        },
+        {
+          "label": "Primary outcome (MI, stroke, or coronary revascularization) at 4 years",
+          "value": "RR, 0.80 (95% CI, 0.73-0.86)"
+        },
+        {
+          "label": "Secondary outcome (MI, stroke, or CVD death) at 4 years",
+          "value": "RR, 0.71 (95% CI, 0.64-0.78)"
+        }
+      ]
+    }
+  },
+  "42757888": {
+    "summary": "Cardiovascular disease (CVD) represents a leading cause of pregnancy-related morbidity and mortality in the early postpartum period. Stillbirth has previously been linked to elevated long-term maternal CVD risk, but its relationship with short-term CVD remains less characterized. To investigate this, investigators conducted a population-based retrospective cohort study of singleton delivery hospitalizations using the Nationwide Readmissions Database from 2010 to 2020. The primary outcome was CVD-related readmission or in-hospital death within the calendar year of delivery, encompassing heart disease and stroke. Associations were analyzed using adjusted Cox proportional hazards models with correction for unmeasured confounding. Analyses were also stratified by the presence of chronic hypertension, ischemic placental disease, and diabetes. The study identified 18,253,997 singleton delivery hospitalizations, of which 117,230 (6.5 per 1000) resulted in stillbirth. The median follow-up period was 6.4 months (interquartile range, 3.7-9.1). CVD-related readmission rates were higher after stillbirth than live birth (404.0 versus 166.0 per 100,000 delivery hospitalizations; incidence proportion difference, 238 per 100,000 [95% CI, 192-285]). Stillbirth was associated with higher overall hazards of CVD hospitalization (adjusted HR, 2.03 [95% CI, 1.78-2.32]). Significant hazard increases were observed for heart disease (adjusted HR, 2.00 [95% CI, 1.72-2.32]), stroke (adjusted HR, 2.29 [95% CI, 1.80-2.92]), and CVD-related death (adjusted HR, 2.08 [95% CI, 1.12-3.84]). CVD hospitalization risk was elevated within 30 days postpartum and reached its peak from 60 to 89 days. Hospitalization risks were higher in the presence of co-occurring chronic hypertension, ischemic placental disease, or diabetes. The authors conclude that stillbirth is associated with increased short-term CVD-related readmission and death.",
+    "relation_evidence": "Adverse pregnancy outcomes have been widely recognized as markers for accelerated long-term cardiovascular risk in women. This study provides population-level data demonstrating that stillbirth is also associated with an increased risk of acute maternal cardiovascular events and readmissions during the immediate postpartum period.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that stillbirth was associated with increased short-term CVD-related readmission and death, extending prior evidence linking stillbirth to long-term CVD risk.",
+    "key_numbers": {
+      "design": "Population-based retrospective cohort study",
+      "n": "18253997",
+      "followup": "Median 6.4 months (interquartile range, 3.7-9.1)",
+      "primary_endpoint": {
+        "name": "CVD-related readmission or in-hospital death within the calendar year of delivery",
+        "arm1_label": "Stillbirth",
+        "arm1_value": "404.0 per 100 000 delivery hospitalizations",
+        "arm2_label": "Live birth",
+        "arm2_value": "166.0 per 100 000 delivery hospitalizations",
+        "effect": "Incidence proportion difference 238 per 100 000 (95% CI, 192-285); adjusted HR 2.03 (95% CI, 1.78-2.32)"
+      },
+      "secondary": [
+        {
+          "name": "Heart disease readmission",
+          "arm1": null,
+          "arm2": null,
+          "effect": "adjusted HR, 2.00 (95% CI, 1.72-2.32)"
+        },
+        {
+          "name": "Stroke readmission",
+          "arm1": null,
+          "arm2": null,
+          "effect": "adjusted HR, 2.29 (95% CI, 1.80-2.92)"
+        },
+        {
+          "name": "CVD-related death",
+          "arm1": null,
+          "arm2": null,
+          "effect": "adjusted HR, 2.08 (95% CI, 1.12-3.84)"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Stillbirth prevalence",
+          "value": "117 230 (6.5 per 1000 singleton delivery hospitalizations)"
+        },
+        {
+          "label": "Adjusted HR for CVD hospitalization",
+          "value": "2.03 (95% CI, 1.78-2.32)"
+        },
+        {
+          "label": "Adjusted HR for stroke",
+          "value": "2.29 (95% CI, 1.80-2.92)"
+        },
+        {
+          "label": "Adjusted HR for heart disease",
+          "value": "2.00 (95% CI, 1.72-2.32)"
+        },
+        {
+          "label": "Adjusted HR for CVD-related death",
+          "value": "2.08 (95% CI, 1.12-3.84)"
+        },
+        {
+          "label": "Peak timing of CVD hospitalization risk",
+          "value": "60 to 89 days postpartum (elevated within 30 days)"
+        }
+      ]
+    }
+  }
+}

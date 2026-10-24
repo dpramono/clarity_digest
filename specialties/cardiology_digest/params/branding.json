@@ -1,0 +1,16 @@
+{
+  "brand": "CLARITY",
+  "tagline": "Real insights in seconds",
+  "field_name": "Cardiology",
+  "palette": {
+    "TEAL": "0F3D3A",
+    "TEAL_D": "0A2C2A",
+    "MINT": "2FB89A",
+    "MINT_BG": "E8F5EF",
+    "CREAM": "F7F4ED",
+    "INK": "16302E",
+    "MUTE": "5C7370",
+    "PANEL": "F0F6F3",
+    "HAIR": "DCE7E3"
+  }
+}

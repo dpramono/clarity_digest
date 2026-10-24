@@ -1,0 +1,50 @@
+Return a single JSON object and nothing else:
+{
+  "summary": "10-14 sentences, based EXCLUSIVELY on the abstract. Cover: background/
+              research question, study design, population and inclusion, intervention
+              and comparator, primary endpoint with numbers, key secondary endpoints
+              with numbers, safety/adverse events, limitations (if stated in the
+              abstract), and what the authors conclude. Purely descriptive - report
+              what the paper says, never what the reader should do.",
+  "relation_evidence": "1-3 sentences placing the study in the context of existing
+              evidence, descriptively. ONLY broadly established knowledge. Do NOT invent
+              specific trials, numbers or results. No advice. If no confident placement
+              is possible, write exactly: 'Cannot be placed in context from the abstract
+              alone.'",
+  "relation_guidelines": "1-3 sentences DESCRIBING how the findings relate to current
+              guidelines - for example that they are consistent with, challenge, or refine
+              what current guidelines state. NEVER invent a specific class of recommendation
+              or level of evidence, and NEVER tell the reader to follow, adopt or change
+              anything. If uncertain, write exactly: 'No clear guideline link can be derived.'",
+  "authors_conclusion": "1-2 sentences stating what THE AUTHORS conclude, explicitly
+              attributed to them (start with 'The authors conclude that ...' or similar).
+              Strictly descriptive. No advice, no recommendation, no imperative.",
+  "key_numbers": {
+    "design": "e.g. 'RCT, double-blind, multicentre'  (or null)",
+    "n": "total participants as a string, e.g. '4321'  (or null)",
+    "followup": "e.g. '12 months'  (or null)",
+    "primary_endpoint": {
+      "name": "name + timepoint, e.g. 'Target lesion failure, 12 mo'",
+      "arm1_label": "short label", "arm1_value": "e.g. '6.1%'",
+      "arm2_label": "short label", "arm2_value": "e.g. '7.0%'",
+      "effect": "e.g. 'Risk difference -0.9% (95% CI -2.1 to 0.3), non-inferior'"
+    },
+    "secondary": [
+      {"name": "e.g. 'Cardiac death'", "arm1": "1.6%", "arm2": "1.8%", "effect": "-0.2%"}
+    ],
+    "key_findings": [
+      {"label": "e.g. 'Operative mortality'", "value": "e.g. '0.4% (n=2)'"}
+    ]
+  }
+}
+IMPORTANT for key_numbers: Only take values stated VERBATIM in the abstract. If a value
+is missing, set it to null (leave 'primary_endpoint' null and 'secondary' empty []).
+Never invent numbers, endpoints, arms or confidence intervals. Max 5 secondary rows.
+
+key_findings is REQUIRED: always fill 3-6 rows whenever the abstract contains any
+quantitative or concrete factual statements. This is what gets displayed for papers with
+no two-arm comparison (registries, single-arm series, prevalence studies, consensus
+documents). Each row is a short label plus the value exactly as stated in the abstract.
+Leave it empty only if the abstract contains nothing concrete.
+
+Write in a factual, clinical, descriptive register. No marketing language, no advice.

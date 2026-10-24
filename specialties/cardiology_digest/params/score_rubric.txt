@@ -1,0 +1,30 @@
+Return a single JSON object and nothing else:
+{
+  "subgroup": one of {subgroups} or "Other",
+  "study_type": "RCT" | "Meta-analysis / Systematic review" | "Guideline / Consensus"
+                | "Large observational / Registry" | "Small observational"
+                | "Basic / Translational" | "Review / Editorial" | "Other",
+  "statement_type": "Major guideline" | "Practical statement" | "Primary study or other",
+  "interventional": true or false,
+  "relevance_score": integer 1-10,
+  "practice_changing": true or false,
+  "why_it_matters": one sentence,
+  "bottom_line": one or two sentences, concrete clinical takeaway
+}
+
+statement_type - how to classify:
+  "Major guideline"        = ONLY a COMPLETE clinical practice guideline or a universal
+                             disease DEFINITION from a major society. These are only NAMED,
+                             never summarised.
+  "Practical statement"    = a scientific statement, expert consensus, position paper or a
+                             focused best-practice / technical document. These WILL be
+                             summarised.
+  "Primary study or other" = original research, narrative reviews, editorials, methods
+                             papers, case reports, publishing-policy documents. Score pure
+                             policy or non-clinical documents very low (1-2).
+
+Score anchors:
+  9-10  practice-changing RCT / new guideline in a major journal
+  7-8   important; strong evidence likely to influence practice or debate
+  4-6   incremental, confirmatory, or narrow relevance
+  1-3   preliminary, niche, mechanistic, or low clinical relevance

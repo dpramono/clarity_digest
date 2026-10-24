@@ -1,0 +1,11 @@
+# Regex-Muster, die am Titelanfang greifen (re.match, case-insensitive)
+^correction to\b
+^corrigendum\b
+^erratum\b
+^author correction\b
+^retraction\b
+^retracted:
+^withdrawn:
+^expression of concern\b
+^reply to\b
+^response to\b
