@@ -6,4 +6,4 @@ __pycache__/
 config/*.cfg
 specialties/cardiology_digest/output/*.*
 specialties/cardiology_digest/output/*/*.*
-test_state/*.*
+test_state/
