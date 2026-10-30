@@ -1683,5 +1683,748 @@
         }
       ]
     }
+  },
+  "42896534": {
+    "summary": "The PELICAN randomized clinical trial investigated whether intraoperative hemodynamic therapy guided by cardiac index improves postoperative outcomes. The trial evaluated individualized cardiac index-guided hemodynamic therapy compared with routine hemodynamic therapy in high-risk patients undergoing elective major abdominal surgery. This was a multicenter, single-blind, superiority randomized clinical trial conducted at 12 university medical centers in Austria, the Czech Republic, Denmark, Germany, and Spain. Enrollment occurred between October 8, 2023, and October 25, 2025, with final follow-up completed on January 15, 2026. Among 1128 enrolled patients, 1111 were randomized and 1095 were included in the primary analysis. Participants had a median age of 67 years (interquartile range, 59-74 years), and 49.4% were female. The intervention consisted of individualized hemodynamic therapy targeting the patient's preoperative resting cardiac index, whereas the control group received routine hemodynamic therapy with blinded cardiac index monitoring. The primary outcome was a composite of acute kidney injury, acute myocardial injury, severe infectious complications, nonfatal cardiac arrest, or death within the first 7 postoperative days. The primary outcome occurred in 243 of 549 patients (44.3%) in the individualized therapy group versus 256 of 546 patients (46.9%) in the routine therapy group. This difference corresponded to a relative risk of 0.94 (95.1% CI, 0.83-1.08; P = .38). Secondary outcomes assessed the individual components of the composite primary outcome within the first 7 postoperative days. The trial reported no between-group differences in the incidence of any individual components of the primary outcome. Specific trial-related adverse events and study limitations were not described in the abstract. The authors concluded that individualized cardiac index-guided therapy did not reduce the 7-day composite outcome compared with routine therapy.",
+    "relation_evidence": "Perioperative goal-directed hemodynamic protocols have yielded heterogeneous results regarding postoperative complications in major surgery. The PELICAN trial provides multicenter randomized data assessing an individualized strategy targeting preoperative resting cardiac index in high-risk abdominal surgery.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that among high-risk patients undergoing elective major abdominal surgery, individualized cardiac index-guided hemodynamic therapy targeting the patient's preoperative resting cardiac index did not reduce the incidence of a composite outcome of acute kidney injury, acute myocardial injury, severe infectious complications, nonfatal cardiac arrest, or death within the first 7 postoperative days compared with routine hemodynamic therapy.",
+    "key_numbers": {
+      "design": "Multicenter, single-blind, superiority RCT",
+      "n": "1095",
+      "followup": "7 postoperative days",
+      "primary_endpoint": {
+        "name": "Composite of acute kidney injury, acute myocardial injury, severe infectious complications, nonfatal cardiac arrest, or death within 7 postoperative days",
+        "arm1_label": "Individualized cardiac index-guided therapy",
+        "arm1_value": "44.3% (243/549)",
+        "arm2_label": "Routine hemodynamic therapy",
+        "arm2_value": "46.9% (256/546)",
+        "effect": "RR 0.94 (95.1% CI, 0.83-1.08); P = .38"
+      },
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Primary composite outcome (Individualized therapy)",
+          "value": "44.3% (243/549)"
+        },
+        {
+          "label": "Primary composite outcome (Routine therapy)",
+          "value": "46.9% (256/546)"
+        },
+        {
+          "label": "Primary outcome relative risk",
+          "value": "0.94 (95.1% CI, 0.83-1.08); P = .38"
+        },
+        {
+          "label": "Median age",
+          "value": "67 years [IQR, 59-74 years]"
+        },
+        {
+          "label": "Female participants",
+          "value": "49.4%"
+        },
+        {
+          "label": "Analyzed cohort size",
+          "value": "1095 (of 1111 randomized and 1128 enrolled)"
+        }
+      ]
+    }
+  },
+  "42895716": {
+    "summary": "Dilated cardiomyopathy (DCM) is a major cause of heart failure that disproportionately affects individuals of predominantly African ancestry, in whom familial clustering of disease is more pronounced than in individuals of European ancestry. Truncating variants in TTN represent the most common established monogenic cause of DCM, while a common CD36 nonsense variant enriched in African ancestry also accounts for a substantial disease burden. This multicohort genetic association study evaluated the contribution of a CD36 nonsense variant to DCM risk compared with TTN truncating variants and pathogenic or likely pathogenic variants in other established DCM genes. The study analyzed exome or genome sequence data from 4 US datasets: the All of Us Research Program, the Million Veteran Program, the Penn Medicine Biobank, and the DCM Precision Medicine Study. Exposures assessed were carrier status for TTN truncating variants, pathogenic or likely pathogenic variants in 11 high-confidence DCM genes, and 0, 1, or 2 copies of the nonsense variant CD36 Y325*. Across the 4 cohorts, 82,623 individuals of predominantly African ancestry were analyzed, with a mean age of 53.4 years (SD, 13.9 years), 47,124 male participants, and 1,316 cases of DCM. Main outcomes evaluated were the risk of DCM, the prevalence of variant carriers among cases, and the population attributable fraction of DCM. Individuals homozygous for the CD36 Y325* risk allele had a higher risk of DCM, with an odds ratio of 4.8 (95% CI, 3.1-7.3). Heterozygous carriers of CD36 Y325* also exhibited an elevated risk of DCM, with an odds ratio of 1.4 (95% CI, 1.2-1.7). TTN truncating variants conferred an odds ratio of 8.5 (95% CI, 5.5-13.0) for DCM among participants of African ancestry. Among the 1,316 African ancestry DCM cases, 33 (2.5%) were homozygous for CD36, 56 (4.3%) harbored TTN truncating variants, and 16 (1.2%) carried pathogenic or likely pathogenic variants in other high-confidence DCM genes. In population-level analyses incorporating heterozygous and homozygous carriers, the population attributable fraction for CD36 was 9.0% (6.2% for heterozygous and 2.8% for homozygous carriers), surpassing the 3.7% population attributable fraction for TTN truncating variants. Safety endpoints and adverse events were not evaluated, and study limitations were not reported in the abstract. The authors concluded that an ancestry-specific CD36 variant contributed more to DCM burden among individuals of African ancestry than established DCM genes, reshaping the known genetic architecture of DCM in this population.",
+    "relation_evidence": "Existing genetic architecture models for dilated cardiomyopathy identify truncating variants in TTN as the predominant monogenic contributor based largely on studies in European-ancestry populations. This study demonstrates that in individuals of African ancestry, the common CD36 Y325* nonsense variant accounts for a larger population attributable fraction of dilated cardiomyopathy than TTN truncating variants or other established high-confidence genes.",
+    "relation_guidelines": "Current cardiomyopathy and heart failure guidelines focus genetic screening recommendations primarily on established rare monogenic variants such as truncating variants in TTN. These findings refine understanding of genetic susceptibility in individuals of African ancestry by highlighting a significant contribution from an ancestry-enriched CD36 variant not routinely featured on standard panels.",
+    "authors_conclusion": "The authors conclude that in 4 US cohorts, an ancestry-specific CD36 variant contributed more to the dilated cardiomyopathy burden among individuals of African ancestry than established genes for the disease, including TTN truncating variants. They further state that these findings reshape the known genetic architecture of dilated cardiomyopathy in individuals of African ancestry and highlight the importance of representation in genomic research.",
+    "key_numbers": {
+      "design": "Multicohort genetic association study",
+      "n": "82623",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "DCM risk in CD36 Y325* homozygotes",
+          "value": "OR 4.8 (95% CI, 3.1-7.3)"
+        },
+        {
+          "label": "DCM risk in CD36 Y325* heterozygotes",
+          "value": "OR 1.4 (95% CI, 1.2-1.7)"
+        },
+        {
+          "label": "DCM risk with TTN truncating variants",
+          "value": "OR 8.5 (95% CI, 5.5-13.0)"
+        },
+        {
+          "label": "Carrier prevalence in DCM cases (CD36 homozygous)",
+          "value": "2.5% (n=33/1316)"
+        },
+        {
+          "label": "Population attributable fraction for CD36",
+          "value": "9.0% (6.2% heterozygous, 2.8% homozygous)"
+        },
+        {
+          "label": "Population attributable fraction for TTN truncating variants",
+          "value": "3.7%"
+        }
+      ]
+    }
+  },
+  "42925557": {
+    "summary": "",
+    "relation_evidence": "",
+    "relation_guidelines": "",
+    "authors_conclusion": "",
+    "key_numbers": {}
+  },
+  "42909429": {
+    "summary": "Preeclampsia is reported to increase the long-term risk of heart failure 4-fold, yet universal guidelines for postpartum heart failure surveillance remain lacking. Subclinical stage B heart failure has been shown to predict major adverse cardiac outcomes, and initiating cardioprotective therapy at this early stage may reduce progression to symptomatic heart failure. This systematic review and meta-analysis aimed to evaluate cardiac structure and function in women with prior preeclampsia and identify the timing of subclinical heart failure development. A systematic search of MEDLINE, EMBASE, and CINAHL was performed according to PRISMA guidelines for studies assessing left ventricular function using transthoracic echocardiography. The analysis included 45 case-control studies encompassing 8,991 women, of whom 2,288 had a history of preeclampsia, compared with normotensive controls. During pregnancy, women with preeclampsia had a higher left ventricular mass index, with a standard mean difference of 10.85 (95% CI: 6.30-15.39). They also showed higher relative wall thickness (0.05 [95% CI: 0.03-0.08]), elevated E/e' (1.58 [95% CI: 1.02-2.13]), and prolonged isovolumetric relaxation time (8.74 [95% CI: 3.14-14.34]). Furthermore, preeclamptic women exhibited a lower E/A ratio (-0.27 [95% CI: -0.51 to -0.04]) and reduced absolute global longitudinal strain values (2.27 [95% CI: 0.43-4.11]). In the postpartum period, global longitudinal strain remained reduced and left ventricular mass index remained elevated out to 10 years postpartum. All other evaluated echocardiographic variables showed no significant differences beyond 6 months postpartum. Left ventricular ejection fraction and right ventricular function remained comparable between preeclampsia and control groups at all timepoints. The authors noted that evidence for persistent left ventricular mass index elevation beyond 6 months postpartum was not robust in sensitivity analyses excluding overlapping cohorts. Adverse events were not evaluated as endpoints in this meta-analysis. The authors concluded that preeclampsia is linked to subclinical myocardial dysfunction characterized by impaired global longitudinal strain and increased left ventricular mass index.",
+    "relation_evidence": "Preeclampsia is an established female-specific risk factor associated with long-term maternal cardiovascular disease and heart failure. This meta-analysis aggregates echocardiographic data showing that left ventricular structural remodeling and subclinical systolic strain impairment originate during pregnancy and can persist for up to a decade postpartum.",
+    "relation_guidelines": "Current guidelines recognize preeclampsia as a condition that enhances cardiovascular risk, though specific postpartum surveillance protocols for subclinical heart failure are not defined. These findings characterize the structural and functional myocardial alterations that could inform definitions of stage B heart failure in this population.",
+    "authors_conclusion": "The authors conclude that preeclampsia is associated with subclinical myocardial dysfunction characterized by impaired global longitudinal strain and increased left ventricular mass index, with strain impairment persisting up to 10 years postpartum. They note that persistent mass index elevation beyond 6 months postpartum requires cautious interpretation and that further studies are needed to determine when subclinical dysfunction progresses to clinical heart failure.",
+    "key_numbers": {
+      "design": "Systematic review and meta-analysis of case-control studies",
+      "n": "8,991",
+      "followup": "up to 10 years postpartum",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "LVMI difference during pregnancy (SMD)",
+          "value": "10.85 (95% CI: 6.30-15.39)"
+        },
+        {
+          "label": "Relative wall thickness difference during pregnancy",
+          "value": "0.05 (95% CI: 0.03-0.08)"
+        },
+        {
+          "label": "E/e' difference during pregnancy",
+          "value": "1.58 (95% CI: 1.02-2.13)"
+        },
+        {
+          "label": "Isovolumetric relaxation time difference during pregnancy",
+          "value": "8.74 (95% CI: 3.14-14.34)"
+        },
+        {
+          "label": "E/A ratio difference during pregnancy",
+          "value": "-0.27 (95% CI: -0.51 to -0.04)"
+        },
+        {
+          "label": "Absolute GLS reduction difference during pregnancy",
+          "value": "2.27 (95% CI: 0.43-4.11)"
+        }
+      ]
+    }
+  },
+  "42913986": {
+    "summary": "Catheter ablation is known to reduce atrial fibrillation recurrence and improve symptoms and quality of life, but sham-controlled trials have yielded discordant findings. This systematic review and Bayesian meta-analysis sought to synthesise sham-controlled trials of catheter ablation and explore reasons for divergent quality-of-life outcomes. Databases and clinical trial registries were searched for randomized trials evaluating catheter ablation versus sham procedures in symptomatic atrial fibrillation. Overall, four randomized trials comprising 468 patients met the inclusion criteria, and three trials including 448 patients were pooled for quantitative synthesis. The primary outcome was the between-group difference in the Atrial Fibrillation Effect on Quality-of-Life (AFEQT) score, evaluated using a Bayesian random-effects model. Catheter ablation improved the AFEQT score relative to sham by 13.5 points (95% credible interval 1.6 to 26.9). The posterior probability of achieving benefit was 0.98, and the posterior probability of exceeding the 5-point minimal clinically important difference was 0.94. Using the primary estimator from the PVI-SHAM-AF trial, the between-group difference was 12.9 points (95% credible interval -0.4 to 27.1), with posterior probabilities of 0.97 for benefit and 0.91 for exceeding the minimal clinically important difference. Substantial heterogeneity was observed across studies (tau 8.2 points, I2 85.3%), which was largely attributed to the PVI-SHAM-AF trial due to differences in symptom severity, rhythm monitoring, and blinding assessment. Excluding PVI-SHAM-AF resulted in a between-group AFEQT score difference of 18.9 points (95% credible interval 6.7 to 31.4). Catheter ablation reduced atrial fibrillation recurrence across all included trials, with a pooled risk ratio of 0.49 (95% credible interval 0.17 to 0.89). GRADE assessment indicated moderate certainty of evidence for atrial fibrillation burden and recurrence, but low certainty for quality of life. The abstract did not report safety or adverse event data. The authors concluded that catheter ablation reduces recurrence and burden and exhibits a high probability of clinically important quality-of-life benefit compared with sham embedded in active rhythm control.",
+    "relation_evidence": "Substantial evidence demonstrates that catheter ablation reduces atrial fibrillation burden and recurrence compared with medical therapy, though recent sham-controlled trials reported conflicting quality-of-life results. This meta-analysis aggregates the sham-controlled trial evidence to quantify treatment effects beyond the placebo response.",
+    "relation_guidelines": "Current atrial fibrillation guidelines incorporate catheter ablation as an established strategy to alleviate symptoms and reduce arrhythmia episodes in symptomatic patients. The findings of this meta-analysis are consistent with these guideline frameworks regarding reductions in recurrence and burden, while characterizing the remaining uncertainty around the exact magnitude of sham-controlled quality-of-life gains.",
+    "authors_conclusion": "The authors conclude that compared with sham embedded in active rhythm control, catheter ablation reduces atrial fibrillation recurrence and burden and carries a high probability of clinically important quality-of-life benefit, despite remaining uncertainty about its exact magnitude. They add that differences between trials reflect variation in population characteristics, rhythm monitoring methods, and statistical estimators rather than divergent directions of treatment effect.",
+    "key_numbers": {
+      "design": "Systematic review and Bayesian meta-analysis of randomized controlled trials",
+      "n": "468",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "AFEQT score improvement vs sham",
+          "value": "13.5 points (95% CrI 1.6 to 26.9)"
+        },
+        {
+          "label": "Posterior probability of exceeding 5-point MCID",
+          "value": "0.94"
+        },
+        {
+          "label": "AFEQT score difference excluding PVI-SHAM-AF",
+          "value": "18.9 points (95% CrI 6.7 to 31.4)"
+        },
+        {
+          "label": "AF recurrence (pooled risk ratio)",
+          "value": "0.49 (95% CrI 0.17-0.89)"
+        },
+        {
+          "label": "Between-study heterogeneity",
+          "value": "τ 8.2 points, I2 85.3%"
+        }
+      ]
+    }
+  },
+  "42909425": {
+    "summary": "Very high-power short-duration (vHPSD; 90 W/4 sec) ablation shortens pulmonary vein isolation (PVI) procedure time but produces shallower lesions that may be inadequate in the thick anterior left atrium. The randomized Q-INDEX trial was conducted to compare vHPSD, ablation index (AI)-guided, and hybrid strategies for PVI in patients with paroxysmal atrial fibrillation. In this multicenter, open-label study, 150 patients with paroxysmal atrial fibrillation were randomly assigned in a 1:1:1 ratio to one of three ablation strategies using the QDOT MICRO catheter. The first group received AI-guided ablation targeting an AI of 500 on anterior segments and 400 elsewhere. The second group received a hybrid strategy using AI-guided ablation on anterior segments (AI 500) and vHPSD elsewhere. The third group underwent uniform vHPSD ablation at 90 W/4 sec across all segments. The primary endpoint was total ablation time, and secondary endpoints included acute pulmonary vein reconnection, safety, and 1-year freedom from atrial arrhythmia. Acute pulmonary vein isolation was achieved in all enrolled patients. Total ablation time differed significantly, being longest with AI-guided ablation and shortest with vHPSD ablation (median 2220 vs 1450 vs 794 sec; P < .001). Acute reconnection across the 14 pulmonary vein segments occurred in 7.7% of the AI-guided group, 9.4% of the hybrid group, and 10.6% of the vHPSD group (P = .40). One-year freedom from atrial arrhythmia was 92.0%, 85.4%, and 77.6% across the groups, respectively (log-rank P = .13; P = .049 for AI-guided vs vHPSD). Regarding safety, no cardiac tamponade occurred, steam pops occurred exclusively in the 90 W groups, and two minor periprocedural strokes occurred in the vHPSD group with subsequent full recovery. The rate of silent cerebral lesions detected on magnetic resonance imaging did not differ significantly among the groups at 5%, 10%, and 0% (P = .35). The authors noted that the study was powered for ablation time and that these exploratory findings warrant confirmation.",
+    "relation_evidence": "Pulmonary vein isolation is the standard ablation approach for paroxysmal atrial fibrillation, with diverse power and duration parameters utilized to achieve durable transmural lesions. This randomized study provides comparative evidence regarding procedural efficiency, safety events, and 1-year clinical durability between standard ablation index guidance, very high-power short-duration ablation, and a regional hybrid strategy.",
+    "relation_guidelines": "Current atrial fibrillation guidelines establish pulmonary vein isolation as the recommended target for catheter ablation without prescribing a specific radiofrequency power-time formulation. The findings describe how differing lesion depth strategies perform within standard pulmonary vein isolation procedures.",
+    "authors_conclusion": "The authors conclude that uniform vHPSD more than halved PVI ablation time but was associated with the lowest 1-year efficacy, whereas the hybrid strategy preserved efficiency without significant loss of durability. They further conclude that these exploratory findings support region-tailored lesion depth in point-by-point ablation and warrant confirmation.",
+    "key_numbers": {
+      "design": "Multicenter, randomized, open-label trial",
+      "n": "150",
+      "followup": "1 year",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Total ablation time (median, AI-guided vs hybrid vs vHPSD)",
+          "value": "2220 vs 1450 vs 794 sec (P < .001)"
+        },
+        {
+          "label": "Acute reconnection across 14 PV segments (AI-guided vs hybrid vs vHPSD)",
+          "value": "7.7% vs 9.4% vs 10.6% (P = .40)"
+        },
+        {
+          "label": "1-year freedom from atrial arrhythmia (AI-guided vs hybrid vs vHPSD)",
+          "value": "92.0% vs 85.4% vs 77.6% (log-rank P = .13; AI-guided vs vHPSD P = .049)"
+        },
+        {
+          "label": "Periprocedural minor stroke",
+          "value": "2 patients (both vHPSD; full recovery)"
+        },
+        {
+          "label": "Silent cerebral lesions on MRI (AI-guided vs hybrid vs vHPSD)",
+          "value": "5% vs 10% vs 0% (P = .35)"
+        },
+        {
+          "label": "Cardiac tamponade",
+          "value": "0%"
+        }
+      ]
+    }
+  },
+  "42900029": {
+    "summary": "Unexplained cardiac arrest associated with idiopathic ventricular fibrillation (IVF) represents a heterogeneous entity causing notable mortality in young individuals. This retrospective multicenter cohort study investigated the natural history, recurrence burden, emerging etiologies, and long-term management of IVF survivors across 46 tertiary centers. Eligible participants were older than 15 years, presented with documented ventricular fibrillation, had extensive negative initial evaluations supporting IVF, and completed at least 5 years of follow-up. Patient outcomes were compiled from medical records, follow-up testing, genetic evaluations, and implantable cardioverter-defibrillator data. The cohort comprised 825 patients (37% women, mean age 35.7 ± 12 years) followed for a median duration of 120 months. All-cause death occurred in 27 patients (3.3%), including cardiac death in 1.2%, noncardiac death in 1.1%, and unknown causes in 1.0%, while 4.5% developed overt cardiomyopathy. Overall arrhythmia recurrences accumulated steadily across two decades to affect 52.7% of patients, with a median time to first recurrence of 20 months and similar rates between sexes. Emergent etiologies were identified in 68.8% of the total cohort based on recurrence data, structural evolution, genetic findings, and electrophysiologic mapping. These etiologies included focal sources in 33.0%, microstructural myocardial alterations (MiCM) with normal imaging in 27.0%, and reclassified inherited arrhythmia conditions in 8.8%, whereas 31.2% remained without an identified diagnosis. In subgroup comparisons, focal IVF involved more female patients, presented more frequently during rest or sleep, and demonstrated narrower QRS durations than MiCM (90.1 ± 12 ms vs 104.8 ± 16 ms; P < 0.001). Quinidine appeared effective in preventing focal IVF in 68.3% of treated cases, whereas beta-blockers appeared effective in 49.3% of MiCM-IVF cases. Catheter ablation was performed in 181 patients, among whom 75.7% had no subsequent recurrence. Study limitations were not detailed in the abstract. The authors concluded that IVF survivors demonstrate low cardiac mortality alongside persistent long-term recurrence risks, frequently revealing emerging etiologies over extended surveillance.",
+    "relation_evidence": "Idiopathic ventricular fibrillation is historically understood as unexplained ventricular fibrillation without detectable structural or electrical disease at baseline. These findings add descriptive evidence that over a median 10-year follow-up, late diagnostic emergence and structural or electrophysiologic reclassification occur in a majority of surviving patients.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that long-term follow-up of idiopathic ventricular fibrillation survivors demonstrates low cardiac mortality alongside a persistent risk of arrhythmia recurrences over time, and identifies potential emerging etiologies.",
+    "key_numbers": {
+      "design": "Retrospective multicenter cohort study",
+      "n": "825",
+      "followup": "Median 120 months (Q1-Q3: 78-180 months)",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "All-cause mortality",
+          "value": "3.3% (n = 27)"
+        },
+        {
+          "label": "Cardiac mortality",
+          "value": "1.2% (n = 10)"
+        },
+        {
+          "label": "Overall arrhythmia recurrence",
+          "value": "52.7%"
+        },
+        {
+          "label": "Median time to first recurrence",
+          "value": "20 months (Q1-Q3: 5-48 months)"
+        },
+        {
+          "label": "Emergent etiologies identified",
+          "value": "68.8%"
+        },
+        {
+          "label": "No recurrence after catheter ablation",
+          "value": "75.7% (performed in 181 patients)"
+        }
+      ]
+    }
+  },
+  "42919988": {
+    "summary": "Cardiac pacing has undergone a shift from conventional right ventricular apical pacing toward physiological activation of the native conduction system. Chronic right ventricular pacing has been shown to induce ventricular dyssynchrony, which contributes to pacing-induced cardiomyopathy and adverse clinical outcomes. Conduction system pacing engages the intrinsic His-Purkinje network of the heart to preserve or restore the natural ventricular activation sequence. His bundle pacing represents the earliest form of conduction system pacing and provided proof of concept for the field. His bundle pacing is nonetheless limited by technical challenges as well as high capture thresholds. Left bundle branch area pacing has since emerged as the dominant conduction system pacing modality. This modality provides greater procedural success, improved lead stability, and broader clinical applicability. Applications of left bundle branch area pacing span bradycardia management, prevention of pacing-induced cardiomyopathy, and cardiac resynchronization therapy in heart failure. Bachmann bundle area pacing is described as an emerging atrial counterpart to ventricular physiological pacing. Capturing this preferential interatrial conduction pathway reduces interatrial conduction delay compared with conventional right atrial appendage pacing. This atrial approach produces a more physiological atrial activation sequence and might help prevent atrial fibrillation. The review unites ventricular and atrial modalities under the shared principle of physiological pacing. The authors examine the mechanistic basis, technical evolution, and latest evidence from randomized trials across these modalities. Practical considerations in clinical application are addressed, and areas requiring further evidence are highlighted.",
+    "relation_evidence": "Conduction system pacing, including His bundle pacing and left bundle branch area pacing, represents a shift from conventional right ventricular apical pacing to avoid pacing-induced dyssynchrony and cardiomyopathy. The exploration of Bachmann bundle area pacing extends physiological pacing principles to the atrium to reduce interatrial conduction delays.",
+    "relation_guidelines": "The review's appraisal of left bundle branch area pacing aligns with the evolving interest in physiological pacing strategies across contemporary pacing and heart failure guidelines. Specific guideline links for Bachmann bundle area pacing cannot be derived from the abstract alone.",
+    "authors_conclusion": "The authors conclude that ventricular and atrial conduction system pacing approaches fall under a unifying principle of physiological pacing that improves activation patterns, while noting that practical clinical application requires further evidence in specific areas.",
+    "key_numbers": {
+      "design": "Review",
+      "n": null,
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Chronic RV pacing effect",
+          "value": "Induces ventricular dyssynchrony, contributing to pacing-induced cardiomyopathy and adverse clinical outcomes"
+        },
+        {
+          "label": "His bundle pacing limitations",
+          "value": "Limited by technical challenges and high capture thresholds"
+        },
+        {
+          "label": "Left bundle branch area pacing features",
+          "value": "Offers greater procedural success, lead stability and broader applicability"
+        },
+        {
+          "label": "Bachmann bundle area pacing mechanism",
+          "value": "Reduces interatrial conduction delay and produces a more physiological atrial activation sequence than right atrial appendage pacing"
+        }
+      ]
+    }
+  },
+  "42918521": {
+    "summary": "Conduction system pacing (CSP), particularly left bundle branch area pacing (LBBAP), represents a physiologic pacing strategy, but large-scale Asian data have been limited. The Korean Conduction System Pacing (K-CSP) observational registry evaluated the feasibility, predictors of procedural failure, and clinical outcomes of CSP. A total of 2,215 consecutive patients undergoing attempted CSP across 35 Korean centers between January 2021 and June 2025 were enrolled. Capture types were classified in accordance with European Heart Rhythm Association criteria. Procedures were predominantly performed using stylet-driven leads, which were utilized in 87.0% of cases. Overall CSP procedural success was documented in 87.4% of patients (1,932 of 2,211). Among the 1,922 patients receiving LBBAP, left bundle branch pacing was achieved in 35.1%, left fascicular pacing in 31.3%, and left ventricular septal pacing (LVSP) in 17.2%. Prior open-heart surgery involving septal manipulation, a right-sided approach, and male sex were identified as independent predictors of CSP failure. Pacing parameters remained stable over a mean follow-up of 17.0 ± 10.8 months. CSP failure was associated with worse composite outcomes on unadjusted analysis, but this association lost statistical significance after adjustment. Among LBBAP patients, LVSP was associated with a higher adjusted risk of heart-failure hospitalization compared with left bundle branch pacing plus left fascicular pacing (adjusted HR 3.04, 95% CI 1.05–8.73, p = 0.039). The authors noted that this heart-failure finding was based on few events with wide confidence intervals and was not statistically significant on unadjusted analysis. The authors conclude that LBBAP was feasible and safe in this cohort, with direct conduction capture showing an association with lower adjusted heart-failure hospitalizations.",
+    "relation_evidence": "Conduction system pacing, including left bundle branch area pacing, is increasingly investigated as an alternative to conventional myocardial pacing to preserve ventricular synchrony. This registry adds observational evidence on procedural feasibility, success rates, and lead characteristics within a large Asian cohort.",
+    "relation_guidelines": "Current cardiology guidelines discuss physiologic pacing modalities, such as conduction system pacing, as potential alternatives to conventional ventricular pacing in selected clinical scenarios. These observational findings describe real-world procedural characteristics and capture types without altering current guideline recommendations.",
+    "authors_conclusion": "The authors conclude that LBBAP was feasible and safe in this large-scale Asian registry, performed predominantly with stylet-driven leads. They further state that direct conduction system capture was associated with a lower adjusted risk of heart-failure hospitalization than LVSP, noting that these findings are hypothesis-generating and warrant confirmation in randomized trials.",
+    "key_numbers": {
+      "design": "Observational registry, multicenter",
+      "n": "2,215",
+      "followup": "17.0±10.8 months",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Overall CSP success rate",
+          "value": "87.4% (1,932/2,211)"
+        },
+        {
+          "label": "Stylet-driven lead utilization",
+          "value": "87.0%"
+        },
+        {
+          "label": "LBBAP capture: Left bundle branch pacing",
+          "value": "35.1%"
+        },
+        {
+          "label": "LBBAP capture: Left fascicular pacing",
+          "value": "31.3%"
+        },
+        {
+          "label": "LBBAP capture: Left ventricular septal pacing",
+          "value": "17.2%"
+        },
+        {
+          "label": "Heart-failure hospitalization (LVSP vs LBBP+LFP)",
+          "value": "adjusted HR 3.04, 95% CI 1.05-8.73, p=0.039"
+        }
+      ]
+    }
+  },
+  "42913987": {
+    "summary": "The Omny-IRE study evaluated the safety and effectiveness of a large-tip focal, multielectrode, contact-force-sensing, pulsed field ablation basket catheter integrated with electroanatomic mapping. The objective was to report 12-month outcomes following pulmonary vein isolation using the OMNYPULSE platform in patients with paroxysmal atrial fibrillation. Follow-up through the 12-month visit incorporated electrocardiography preprocedure, predischarge, and at 1, 3, 6, and 12 months. Rhythm surveillance further included 24-hour Holter monitoring at 3, 6, and 12 months, as well as remote rhythm monitoring performed weekly during months 1 to 5, monthly during months 6 to 12, and upon symptom triggers. The secondary effectiveness endpoint was 12-month freedom from documented symptomatic or asymptomatic atrial arrhythmia lasting 30 seconds or longer and acute procedural failure. Additional evaluated outcomes included device- and procedure-related serious adverse events, Atrial Fibrillation Effect on Quality-of-Life scores, and healthcare utilization. Among 188 enrolled patients, 136 comprised the main-phase cohort for safety and effectiveness evaluations. In the main-phase cohort, 12-month freedom from symptomatic or asymptomatic atrial arrhythmia was 82.5%, which was 90.1% when assessed using standard-of-care monitoring only. Clinical success, defined as freedom from documented symptomatic arrhythmia and acute procedural failure, was 89.9%, while single procedural success was 89.2%. Device- or procedure-related serious adverse events were reported in 2.9% of main-phase patients. Patient-reported quality of life improved, with a mean increase in overall AFEQT score of 25.5 points from baseline to 12 months. Healthcare utilization declined, with cardiovascular hospitalizations decreasing by 40.9% compared with the 12-month preprocedure period. In addition, Class I/III antiarrhythmic drug use decreased by 49.3% between 6 and 12 months postablation compared with baseline. Study limitations were not described in the abstract.",
+    "relation_evidence": "Catheter ablation utilizing pulsed field ablation represents an evolving non-thermal approach to achieve pulmonary vein isolation in atrial fibrillation. This study provides prospective 12-month data regarding procedural outcomes and safety for a contact-force-sensing, focal multielectrode pulsed field ablation platform with electroanatomic mapping integration.",
+    "relation_guidelines": "Current clinical practice guidelines recognize catheter ablation for pulmonary vein isolation as an established rhythm control strategy in symptomatic paroxysmal atrial fibrillation. These findings report observational 12-month safety and effectiveness metrics for a specific pulsed field ablation system within this clinical context.",
+    "authors_conclusion": "The authors conclude that Omny-IRE results demonstrated the effectiveness, safety, and healthcare benefits of pulsed field ablation with the OMNYPULSE platform.",
+    "key_numbers": {
+      "design": "Single-arm clinical study (NCT05971693)",
+      "n": "188",
+      "followup": "12 months",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "12M freedom from symptomatic/asymptomatic atrial arrhythmia",
+          "value": "82.5%"
+        },
+        {
+          "label": "Clinical success",
+          "value": "89.9%"
+        },
+        {
+          "label": "Single procedural success",
+          "value": "89.2%"
+        },
+        {
+          "label": "Device/procedure-related SAEs",
+          "value": "2.9%"
+        },
+        {
+          "label": "Mean overall AFEQT score improvement",
+          "value": "25.5 points"
+        },
+        {
+          "label": "Cardiovascular-hospitalizations reduction vs 12M preprocedure",
+          "value": "40.9%"
+        }
+      ]
+    }
+  },
+  "42913970": {
+    "summary": "Long-term surveillance of implantable cardioverter-defibrillator leads is essential because clinically important mechanical failures can emerge years after implantation. This study was conducted to evaluate the 10-year mechanical complication-free survival of the Optisure defibrillation lead in a real-world Medicare population. Investigators linked manufacturer device-tracking records to Medicare Fee-for-Service claims and device complaint data using the EP PASSION framework. The analysis included patients receiving an Optisure lead between February 2014 and December 2024. Mechanical lead-related complications were defined by claims requiring both a diagnosis of mechanical lead malfunction and a lead-related surgical intervention more than 30 days after implantation. Kaplan-Meier survival was estimated under a best-case scenario incorporating confirmed Optisure-related events and a worst-case scenario incorporating both confirmed and potentially related events. The study cohort comprised 26,830 patients with 27,033 Optisure leads. The mean age of the population was 73.8 ± 8.6 years, 28.4% were women, and 49.8% had cardiac resynchronization therapy defibrillators. During follow-up, 379 complications were classified as confirmed lead-related, and 606 were classified as confirmed or potentially lead-related. At 10 years, complication-free lead survival was 97.2% (95% CI, 96.7%-97.7%) in the best-case scenario. In the worst-case scenario, 10-year complication-free survival was 95.6% (95% CI, 94.9%-96.2%). Survival did not differ significantly by age, lead length, coil configuration, or device type. Specific study limitations were not stated in the abstract. The authors conclude that the Optisure lead demonstrated favorable mechanical performance through 10 years in routine clinical practice, supporting its durability and the use of integrated real-world data for post-market surveillance.",
+    "relation_evidence": "Transvenous defibrillator leads are known to be vulnerable to mechanical failure and insulation degradation over extended periods of follow-up. This study provides long-term real-world performance data on a specific multi-layer insulated lead design across a 10-year timeframe.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that the Optisure ICD lead demonstrated favorable mechanical performance through 10 years in routine clinical practice, supporting both its long-term durability and the use of integrated real-world data for post-market device surveillance.",
+    "key_numbers": {
+      "design": "Retrospective linkage cohort study",
+      "n": "26,830",
+      "followup": "10 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Total leads analyzed",
+          "value": "27,033"
+        },
+        {
+          "label": "Confirmed lead-related complications",
+          "value": "379"
+        },
+        {
+          "label": "Confirmed or potentially lead-related complications",
+          "value": "606"
+        },
+        {
+          "label": "10-year complication-free survival (best-case)",
+          "value": "97.2% (95% CI, 96.7%-97.7%)"
+        },
+        {
+          "label": "10-year complication-free survival (worst-case)",
+          "value": "95.6% (95% CI, 94.9%-96.2%)"
+        }
+      ]
+    }
+  },
+  "42925297": {
+    "summary": "Whether age influences the comparative treatment effect of immediate complete revascularization versus staged complete revascularization during index admission for ST-segment elevation myocardial infarction with multivessel disease remains unknown. The authors conducted a secondary analysis of the randomized OPTION-STEMI trial to evaluate the impact of age on clinical outcomes. The trial cohort comprised 994 patients randomized to either immediate complete revascularization or in-hospital staged complete revascularization. Complete revascularization of non-infarct-related arteries was guided by fractional flow reserve. The primary endpoint evaluated at 1 year was a composite of all-cause death, nonfatal myocardial infarction, or any unplanned revascularization. Outcomes were analyzed according to patient age and complete revascularization strategy. Analysis of age as a continuous variable revealed a statistically significant interaction with revascularization strategy for the primary endpoint (interaction P = 0.015). The hazard ratio for the primary endpoint was initially higher in the staged complete revascularization arm until approximately 67 years of age. Above 67 years of age, the hazard ratio increased steadily in the immediate complete revascularization arm. In binary subgroup analysis, patients aged 70 years or older had a significantly higher incidence of the primary endpoint with immediate versus staged complete revascularization (45 of 202 [22.3%] vs 29 of 210 [13.8%]; HR: 1.68; 95% CI: 1.06-2.69; log-rank P = 0.029). In patients younger than 70 years, no significant difference between strategies was observed (20 of 296 [6.8%] vs 24 of 286 [8.4%]; HR: 0.80; 95% CI: 0.45-1.45; log-rank P = 0.470). The multiplicative interaction P value was 0.054, and the relative excess risk due to interaction P value was 0.016. Additional safety endpoints and study limitations were not reported in the abstract. The authors note that these findings warrant confirmation in adequately powered trials.",
+    "relation_evidence": "Complete revascularization reduces adverse cardiovascular events in patients presenting with ST-segment elevation myocardial infarction and multivessel disease. However, the optimal timing of non-culprit lesion intervention—whether immediate during primary percutaneous coronary intervention or staged during the index hospitalization—across specific patient subsets such as older adults remains an unresolved question.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that older patients experience significantly worse clinical outcomes with immediate complete revascularization compared with in-hospital staged complete revascularization. They state that age modifies the treatment effect of the complete revascularization strategy, warranting confirmation in adequately powered trials.",
+    "key_numbers": {
+      "design": "Secondary analysis of a randomized controlled trial",
+      "n": "994",
+      "followup": "1 year",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Primary endpoint in patients ≥70 years, immediate CR",
+          "value": "45 of 202 (22.3%)"
+        },
+        {
+          "label": "Primary endpoint in patients ≥70 years, staged CR",
+          "value": "29 of 210 (13.8%) (HR: 1.68; 95% CI: 1.06-2.69; log-rank P = 0.029)"
+        },
+        {
+          "label": "Primary endpoint in patients <70 years, immediate CR",
+          "value": "20 of 296 (6.8%)"
+        },
+        {
+          "label": "Primary endpoint in patients <70 years, staged CR",
+          "value": "24 of 286 (8.4%) (HR: 0.80; 95% CI: 0.45-1.45; log-rank P = 0.470)"
+        },
+        {
+          "label": "Age (continuous) × CR strategy interaction P value",
+          "value": "P = 0.015"
+        },
+        {
+          "label": "Age interaction metrics (binary)",
+          "value": "Multiplicative interaction P = 0.054; relative excess risk due to interaction P = 0.016"
+        }
+      ]
+    }
+  },
+  "42909452": {
+    "summary": "",
+    "relation_evidence": "",
+    "relation_guidelines": "",
+    "authors_conclusion": "",
+    "key_numbers": {}
+  },
+  "42900708": {
+    "summary": "Coronary bifurcation lesions represent a technically challenging subset of percutaneous coronary interventions, with suboptimal clinical outcomes frequently observed in side branches. Drug-coated balloons have demonstrated acceptable clinical outcomes in native coronary artery disease. The OCVC-BIF study was conducted as a multicenter, randomized, open-label trial designed to assess the efficacy and safety of supplementary drug-coated balloon inflation in the side branches of bifurcation lesions. Eligible patients had coronary bifurcation lesions scheduled for drug-eluting stent implantation in the main vessel followed by kissing balloon inflation. Participants were randomized to either additional side-branch dilatation with a drug-coated balloon following drug-eluting stent implantation and kissing balloon inflation or standard drug-eluting stent implantation with conventional kissing balloon inflation alone. The primary end point was side-branch restenosis, defined as at least 50% stenosis assessed by three-dimensional bifurcation quantitative coronary angiography on scheduled 9-month angiography or symptom-driven angiography through 1-year follow-up. The key secondary end point was major adverse cardiac events at 12 months, comprising cardiac death, myocardial infarction, clinically driven target lesion revascularization, and stent thrombosis. Between October 2019 and September 2024, a total of 299 patients were enrolled, with 151 allocated to the drug-coated balloon group and 148 to the non-drug-coated balloon group. Serial three-dimensional bifurcation quantitative coronary angiography was completed in 262 patients, representing 87.6% of the trial cohort. The primary end point of side-branch restenosis occurred in 8.1% of patients in the drug-coated balloon group compared with 18.3% in the non-drug-coated balloon group (P=0.012). At 12 months, the incidence of major adverse cardiac events was 10.1% in the drug-coated balloon group and 12.4% in the non-drug-coated balloon group (P=0.58). Specific trial limitations were not detailed in the abstract. The authors conclude that additional drug-coated balloon inflation in the side branch after main-vessel drug-eluting stent implantation with kissing balloon inflation reduces side-branch restenosis in bifurcation lesions.",
+    "relation_evidence": "Bifurcation interventions frequently encounter side-branch compromise and restenosis after provisional or complex stenting strategies. Drug-coated balloons deliver antiproliferative agents locally without requiring permanent scaffold implantation in the side branch.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that additional DCB inflation in the side branch after main-vessel DES implantation with kissing balloon inflation decreases restenosis in the side branch in the treatment of bifurcation lesions.",
+    "key_numbers": {
+      "design": "Multicenter, randomized, open-label trial",
+      "n": "299",
+      "followup": "12 months",
+      "primary_endpoint": {
+        "name": "Side branch restenosis (≥50% stenosis) at 9-12 months",
+        "arm1_label": "DCB",
+        "arm1_value": "8.1%",
+        "arm2_label": "Non-DCB",
+        "arm2_value": "18.3%",
+        "effect": "P=0.012"
+      },
+      "secondary": [
+        {
+          "name": "Major adverse cardiac events at 12 months",
+          "arm1": "10.1%",
+          "arm2": "12.4%",
+          "effect": "P=0.58"
+        }
+      ],
+      "key_findings": [
+        {
+          "label": "Patients randomized to DCB group",
+          "value": "151"
+        },
+        {
+          "label": "Patients randomized to non-DCB group",
+          "value": "148"
+        },
+        {
+          "label": "Serial 3D bifurcation QCA performed",
+          "value": "262 (87.6%)"
+        },
+        {
+          "label": "Side branch restenosis rate (DCB vs non-DCB)",
+          "value": "8.1% vs 18.3% (P=0.012)"
+        },
+        {
+          "label": "12-month MACE rate (DCB vs non-DCB)",
+          "value": "10.1% vs 12.4% (P=0.58)"
+        }
+      ]
+    }
+  },
+  "42910974": {
+    "summary": "The optimal clinical management of coronary artery disease in patients with severe aortic stenosis undergoing transcatheter aortic valve implantation remains uncertain. This study comprised a systematic review and meta-analysis of randomised controlled trials comparing routine coronary revascularisation with conservative management in patients undergoing transcatheter aortic valve implantation. A network meta-analysis was also performed to evaluate the relative effectiveness of individual revascularisation strategies, specifically angiography-guided and physiology-guided percutaneous coronary intervention. The primary outcome of the meta-analysis was a study-defined composite endpoint of major adverse cardiovascular events. Secondary endpoints included all-cause death, cardiovascular death, myocardial infarction, stroke, unplanned revascularisation, and major bleeding. Overall, five trials involving 1,644 patients met the inclusion criteria for the systematic review. Four trials encompassing 1,476 patients contributed data to the primary quantitative synthesis. Compared with conservative management, routine percutaneous coronary intervention significantly reduced the primary composite of major adverse cardiovascular events (risk ratio 0.80, 95% confidence interval: 0.65-0.98). Routine percutaneous coronary intervention was also associated with a reduced incidence of unplanned revascularisation (risk ratio 0.30, 95% confidence interval: 0.11-0.83). Regarding safety events, routine revascularisation was associated with an increased risk of major bleeding compared with conservative management (risk ratio 1.57, 95% confidence interval: 1.07-2.32). In the network meta-analysis, physiology-guided percutaneous coronary intervention significantly decreased major adverse cardiovascular events, stroke, and unplanned revascularisation compared with conservative management. Among all evaluated revascularisation strategies, physiology-guided percutaneous coronary intervention ranked highest for all ischaemic endpoints. Specific study limitations were not described in the abstract. The authors concluded that routine revascularisation reduces ischaemic outcomes compared with conservative therapy in patients referred for transcatheter aortic valve implantation, with physiology-guided intervention demonstrating the most favourable efficacy profile.",
+    "relation_evidence": "The management of concomitant coronary artery disease in patients undergoing transcatheter aortic valve implantation has historically yielded conflicting observational and randomised evidence regarding the benefits of routine revascularisation. This meta-analysis aggregates randomised trial data to delineate the clinical trade-off between ischaemic risk reduction and post-procedural bleeding complications. It also contextualises the comparative performance of physiology-guided strategies against angiography-guided and conservative approaches.",
+    "relation_guidelines": "Current valvular heart disease guidelines address the management of coronary artery disease in patients evaluated for transcatheter aortic valve implantation, where indications for percutaneous intervention remain an area of ongoing debate. These meta-analytic findings add randomised evidence regarding the balance of ischaemic and bleeding events, as well as the role of physiology-guided decision-making in this cohort.",
+    "authors_conclusion": "The authors conclude that among patients referred for transcatheter aortic valve implantation, routine revascularisation reduces the risk of ischaemic outcomes compared with conservative treatment. They further conclude that physiology-guided percutaneous coronary intervention may be associated with the most favourable efficacy profile across available strategies in this setting.",
+    "key_numbers": {
+      "design": "Systematic review and pairwise/network meta-analysis of randomised controlled trials",
+      "n": "1,644",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "MACE (routine PCI vs conservative)",
+          "value": "RR 0.80 (95% CI: 0.65-0.98)"
+        },
+        {
+          "label": "Unplanned revascularisation (routine PCI vs conservative)",
+          "value": "RR 0.30 (95% CI: 0.11-0.83)"
+        },
+        {
+          "label": "Major bleeding (routine PCI vs conservative)",
+          "value": "RR 1.57 (95% CI: 1.07-2.32)"
+        },
+        {
+          "label": "Physiology-guided PCI vs conservative (network meta-analysis)",
+          "value": "Significantly reduced MACE, stroke, and unplanned revascularisation; ranked highest for all ischaemic outcomes"
+        }
+      ]
+    }
+  },
+  "42924854": {
+    "summary": "This study evaluated postoperative neurologic and mortality outcomes according to stroke-to-surgery timing and stroke phenotype in patients with left-sided infective endocarditis. The authors analyzed adult patients who underwent surgery for infective endocarditis complicated by preoperative stroke between 2004 and 2024 across two institutions. The study cohort was stratified by stroke-to-surgery intervals of less than 1 week, 1 to 4 weeks, and 4 to 6 weeks. The primary outcome was a composite postoperative cerebrovascular event comprising new stroke, enlarging stroke, or hemorrhagic conversion. Secondary outcomes assessed included operative death and major morbidity events. Among 2265 screened patients with left-sided infective endocarditis, 322 met the inclusion criteria. In this cohort, 122 patients (38%) had surgery within 1 week, 168 (52%) between 1 and 4 weeks, and 32 (10%) between 4 and 6 weeks. Operative death did not differ significantly across the timing groups (P=0.09). Postoperative cerebrovascular events occurred in 21.3% of patients operated within 1 week, 11.9% at 1 to 4 weeks, and 9.4% at 4 to 6 weeks (P=0.015). On multivariable analysis, a longer stroke-to-surgery interval was associated with reduced odds of postoperative cerebrovascular events (odds ratio, 0.92 per day [95% CI, 0.85-0.98]; P=0.015). This reduction was driven by early events among patients presenting with intraparenchymal hemorrhage, subarachnoid hemorrhage, and septic emboli. Among patients with ischemic stroke, operative death was lowest with surgery within 1 week at 5.8%, compared to 11.2% at 1 to 4 weeks (P=0.24). Interval embolization occurred in 10.6% of patients awaiting surgery, predominantly affecting the spleen and kidneys. Specific study limitations were not described in the abstract.",
+    "relation_evidence": "Surgical timing for patients with infective endocarditis complicated by stroke involves balancing the risk of secondary neurologic deterioration against the risk of recurrent systemic embolization and clinical deterioration. Observational literature has historically debated the duration of surgical delay, particularly regarding differences between ischemic and hemorrhagic cerebral events.",
+    "relation_guidelines": "Current endocarditis guidelines delineate distinct surgical timing recommendations depending on whether a preoperative stroke is ischemic or hemorrhagic, frequently endorsing early surgery for non-severe ischemic events while favoring delays for intracranial hemorrhage. The findings refine existing guideline frameworks by demonstrating that excess early postoperative cerebrovascular risk is largely restricted to hemorrhagic and septic embolic subtypes rather than ischemic strokes.",
+    "authors_conclusion": "The authors conclude that excess postoperative neurologic risk was concentrated within the first 7 to 10 days and driven by intraparenchymal hemorrhage, subarachnoid hemorrhage, and septic emboli, with ischemic stroke showing no appreciable temporal association. They state that routine delay after ischemic stroke may not be necessary, whereas a short delay of approximately 7 days for hemorrhagic and septic embolic subtypes may be reasonable when hemodynamically feasible.",
+    "key_numbers": {
+      "design": "Two-institution retrospective cohort study",
+      "n": "322",
+      "followup": null,
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Postoperative cerebrovascular events (<1 week)",
+          "value": "21.3%"
+        },
+        {
+          "label": "Postoperative cerebrovascular events (1-4 weeks)",
+          "value": "11.9%"
+        },
+        {
+          "label": "Postoperative cerebrovascular events (4-6 weeks)",
+          "value": "9.4% (P=0.015 across groups)"
+        },
+        {
+          "label": "Postoperative cerebrovascular events per day of delay",
+          "value": "OR 0.92/d (95% CI, 0.85-0.98; P=0.015)"
+        },
+        {
+          "label": "Operative death in ischemic stroke (<1 week vs 1-4 weeks)",
+          "value": "5.8% vs 11.2% (P=0.24)"
+        },
+        {
+          "label": "Interval embolization awaiting surgery",
+          "value": "10.6%"
+        }
+      ]
+    }
+  },
+  "42924766": {
+    "summary": "Mitral valve transcatheter edge-to-edge repair can be technically more challenging in noncentral regions of the mitral valve as well as in anterior or bileaflet lesions. This study evaluated the influence of implant location and leaflet lesion location on the 30-day safety and effectiveness of the PASCAL Precision system in patients with degenerative mitral regurgitation. Data were analyzed from patients treated with the PASCAL Precision system between September 2022 and October 2024 within the US STS/ACC TVT Registry. Outcomes were categorized by implant location into A2P2 and non-A2P2 cohorts, and by leaflet lesion location into anterior, posterior, and bileaflet cohorts. At 30 days, both the A2P2 group (n=1526) and the non-A2P2 group (n=299) demonstrated low adverse event rates, including cardiovascular mortality (1.1% versus 1.0%), mitral valve reintervention (0.4% versus 0.0%), and single leaflet device attachment (0.5% versus 0.3%; all P>0.05). Both implant location cohorts showed significant mitral regurgitation reduction from baseline (P<0.001) without significant difference between groups (P=0.750). Mitral regurgitation ≤2+ was achieved in 93.4% of the A2P2 cohort versus 95.4% of the non-A2P2 cohort, while mitral regurgitation ≤1+ was achieved in 72.0% versus 73.3%. Kansas City Cardiomyopathy Questionnaire Overall Summary scores improved significantly in both implant location groups (mean change of 19.3 versus 17.7 points; P=0.741). In the lesion location analysis, anterior (n=250), posterior (n=902), and bileaflet (n=192) disease groups also demonstrated low rates of cardiovascular mortality (0.4%, 1.1%, and 0.0%), mitral valve reintervention (0.8%, 0.1%, and 0.5%), and single leaflet device attachment (0.8%, 0.2%, and 0.5%; all P>0.05). Significant mitral regurgitation reduction occurred across all lesion groups (P<0.001 versus baseline) with no significant intergroup difference (P=0.459), yielding mitral regurgitation ≤2+ rates of 94.1%, 93.1%, and 94.5%, and mitral regurgitation ≤1+ rates of 79.0%, 69.2%, and 72.4%. Kansas City Cardiomyopathy Questionnaire Overall Summary scores improved across anterior, posterior, and bileaflet groups (mean change of 21.4, 18.8, and 12.0 points; P=0.087). Limitations were not explicitly detailed in the abstract. The authors concluded that treatment with the PASCAL Precision system was associated with favorable safety and effectiveness at 30 days in real-world degenerative mitral regurgitation regardless of implant or lesion location.",
+    "relation_evidence": "Transcatheter edge-to-edge repair was historically established primarily in central A2P2 pathology, with noncentral and complex leaflet morphologies considered anatomically challenging. These observational findings from the STS/ACC TVT Registry provide descriptive real-world evidence indicating comparable short-term technical and clinical outcomes across central and noncentral implant sites and diverse leaflet lesion locations.",
+    "relation_guidelines": "Current valvular heart disease guidelines describe transcatheter edge-to-edge repair as an option for symptomatic severe primary mitral regurgitation in patients who are inoperable or at high surgical risk and fulfill criteria for anatomical suitability. The reported findings descriptively add real-world registry experience on outcomes across various anatomical locations, without altering established guideline criteria.",
+    "authors_conclusion": "The authors conclude that in real-world patients with degenerative mitral regurgitation, treatment with the PASCAL Precision system was associated with favorable safety and effectiveness at 30 days, regardless of implant location or leaflet lesion location.",
+    "key_numbers": {
+      "design": "Registry analysis (STS/ACC TVT Registry)",
+      "n": null,
+      "followup": "30 days",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Cardiovascular mortality at 30 days (A2P2 vs non-A2P2)",
+          "value": "1.1% versus 1.0% (P>0.05)"
+        },
+        {
+          "label": "Mitral regurgitation <=2+ at 30 days (A2P2 vs non-A2P2)",
+          "value": "93.4% versus 95.4% (P=0.750)"
+        },
+        {
+          "label": "Mitral regurgitation <=1+ at 30 days (A2P2 vs non-A2P2)",
+          "value": "72.0% versus 73.3%"
+        },
+        {
+          "label": "KCCQ Overall Summary score change (A2P2 vs non-A2P2)",
+          "value": "∆19.3 vs ∆17.7 points (P=0.741)"
+        },
+        {
+          "label": "Mitral regurgitation <=2+ at 30 days (Anterior vs Posterior vs Bileaflet)",
+          "value": "94.1%, 93.1%, and 94.5% (P=0.459)"
+        },
+        {
+          "label": "Mitral regurgitation <=1+ at 30 days (Anterior vs Posterior vs Bileaflet)",
+          "value": "79.0%, 69.2%, and 72.4%"
+        }
+      ]
+    }
+  },
+  "42913976": {
+    "summary": "This study evaluated the prognostic importance of atrial fibrillation (AF) pattern on residual clinical risk following left atrial appendage occlusion (LAAO) and examined whether peri-device leak (PDL) or device-related thrombus (DRT) identify a persistently high-risk subgroup. The authors analyzed 3,459 patients with documented AF patterns undergoing LAAO within a contemporary multicenter registry. AF pattern was categorized into paroxysmal, persistent or long-standing persistent, or permanent AF. Baseline differences across groups were adjusted using inverse probability weighting and propensity score methods. Follow-up imaging was utilized to identify the presence of PDL and DRT. The primary endpoint was a 2-year hierarchical composite of death, stroke or systemic embolism (stroke/SE), and major bleeding assessed by win ratio. After inverse probability weighting, persistent AF and permanent AF were associated with progressively worse hierarchical outcomes compared with paroxysmal AF, with win ratios of 1.39 and 1.59, respectively. Non-paroxysmal AF was associated with a higher risk of stroke compared with paroxysmal AF (HR 1.64; 95% CI 1.07-2.50). The study observed no significant increase in mortality or major bleeding associated with non-paroxysmal AF. Both PDL and DRT occurred more frequently in patients with non-paroxysmal AF. In the subgroup of patients with PDL or DRT, non-paroxysmal AF was associated with an increased risk of first stroke/SE (HR 1.83; 95% CI 1.00-3.34). This elevated risk in the PDL/DRT subgroup was concentrated between 180 and 540 days after the procedure. The authors concluded that AF pattern independently stratifies residual clinical risk after LAAO, primarily driven by thromboembolism.",
+    "relation_evidence": "Existing literature demonstrates that AF pattern influences thromboembolic risk during oral anticoagulation, but its prognostic role after percutaneous LAAO has been less defined. This registry study provides comparative observational data showing that residual thromboembolic risk after LAAO remains higher in non-paroxysmal AF relative to paroxysmal AF.",
+    "relation_guidelines": "Current ESC AF guidelines outline indications for LAAO and post-procedure surveillance without differentiating surveillance intervals or procedural indications by AF temporal pattern. These findings describe post-implantation risk stratification across AF patterns without directly altering established guideline frameworks.",
+    "authors_conclusion": "The authors conclude that AF pattern independently stratified residual clinical risk after LAAO, with progressively worse severity-weighted outcomes from paroxysmal to persistent and permanent AF driven primarily by thromboembolism. They note that the risk in the PDL/DRT subgroup was concentrated 180-540 days after LAAO, suggesting these patients may benefit from prolonged thromboembolic surveillance.",
+    "key_numbers": {
+      "design": "Contemporary multicenter registry",
+      "n": "3459",
+      "followup": "2 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Hierarchical composite (persistent vs paroxysmal AF)",
+          "value": "Win ratio 1.39"
+        },
+        {
+          "label": "Hierarchical composite (permanent vs paroxysmal AF)",
+          "value": "Win ratio 1.59"
+        },
+        {
+          "label": "Stroke risk in non-paroxysmal vs paroxysmal AF",
+          "value": "HR 1.64 (95% CI 1.07-2.50)"
+        },
+        {
+          "label": "First stroke/SE in PDL/DRT subgroup (non-paroxysmal AF)",
+          "value": "HR 1.83 (95% CI 1.00-3.34)"
+        },
+        {
+          "label": "Timing of concentrated stroke/SE risk in PDL/DRT subgroup",
+          "value": "180-540 days after LAAO"
+        }
+      ]
+    }
+  },
+  "42895015": {
+    "summary": "",
+    "relation_evidence": "",
+    "relation_guidelines": "",
+    "authors_conclusion": "",
+    "key_numbers": {}
+  },
+  "42913972": {
+    "summary": "Ventricular arrhythmias often complicate acute coronary syndromes. The prognostic impact of the timing of ventricular arrhythmias relative to percutaneous coronary intervention has remained unclear. The authors conducted a systematic review and network meta-analysis of observational studies to evaluate this relationship. The analyzed population consisted of acute coronary syndrome patients undergoing percutaneous coronary intervention with or without ventricular arrhythmias, defined as sustained or hemodynamically unstable ventricular tachycardia or ventricular fibrillation. Endpoints evaluated in the analysis were short-term mortality, defined as 30-day or in-hospital death, and long-term mortality at one year. A network meta-analysis compared ventricular arrhythmias occurring before, during, and after percutaneous coronary intervention, using patients without ventricular arrhythmias as the reference group. The analysis synthesized data across 12 observational studies comprising 49,963 patients. A total of 3,475 patients (7.0%) experienced ventricular arrhythmias across the included cohorts. Ventricular arrhythmias were associated with increased short-term mortality (OR 5.04, 95% CI 3.78-6.72). Ventricular arrhythmias were also associated with increased long-term mortality (OR 2.92, 95% CI 2.20-3.86). Among patients who survived to discharge or 30 days, subsequent long-term mortality risk did not significantly differ between patients with and without ventricular arrhythmias (OR 0.97, 95% CI 0.62-1.52). The network meta-analysis indicated that all timing categories of ventricular arrhythmias were associated with a significantly higher mortality risk compared with no ventricular arrhythmias. Sensitivity analysis showed that ventricular arrhythmias occurring after percutaneous coronary intervention were associated with higher short-term mortality than earlier ventricular arrhythmias (OR 3.37, 95% CI 1.46-7.82). The authors conclude that ventricular arrhythmias substantially increase death risk in acute coronary syndromes undergoing percutaneous coronary intervention, with post-procedural arrhythmias carrying the highest risk.",
+    "relation_evidence": "Ventricular arrhythmias occurring during acute coronary syndromes have historically been associated with adverse short-term outcomes. This meta-analysis adds granular evidence regarding the prognostic significance of the timing of these arrhythmias relative to revascularization, identifying post-PCI arrhythmias as having the highest short-term mortality.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that ventricular arrhythmias substantially increase the risk of death in patients with acute coronary syndromes undergoing percutaneous coronary intervention, with mortality risk linked to the timing of arrhythmia occurrence and post-PCI arrhythmias conferring the highest risk.",
+    "key_numbers": {
+      "design": "Systematic review and network meta-analysis of observational studies",
+      "n": "49963",
+      "followup": "1 year",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Ventricular arrhythmia occurrence",
+          "value": "7.0% (3,475/49,963)"
+        },
+        {
+          "label": "Short-term mortality with VA vs no VA",
+          "value": "OR 5.04 (95% CI 3.78-6.72)"
+        },
+        {
+          "label": "Long-term mortality with VA vs no VA",
+          "value": "OR 2.92 (95% CI 2.20-3.86)"
+        },
+        {
+          "label": "Long-term mortality in discharge/30-day survivors with VA vs no VA",
+          "value": "OR 0.97 (95% CI 0.62-1.52)"
+        },
+        {
+          "label": "Short-term mortality for VA-after PCI vs earlier VA",
+          "value": "OR 3.37 (95% CI 1.46-7.82)"
+        }
+      ]
+    }
+  },
+  "42912400": {
+    "summary": "Coronary artery calcium (CAC) scoring is an established tool for assessing cardiovascular risk, but its long-term prognostic significance in young adults remains unclear. This cohort study evaluated the long-term risk of all-cause, cardiovascular disease (CVD), and coronary heart disease (CHD) mortality associated with premature advanced subclinical atherosclerosis. The investigators analyzed the CAC Consortium dataset, consisting of retrospectively assembled data from four United States centers including individuals referred for clinically indicated CAC scans. The study population comprised 12,847 adults aged 30 to 45 years who were followed for a median duration of 22.6 years. The mean (SD) age of the cohort was 40.5 (3.6) years, and 9922 participants (77.2%) were male. At baseline, 9262 individuals (72.1%) had a CAC score of 0, 1626 (12.7%) had a CAC score between 75% and 90%, and 1703 (13.3%) had a CAC score greater than 90%. Over the follow-up period, 624 total deaths were documented, including 149 CVD deaths and 81 CHD deaths. In multivariable models adjusting for age, sex, and traditional atherosclerotic CVD risk factors, a CAC score greater than 90% compared with a CAC score of 0 was associated with an adjusted hazard ratio of 1.87 (95% CI, 1.54-2.27) for all-cause mortality. The adjusted hazard ratio for CVD mortality was 2.60 (95% CI, 1.77-3.82) for individuals with a CAC score greater than 90% versus a CAC score of 0. For CHD mortality, the adjusted hazard ratio for a CAC score greater than 90% versus a CAC score of 0 was 3.71 (95% CI, 2.24-6.16). Modeled 30-year cumulative incidence demonstrated an all-cause mortality risk of 12.9% in the CAC score greater than 90% group compared with 7.5% in the CAC score 0 group. The modeled 30-year CVD mortality risk was 4.5% versus 1.5%, and CHD mortality risk was 3.0% versus 0.6% for participants with a CAC score greater than 90% compared to those with a CAC score of 0. Specific adverse events and study limitations were not described in the abstract. The authors concluded that young adults with a CAC score greater than 90% have a significantly higher long-term risk of all-cause, CVD, and CHD mortality.",
+    "relation_evidence": "Coronary artery calcium scoring is well recognized for cardiovascular risk stratification in middle-aged and older populations, but evidence tracking long-term outcomes over multiple decades in young adults has historically been limited.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that young adults with a CAC score greater than 90% face significantly higher long-term risk of all-cause, CVD, and CHD mortality, suggesting potential implications for guiding the intensification of preventive intervention in this high-risk phenotype.",
+    "key_numbers": {
+      "design": "Retrospective cohort study",
+      "n": "12847",
+      "followup": "median 22.6 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "All-cause mortality aHR (CAC >90% vs CAC 0)",
+          "value": "1.87 (95% CI, 1.54-2.27)"
+        },
+        {
+          "label": "CVD mortality aHR (CAC >90% vs CAC 0)",
+          "value": "2.60 (95% CI, 1.77-3.82)"
+        },
+        {
+          "label": "CHD mortality aHR (CAC >90% vs CAC 0)",
+          "value": "3.71 (95% CI, 2.24-6.16)"
+        },
+        {
+          "label": "30-year modeled all-cause mortality (CAC >90% vs CAC 0)",
+          "value": "12.9% vs 7.5%"
+        },
+        {
+          "label": "30-year modeled CVD mortality (CAC >90% vs CAC 0)",
+          "value": "4.5% vs 1.5%"
+        },
+        {
+          "label": "30-year modeled CHD mortality (CAC >90% vs CAC 0)",
+          "value": "3.0% vs 0.6%"
+        }
+      ]
+    }
+  },
+  "42924847": {
+    "summary": "Lipoprotein(a) [Lp(a)] is an established risk factor for atherosclerotic cardiovascular disease (ASCVD), but its prognostic relevance across the cardiovascular-kidney-metabolic (CKM) continuum remains uncertain. The investigators evaluated whether Lp(a) was associated with incident ASCVD across CKM stages and whether it provided risk stratification beyond CKM staging alone. The study cohort comprised 333,321 UK Biobank participants free of clinical cardiovascular disease at baseline. Participants were categorized into CKM stages 0 through 3. Elevated Lp(a) was pre-specified as a concentration of 125 nmol/L or higher. The primary outcome was incident ASCVD, defined as coronary artery disease or ischemic stroke. Cox proportional hazards regression models were used to calculate hazard ratios, and 10-year absolute risks were estimated via Kaplan-Meier methods. Over a median follow-up of 15.3 years, 17,581 incident ASCVD events were recorded. After multivariable adjustment for demographic characteristics, socioeconomic factors, lifestyle factors, low-density lipoprotein cholesterol, medications, and CKM stage, elevated Lp(a) was associated with higher ASCVD risk (hazard ratio, 1.31 [95% CI, 1.25-1.36]). In joint analyses, ASCVD risk increased progressively across combined CKM-Lp(a) categories. The highest risk was identified in individuals with CKM stage 3 and elevated Lp(a) compared with those having CKM stage 0 and lower Lp(a) (hazard ratio, 3.43 [95% CI, 2.74-4.31]). Ten-year absolute ASCVD risk spanned from 0.64% to 16.30% across the cohorts. The absolute risk difference associated with elevated Lp(a) increased from 0.23% in stage 0 to 2.20% in stage 3. The authors concluded that elevated Lp(a) was associated with higher incident ASCVD risk across the CKM continuum, with absolute risk increments being greater at more advanced CKM stages.",
+    "relation_evidence": "Lp(a) is recognized as an independent, genetically determined risk factor for atherosclerotic cardiovascular disease in the general population. This study examines how Lp(a) relates to ASCVD risk when evaluated across newly proposed cardiovascular-kidney-metabolic staging definitions.",
+    "relation_guidelines": "No clear guideline link can be derived.",
+    "authors_conclusion": "The authors conclude that elevated Lp(a) was associated with higher incident ASCVD risk across the CKM continuum. They report that although relative associations were broadly consistent across CKM stages, absolute risk increments associated with elevated Lp(a) were greater at more advanced CKM stages, which they describe as lending support to integrating Lp(a) into CKM-based risk stratification for primary prevention.",
+    "key_numbers": {
+      "design": "Prospective cohort study",
+      "n": "333321",
+      "followup": "15.3 years",
+      "primary_endpoint": null,
+      "secondary": [],
+      "key_findings": [
+        {
+          "label": "Incident ASCVD events",
+          "value": "17 581"
+        },
+        {
+          "label": "Adjusted HR for elevated Lp(a) (≥125 nmol/L)",
+          "value": "1.31 (95% CI, 1.25-1.36)"
+        },
+        {
+          "label": "HR for CKM stage 3 and elevated Lp(a) vs stage 0 and lower Lp(a)",
+          "value": "3.43 (95% CI, 2.74-4.31)"
+        },
+        {
+          "label": "10-year ASCVD risk range",
+          "value": "0.64% to 16.30%"
+        },
+        {
+          "label": "Absolute risk difference with elevated Lp(a) across stages",
+          "value": "0.23% in stage 0 to 2.20% in stage 3"
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,56 @@
+{
+  "42949742": {
+    "title": "Left Bundle-Branch Area Pacing vs Right Ventricular Pacing for Atrioventricular Block and Preserved Left Ventricular Function: The LEAP-Block Randomized Clinical Trial.",
+    "topic": "Other",
+    "diagnostics": {
+      "topic": "Other",
+      "topics_all": [
+        "Other"
+      ],
+      "topic_was_set": false,
+      "topic_guessed": false,
+      "guideline_words": 36,
+      "n_landmarks": 0,
+      "n_consensus": 0,
+      "context_words": 36,
+      "cached": true
+    },
+    "context_sent_to_model": "## TIER 1 - CURRENT GUIDELINES\nFull text not available; only these documents are known to apply:\n- 2025 ESC/EACTS Guidelines for the management of valvular heart disease\n\n## NOTE ON THIS TOPIC\nNo entries yet."
+  },
+  "42956796": {
+    "title": "Performance of 0/1 h versus 0/3 h pathways in patients with suspected myocardial infarction: a systematic review and individual participant data meta-analysis of randomised controlled trials.",
+    "topic": "Other",
+    "diagnostics": {
+      "topic": "Other",
+      "topics_all": [
+        "Other"
+      ],
+      "topic_was_set": false,
+      "topic_guessed": false,
+      "guideline_words": 36,
+      "n_landmarks": 0,
+      "n_consensus": 0,
+      "context_words": 36,
+      "cached": true
+    },
+    "context_sent_to_model": "## TIER 1 - CURRENT GUIDELINES\nFull text not available; only these documents are known to apply:\n- 2025 ESC/EACTS Guidelines for the management of valvular heart disease\n\n## NOTE ON THIS TOPIC\nNo entries yet."
+  },
+  "42953942": {
+    "title": "Clopidogrel Versus Aspirin Monotherapy According to Atherothrombotic Risk Profile.",
+    "topic": "Other",
+    "diagnostics": {
+      "topic": "Other",
+      "topics_all": [
+        "Other"
+      ],
+      "topic_was_set": false,
+      "topic_guessed": false,
+      "guideline_words": 36,
+      "n_landmarks": 0,
+      "n_consensus": 0,
+      "context_words": 36,
+      "cached": true
+    },
+    "context_sent_to_model": "## TIER 1 - CURRENT GUIDELINES\nFull text not available; only these documents are known to apply:\n- 2025 ESC/EACTS Guidelines for the management of valvular heart disease\n\n## NOTE ON THIS TOPIC\nNo entries yet."
+  }
+}

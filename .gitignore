@@ -3,3 +3,7 @@ __pycache__/
 *.log
 .env
 *.md
+config/*.cfg
+specialties/cardiology_digest/output/*.*
+specialties/cardiology_digest/output/*/*.*
+test_state/*.*

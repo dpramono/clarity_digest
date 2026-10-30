@@ -1,0 +1,1628 @@
+[
+ {
+  "pmid": "42958937",
+  "title": "Obesity and Atrial Fibrillation: Integrating Lifestyle, Pharmacotherapy and Ablation.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Ha F.",
+   "Kotschet E.",
+   "Nerlekar N."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag307",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42958937/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [
+    "Prevention, Lipids & Sports Cardiology"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a narrative or state-of-the-art review of how weight management, drugs and ablation fit together for obesity-associated AF, which is clinically relevant but unlikely to change practice on its own.",
+   "bottom_line": "No abstract is available, so the content cannot be verified; treat this as a review of established concepts unless the full text shows new randomised or large registry data. Keep current AF management, including ablation, guided by existing guidelines.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42958650",
+  "title": "Postoperative Vocal fold mobility impairment after thoracic aortic surgery: A systematic review and meta-analysis of incidence, anatomy, and ascertainment.",
+  "journal": "Interdiscip Cardiovasc Thorac Surg",
+  "journal_full": "Interdisciplinary cardiovascular and thoracic surgery",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Farooq O.",
+   "Jamileh E.",
+   "Muhammad F.",
+   "Nawaz A.",
+   "Abbas Z.",
+   "Layton G.",
+   "Zakkar M.",
+   "Antoun I."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "OBJECTIVES: Postoperative vocal fold mobility impairment (VFMI) after thoracic aortic surgery is reported inconsistently because operative anatomy, outcome definitions and postoperative ascertainment vary substantially. We evaluated variation in observed VFMI, its relationship with anatomical exposure and ascertainment, and its reported clinical consequences.\nMETHODS: PubMed, Embase and MEDLINE (Ovid) were searched from inception to July 2026 for adult studies reporting VFMI after open or hybrid thoracic aortic surgery. Random-effects meta-analysis was restricted to symptom-triggered, instrumentally confirmed cohorts undergoing direct open thoracic-aortic reconstruction. Risk of bias was assessed using QUIPS and JBI guidance, and certainty using GRADE.\nRESULTS: Thirty-nine observational studies were included. Eleven symptom-triggered, instrumentally confirmed cohorts (2,082 patients; 263 events) contributed to the primary synthesis. Pooled observed VFMI was 14.9% (95% CI 9.4-21.5%), but heterogeneity was substantial (I² 92.7%, 95% CI 89.7-94.6%) and the 95% prediction interval was 0.3-43.3%. Study-level incidence ranged from 4.0% to 38.8%. Greater anatomical extent, particularly distal arch or descending exposure, was consistently associated with higher observed VFMI, whereas specific left-subclavian-proximate estimates were based on limited observational evidence. VFMI was also associated with pulmonary morbidity, airway intervention and prolonged hospitalisation.\nCONCLUSION: A single pooled incidence does not adequately describe postoperative VFMI after thoracic aortic surgery. Observed risk varies markedly with anatomical exposure and ascertainment strategy. The evidence supports targeted postoperative laryngeal assessment in symptomatic patients and highlights the need to evaluate routine screening in selected high-risk distal arch and descending procedures.",
+  "doi": "10.1093/icvts/ivag291",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42958650/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Other",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "It shows that the pooled incidence of vocal fold mobility impairment after thoracic aortic surgery is highly heterogeneous and depends on anatomical extent and how it is ascertained, so a single rate is misleading.",
+   "bottom_line": "Symptomatic patients after open thoracic aortic repair warrant targeted laryngeal assessment, and routine screening should be considered only for high-risk distal arch and descending procedures. Because the included studies are observational and the evidence is heterogeneous, this is a hypothesis-generating signal rather than a basis for routine screening.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": null,
+  "_filled": false,
+  "_status": "outside_focus",
+  "_reason": "Other"
+ },
+ {
+  "pmid": "42958636",
+  "title": "Does thrombocytopenia predict short-term mortality after transcatheter and surgical aortic valve replacement?",
+  "journal": "Interdiscip Cardiovasc Thorac Surg",
+  "journal_full": "Interdisciplinary cardiovascular and thoracic surgery",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Taban V.",
+   "Güner A.",
+   "Alsancak Y.",
+   "Dereli Y.",
+   "Görmüş N."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "OBJECTIVE: Postprocedural thrombocytopenia is frequently observed after transcatheter aortic valve implantation (TAVI) and surgical aortic valve replacement (sAVR), but its independent prognostic value remains unclear. We investigated whether platelet reduction after TAVI and sAVR independently predicts short-term mortality beyond baseline procedural risk.\nMETHODS: This retrospective single-center study included 216 patients who underwent aortic valve replacement between 2015 and 2020. Sixty-seven patients underwent TAVI and 149 underwent sAVR. Mechanical valve recipients were retained in the overall cohort but excluded from the primary TAVI-sAVR comparison. Propensity score overlap weighting was used to reduce baseline differences between groups. Longitudinal changes in platelet count (PLT), neutrophil-to-lymphocyte ratio (NLR), and platelet-to-lymphocyte ratio (PLR) were evaluated using generalized estimating equation models, and factors associated with 90-day mortality were assessed using Firth penalized logistic regression.\nRESULTS: The primary comparative cohort included 67 TAVI and 93 sAVR patients. After overlap weighting, adequate balance was achieved for all measured baseline covariates. Significant treatment × time interactions were observed for PLT (p = 0.001), NLR (p < 0.001), and PLR (p = 0.002). On postprocedural day 3, moderate thrombocytopenia was more frequent after sAVR than TAVI (33.5% vs. 8.3%), whereas normal platelet levels were more frequent after TAVI (45.6% vs. 8.2%; overall p < 0.001). Weighted 90-day mortality did not differ significantly between TAVI and sAVR (12.6% vs. 17.5%, p = 0.487). In Firth regression models, only EuroSCORE II remained independently associated with 90-day mortality.\nCONCLUSION: Postprocedural platelet and inflammatory responses showed different temporal patterns after TAVI and sAVR. However, these biomarker changes were not independently associated with 90-day mortality after adjustment, whereas EuroSCORE II remained independently associated with mortality. Serial hematological changes should therefore be interpreted together with baseline clinical risk rather than as isolated prognostic markers.",
+  "doi": "10.1093/icvts/ivag295",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42958636/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "TAVR - intermediate/high risk",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "A single-center retrospective study of 216 patients (67 TAVI, 93 sAVR after weighting) finds that platelet and inflammatory-marker trajectories differ by procedure, but these changes do not independently predict 90-day mortality once baseline risk is accounted for.",
+   "bottom_line": "Post-procedural thrombocytopenia and NLR/PLR changes after TAVI or sAVR do not add independent prognostic value beyond EuroSCORE II, so baseline clinical risk should remain the main guide. Given the retrospective design, small sample and wide confidence intervals, this is hypothesis-generating only.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 3 < 6"
+ },
+ {
+  "pmid": "42957488",
+  "title": "Beyond calcium modification: Comparative evidence and disparities in access to intravascular lithotripsy, rotational atherectomy, and orbital atherectomy.",
+  "journal": "Cardiovasc Revasc Med",
+  "journal_full": "Cardiovascular revascularization medicine : including molecular interventions",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Hart T.",
+   "Bourdeau N.",
+   "Haik B.",
+   "Turner W.",
+   "Horne A."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "abstract": "Severely calcified coronary artery disease complicates percutaneous coronary intervention (PCI) by limiting lesion compliance, balloon expansion, stent delivery, and optimal stent deployment. This review compares intravascular lithotripsy (IVL), rotational atherectomy (RA), and orbital atherectomy (OA), focusing on their mechanisms, procedural characteristics, comparative evidence, and disparities in access. RA uses a high-speed diamond-coated burr to ablate calcified plaque, whereas OA uses an eccentrically mounted diamond-coated crown to modify calcium through orbital motion. IVL delivers acoustic pressure waves that fracture superficial and deep calcium without mechanically removing plaque. Recent randomized trials, including ROTA.shock, DIRO, and the three-arm ROLLER COASTR-EPIC22 trial (RA, IVL, and excimer laser coronary angioplasty [ELCA]), suggest that IVL achieves stent expansion comparable to RA in balloon-crossable lesions, while RA produced greater stent expansion than OA in one small trial, without established clinical superiority. However, available comparative studies remain limited by small sample sizes and reliance on imaging-based rather than clinical endpoints. Beyond procedural efficacy, contemporary U.S. data indicate disparities in the use of atherectomy and IVL associated with socioeconomic status, race, sex, insurance status, income, and geographic region. These disparities suggest that access to advanced calcium-modification technologies remains inequitable among patients with potentially treatable disease. Expanding equitable access will require improved reimbursement, referral pathways, regionalization of complex PCI, and broader availability of advanced devices at hospitals serving underserved populations. Future research should integrate comparative clinical outcomes with evaluation of the health-system and socioeconomic factors influencing technology access.",
+  "doi": "10.1016/j.carrev.2026.10.017",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42957488/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [
+    "Coronary Artery Disease / ACS"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This narrative review summarises the limited comparative evidence for IVL, rotational atherectomy and orbital atherectomy in severely calcified PCI and documents socioeconomic and geographic disparities in access to these devices.",
+   "bottom_line": "In balloon-crossable calcified lesions, IVL achieves stent expansion comparable to rotational atherectomy, and rotational atherectomy gave greater expansion than orbital atherectomy in one small trial. No device has established clinical superiority, and the evidence rests on small, largely imaging-based studies, so device choice should remain lesion- and operator-driven.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42957053",
+  "title": "The Right Ventricle in Focus: State-of-the-Art CMR Imaging - Challenges, Standards, and Innovations.",
+  "journal": "J Cardiovasc Magn Reson",
+  "journal_full": "Journal of cardiovascular magnetic resonance : official journal of the Society for Cardiovascular Magnetic Resonance",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Gunasekaran S.",
+   "Thornton G.",
+   "Kwan A.",
+   "Li H.",
+   "Roujol S.",
+   "Greil F.",
+   "Velthuis B.",
+   "Bluemke D."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "abstract": "The right ventricle (RV) is recognized as a critical contributor to cardiovascular outcomes. Cardiovascular magnetic resonance (CMR) has emerged as the reference standard for comprehensive RV assessment, enabling precise evaluation of ventricular volumes, function, flow, and tissue characterization. In this review, we provide a state-of-the-art overview of RV imaging using CMR. We first outline the anatomical and physiological features that distinguish the RV from the left ventricle. Next, we highlight the key technical challenges in imaging the RV, notably its complex geometry, prominent trabeculation, and thin myocardial wall. We then summarize current clinical CMR approaches, including cine imaging for volumetric assessment, phase-contrast techniques for flow quantification, and methods for tissue characterization such as late gadolinium enhancement. Additionally, we discuss advanced and emerging CMR techniques aimed at overcoming current RV imaging limitations, including high-resolution three-dimensional cine imaging, four-dimensional flow imaging, parametric mapping, and novel reconstruction strategies. These innovations hold promise for improving accuracy, reproducibility, and mechanistic insight into RV structure and function. Finally, we review the clinical role of CMR in major RV pathologies, including congenital heart disease, pulmonary hypertension, arrhythmogenic right ventricular cardiomyopathy, and tricuspid regurgitation. Across these conditions, CMR provides vital diagnostic and prognostic information, with growing evidence supporting its role in guiding clinical management. As technical advancements continue and standardization improves, CMR is poised to transform RV evaluation from a historically challenging endeavor into a precise and impactful component of cardiovascular care.",
+  "doi": "10.1016/j.jocmr.2026.102822",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42957053/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Cardiac Imaging",
+   "secondary_subgroups": [
+    "Heart Failure / Cardiomyopathies"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This state-of-the-art review summarises CMR techniques for right ventricular assessment and their emerging applications across major RV pathologies, offering a useful reference rather than new evidence.",
+   "bottom_line": "CMR remains the reference modality for RV volumes, function and flow, but the cited innovations (3D cine, 4D flow, mapping) are still largely emerging and not yet established as standard practice. Clinicians should use this review as a conceptual overview, not as a basis for changing RV assessment protocols.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Cardiac Imaging",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 4 < 6"
+ },
+ {
+  "pmid": "42956946",
+  "title": "Early Cardiac Dysfunction in Pediatric Becker Muscular Dystrophy: A Prospective Cross-sectional Echocardiographic Study.",
+  "journal": "J Am Soc Echocardiogr",
+  "journal_full": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Liu J.",
+   "Shao S.",
+   "Cai X.",
+   "Zhang L.",
+   "Cui Y.",
+   "Zhou K.",
+   "Hua Y.",
+   "Wang C."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Becker muscular dystrophy (BMD) is an X-linked disorder characterized by progressive muscle weakness and cardiac involvement, with cardiomyopathy being the leading cause of mortality. While cardiac dysfunction in adult BMD patients is well documented, the early cardiac phenotype in pediatric populations remains poorly understood. This prospective cross-sectional study aimed to characterize age-stratified differences in cardiac function among children with BMD, children with Duchenne muscular dystrophy (DMD), and healthy controls.\nMETHODS: This prospective cross-sectional study included male children aged 3-18 years who were enrolled from June 2020 to December 2023 and met strict inclusion criteria: genetically confirmed BMD or DMD diagnosis, no prior cardiac medications, and absence of comorbid conditions affecting cardiac function. Participants were stratified into three age-matched groups: 3 to under 7 years (youngest group), 7 to under 10 years (middle group), and 10 to under 18 years (oldest group), with comparable mean ages across BMD, DMD, and healthy controls within each age stratum. Comprehensive echocardiographic assessments were performed, including conventional parameters, tissue Doppler imaging, and speckle-tracking echocardiography. Statistical comparisons were made between groups within each age range.\nRESULT: The study comprised 86 BMD patients, 86 DMD patients, and 74 controls across three age groups. After normality testing and Bonferroni-corrected post hoc comparisons, BMD patients showed early left ventricular involvement, including lower LVEF (60.54±8.09% vs 65.56±3.04%, p<0.01) and GLS (18.06±2.10 vs 20.66±1.42, p<0.01) than healthy controls from the Younger group onward. Right ventricular enlargement (RV GLS 22.99±3.26 vs 25.58±2.37, p<0.01) and reduced FAC (40.35±6.01% vs 47.8±17.08%, p<0.01) were also evident in BMD, with age-dependent RV strain abnormalities. Compared with DMD, BMD showed larger LVEDV across age groups and relatively preserved GCS, whereas GLS abnormalities (18.06±2.10 vs 20.66±1.42, p<0.01) were still present compared with healthy controls. Left atrial reservoir/conduit indices were better preserved in BMD than DMD in the Older group. In a short-term longitudinal subsample (16 BMD and 19 DMD patients; mean follow-up ∼0.9 years), BMD patients showed a modest decline in LVEF (annualized change 2.01%/year, P = 0.050), while LV-GLS remained stable in both groups.\nCONCLUSION: Pediatric BMD patients exhibit subclinical, age-associated cardiac dysfunction detectable across pediatric age groups. Because abnormalities in LVEF, LV GLS, RV FAC, and RV GLS were already present in the youngest group, the findings support early and regular cardiac surveillance incorporating advanced echocardiographic techniques from preschool age. Longitudinal studies are needed to determine whether these subclinical differences predict clinically overt cardiomyopathy or treatment response.",
+  "doi": "10.1016/j.echo.2026.10.003",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956946/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "It characterises subclinical echocardiographic dysfunction (LVEF, LV/RV strain, RV FAC) in boys with Becker muscular dystrophy from age 3, which is relevant to surveillance planning in a rare neuromuscular cardiomyopathy.",
+   "bottom_line": "This single-cohort cross-sectional study suggests that LV and RV strain and LVEF abnormalities in pediatric BMD appear early, but its 0.9-year longitudinal subsample is small and the LVEF decline is borderline (P = 0.050). Use it to inform hypotheses about earlier echo surveillance, not to change current practice until prospective outcome data show these findings predict clinical cardiomyopathy.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 4 < 6"
+ },
+ {
+  "pmid": "42956818",
+  "title": "DPP3-positive circulatory shock: from targetable ICU endotype to Horizon Europe precision-therapy trial.",
+  "journal": "Eur J Heart Fail",
+  "journal_full": "European journal of heart failure",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Karakas M.",
+   "Ziolkowska K.",
+   "Kovalenko O.",
+   "Zemskov S.",
+   "Blagaia A.",
+   "Zeller T.",
+   "Boos A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/ejhf/xuag328",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956818/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a translational or perspective piece on DPP3 as a biomarker-defined endotype of circulatory shock leading to a planned trial, but with no abstract and no design word it could also be an early original study, so it is hard to judge its evidence.",
+   "bottom_line": "No clinical change is warranted yet; DPP3-guided therapy is still at the hypothesis and trial-planning stage, so await the Horizon Europe trial results before altering shock management.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42956796",
+  "title": "Performance of 0/1 h versus 0/3 h pathways in patients with suspected myocardial infarction: a systematic review and individual participant data meta-analysis of randomised controlled trials.",
+  "journal": "Lancet",
+  "journal_full": "Lancet (London, England)",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Boeddinghaus J.",
+   "Kunz M.",
+   "Lopez-Ayala P.",
+   "Khand A.",
+   "Inoue K.",
+   "Hatherley J.",
+   "Miller J.",
+   "Lambrakis K.",
+   "Emakhu J.",
+   "Cook B.",
+   "Collinson P.",
+   "Papendick C.",
+   "Kasim S.",
+   "Salleh F.",
+   "Wiencierz A.",
+   "Bima P.",
+   "Crisanti L.",
+   "Koechlin L.",
+   "Christ M.",
+   "Miró Ò.",
+   "Morello F.",
+   "Nazerian P.",
+   "Abubakr M.",
+   "Roth D.",
+   "Mahfoud F.",
+   "Riley R.",
+   "McCord J.",
+   "Chew D.",
+   "Mueller C."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: In patients with suspected myocardial infarction, the 0/1 h pathway (blood draws at 0 h and 1 h) is recommended in current guidelines for early risk stratification. However, individual trials used different safety outcomes, and efficacy outcomes were inconclusive or not assessed. We conducted a systematic review and individual participant data meta-analysis of all randomised controlled trials to synthesise the totality of the evidence, assess heterogeneity across trials, and evaluate clinically relevant outcomes using harmonised definitions across trials.\nMETHODS: In this systematic review and individual participant data meta-analysis, we searched PubMed, Cochrane Central Register of Controlled Trials, Scopus, and the International Clinical Trials Registry Platform from inception to July 6, 2026, without language restrictions, for randomised trials comparing the safety and efficacy of 0/1 h versus 0/3 h pathways (blood draws at 0 h and 3 h, ie, standard care). Individual participant data were obtained and outcome definitions were harmonised. The primary analysis used a two-stage random-effects meta-analysis. After receipt of the individual participant data but before data harmonisation or analysis, the primary safety outcome was refined to a composite of all-cause death or new type 1 myocardial infarction within 30 days, from the originally specified composite of all-cause death or any new myocardial infarction. The primary efficacy outcomes were emergency department length of stay and direct discharge from the emergency department. This meta-analysis is registered with PROSPERO (CRD420261383452).\nFINDINGS: Our systematic review identified five randomised trials, all of which provided individual participant data. Among these, the definition of the primary safety outcome varied, and in four trials emergency department length of stay was not reported for the whole analysis population. We included 110 933 patient presentations (55 489 managed with the 0/1 h pathway and 55 444 managed with the 0/3 h pathway). Within 30 days, all-cause death or new type 1 myocardial infarction occurred in 446 patient presentations (0·8%) with the 0/1 h pathway versus 562 patient presentations (1·0%) with the 0/3 h pathway (random-effects pooled odds ratio [OR] 0·83 [95% CI 0·45-1·53]; I2=62·9%; τ2=0·143). Emergency department length of stay was 314 min (IQR 211-481) in the 0/1 h pathway group versus 308 min (209-453) in the 0/3 h pathway group (random-effects pooled geometric mean ratio 1·03 [95% CI 0·85-1·25]; I2=99·2%; τ2=0·024). Direct discharge from the emergency department occurred in 37 190 patient presentations (67·0%) with the 0/1 h pathway versus 36 485 patient presentations (65·8%) with the 0/3 h pathway (random-effects pooled OR 1·31 [95% CI 0·79-2·16]; I2=97·8%; τ2=0·156).\nINTERPRETATION: Across the available randomised trials, short-term adverse event rates were low with both pathways, but the pooled safety estimate remained imprecise. On average, earlier cardiac troponin retesting did not reduce emergency department length of stay or clearly increase direct discharge, and substantial between-study heterogeneity indicates that treatment effects might not translate uniformly across health-care systems. For hospitals considering transitioning from a 0/3 h to a 0/1 h pathway, implementation decisions should take broader diagnostic and organisational considerations into account.\nFUNDING: Swiss National Science Foundation, Swiss Heart Foundation, University Hospital Basel, University of Basel, and Foundation for Cardiovascular Research Basel.",
+  "doi": "10.1016/S0140-6736(26)01767-8",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956796/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 7,
+   "practice_changing": false,
+   "why_it_matters": "This individual participant data meta-analysis of five RCTs tests whether the guideline-endorsed 0/1 h troponin pathway for suspected myocardial infarction improves emergency department efficiency without compromising safety, which is central to how EDs implement rapid rule-out.",
+   "bottom_line": "The 0/1 h pathway did not significantly shorten emergency department length of stay or clearly increase direct discharge, and its 30-day safety estimate (OR 0.83, 95% CI 0.45-1.53) is too imprecise to show it is safe or unsafe. Implementation should weigh local diagnostic and organisational factors, since heterogeneity was high and the safety outcome was redefined after the individual participant data were received.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "selected",
+  "_reason": "",
+  "sources": [
+   {
+    "journal": "Lancet",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42956796/"
+   }
+  ],
+  "summary": {
+   "short": "This individual participant data meta-analysis of five randomised trials (110 933 patient presentations) compared 0/1 h and 0/3 h pathways in suspected myocardial infarction. All-cause death or new type 1 MI within 30 days occurred in 0·8% versus 1·0% (pooled OR 0·83, 95% CI 0·45-1·53). The authors conclude the pooled safety estimate remained imprecise.",
+   "headline": "0/1 h vs 0/3 h pathway: 30-day death or new type 1 MI 0·8% vs 1·0%, pooled OR 0·83 (95% CI 0·45-1·53)",
+   "design_tag": "IPD meta-analysis of 5 RCTs · 110 933 patient presentations",
+   "why_it_matters": "This systematic review and individual participant data meta-analysis pooled all randomised trials comparing the 0/1 h pathway with the 0/3 h pathway (standard care) in patients with suspected myocardial infarction, using harmonised outcome definitions. According to the background, the 0/1 h pathway is recommended in current guidelines, but individual trials used different safety outcomes and efficacy outcomes were inconclusive or not assessed.",
+   "key_finding": "Five randomised trials, all providing individual participant data, were included, comprising 110 933 patient presentations (55 489 with the 0/1 h pathway and 55 444 with the 0/3 h pathway). All-cause death or new type 1 myocardial infarction within 30 days occurred in 446 (0·8%) versus 562 (1·0%) patient presentations (pooled OR 0·83 [95% CI 0·45-1·53]; I2=62·9%; τ2=0·143). Emergency department length of stay was 314 min (IQR 211-481) versus 308 min (209-453) (pooled geometric mean ratio 1·03 [95% CI 0·85-1·25]; I2=99·2%). Direct discharge occurred in 67·0% versus 65·8% (pooled OR 1·31 [95% CI 0·79-2·16]; I2=97·8%).",
+   "tiles": [
+    {
+     "value": "0·8% vs. 1·0%",
+     "label": "30-day death/type 1 MI",
+     "context": "pooled OR 0·83, 95% CI 0·45-1·53"
+    },
+    {
+     "value": "314 vs. 308 min",
+     "label": "ED length of stay",
+     "context": "geometric mean ratio 1·03, 95% CI 0·85-1·25"
+    },
+    {
+     "value": "67·0% vs. 65·8%",
+     "label": "Direct ED discharge",
+     "context": "pooled OR 1·31, 95% CI 0·79-2·16"
+    }
+   ],
+   "summary": "In patients with suspected myocardial infarction, the 0/1 h pathway is recommended in current guidelines for early risk stratification, but individual trials used different safety outcomes and efficacy outcomes were inconclusive or not assessed. This systematic review and individual participant data meta-analysis searched PubMed, Cochrane Central Register of Controlled Trials, Scopus, and the International Clinical Trials Registry Platform from inception to July 6, 2026, for randomised trials comparing 0/1 h with 0/3 h pathways. Outcome definitions were harmonised and the primary analysis used a two-stage random-effects meta-analysis. After receipt of the individual participant data but before harmonisation or analysis, the primary safety outcome was refined to all-cause death or new type 1 myocardial infarction within 30 days. The primary efficacy outcomes were emergency department length of stay and direct discharge from the emergency department. Five randomised trials were identified, all providing individual participant data, with 110 933 patient presentations (55 489 with the 0/1 h pathway and 55 444 with the 0/3 h pathway). The primary safety outcome occurred in 446 (0·8%) versus 562 (1·0%) patient presentations (pooled OR 0·83 [95% CI 0·45-1·53]; I2=62·9%; τ2=0·143). Emergency department length of stay was 314 min (IQR 211-481) versus 308 min (209-453), with a pooled geometric mean ratio of 1·03 (95% CI 0·85-1·25; I2=99·2%; τ2=0·024). Direct discharge occurred in 37 190 (67·0%) versus 36 485 (65·8%) patient presentations (pooled OR 1·31 [95% CI 0·79-2·16]; I2=97·8%; τ2=0·156). The definition of the primary safety outcome varied among trials, and in four trials emergency department length of stay was not reported for the whole analysis population. The authors conclude that short-term adverse event rates were low with both pathways but the pooled safety estimate remained imprecise, that earlier troponin retesting on average did not reduce length of stay or clearly increase direct discharge, and that substantial between-study heterogeneity indicates effects might not translate uniformly across health-care systems.",
+   "relation_evidence": "No directly comparable studies were considered for this topic.",
+   "relation_guidelines": "For this topic the guideline 2025 ESC/EACTS Guidelines for the management of valvular heart disease exists; no comparison of content is made in this edition.",
+   "authors_conclusion": "The authors conclude that, across the available randomised trials, short-term adverse event rates were low with both pathways but the pooled safety estimate remained imprecise, and that earlier troponin retesting did not on average reduce emergency department length of stay or clearly increase direct discharge. They state that, for hospitals considering a transition from a 0/3 h to a 0/1 h pathway, broader diagnostic and organisational considerations are relevant to implementation decisions.",
+   "key_numbers": {
+    "design": "IPD meta-analysis of RCTs",
+    "n": "110933",
+    "followup": "30 days",
+    "primary_endpoint": {
+     "name": "All-cause death or new type 1 MI, 30 days",
+     "arm1_label": "0/1 h",
+     "arm1_value": "0·8%",
+     "arm2_label": "0/3 h",
+     "arm2_value": "1·0%",
+     "effect": "Pooled OR 0·83 (95% CI 0·45-1·53); I2=62·9%; τ2=0·143"
+    },
+    "secondary": [
+     {
+      "name": "ED length of stay (median, min)",
+      "arm1": "314",
+      "arm2": "308",
+      "effect": "Geometric mean ratio 1·03 (95% CI 0·85-1·25)"
+     },
+     {
+      "name": "Direct discharge from ED",
+      "arm1": "67·0%",
+      "arm2": "65·8%",
+      "effect": "Pooled OR 1·31 (95% CI 0·79-2·16)"
+     }
+    ],
+    "key_findings": [
+     {
+      "label": "Randomised trials included",
+      "value": "5 (all provided IPD)"
+     },
+     {
+      "label": "Patient presentations 0/1 h vs 0/3 h",
+      "value": "55 489 vs 55 444"
+     },
+     {
+      "label": "Primary safety events 0/1 h vs 0/3 h",
+      "value": "446 vs 562"
+     },
+     {
+      "label": "Heterogeneity, ED length of stay",
+      "value": "I2=99·2%"
+     },
+     {
+      "label": "Heterogeneity, direct discharge",
+      "value": "I2=97·8%"
+     }
+    ]
+   },
+   "qc_notes": "The abstract's Interpretation contains 'implementation decisions should take ... into account'; this was paraphrased and attributed to the authors to comply with Rule 2. The date range (search to July 6, 2026) and publication date are reproduced as given. The primary safety outcome was refined after receipt of IPD but before harmonisation/analysis, as stated in the abstract. The abstract gives no per-trial results or subgroup data. 'n' is the total number of patient presentations, not unique patients.",
+   "_meta": {
+    "lang": "en",
+    "v": "2.3",
+    "model": "claude-sonnet-5-5"
+   },
+   "sources_used": [],
+   "relation_qc_notes": "The only guideline listed is the 2025 ESC/EACTS valvular heart disease guideline (title only, full text not available), which does not concern suspected myocardial infarction or 0/1 h troponin pathways. No consensus papers or trials were listed for this topic ('No entries yet'). The abstract states that current guidelines recommend the 0/1 h pathway, but no guideline text was available to name or verify that statement, so no tension was asserted. Wrong guideline mapping is likely; an ESC guideline on acute coronary syndromes / chronic coronary syndromes would be the relevant source."
+  }
+ },
+ {
+  "pmid": "42956795",
+  "title": "Faster troponin, same time in the emergency department: what is next for acute coronary syndrome assessment?",
+  "journal": "Lancet",
+  "journal_full": "Lancet (London, England)",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Cullen L.",
+   "Greenslade J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/S0140-6736(26)02097-0",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956795/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-style title ('what is next for...?') and the lack of design words suggest a Lancet commentary on a faster-troponin strategy rather than a primary trial, though the underlying ACS-assessment topic is clinically relevant.",
+   "bottom_line": "Treat this as commentary: the underlying evidence for faster troponin pathways should be checked in the primary trial it discusses before any change to ED chest-pain practice. No change to current practice is warranted on the basis of this record alone.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42956774",
+  "title": "A global men's health epidemiology within an intersectional framework.",
+  "journal": "Lancet",
+  "journal_full": "Lancet (London, England)",
+  "pub_date": "2026 Oct 31",
+  "epub_date": "",
+  "authors": [
+   "Catto J.",
+   "Thomson R.",
+   "Griffith D.",
+   "Mavhu W.",
+   "Gu J.",
+   "Misha F.",
+   "Rashid S.",
+   "Fazel S.",
+   "Egid B.",
+   "Barreto M.",
+   "Ngwa W.",
+   "Oliffe J.",
+   "Prabhakaran D.",
+   "Flor L.",
+   "Hawkes S.",
+   "Tolhurst R.",
+   "Theobald S.",
+   "Katikireddi S."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "abstract": "Males have lower life expectancies and greater disability-adjusted life-years (DALYs) than females, and particularly poor outcomes are seen among males in marginalised contexts. In this paper, we provide an epidemiological overview and highlight the intersectional nature of men's health. We analyse mortality and DALYs data from the 1990-2023 Global Burden of Diseases, Injuries, and Risk Factors Studies to illustrate our intersectional framework and draw attention to how health varies in men and to show key themes. Conditions that contribute most to the poor health of males include non-communicable diseases (eg, cardiovascular diseases and cancers), substance use, suicide, injuries (eg, road traffic incidents and interpersonal violence), and respiratory infections (eg, tuberculosis and COVID-19). Although cardiovascular disease and cancer make the largest contributions to men's higher mortality rates, determinants of health such as violence and war, migration, economic stagnation, and labour market changes due to automation and new technologies will disproportionally affect their health in the future. Injuries, violence, and other external morbidity causes often occur at a young age and in unequal distributions across the sexes, making a large contribution to DALYs. Although biology plays a role, the pattern of many diseases contributing to health differences reflects the intersection of health behaviours, shaped by patriarchy, ideas of masculinity, and structural drivers (including commercial determinants of health); many of these are preventable. Although improvements in some health behaviours are seen, exceptions occur in marginalising social conditions (eg, incarcerated men, men experiencing homelessness, men with mental illnesses, men with substance use disorders, men with low income, men who have sex with men, and those who are gender non-conforming). Multiple data sources detail men's shorter life expectancies and the drivers compared with women, but going beyond sex disaggregation remains challenging and is an urgent priority for research and health monitoring.",
+  "doi": "10.1016/S0140-6736(26)01490-X",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956774/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Other",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This Lancet Series-style overview uses GBD 1990-2023 data to describe sex differences in mortality and DALYs across many conditions, with cardiovascular disease only one of several contributors, so it is a public-health framing rather than cardiology evidence.",
+   "bottom_line": "Men's excess mortality from cardiovascular disease and other causes is largely preventable and shaped by behavioural and structural drivers, but this paper does not change cardiology management. It is useful background for prevention advocacy and health-system planning.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": null,
+  "_filled": false,
+  "_status": "outside_focus",
+  "_reason": "Other"
+ },
+ {
+  "pmid": "42955936",
+  "title": "Acquired ventricular septal defect in the setting of a catecholaminergic storm.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Griné M.",
+   "Borges-Rosa J.",
+   "Oliveira-Santos M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag845",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955936/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a rare case report or small case series of an acquired ventricular septal defect after catecholamine excess, a niche complication with limited generalisable practice impact.",
+   "bottom_line": "Clinicians should be aware that catecholamine storm can, rarely, cause an acquired VSD, which should be considered in unexplained shock or new murmur in this setting. Changes to management cannot be confirmed from the title alone, so the full text is needed.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42955049",
+  "title": "Pulmonary Hypertension and Its Association With Cardiac Transplant Outcomes: Does Pulmonary Artery Systolic Pressure Matter?",
+  "journal": "JACC Heart Fail",
+  "journal_full": "JACC. Heart failure",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Airewele E.",
+   "Ali A.",
+   "Cajigas H.",
+   "Ramani M.",
+   "Bryner B.",
+   "Harap R.",
+   "Medina M.",
+   "Pham D.",
+   "Raza Y.",
+   "Tibrewala A.",
+   "Wu T.",
+   "Wilcox J.",
+   "Youmans Q.",
+   "Okwuosa I."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jchf.2026.103480",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955049/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests an observational analysis of pulmonary hypertension and pulmonary artery systolic pressure as predictors of heart transplant outcomes, but with no abstract the design and sample are unverified and the question-style title could also indicate a commentary.",
+   "bottom_line": "Relevant to transplant candidate risk assessment, but without the abstract it is unclear whether PASP adds prognostic value beyond established haemodynamic measures, so a full-text read is needed before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42954950",
+  "title": "Great debate: a dual biomarker strategy improves the triage of patients with suspected acute coronary syndrome.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Giannitsis E.",
+   "Mueller C.",
+   "Huber K.",
+   "Möckel M.",
+   "Schröder M.",
+   "Hamm C.",
+   "Bima P.",
+   "Thiele H.",
+   "Mills N.",
+   "Kaski J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "Suspected myocardial infarction in patients with acute chest pain at rest is one of the most common diagnostic categories leading to emergency hospital admission and emergency department overcrowding worldwide. Efforts are being made to improve the efficiency of currently used triage and diagnostic work-up strategies. Despite major advances in recent years with the use of high-sensitivity cardiac troponin, challenges still exist regarding how to accurately and rapidly rule out or rule in myocardial infarction, as current strategies are relatively slow due to the need for serial troponin measurements. The 2023 European Society of Cardiology (ESC) guidelines recommend a 0 h/1 h or a 0 h/2 h high-sensitivity troponin diagnostic algorithm, instead of the previously suggested 0 h/3 h diagnostic protocol, to reduce the time required to discharge patients with suspected acute coronary syndrome/myocardial infarction. The ESC endorsed algorithms are not without difficulty, and alternative ways of improving triaging have been proposed, particularly a dual biomarker rule-out strategy involving the combined measurement of copeptin and troponin. Supporters of the dual biomarker strategy argue that a timely optimized algorithm can potentially allow the safe rule-out of myocardial infarction earlier than currently used strategies. In the present Great Debate article, two expert teams discuss the 'pros' and 'cons' of implementing single vs dual biomarker strategies for the rule-in and rule-out of myocardial infarction, under the moot topic 'A dual biomarker strategy improves the triage of patients with suspected acute coronary syndrome'. They address in detail many of the controversial issues currently affecting everyday clinical practice and provide insightful comments on how to best triage patients presenting with suspected acute myocardial infarction.",
+  "doi": "10.1093/eurheartj/ehag090",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954950/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This structured debate weighs copeptin-plus-troponin dual biomarker rule-out against the single-biomarker hs-troponin algorithms endorsed by the 2023 ESC guidelines for suspected ACS triage.",
+   "bottom_line": "The debate presents opinion from two expert teams rather than new trial data, so it does not change practice. Current practice remains the ESC-endorsed 0 h/1 h or 0 h/2 h hs-troponin algorithms, with the copeptin dual strategy still considered investigational pending prospective outcome evidence.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42954928",
+  "title": "Impact of obesity on clinical outcomes and the treatment effect of catheter ablation in atrial fibrillation: insights from CABANA.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 01",
+  "epub_date": "",
+  "authors": [
+   "Erzeel J.",
+   "Dhont S.",
+   "van Es M.",
+   "De Wever M.",
+   "Meekers E.",
+   "Van Herendael H.",
+   "Nuyens D.",
+   "Rivero-Ayerza M.",
+   "Pison L.",
+   "Mullens W.",
+   "Tang W.",
+   "Martens P."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Randomized Controlled Trial"
+  ],
+  "abstract": "AIMS: Obesity and atrial fibrillation (AF) are global epidemics, often co-existing and compounding cardiovascular risk. While catheter ablation has emerged as an effective strategy for rhythm control in symptomatic AF, it remains unclear whether obesity modifies its benefit. This post hoc analysis of the CABANA trial investigates the influence of baseline obesity on clinical outcomes after catheter ablation vs. drug therapy in AF patients.\nMETHODS AND RESULTS: A total of 2170 CABANA participants with available body mass index (BMI) were included. Obesity was defined by BMI ≥ 30 kg/m2, and Class II obesity by BMI ≥ 35 kg/m2. Adverse outcomes, AF recurrence, and functional status were analysed using Cox, mixed-effects, and generalized estimating equation models, assessing treatment-by-obesity interactions. Obese patients exhibited higher comorbidity burden, worse baseline functional status, and more persistent AF compared to non-obese counterparts. Higher BMI was associated with increased cardiovascular hospitalization and a higher New York Heart Association functional class. Catheter ablation significantly reduced the risk of AF recurrence and improved symptom burden and functional capacity, irrespective of obesity status. No significant interaction was found between BMI and treatment effect on the primary composite endpoint of cardiovascular hospitalization or all-cause mortality. However, patients with Class II obesity or higher had worse absolute outcomes despite similar relative benefits from ablation.\nCONCLUSION: While obesity is associated with worse baseline status and outcomes, it was not shown to significantly alter the relative effectiveness of AF ablation compared to drug therapy. These findings support a multifaceted approach integrating rhythm control with upstream interventions targeting obesity-related atrial remodelling and comorbidity management.",
+  "doi": "10.1093/europace/euag293",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954928/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This post hoc CABANA analysis suggests obesity worsens absolute outcomes in AF but does not significantly modify the relative benefit of ablation over drug therapy.",
+   "bottom_line": "Obese patients with AF have worse baseline status and higher event rates, but ablation's relative benefit appears similar regardless of BMI. Because this is a post hoc subgroup analysis, it should not change ablation selection, and obesity management should remain a parallel priority.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [
+   [
+    "trial_below",
+    5
+   ]
+  ],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42954927",
+  "title": "Impact of obesity on procedural safety and 1-year outcomes after pulsed-field ablation for atrial fibrillation.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 01",
+  "epub_date": "",
+  "authors": [
+   "Massoullié G.",
+   "Chaumont C.",
+   "Laredo M.",
+   "Pereira B.",
+   "Thomas O.",
+   "Maury P.",
+   "Defaye P.",
+   "Boveda S.",
+   "Marijon E.",
+   "Escande W.",
+   "Roux A.",
+   "Raczka F.",
+   "Guyomar Y.",
+   "Jaïs P.",
+   "Ollitrault P.",
+   "Granier M.",
+   "Fareh S.",
+   "Marchand H.",
+   "Pierre B.",
+   "Abbey S.",
+   "Noel A.",
+   "Da Costa A.",
+   "Extramiana F.",
+   "Cesari O.",
+   "Champ-Rigot L.",
+   "Khoueiry Z.",
+   "Villemin T.",
+   "Traullé S.",
+   "Treguer F.",
+   "Bader H.",
+   "Deharo J.",
+   "Degand B.",
+   "Guy-Moyat B.",
+   "Klug D.",
+   "Gandjbakhch E.",
+   "Zhao A.",
+   "Beneyto M.",
+   "Venier S.",
+   "Combes S.",
+   "Lepillier A.",
+   "Mielczarek M.",
+   "Clementy N.",
+   "Menet A.",
+   "Sacher F.",
+   "De Chillou C.",
+   "Eschalier R.",
+   "Anselme F."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "AIMS: Obesity is associated with atrial fibrillation (AF), atrial remodelling, and cardiometabolic comorbidities. Whether baseline body mass index (BMI) influences procedural safety and effectiveness of pulsed-field ablation (PFA) remains uncertain. We evaluated the association of baseline BMI with procedural characteristics, periprocedural safety, and 1-year arrhythmia recurrence after first-time PFA for AF.\nMETHODS AND RESULTS: FRANCE-PFA is a nationwide registry including consecutive patients undergoing first-time AF ablation with a pentaspline PFA catheter. Patients with available BMI were categorized as <25, 25 to <30, 30 to <35, or ≥35 kg/m2. Periprocedural complications and 1-year atrial arrhythmia recurrence were assessed across BMI categories. Among 5223 patients, BMI was available in 4573 (87.6%). Higher BMI was associated with greater cardiometabolic burden, more persistent AF, larger atria, and more extensive ablation strategies, including fewer pulmonary vein isolation-only procedures and more additional lesion sets (all P < 0.001). Periprocedural complications remained infrequent (1.0%), with no significant difference across BMI categories. At 1 year, recurrence was driven mainly by AF type rather than obesity. Within paroxysmal and non-paroxysmal AF, recurrence rates were comparable between patients with BMI < 35 and ≥35 kg/m2 (13.8% vs. 9.1% and 22.9% vs. 23.3%, respectively; log-rank P = 0.925). Severe obesity was not associated with recurrence after multivariable adjustment (HR, 0.86; 95% CI, 0.65-1.14; P = 0.299), with similar findings when BMI was analysed continuously.\nCONCLUSION: In this nationwide PFA cohort, higher BMI identified a more advanced AF phenotype and more extensive ablation strategies but was not independently associated with periprocedural complications or 1-year arrhythmia recurrence.",
+  "doi": "10.1093/europace/euag288",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954927/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "In a large nationwide registry, higher BMI marked a more advanced AF phenotype and more extensive ablation but was not independently linked to periprocedural complications or 1-year recurrence after pulsed-field ablation.",
+   "bottom_line": "Obesity alone should not deter pulsed-field ablation for AF, since complication and 1-year recurrence rates were comparable across BMI categories after adjustment. Recurrence was driven mainly by AF type, and this observational design cannot establish causality.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42954926",
+  "title": "The weight of evidence: does obesity really not matter for atrial fibrillation ablation? Lessons from CABANA.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 01",
+  "epub_date": "",
+  "authors": [
+   "Defaye P.",
+   "Mansour M.",
+   "Di Biase L."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag290",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954926/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-form title with 'Lessons from CABANA' suggests a commentary on prior trial data on obesity and AF ablation outcomes, not new original research.",
+   "bottom_line": "Treat this as commentary on CABANA rather than new evidence; the underlying question of whether obesity affects AF ablation outcomes should be checked against the primary CABANA analyses and the full text once available.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42954724",
+  "title": "Exercise chronotropic inefficiency in patients with heart failure across distinct left ventricular ejection fraction phenotypes.",
+  "journal": "Eur J Prev Cardiol",
+  "journal_full": "European journal of preventive cardiology",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Nunes Silva R.",
+   "Crisci G.",
+   "Losito M.",
+   "Serrantoni V.",
+   "Borghi-Silva A.",
+   "Arena R.",
+   "Guazzi M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "AIMS: To characterize the pattern of chronotropic incompetence (CI) response to exercise in patients with heart failure (HF) across distinct phenotypes of the left ventricular ejection fraction and to explore the extent to which heart rate (HR) response should be prioritized as a therapeutic target within personalized HF management strategies.\nMETHODS: Patients with HF with preserved ejection fraction (HFpEF), HF with reduced ejection fraction (HFrEF), and healthy controls underwent incremental exercise testing with simultaneous gas exchange and echocardiography assessments. Stroke volume (SV), HR, cardiac output (CO), and arteriovenous oxygen difference [C(a-v)O2] were assessed from rest to peak exercise. Graphical analyses explored relationships amongst determinants of oxygen uptake (V̇O2).\nRESULTS: Both HF phenotypes exhibited CI and a blunted increase in CO during exercise compared with controls. Peak HR was similarly reduced by 20% in HFpEF and 23% in HFrEF. HFpEF, however, exhibited a steeper HR-VO2 relationship. HFrEF demonstrated a greater compensatory increase in peripheral O2 extraction, with peak C(a-v)O2 73% higher than controls and 21% higher than HFpEF. In contrast, HFpEF showed limited ability to augment C(a-v)O2 and presented the lowest relative peak V̇O2 (-39% vs. controls and -16% vs. HFrEF), despite similar peak V̇O2%pred between HF phenotypes.\nCONCLUSION: CI can contribute to exercise intolerance in both HF phenotypes, with distinct compensatory mechanisms. An integrated cardiopulmonary exercise testing-echocardiography approach may support identifying phenotype-specific physiological profiles that might address therapeutic strategies targeting CI, SV reserve, and peripheral O2 utilization to improve functional capacity in HF. Addressing the kinetics of HR slope and ΔHR metrics seems relevant to implement knowledge on the fundamental CI contribution in HF phenotypes.",
+  "doi": "10.1093/eurjpc/zwag542",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954724/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This mechanistic exercise physiology study compares chronotropic incompetence and oxygen-delivery determinants across HFpEF, HFrEF and controls, providing hypothesis-generating insight into phenotype-specific exercise limitation.",
+   "bottom_line": "Chronotropic incompetence contributes to exercise intolerance in both HFpEF and HFrEF, but the compensatory mechanisms differ, with HFpEF showing limited arteriovenous O2 difference augmentation. Findings are small-scale and mechanistic, so they should not yet change heart rate-targeted therapy.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 3 < 6"
+ },
+ {
+  "pmid": "42954105",
+  "title": "Malignant Ventricular Arrhythmias following Pulsed Field Ablation for Atrial Fibrillation: A systematic review of published cases and mechanistic insights.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Papakonstantinou P.",
+   "Charitos D.",
+   "Fitzpatrick N.",
+   "O'Brien J.",
+   "Bolao J.",
+   "Szeplaki G.",
+   "Boveda S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag303",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954105/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "A systematic review of published case reports of malignant ventricular arrhythmias after pulsed field ablation addresses an emerging safety question for a rapidly adopted AF technology, though case-level data are low-grade evidence.",
+   "bottom_line": "Ventricular arrhythmias after pulsed field ablation are reported in published case series, but case-report pooling cannot establish incidence or causality. Keep the signal in mind and watch for registry or prospective data before changing post-ablation monitoring or antiarrhythmic practice.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42953942",
+  "title": "Clopidogrel Versus Aspirin Monotherapy According to Atherothrombotic Risk Profile.",
+  "journal": "Circ Cardiovasc Interv",
+  "journal_full": "Circulation. Cardiovascular interventions",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Lee J.",
+   "Gim D.",
+   "Park Y.",
+   "Lee J.",
+   "Jeong J.",
+   "Kim C.",
+   "Yun K.",
+   "Lee H.",
+   "Chang K.",
+   "Park M.",
+   "Bae J.",
+   "Doh J.",
+   "Cho B.",
+   "Kim H.",
+   "Kim W.",
+   "Kim U.",
+   "Rha S.",
+   "Hong Y.",
+   "Lee H.",
+   "Ahn S.",
+   "Kim D.",
+   "Cho J.",
+   "Her S.",
+   "Jeon D.",
+   "Han S.",
+   "Lee J.",
+   "Lee C.",
+   "Kang D.",
+   "Choi K.",
+   "Park T.",
+   "Yang J.",
+   "Lee S.",
+   "Choi S.",
+   "Gwon H.",
+   "Song Y.",
+   "Hahn J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Clopidogrel monotherapy has shown superior efficacy compared with aspirin after completion of dual antiplatelet therapy following percutaneous coronary intervention (PCI). However, whether treatment effects differ according to overall atherothrombotic risk integrating clinical and angiographic factors remains unclear.\nMETHODS: This post hoc analysis of the SMART-CHOICE 3 (Smart Angioplasty Research Team: Choice of Optimal Anti-Thrombotic Strategy in Patients Undergoing Implantation of Coronary Drug-Eluting Stents 3) randomized trial included patients who completed guideline-directed dual antiplatelet therapy after PCI. Atherothrombotic risk was defined using the a Thrombolysis in Myocardial Infarction Risk Score for Secondary Prevention and complex PCI. Patients with Thrombolysis in Myocardial Infarction Risk Score for Secondary Prevention ≥3 or complex PCI were classified as higher risk, and those with a Thrombolysis in Myocardial Infarction Risk Score for Secondary Prevention <3 without complex PCI were classified as lower risk. The primary end point was major adverse cardiac and cerebrovascular events (death, myocardial infarction, or stroke). Bleeding was defined as Bleeding Academic Research Consortium type 2, 3, or 5.\nRESULTS: Among 5506 patients, 4486 (81.5%) were at higher risk and 1020 (18.5%) were at lower risk. Over a median 2.3 years, the incidence of major adverse cardiac and cerebrovascular events was higher in the higher-risk group (6.1% versus 3.1%; hazard ratio, 1.83 [95% CI, 1.17-2.78]; P=0.007). In higher-risk patients, clopidogrel reduced major adverse cardiac and cerebrovascular events compared with aspirin (4.6% versus 7.4%; hazard ratio, 0.67 [95% CI, 0.50-0.89]; P=0.006), with no difference in lower-risk patients (3.0% versus 3.2%; hazard ratio, 1.03; P=0.945; interaction P=0.242). Bleeding was similar between groups.\nCONCLUSIONS: After completion of dual antiplatelet therapy following PCI, clopidogrel monotherapy was associated with lower ischemic risk than aspirin in patients with higher atherothrombotic risk, without increased bleeding.\nREGISTRATION: URL: https://www.clinicaltrials.gov; Unique identifier: NCT04418479.",
+  "doi": "10.1161/CIRCINTERVENTIONS.126.017277",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42953942/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [
+    "Interventional Cardiology"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "It suggests that clopidogrel monotherapy may be preferable to aspirin after DAPT in higher atherothrombotic-risk post-PCI patients, but this is a post hoc subgroup analysis with a non-significant interaction test.",
+   "bottom_line": "In this post hoc analysis of SMART-CHOICE 3, clopidogrel monotherapy reduced MACCE versus aspirin in higher-risk patients (TIMI-SP ≥3 or complex PCI) after DAPT without more bleeding, and showed no benefit in lower-risk patients. The interaction P=0.242 means this is hypothesis-generating and should be confirmed before changing routine practice.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "selected",
+  "_reason": "",
+  "sources": [
+   {
+    "journal": "Circ Cardiovasc Interv",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42953942/"
+   }
+  ],
+  "summary": {
+   "short": "In this post hoc analysis of the SMART-CHOICE 3 randomized trial (5,506 patients after completed DAPT following PCI), MACCE in higher-risk patients was 4.6% with clopidogrel versus 7.4% with aspirin (HR 0.67). No difference was seen in lower-risk patients. The authors conclude clopidogrel was associated with lower ischemic risk without increased bleeding.",
+   "headline": "Higher atherothrombotic risk: MACCE 4.6% with clopidogrel vs 7.4% with aspirin (HR 0.67); no difference in lower risk",
+   "design_tag": "Post hoc RCT analysis · SMART-CHOICE 3 · N = 5,506",
+   "why_it_matters": "This post hoc analysis of the SMART-CHOICE 3 randomized trial compared clopidogrel with aspirin monotherapy in patients who completed dual antiplatelet therapy after PCI, stratified by atherothrombotic risk (TIMI Risk Score for Secondary Prevention and complex PCI). The background states that it was unclear whether treatment effects differ by overall atherothrombotic risk integrating clinical and angiographic factors.",
+   "key_finding": "Of 5,506 patients, 4,486 (81.5%) were classified as higher risk and 1,020 (18.5%) as lower risk. Over a median 2.3 years, MACCE occurred in 6.1% of higher-risk versus 3.1% of lower-risk patients (HR 1.83 [95% CI 1.17-2.78]; P=0.007). In higher-risk patients, MACCE was 4.6% with clopidogrel versus 7.4% with aspirin (HR 0.67 [95% CI 0.50-0.89]; P=0.006). In lower-risk patients, it was 3.0% versus 3.2% (HR 1.03; P=0.945; interaction P=0.242). Bleeding (BARC type 2, 3, or 5) was similar between groups.",
+   "tiles": [
+    {
+     "value": "4.6% vs. 7.4%",
+     "label": "MACCE, higher-risk patients",
+     "context": "Clopidogrel vs. aspirin; HR 0.67 (95% CI 0.50-0.89)"
+    },
+    {
+     "value": "6.1% vs. 3.1%",
+     "label": "MACCE by risk group",
+     "context": "Higher vs. lower risk; HR 1.83 (95% CI 1.17-2.78)"
+    },
+    {
+     "value": "3.0% vs. 3.2%",
+     "label": "MACCE, lower-risk patients",
+     "context": "Clopidogrel vs. aspirin; HR 1.03; P=0.945"
+    }
+   ],
+   "summary": "The background notes that clopidogrel monotherapy has shown superior efficacy compared with aspirin after completion of dual antiplatelet therapy following PCI, but that it was unclear whether the effect differs by overall atherothrombotic risk integrating clinical and angiographic factors. This was a post hoc analysis of the randomized SMART-CHOICE 3 trial, which included patients who completed guideline-directed dual antiplatelet therapy after PCI. Atherothrombotic risk was defined using the TIMI Risk Score for Secondary Prevention and complex PCI. Patients with a score ≥3 or complex PCI were classified as higher risk, and those with a score <3 without complex PCI as lower risk. The comparison was clopidogrel versus aspirin monotherapy. The primary end point was MACCE (death, myocardial infarction, or stroke), and bleeding was defined as BARC type 2, 3, or 5. Among 5,506 patients, 4,486 (81.5%) were higher risk and 1,020 (18.5%) lower risk. Over a median 2.3 years, MACCE was higher in the higher-risk group (6.1% versus 3.1%; HR 1.83 [95% CI 1.17-2.78]; P=0.007). In higher-risk patients, clopidogrel reduced MACCE compared with aspirin (4.6% versus 7.4%; HR 0.67 [95% CI 0.50-0.89]; P=0.006), whereas lower-risk patients showed 3.0% versus 3.2% (HR 1.03; P=0.945; interaction P=0.242). Bleeding was similar between groups. The authors conclude that clopidogrel monotherapy was associated with lower ischemic risk than aspirin in higher-risk patients, without increased bleeding.",
+   "relation_evidence": "No directly comparable studies were considered for this topic.",
+   "relation_guidelines": "For this topic the guideline 2025 ESC/EACTS Guidelines for the management of valvular heart disease exists; no comparison of content is made in this edition.",
+   "authors_conclusion": "The authors conclude that, after completion of dual antiplatelet therapy following PCI, clopidogrel monotherapy was associated with lower ischemic risk than aspirin in patients with higher atherothrombotic risk, without increased bleeding.",
+   "key_numbers": {
+    "design": "Post hoc analysis of RCT",
+    "n": "5506",
+    "followup": "Median 2.3 years",
+    "primary_endpoint": {
+     "name": "MACCE in higher-risk patients (median 2.3 y)",
+     "arm1_label": "Clopidogrel",
+     "arm1_value": "4.6%",
+     "arm2_label": "Aspirin",
+     "arm2_value": "7.4%",
+     "effect": "HR 0.67 (95% CI 0.50-0.89); P=0.006"
+    },
+    "secondary": [
+     {
+      "name": "MACCE, higher-risk vs. lower-risk group",
+      "arm1": "6.1%",
+      "arm2": "3.1%",
+      "effect": "HR 1.83 (95% CI 1.17-2.78); P=0.007"
+     },
+     {
+      "name": "MACCE in lower-risk patients (clopidogrel vs. aspirin)",
+      "arm1": "3.0%",
+      "arm2": "3.2%",
+      "effect": "HR 1.03; P=0.945; interaction P=0.242"
+     }
+    ],
+    "key_findings": [
+     {
+      "label": "Higher-risk patients",
+      "value": "4486 (81.5%)"
+     },
+     {
+      "label": "Lower-risk patients",
+      "value": "1020 (18.5%)"
+     },
+     {
+      "label": "Median follow-up",
+      "value": "2.3 years"
+     },
+     {
+      "label": "Interaction P (MACCE)",
+      "value": "0.242"
+     },
+     {
+      "label": "Bleeding (BARC 2, 3, or 5)",
+      "value": "Similar between groups"
+     }
+    ]
+   },
+   "qc_notes": "Abstract gives no numeric bleeding rates or HR/CI for bleeding, and no CI for the lower-risk HR 1.03. Interaction P=0.242 is stated alongside the conclusion about higher-risk patients; wording kept as in the abstract. Group sizes within risk strata (clopidogrel vs. aspirin) are not stated. Journal date '2026 Oct 29' taken as provided.",
+   "_meta": {
+    "lang": "en",
+    "v": "2.3",
+    "model": "claude-sonnet-5-5"
+   },
+   "sources_used": [
+    "ESC/EACTS 2025 valvular heart disease (title only)"
+   ],
+   "relation_qc_notes": "The only guideline listed is the 2025 ESC/EACTS valvular heart disease guideline, title only and with no full text; it is not relevant to post-PCI antiplatelet monotherapy (clopidogrel vs aspirin). No trials or consensus papers were supplied for this topic, and the topic note says 'No entries yet'. The SMART-CHOICE 3 main trial and the ESC chronic coronary syndrome / ACS guidelines would be the relevant comparators but were not in the material, so no comparison is made. Interaction P=0.242 is reported in the abstract; this was not discussed in the reader text because no comparator was available."
+  }
+ },
+ {
+  "pmid": "42951705",
+  "title": "Stepwise intracoronary imaging assessment of lumen and vessel changes during drug-coated balloon angioplasty for in-stent restenosis.",
+  "journal": "Cardiovasc Revasc Med",
+  "journal_full": "Cardiovascular revascularization medicine : including molecular interventions",
+  "pub_date": "2026 Oct 09",
+  "epub_date": "2026-10-09",
+  "authors": [
+   "Alexandridis G.",
+   "van der Eijk J.",
+   "Sadowski K.",
+   "Kardys I.",
+   "den Dekker W.",
+   "Diletti R.",
+   "Nuis R.",
+   "Mahmoud K.",
+   "Wilschut J.",
+   "Tu S.",
+   "Daemen J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Drug-coated balloon (DCB) angioplasty is an established treatment for in-stent restenosis (ISR), and its procedural success mainly depends on optimal lesion preparation. Angiography alone offers limited assessment of acute procedural effects, and sequential vessel and lumen changes have not been comprehensively characterized with intracoronary imaging (ICI). Therefore, we aimed to characterize the stepwise vessel and lumen changes during DCB angioplasty for ISR across three procedural stages: pre-lesion preparation, post-lesion preparation and post-DCB inflation.\nMETHODS: We retrospectively enrolled 20 patients (21 lesions) undergoing DCB angioplasty for ISR with available ICI pullbacks (intravascular ultrasound (IVUS), n = 16; optical coherence tomography (OCT), n = 5) at three stages: pre-lesion preparation, post-lesion preparation, and post-DCB inflation. Lesions treated with DCBs were identified on angiography and co-registered to the ICI pullbacks.\nRESULTS: Median age was 69 years, 15 patients (75%) were male, and lesion preparation was performed with non-compliant balloons in 76%. On IVUS, minimal lumen area (MLA) increased from 2.7 [2.2-3.5]mm2 at baseline to 4.8 [4.1-6.0]mm2 after lesion preparation (median difference (95% confidence interval) +2.6 (1.8-2.7)mm2, p < 0.001), and 5.9 [4.5-7.0]mm2 post-DCB (+0.6 (0.4-1.1)mm2, p < 0.001). On OCT, MLA increased from 1.9 [1.4-2.1]mm2 at baseline to 3.8 [2.9-4.2]mm2 after lesion preparation (+2.0 [0.3-2.8]mm2), and 4.5 [3.9-5.3]mm2 post-DCB (+0.6 [0.3-1.0]mm2). Neointimal burden decreased after lesion preparation and decreased further after DCB treatment.\nCONCLUSION: ICI demonstrates that the principal morphologic changes are achieved after lesion preparation, with smaller yet significant additional acute mechanical effects following DCB treatment.",
+  "doi": "10.1016/j.carrev.2026.10.007",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42951705/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "It describes stepwise IVUS/OCT lumen changes during drug-coated balloon treatment of in-stent restenosis, which helps explain the mechanics of the procedure.",
+   "bottom_line": "In this retrospective series of 20 patients (21 lesions), most lumen gain came from lesion preparation, with a smaller but significant additional gain after DCB inflation. The small, uncontrolled design makes this hypothesis-generating and unlikely to change practice on its own.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 4 < 6"
+ },
+ {
+  "pmid": "42951127",
+  "title": "Interstage Reinterventions in Hybrid Stage I Palliation - Impact on Survival to Comprehensive Stage II Operation.",
+  "journal": "J Thorac Cardiovasc Surg",
+  "journal_full": "The Journal of thoracic and cardiovascular surgery",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Wride J.",
+   "Bigelow A.",
+   "Wright L.",
+   "Texter K.",
+   "Salavitabar A.",
+   "Camacho M.",
+   "Abdelshahid M.",
+   "Davidson E.",
+   "Bolling S.",
+   "Richardson C.",
+   "Alvarado C.",
+   "Carrillo S.",
+   "McConnell P.",
+   "Yerebakan C.",
+   "Galantowicz M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "OBJECTIVE: The need for interstage reinterventions is one of the perceived limitations of Hybrid Stage 1 Palliation (HS1P). We aim to evaluate the impact of unplanned interstage reinterventions on survival to comprehensive stage II (CS2) and characterize their frequency, type, and timing.\nMETHODS: We retrospectively reviewed 199 infants who underwent HS1P at a single institution from 2009 to 2025, tracking all reinterventions between HS1P and CS2. We assessed the likelihood of reaching CS2 using a series of Fine-Gray models at distinct landmarks to assess competing risks, comparing reintervention and non-reintervention groups.\nRESULTS: The reintervention rate in our study was 43%, with 132 unique reinterventions received in 86 patients. In the reintervention group, progression to CS2 was 78%, with 4.7% of patients dying after HS1P. Among the 33 patients (17%) who died after HS1P, 88% did not receive reinterventions and 76% died prior to HS1P discharge. Reinterventions before 90 days post-HS1P were associated with no difference in progression to CS2 (sHR 1.20, CI 0.83-1.74), but reinterventions before 150 days post-HS1P were associated with a decreased likelihood of reaching CS2 (sHR 0.61, CI 0.41-0.93). The most common reintervention target was the retrograde aortic arch (45%), with aortic atresia in 72% of these patients.\nCONCLUSIONS: Interstage reinterventions after HS1P are common, but, if done early, do not appear to worsen survival to comprehensive stage II. Reinterventions play an integral part of HS1P care rather than a marker of failure, especially when performed early.",
+  "doi": "10.1016/j.jtcvs.2026.10.021",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42951127/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Other",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This single-centre retrospective study of 199 infants with hybrid stage I palliation suggests that early interstage reinterventions do not reduce the chance of reaching comprehensive stage II, which may reassure teams that reintervention is not automatically a sign of failure.",
+   "bottom_line": "In paediatric hybrid stage I palliation, reinterventions before about 90 days were not associated with worse progression to stage II, but those before 150 days were associated with a lower likelihood of reaching it. The retrospective, single-centre design limits causal inference, so this is hypothesis-generating for paediatric centres rather than a basis for changing adult cardiology practice.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": null,
+  "_filled": false,
+  "_status": "outside_focus",
+  "_reason": "Other"
+ },
+ {
+  "pmid": "42951093",
+  "title": "Pulsed field, cryoballoon or radiofrequency catheter ablation of atrial fibrillation in hypertrophic cardiomyopathy.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Johner N.",
+   "Monaco C.",
+   "Magnocavallo M.",
+   "Deville L.",
+   "Benali K.",
+   "Carmagnola L.",
+   "Fortuna M.",
+   "Boveda S.",
+   "M'Rabet S.",
+   "Guenancia C.",
+   "Van Wabeke J.",
+   "Verhaeghe L.",
+   "Ditac G.",
+   "Bessière F.",
+   "Vlachos K.",
+   "Vazirani R.",
+   "Cruz A.",
+   "Schiavone M.",
+   "Tondo C.",
+   "Rossi P.",
+   "Bianchi S.",
+   "Gamer A.",
+   "Tétreault-Langlois M.",
+   "Notaristefano F.",
+   "Fitzgerald J.",
+   "Plant A.",
+   "Kneizeh K.",
+   "Benabou L.",
+   "Charton J.",
+   "Sacristan B.",
+   "Arnaud M.",
+   "Da Costa A.",
+   "Chierchia G.",
+   "Koopman P.",
+   "Vijgen J.",
+   "Haïssaguerre M.",
+   "Duchateau J.",
+   "Hocini M.",
+   "Sacher F.",
+   "Tixier R.",
+   "Pambrun T.",
+   "Derval N.",
+   "Della Rocca D.",
+   "Jaïs P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Patients with hypertrophic cardiomyopathy (HCM) exhibit suboptimal outcomes after atrial fibrillation (AF) ablation.\nOBJECTIVE: We sought to compare the efficacy, safety and long-term outcomes of pulsed field ablation (PFA), cryoballoon (CB) and radiofrequency (RF) ablation for AF in HCM.\nMETHODS: Patients with HCM undergoing de novo AF ablation were retrospectively included from 11 centers. Procedure characteristics, safety endpoints and 24-month outcomes were assessed. The primary endpoint was atrial arrhythmia recurrence (AF/atrial tachycardia).\nRESULTS: A total of 364 patients with HCM (61.7±11.1 years, 74.5% male, 47.5% paroxysmal AF) underwent AF ablation with PFA (n=84), CB (n=50) or RF (n=230). Procedure-related complications occurred in 1.2%, 4.0% and 5.2% with PFA, CB and RF, respectively (p=0.344). Cumulative 24-month freedom from atrial arrhythmia recurrence was 48.6%. PFA was associated with reduced atrial arrhythmia recurrence compared with RF (adjusted HR, 0.57; 95% CI, 0.36-0.91; p=0.018), while CB showed no significant difference with either group (adjusted HR versus RF, 0.71; 95% CI, 0.42-1.21; p=0.212). In exploratory secondary analyses, PFA was associated with reduced cardiovascular hospitalization (adjusted HR, 0.43; 95% CI, 0.23-0.80; p=0.008), and greater improvement in NYHA class compared with RF (p=0.032), while CB showed no significant difference. Heart failure hospitalization, repeat ablation, ventricular arrhythmias, stroke/transient ischemic attack and mortality did not differ significantly between ablation modalities.\nCONCLUSION: PFA for catheter ablation of AF in HCM was associated with reduced 24-month atrial arrhythmia recurrence, with exploratory signals of fewer cardiovascular hospitalizations and improved NYHA class compared with RF, while CB showed no significant difference.",
+  "doi": "10.1016/j.hrthm.2026.10.057",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42951093/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [
+    "Heart Failure / Cardiomyopathies"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "It is one of the larger comparisons of pulsed field, cryoballoon and radiofrequency ablation specifically in hypertrophic cardiomyopathy, a population with poor AF ablation outcomes.",
+   "bottom_line": "In this retrospective multicentre cohort, PFA was associated with lower 24-month atrial arrhythmia recurrence than RF, but non-randomised confounding limits causal inference. Treat the finding as hypothesis-generating until prospective or randomised data confirm it.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42950959",
+  "title": "Upright Treadmill versus Supine Bicycle Exercise in Rheumatic Mitral Stenosis: Exercise Capacity and Hemodynamic Responses.",
+  "journal": "J Am Soc Echocardiogr",
+  "journal_full": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Lee J.",
+   "Kim J.",
+   "Yang J.",
+   "Choi K.",
+   "Kim E.",
+   "Chang S.",
+   "Park S.",
+   "Lee S.",
+   "Park S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.echo.2026.10.004",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950959/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": "Other",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This appears to compare upright treadmill and supine bicycle exercise echocardiography protocols in rheumatic mitral stenosis, a narrow question about test methodology in a niche population, though the abstract is not yet available to confirm sample size or design.",
+   "bottom_line": "Exercise test modality choice in rheumatic mitral stenosis may affect exercise capacity and haemodynamic readouts, but the findings are likely hypothesis-generating until the full abstract and sample size are reviewed.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42950123",
+  "title": "Right Atrial Phasic Function Improves CMR-Based Prognostication in Patients with Heart Failure with Mildly Reduced Ejection Fraction: A Multicenter Study.",
+  "journal": "Eur Heart J Cardiovasc Imaging",
+  "journal_full": "European heart journal. Cardiovascular Imaging",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Wang W.",
+   "Zhu R.",
+   "Gao Y.",
+   "Wang J.",
+   "Liu W.",
+   "Liu J.",
+   "Wu L.",
+   "Wang W.",
+   "Bo K.",
+   "Wang X."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "AIMS: In multiple cardiovascular diseases, right atrial (RA) function can serve as an independent predictor for the clinical status and prognosis. However, the prognostic value of RA strain in patients with heart failure with mildly reduced ejection fraction (HFmrEF) remains considerably unknown. This study aims to explore the relationships between RA strain derived from cardiac magnetic resonance imaging-feature tracking (CMR-FT) and adverse outcomes in patients with HFmrEF.\nMETHODS AND RESULTS: This retrospective study enrolled patients with HFmrEF who were referred for echocardiography and CMR at two tertiary medical centers from April 2016 to September 2024. The primary endpoint was a composite of all-cause mortality, HF-related hospitalization and cardiac transplantation. The findings were validated in a cohort of patients with HFmrEF enrolled from two additional tertiary care centers (January 2019 to January 2025). The development cohort included 1317 patients, and the validation cohort comprised 385 patients. During a median follow-up period of 2.8 years and 2.1 years, respectively, 243 and 72 patients in the development cohort and validation cohort reached the primary endpoint, respectively. Cox regression analysis showed that RA conduit strain was an independent predictor of the primary outcome (HR: 0.86 [0.82, 0.90]; P < .001). The full model integrating clinical variables, traditional imaging, and RA strain achieved the best predictive performance (C-index: 0.80 in development, 0.81 in validation cohorts).\nCONCLUSION: RA conduit strain derived from CMR is an independent predictor of adverse outcomes in patients with HFmrEF, providing incremental prognostic value beyond traditional clinical and imaging-derived risk markers.​.",
+  "doi": "10.1093/ehjci/jeag298",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950123/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This retrospective two-centre study with external validation suggests CMR-derived right atrial conduit strain adds modest prognostic information beyond clinical and standard imaging variables in HFmrEF.",
+   "bottom_line": "RA conduit strain by CMR-FT is associated with outcomes in HFmrEF and modestly improves C-index (about 0.80-0.81), but it is retrospective, lacks a prespecified threshold or external impact analysis, and is not ready to guide management. Treat it as hypothesis-generating until prospective data and a validated cut-off are available.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 4 < 6"
+ },
+ {
+  "pmid": "42950084",
+  "title": "Extensive type B aortic dissection with Michels type IX hepatic arterial anatomy causing acalculous gangrenous cholecystitis.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Liao J.",
+   "Wu H."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag804",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950084/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 2,
+   "practice_changing": false,
+   "why_it_matters": "The title describes a single-patient case of type B aortic dissection complicated by acalculous gangrenous cholecystitis in unusual hepatic arterial anatomy, a rare presentation with little bearing on routine cardiology practice.",
+   "bottom_line": "Consider mesenteric and visceral ischaemia from dissection branch involvement, including hepatic and biliary complications, when a patient with type B dissection develops abdominal pain, though this single case does not change management.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 2"
+ },
+ {
+  "pmid": "42949742",
+  "title": "Left Bundle-Branch Area Pacing vs Right Ventricular Pacing for Atrioventricular Block and Preserved Left Ventricular Function: The LEAP-Block Randomized Clinical Trial.",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Li X.",
+   "Wang H.",
+   "Zhang W.",
+   "You L.",
+   "Qiu C.",
+   "Jia F.",
+   "Liu Z.",
+   "Li X.",
+   "Wang R.",
+   "Chen T.",
+   "Lin W.",
+   "Ren M.",
+   "Cheng K.",
+   "Peng H.",
+   "Zhou J.",
+   "Yang H.",
+   "Wu Y.",
+   "Zhu H.",
+   "Wang Z.",
+   "He C.",
+   "Sun Z.",
+   "Chu S.",
+   "Wang Y.",
+   "Li W.",
+   "Zhao Y.",
+   "Gold M.",
+   "Ellenbogen K.",
+   "Yao Y.",
+   "Fan X."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: For patients with atrioventricular block requiring high-burden ventricular pacing, the optimal pacing strategy to reduce heart failure (HF) and all-cause mortality remains uncertain. Robust comparative evidence on the clinical outcomes of left bundle-branch area pacing (LBBAP) vs right ventricular pacing (RVP) in this population is needed.\nOBJECTIVE: To compare 24-month clinical outcomes of LBBAP vs RVP in patients with atrioventricular block and preserved left ventricular ejection fraction (LVEF; ≥50%).\nDESIGN, SETTING, AND PARTICIPANTS: The LEAP-Block study was a prospective, multicenter, randomized, controlled, superiority trial conducted across 14 Chinese hospitals from January 2021 to August 2025, with last follow-up on June 3, 2025. Of 551 patients with LVEF 50% or greater requiring ventricular pacing who underwent eligibility assessment, 499 with anticipated ventricular pacing greater than 40% were randomized.\nINTERVENTIONS: Patients were randomized in a 1:1 ratio to LBBAP (n = 249) or RVP (n = 250).\nMAIN OUTCOMES AND MEASURES: The primary end point was a composite of all-cause death, HF events, or upgrade to biventricular pacing at 24 months. Secondary end points included pacing-induced cardiomyopathy and device-related complications.\nRESULTS: The primary analysis included 482 patients (LBBAP, n = 242; RVP, n = 240; mean age, 67 years; 46% female). Acute procedure success was comparable between the 2 groups (LBBAP, 237/242 [97.9%] vs RVP, 239/240 [99.6%]; P = .22), with left bundle-branch capture confirmed in 188 of 236 patients (79.7%). LBBAP significantly reduced the primary end point vs RVP (2.4% vs 12.5%, respectively; absolute risk difference, -10.1% [95% CI, -16.8% to -3.4%]; P = .003). Among secondary outcomes, the LBBAP group had fewer HF events (3.4% vs 11.3%; -7.9% [95% CI, -13.0% to -2.8%]). No significant differences were observed in all-cause death, biventricular pacing upgrade, device-related complications, or pacing-induced cardiomyopathy. The 24-month Kaplan-Meier estimated cumulative incidence of the primary end point was 5.0% for LBBAP vs 13.2% for RVP (hazard ratio, 0.37 [95% CI, 0.19 to 0.73]; P = .004). LBBAP superiority was consistent across all prespecified subgroups.\nCONCLUSIONS AND RELEVANCE: Among patients with atrioventricular block and preserved LVEF requiring high-burden ventricular pacing, LBBAP was superior to RVP in reducing the risk of the composite end point of all-cause death, HF events, or upgrade to biventricular pacing at 24 months.\nTRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT04730921.",
+  "doi": "10.1001/jama.2026.18146",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949742/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 7,
+   "practice_changing": false,
+   "why_it_matters": "This is a multicenter RCT in JAMA suggesting LBBAP may reduce HF events and a composite of death, HF, or BiV upgrade versus RVP in patients with preserved LVEF who need high-burden pacing.",
+   "bottom_line": "LBBAP appears to reduce a composite of death, HF events, or BiV upgrade versus RVP at 24 months, but the benefit is driven mainly by HF events, all-cause death did not differ, and the trial is single-country with an open-label-type design and procedure-dependent success (capture 79.7%). Await replication and guideline review before routinely preferring LBBAP over RVP in this population.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "selected",
+  "_reason": "",
+  "sources": [
+   {
+    "journal": "JAMA",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42949742/"
+   }
+  ],
+  "summary": {
+   "short": "LEAP-Block was a randomized, multicenter superiority trial at 14 Chinese hospitals in 499 patients with atrioventricular block and LVEF ≥50%, comparing LBBAP with RVP. The 24-month composite of all-cause death, HF events, or biventricular pacing upgrade occurred in 2.4% vs 12.5% (P = .003). The authors conclude that LBBAP was superior to RVP.",
+   "headline": "LBBAP vs RVP at 24 months: composite of death, HF events or biventricular upgrade 2.4% vs 12.5%",
+   "design_tag": "Multicenter RCT · 14 hospitals · N = 499 randomized",
+   "why_it_matters": "The LEAP-Block trial randomized patients with atrioventricular block and preserved LVEF (≥50%) to left bundle-branch area pacing (LBBAP) or right ventricular pacing (RVP) and compared 24-month clinical outcomes. According to the abstract, the optimal pacing strategy to reduce heart failure and all-cause mortality in patients requiring high-burden ventricular pacing remains uncertain, and robust comparative evidence is needed.",
+   "key_finding": "Of 499 randomized patients, 482 entered the primary analysis (LBBAP n = 242; RVP n = 240; mean age 67 years; 46% female). The primary end point occurred in 2.4% with LBBAP vs 12.5% with RVP (absolute risk difference -10.1% [95% CI, -16.8% to -3.4%]; P = .003). HF events were 3.4% vs 11.3% (-7.9% [95% CI, -13.0% to -2.8%]). The 24-month Kaplan-Meier estimated cumulative incidence of the primary end point was 5.0% vs 13.2% (hazard ratio, 0.37 [95% CI, 0.19 to 0.73]; P = .004). Acute procedure success was 97.9% vs 99.6% (P = .22). No significant differences were observed in all-cause death, biventricular pacing upgrade, device-related complications, or pacing-induced cardiomyopathy.",
+   "tiles": [
+    {
+     "value": "2.4% vs 12.5%",
+     "label": "Primary end point, 24 mo",
+     "context": "LBBAP vs RVP; P = .003"
+    },
+    {
+     "value": "HR 0.37",
+     "label": "Kaplan-Meier primary end point",
+     "context": "95% CI 0.19 to 0.73; 5.0% vs 13.2%"
+    },
+    {
+     "value": "3.4% vs 11.3%",
+     "label": "HF events",
+     "context": "LBBAP vs RVP; 95% CI -13.0% to -2.8% for difference"
+    }
+   ],
+   "summary": "The abstract states that the optimal pacing strategy to reduce heart failure (HF) and all-cause mortality in patients with atrioventricular block requiring high-burden ventricular pacing remains uncertain. LEAP-Block was a prospective, multicenter, randomized, controlled, superiority trial conducted across 14 Chinese hospitals from January 2021 to August 2025, with last follow-up on June 3, 2025. Of 551 patients with LVEF 50% or greater requiring ventricular pacing who underwent eligibility assessment, 499 with anticipated ventricular pacing greater than 40% were randomized 1:1 to LBBAP (n = 249) or RVP (n = 250). The primary end point was a composite of all-cause death, HF events, or upgrade to biventricular pacing at 24 months; secondary end points included pacing-induced cardiomyopathy and device-related complications. The primary analysis included 482 patients (LBBAP, n = 242; RVP, n = 240; mean age, 67 years; 46% female). Acute procedure success was 237/242 (97.9%) with LBBAP vs 239/240 (99.6%) with RVP (P = .22), and left bundle-branch capture was confirmed in 188 of 236 patients (79.7%). The primary end point occurred in 2.4% with LBBAP vs 12.5% with RVP (absolute risk difference, -10.1% [95% CI, -16.8% to -3.4%]; P = .003). HF events occurred in 3.4% vs 11.3% (-7.9% [95% CI, -13.0% to -2.8%]). No significant differences were observed in all-cause death, biventricular pacing upgrade, device-related complications, or pacing-induced cardiomyopathy. The 24-month Kaplan-Meier estimated cumulative incidence of the primary end point was 5.0% for LBBAP vs 13.2% for RVP (hazard ratio, 0.37 [95% CI, 0.19 to 0.73]; P = .004), and superiority of LBBAP was consistent across all prespecified subgroups. The authors conclude that LBBAP was superior to RVP in reducing the risk of the composite end point at 24 months.",
+   "relation_evidence": "No directly comparable studies were considered for this topic.",
+   "relation_guidelines": "For this topic the guideline 2025 ESC/EACTS Guidelines for the management of valvular heart disease exists; no comparison of content is made in this edition.",
+   "authors_conclusion": "The authors conclude that, among patients with atrioventricular block and preserved LVEF requiring high-burden ventricular pacing, LBBAP was superior to RVP in reducing the risk of the composite of all-cause death, HF events, or upgrade to biventricular pacing at 24 months.",
+   "key_numbers": {
+    "design": "RCT, multicenter, superiority",
+    "n": "482",
+    "followup": "24 months",
+    "primary_endpoint": {
+     "name": "All-cause death, HF events, or upgrade to biventricular pacing, 24 mo",
+     "arm1_label": "LBBAP",
+     "arm1_value": "2.4%",
+     "arm2_label": "RVP",
+     "arm2_value": "12.5%",
+     "effect": "Absolute risk difference -10.1% (95% CI -16.8% to -3.4%); P = .003"
+    },
+    "secondary": [
+     {
+      "name": "HF events",
+      "arm1": "3.4%",
+      "arm2": "11.3%",
+      "effect": "-7.9% (95% CI -13.0% to -2.8%)"
+     },
+     {
+      "name": "Primary end point, Kaplan-Meier 24-mo cumulative incidence",
+      "arm1": "5.0%",
+      "arm2": "13.2%",
+      "effect": "HR 0.37 (95% CI 0.19 to 0.73); P = .004"
+     },
+     {
+      "name": "Acute procedure success",
+      "arm1": "97.9%",
+      "arm2": "99.6%",
+      "effect": "P = .22"
+     }
+    ],
+    "key_findings": [
+     {
+      "label": "Randomized",
+      "value": "499 (LBBAP n = 249; RVP n = 250)"
+     },
+     {
+      "label": "Primary analysis",
+      "value": "482 (LBBAP n = 242; RVP n = 240)"
+     },
+     {
+      "label": "Left bundle-branch capture confirmed",
+      "value": "188 of 236 (79.7%)"
+     },
+     {
+      "label": "Mean age / female",
+      "value": "67 years / 46%"
+     },
+     {
+      "label": "Subgroups",
+      "value": "LBBAP superiority consistent across all prespecified subgroups"
+     }
+    ]
+   },
+   "qc_notes": "Abstract gives no numeric values for the individual components (all-cause death, biventricular upgrade), device-related complications or pacing-induced cardiomyopathy, only 'no significant differences'. No reasons for the exclusion of 17 randomized patients from the primary analysis are given. No limitations are stated. Crude primary end point rates (2.4% vs 12.5%) and Kaplan-Meier estimates (5.0% vs 13.2%) differ; both are reported as given. The n field uses the 482 analysed patients; 499 were randomized. The 'HR 0.37' tile abbreviates 'hazard ratio, 0.37'.",
+   "_meta": {
+    "lang": "en",
+    "v": "2.3",
+    "model": "claude-sonnet-5-5"
+   },
+   "sources_used": [
+    "ESC/EACTS 2025 (valvular heart disease, title only)"
+   ],
+   "relation_qc_notes": "Only the title of the 2025 ESC/EACTS valvular heart disease guideline was listed, without text; it is also not the guideline that normally covers pacing (a cardiac pacing/CRT guideline would be the relevant document). No trials or consensus papers were listed for this topic ('No entries yet'), so no comparison with prior pacing trials (e.g. LBBAP vs RVP or biventricular pacing studies) was possible. Tension field left null because no guideline content on pacing was available."
+  }
+ }
+]
