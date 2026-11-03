@@ -1,0 +1,615 @@
+{
+  "topic_order": [
+    "TAVR - low risk",
+    "TAVR - intermediate/high risk",
+    "TEER - secondary (functional) MR",
+    "TEER - primary (degenerative) MR",
+    "Transcatheter mitral valve replacement (TMVR)",
+    "LAAO / left atrial appendage occlusion",
+    "Transcatheter tricuspid valve (TEER/replacement)",
+    "PFO / ASD closure",
+    "Paravalvular leak",
+    "Infective endocarditis",
+    "Multivalvular disease",
+    "Other"
+  ],
+  "topics": {
+    "TAVR - low risk": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        },
+        {
+          "pmid": "33871579",
+          "year": 2021,
+          "title": "Valve Academic Research Consortium 3: Updated Endpoint Definitions for Aortic Valve Clinical Research"
+        },
+        {
+          "pmid": "29020344",
+          "year": 2017,
+          "title": "Standardized definitions of structural deterioration and valve failure in transcatheter and surgical aortic bioprosthetic valves: EAPCI consensus statement"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "37874020",
+          "year": 2023,
+          "title": "Transcatheter Aortic-Valve Replacement in Low-Risk Patients at Five Years (PARTNER 3)"
+        },
+        {
+          "pmid": "41144631",
+          "year": 2025,
+          "title": "Transcatheter or Surgical Aortic-Valve Replacement in Low-Risk Patients at 7 Years (PARTNER 3)"
+        },
+        {
+          "pmid": "40158212",
+          "year": 2025,
+          "title": "5-Year Outcomes After TAVR or SAVR in Low-Risk Patients With Aortic Stenosis (Evolut Low Risk)"
+        },
+        {
+          "pmid": "38588025",
+          "year": 2024,
+          "title": "Transcatheter or Surgical Treatment of Aortic-Valve Stenosis (DEDICATE-DZHK6)"
+        },
+        {
+          "pmid": "38747246",
+          "year": 2024,
+          "title": "TAVI in low-risk tricuspid or bicuspid aortic stenosis: the NOTION-2 trial"
+        },
+        {
+          "pmid": "40884768",
+          "year": 2025,
+          "title": "Three-Year Follow-Up of the NOTION-2 Trial: TAVR Versus SAVR in Younger Low-Risk Patients"
+        },
+        {
+          "pmid": "38321820",
+          "year": 2024,
+          "title": "Transcatheter or surgical aortic valve implantation: 10-year outcomes of the NOTION trial"
+        },
+        {
+          "pmid": "40171878",
+          "year": 2025,
+          "title": "Transcatheter vs. surgical aortic valve replacement in women: the RHEIA trial"
+        }
+      ]
+    },
+    "TAVR - intermediate/high risk": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        },
+        {
+          "pmid": "33871579",
+          "year": 2021,
+          "title": "Valve Academic Research Consortium 3: Updated Endpoint Definitions for Aortic Valve Clinical Research"
+        },
+        {
+          "pmid": "29020344",
+          "year": 2017,
+          "title": "Standardized definitions of structural deterioration and valve failure in transcatheter and surgical aortic bioprosthetic valves: EAPCI consensus statement"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "36001335",
+          "year": 2022,
+          "title": "5-Year Outcomes of the SURTAVI Randomized Clinical Trial"
+        },
+        {
+          "pmid": "35579641",
+          "year": 2022,
+          "title": "TAVI vs SAVR on All-Cause Mortality in Patients Aged 70+ With Severe Aortic Stenosis: The UK TAVI Trial"
+        },
+        {
+          "pmid": "38588025",
+          "year": 2024,
+          "title": "Transcatheter or Surgical Treatment of Aortic-Valve Stenosis (DEDICATE-DZHK6)"
+        }
+      ]
+    },
+    "TEER - secondary (functional) MR": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "34447992",
+          "year": 2021,
+          "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure"
+        },
+        {
+          "pmid": "37622666",
+          "year": 2023,
+          "title": "2023 Focused Update of the 2021 ESC Guidelines for acute and chronic heart failure"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "33734354",
+          "year": 2021,
+          "title": "Management of secondary mitral regurgitation in heart failure: HFA/EACVI/EHRA/EAPCI joint position statement"
+        },
+        {
+          "pmid": "35292799",
+          "year": 2022,
+          "title": "Multi-modality imaging assessment of native valvular regurgitation: EACVI/ESC Council of Valvular Heart Disease position paper"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        },
+        {
+          "pmid": "26184622",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 1"
+        },
+        {
+          "pmid": "26184623",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 2: Endpoint definitions"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "36876756",
+          "year": 2023,
+          "title": "Five-Year Follow-up after Transcatheter Repair of Secondary Mitral Regurgitation (COAPT)"
+        },
+        {
+          "pmid": "39216092",
+          "year": 2024,
+          "title": "Transcatheter Valve Repair in Heart Failure with Moderate to Severe Mitral Regurgitation (RESHAPE-HF2)"
+        },
+        {
+          "pmid": "39216093",
+          "year": 2024,
+          "title": "Transcatheter Repair versus Mitral-Valve Surgery for Secondary Mitral Regurgitation (MATTERHORN)"
+        }
+      ]
+    },
+    "TEER - primary (degenerative) MR": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "35292799",
+          "year": 2022,
+          "title": "Multi-modality imaging assessment of native valvular regurgitation: EACVI/ESC Council of Valvular Heart Disease position paper"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        },
+        {
+          "pmid": "26184622",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 1"
+        },
+        {
+          "pmid": "26184623",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 2: Endpoint definitions"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "36121247",
+          "year": 2022,
+          "title": "Randomized Comparison of TEER for Degenerative MR in Prohibitive Surgical Risk Patients (CLASP IID)"
+        },
+        {
+          "pmid": "37962288",
+          "year": 2023,
+          "title": "One-Year Outcomes from the CLASP IID Randomized Trial for Degenerative MR"
+        },
+        {
+          "pmid": "41093456",
+          "year": 2025,
+          "title": "CLASP IID Trial and Registry: 2-Year Outcomes of TEER for Degenerative MR"
+        }
+      ]
+    },
+    "Transcatheter mitral valve replacement (TMVR)": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        },
+        {
+          "pmid": "26184622",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 1"
+        },
+        {
+          "pmid": "26184623",
+          "year": 2015,
+          "title": "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 2: Endpoint definitions"
+        },
+        {
+          "pmid": "26481845",
+          "year": 2015,
+          "title": "Multimodality Imaging in Transcatheter Mitral Valve Replacement"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "34736561",
+          "year": 2021,
+          "title": "2-Year Outcomes of TMVR in Patients With Severe Symptomatic MR (Tendyne)"
+        },
+        {
+          "pmid": "35338542",
+          "year": 2022,
+          "title": "Clinical outcomes of TMVR: 1-year results from the CHOICE-MI registry"
+        },
+        {
+          "pmid": "37235388",
+          "year": 2023,
+          "title": "Clinical outcomes of TMVR: 2-year results of the CHOICE-MI registry"
+        },
+        {
+          "pmid": "37758379",
+          "year": 2023,
+          "title": "Five-Year Evaluation of Mitral Valve-in-Valve, Valve-in-Ring, and Valve-in-MAC: MITRAL Trial"
+        },
+        {
+          "pmid": "39243268",
+          "year": 2024,
+          "title": "5-Year Outcomes of Anterior Mitral Leaflet Laceration to Prevent Outflow Obstruction (LAMPOON) During TMVR"
+        },
+        {
+          "pmid": "41194751",
+          "year": 2025,
+          "title": "TMVR for Severe Mitral Annular Calcification: Primary Outcomes From SUMMIT-MAC"
+        }
+      ]
+    },
+    "LAAO / left atrial appendage occlusion": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "39210723",
+          "year": 2024,
+          "title": "2024 ESC Guidelines for the management of atrial fibrillation"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "31504441",
+          "year": 2020,
+          "title": "EHRA/EAPCI expert consensus statement on catheter-based left atrial appendage occlusion - an update"
+        },
+        {
+          "pmid": "38291925",
+          "year": 2024,
+          "title": "Practical guide on left atrial appendage closure for the non-implanting physician: an international consensus paper"
+        },
+        {
+          "pmid": "39812172",
+          "year": 2025,
+          "title": "The role of multi-modality imaging for the assessment of left atrium and left atrial appendage: EACVI clinical consensus statement"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "34459659",
+          "year": 2021,
+          "title": "Amplatzer Amulet LAA Occluder Versus Watchman Device for Stroke Prophylaxis (Amulet IDE)"
+        },
+        {
+          "pmid": "34748929",
+          "year": 2022,
+          "title": "4-Year Outcomes After LAA Closure Versus Nonwarfarin Oral Anticoagulation for AF (PRAGUE-17)"
+        },
+        {
+          "pmid": "34747186",
+          "year": 2022,
+          "title": "Amulet or Watchman Device for Percutaneous LAA Closure: SWISS-APERO Randomized Trial"
+        },
+        {
+          "pmid": "39555822",
+          "year": 2025,
+          "title": "Left Atrial Appendage Closure after Ablation for Atrial Fibrillation (OPTION)"
+        },
+        {
+          "pmid": "41910347",
+          "year": 2026,
+          "title": "Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation (CHAMPION-AF)"
+        },
+        {
+          "pmid": "41849741",
+          "year": 2026,
+          "title": "Left Atrial Appendage Closure or Medical Therapy in Atrial Fibrillation (CLOSURE-AF)"
+        }
+      ]
+    },
+    "Transcatheter tricuspid valve (TEER/replacement)": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "34455430",
+          "year": 2021,
+          "title": "2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "38131233",
+          "year": 2024,
+          "title": "Chronic right-sided heart failure and tricuspid regurgitation: HFA/EAPCI clinical consensus statement"
+        },
+        {
+          "pmid": "40163675",
+          "year": 2025,
+          "title": "Management of patients with transvalvular RV leads undergoing transcatheter tricuspid valve interventions: EHRA/EAPCI scientific statement"
+        },
+        {
+          "pmid": "37793121",
+          "year": 2023,
+          "title": "Tricuspid Valve Academic Research Consortium Definitions for Tricuspid Regurgitation and Trial Endpoints"
+        },
+        {
+          "pmid": "35292799",
+          "year": 2022,
+          "title": "Multi-modality imaging assessment of native valvular regurgitation: EACVI/ESC Council of Valvular Heart Disease position paper"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "36876753",
+          "year": 2023,
+          "title": "Transcatheter Repair for Patients with Tricuspid Regurgitation (TRILUMINATE Pivotal)"
+        },
+        {
+          "pmid": "39471883",
+          "year": 2024,
+          "title": "One-Year Outcomes From the TRILUMINATE Randomized Cohort"
+        },
+        {
+          "pmid": "40159089",
+          "year": 2025,
+          "title": "Two-Year Outcomes From the TRILUMINATE Pivotal Trial"
+        },
+        {
+          "pmid": "39602173",
+          "year": 2024,
+          "title": "TEER for Severe Isolated Tricuspid Regurgitation: The Tri.Fr Randomized Clinical Trial"
+        },
+        {
+          "pmid": "39475399",
+          "year": 2024,
+          "title": "Transcatheter Valve Replacement in Severe Tricuspid Regurgitation (TRISCEND II)"
+        },
+        {
+          "pmid": "39480380",
+          "year": 2024,
+          "title": "One-Year Outcomes After Transcatheter Tricuspid Valve Replacement (TRISCEND II)"
+        }
+      ]
+    },
+    "PFO / ASD closure": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "32860028",
+          "year": 2020,
+          "title": "2020 ESC Guidelines for the management of adult congenital heart disease"
+        },
+        {
+          "pmid": "38752755",
+          "year": 2024,
+          "title": "European Stroke Organisation Guidelines on the diagnosis and management of patent foramen ovale after stroke"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "30141306",
+          "year": 2019,
+          "title": "European position paper on the management of patients with patent foramen ovale: Part I"
+        },
+        {
+          "pmid": "33507260",
+          "year": 2021,
+          "title": "European position paper on the management of patients with patent foramen ovale - Part II"
+        },
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "28902593",
+          "year": 2017,
+          "title": "Patent Foramen Ovale Closure or Anticoagulation versus Antiplatelets after Stroke (CLOSE)"
+        },
+        {
+          "pmid": "28902580",
+          "year": 2017,
+          "title": "Patent Foramen Ovale Closure or Antiplatelet Therapy for Cryptogenic Stroke (REDUCE)"
+        },
+        {
+          "pmid": "28902590",
+          "year": 2017,
+          "title": "Long-Term Outcomes of Patent Foramen Ovale Closure or Medical Therapy after Stroke (RESPECT)"
+        }
+      ],
+      "notes": "ASD: no new landmark RCT primary publication in the period 31.07.2021-31.07.2026."
+    },
+    "Paravalvular leak": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "37622656",
+          "year": 2023,
+          "title": "2023 ESC Guidelines for the management of endocarditis"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        },
+        {
+          "pmid": "37283275",
+          "year": 2023,
+          "title": "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1"
+        },
+        {
+          "pmid": "33871579",
+          "year": 2021,
+          "title": "Valve Academic Research Consortium 3: Updated Endpoint Definitions for Aortic Valve Clinical Research"
+        }
+      ],
+      "landmark_trials": [
+        {
+          "pmid": "38156599",
+          "year": 2024,
+          "title": "Transcatheter Closure or Surgery for Symptomatic Paravalvular Leaks: The Multicenter KISS Registry"
+        },
+        {
+          "pmid": "36256693",
+          "year": 2022,
+          "title": "Predictors of Clinical Success After Transcatheter Paravalvular Leak Closure: An International Prospective Registry"
+        },
+        {
+          "pmid": "37128805",
+          "year": 2023,
+          "title": "Percutaneous Paravalvular Leak Closure After TAVI: The International PLUGinTAVI Registry"
+        }
+      ]
+    },
+    "Infective endocarditis": {
+      "esc_guideline": [
+        {
+          "pmid": "37622656",
+          "year": 2023,
+          "title": "2023 ESC Guidelines for the management of endocarditis"
+        }
+      ],
+      "additional_guidelines": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "notes": "The dedicated guideline for this topic is the 2023 ESC Guidelines for the management of endocarditis. If no excerpt of it appears above, its content is NOT available: do not describe or guess it, and state in relation_guidelines only that this guideline exists for the topic."
+    },
+    "Multivalvular disease": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "consensus": [
+        {
+          "pmid": "39874243",
+          "year": 2025,
+          "title": "The role of multi-modality imaging in multiple valvular heart disease: EACVI expert consensus document"
+        },
+        {
+          "pmid": "35292799",
+          "year": 2022,
+          "title": "Multi-modality imaging assessment of native valvular regurgitation: EACVI/ESC Council of Valvular Heart Disease position paper"
+        },
+        {
+          "pmid": "39207816",
+          "year": 2024,
+          "title": "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum"
+        }
+      ],
+      "notes": "No standalone landmark RCT primary publication in the period 31.07.2021-31.07.2026."
+    },
+    "Other": {
+      "esc_guideline": [
+        {
+          "pmid": "40878295",
+          "year": 2025,
+          "title": "2025 ESC/EACTS Guidelines for the management of valvular heart disease"
+        }
+      ],
+      "notes": "No entries yet."
+    }
+  }
+}

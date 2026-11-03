@@ -1,0 +1,112 @@
+Return a single JSON object and nothing else:
+{
+  "short": "Short edition in 2-3 sentences, at most 60 words, based EXCLUSIVELY on the
+              abstract: design and population (with n if stated), the central result with
+              its most important number, and finally what the authors conclude. Purely
+              descriptive, no advice. Must be understandable without the rest of the summary.",
+  "headline": "ONE line, at most 20 words: the central result with its most important
+              number, purely descriptive (e.g. 'TAVR non-inferior at 5 years: death/stroke 20.1%
+              vs 22.3%'). No advice.",
+  "design_tag": "Design label plus size for the study header, at most 10 words, e.g.
+              'International registry · N = 5,605', 'Systematic review & meta-analysis · 57
+              studies · N = 73,588', 'Multicenter AI'. Only facts from the abstract.",
+  "why_it_matters": "2 sentences (35-60 words): (1) what the study does - design, population
+              and the question it answers, naming the trial or registry; (2) the clinical
+              context from the abstract's background: which gap or uncertainty it addresses.
+              Descriptive; no praise, no advice, no judgement of quality.",
+  "key_finding": "3-4 sentences (60-110 words), dense with the numbers exactly as in the
+              abstract: (1) population size and structure (cohorts, groups); (2) the primary
+              result with both group values and the effect measure with its CI or p-value;
+              (3) the most important secondary, subgroup or validation result with numbers;
+              (4) if stated, a further key result. Never only a single sentence. Purely
+              descriptive; the authors' conclusion is NOT repeated here.",
+  "tiles": [{"value": "short figure exactly as in the abstract, e.g. '55.1% vs. 67.7%' or
+              'aHR 2.01'", "label": "2-4 words, e.g. '5-year mortality'", "context": "short
+              qualifier, e.g. 'MitraScore <=3 vs. >=4' or '95% CI 1.35-3.00'"}],
+              EXACTLY 3 tiles with the three most informative figures of the abstract. Every
+              number in value and context must appear VERBATIM in the abstract - never compute,
+              round or combine numbers. Fewer than 3 only if the abstract has fewer figures.
+  "summary": "8-12 sentences, based EXCLUSIVELY on the abstract. Cover: background/
+              research question, study design, population and inclusion, intervention
+              and comparator, primary endpoint with numbers, key secondary endpoints
+              with numbers, safety/adverse events (only if stated), limitations stated in
+              the abstract, and what the authors conclude. Purely descriptive - report
+              what the paper says, never what the reader should do. No sentences about
+              what the abstract lacks.",
+  "relation_evidence": "1-3 sentences placing the study in the context of existing
+              evidence, descriptively. ONLY broadly established knowledge. Do NOT invent
+              specific trials, numbers or results. No advice. If no confident placement
+              is possible, write exactly: 'Cannot be placed in context from the abstract
+              alone.'",
+  "relation_guidelines": "1-3 sentences DESCRIBING how the findings relate to current
+              guidelines (e.g. ESC/ACC/AHA) - for example that they are consistent with,
+              challenge, or refine what current guidelines state. NEVER invent a specific
+              class of recommendation or level of evidence, and NEVER tell the reader to
+              follow, adopt or change anything. If uncertain, write exactly: 'No clear
+              guideline link can be derived.'",
+  "authors_conclusion": "1-2 sentences stating what THE AUTHORS conclude, explicitly
+              attributed to them (start with 'The authors conclude that ...' or similar).
+              Strictly descriptive. No advice, no recommendation, no imperative.",
+  "key_numbers": {
+    "design": "keyword(s), at most 6 words, e.g. 'RCT, double-blind, multicentre' or 'Registry' (or null)",
+    "n": "total participants as a string, e.g. '4321'  (or null)",
+    "followup": "e.g. '12 months'  (or null)",
+    "primary_endpoint": {
+      "name": "name + timepoint, e.g. 'Target lesion failure, 12 mo'",
+      "arm1_label": "short label, e.g. 'DCB'", "arm1_value": "e.g. '6.1%'",
+      "arm2_label": "short label, e.g. 'DES'", "arm2_value": "e.g. '7.0%'",
+      "effect": "e.g. 'Risk difference -0.9% (95% CI -2.1 to 0.3), non-inferior'  (or null)"
+    },
+    "secondary": [
+      {"name": "e.g. 'Cardiac death'", "arm1": "1.6%", "arm2": "1.8%", "effect": "-0.2%"}
+    ],
+    "key_findings": [
+      {"label": "e.g. 'Operative mortality'", "value": "e.g. '0.4% (n=2)'"}
+    ]
+  },
+  "qc_notes": "Internal notes for the editor (NOT shown in the document), e.g. information
+              missing from the abstract, unclear numbers. Leave empty if nothing stands out."
+}
+IMPORTANT for key_numbers:
+- Only take values stated VERBATIM in the abstract. If a value is missing, set it to null.
+  Never invent numbers, endpoints, arms or confidence intervals. Max 5 secondary rows.
+- If the abstract gives values for two groups for the primary endpoint, 'primary_endpoint'
+  MUST be filled completely (name, arm1/arm2 with label and value, effect).
+- Every endpoint number you cite in 'summary' must also appear in key_numbers
+  (primary_endpoint, secondary or key_findings) whenever it fits one of those structures.
+- With only ONE cohort (pooled meta-analysis, single arm, registry): arm2_label and
+  arm2_value = null and put the overall value in arm1. No empty strings and no
+  placeholders such as '-', 'n/a' or 'not stated' - always use null.
+- 'design': at most 6 words, a keyword rather than a sentence.
+- 'n': ONE number (total participants analysed; with several cohorts the main cohort),
+  no text and no brackets.
+- 'primary_endpoint' is the primary endpoint or main result named in the abstract - NOT a
+  baseline characteristic. For descriptive studies without a defined endpoint use the
+  central result the authors' conclusion rests on; if there is none with a number: null.
+- 'effect' only if the abstract states a measure (HR, OR, RR, difference, SMD, p-value,
+  confidence interval); never a sentence in words such as 'significantly lower'. If the
+  abstract gives only the group values, fill arm1/arm2 and set effect = null.
+- 'effect' only if the abstract states it, otherwise null.
+- key_findings is REQUIRED: 3-6 rows whenever the abstract contains any quantitative or
+  concrete factual statements (rates, counts, gradients, durations, prevalences, thresholds,
+  scope items). Each row is a short label plus the value exactly as stated in the abstract.
+  For a document with no numbers at all (e.g. a technique consensus) use concrete factual
+  descriptors, such as {"label": "Complication addressed", "value": "LVOT obstruction after
+  TMVR"}. Leave it empty only if the abstract contains nothing concrete.
+
+Write in a factual, clinical, descriptive register. No marketing language, no advice.
+
+STYLE EXAMPLES for why_it_matters / key_finding (from the approved CLARITY short edition -
+match this length and density, never copy their content):
+  why_it_matters: "The 5-year MITRA-PRO follow-up quantifies the association between residual
+    mitral regurgitation after M-TEER and long-term mortality, including how that association
+    changes over time. Earlier analyses of the registry covered only 1- and 3-year outcomes."
+  key_finding: "Five-year mortality was 55.1% with MitraScore <=3 versus 67.7% with MitraScore
+    >=4. In degenerative MR, the corresponding mortality rates were 53.1% and 73.2%; in
+    functional MR, they were 55.0% and 64.6%. Residual MR became prognostic after 30 days and
+    remained associated with excess long-term mortality."
+  key_finding: "The registry enrolled 2,171 patients; 2,140 entered the final analysis and 254
+    (11.9%) died within 30 days. The model achieved an AUROC of 0.763 with good calibration. In
+    the external cohort of 377 patients, 48 (12.7%) died within 30 days and the AUROC was 0.799
+    (95% CI 0.730-0.868)."
+

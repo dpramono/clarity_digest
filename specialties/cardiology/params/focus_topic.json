@@ -1,0 +1,40 @@
+{
+  "_comment": "Optionales Schwerpunktthema mit eigener Logik (Titel-Regel, Unterthemen, Leitlinienbezug). Datei löschen, um die Sonderlogik für dieses Fach abzuschalten.",
+  "subgroup": "Structural Heart Disease",
+  "label_de": "Strukturelle Kardiologie",
+  "topics": [
+    "TAVR - low risk",
+    "TAVR - intermediate/high risk",
+    "TEER - secondary (functional) MR",
+    "TEER - primary (degenerative) MR",
+    "Transcatheter mitral valve replacement (TMVR)",
+    "LAAO / left atrial appendage occlusion",
+    "Transcatheter tricuspid valve (TEER/replacement)",
+    "PFO / ASD closure",
+    "Paravalvular leak",
+    "Infective endocarditis",
+    "Multivalvular disease",
+    "Other"
+  ],
+  "title_regex": "\\b(TAVR|TAVI|TMVR|TTVR|TEER|M-TEER|T-TEER|MitraClip|TriClip|PASCAL|transcatheter\\s+(?:aortic|mitral|tricuspid|pulmonary|valve|edge)|aortic\\s+(?:stenosis|valve|regurgitation|bioprosthe\\w*)|mitral\\s+(?:regurgitation|valve|stenosis|annul\\w*|leaflet\\w*)|tricuspid|paravalvular|valve[\\s\\-]in[\\s\\-](?:valve|ring)|TAV[\\s\\-]in[\\s\\-]\\w+|bioprosthe\\w*|valvular|valve\\s+(?:replacement|repair|disease|durability)|left\\s+atrial\\s+appendage|LAAO|LAAC|appendage\\s+(?:closure|occlusion)|patent\\s+foramen|PFO|atrial\\s+septal|endocarditis)\\b",
+  "recall_tiab": [
+    "TAVR",
+    "TAVI",
+    "TEER",
+    "TMVR",
+    "transcatheter aortic",
+    "transcatheter mitral",
+    "transcatheter tricuspid",
+    "aortic stenosis",
+    "aortic valve",
+    "mitral valve",
+    "tricuspid valve",
+    "mitral regurgitation",
+    "tricuspid regurgitation",
+    "edge-to-edge",
+    "left atrial appendage",
+    "patent foramen ovale",
+    "paravalvular",
+    "valve-in-valve"
+  ]
+}

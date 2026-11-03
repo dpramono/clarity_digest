@@ -1,0 +1,89 @@
+{
+  "TAVR - low risk": [
+    "transcatheter aortic",
+    "TAVI",
+    "TAVR",
+    "aortic stenosis",
+    "surgical aortic valve",
+    "SAVR",
+    "low risk",
+    "low surgical risk"
+  ],
+  "TAVR - intermediate/high risk": [
+    "transcatheter aortic",
+    "TAVI",
+    "TAVR",
+    "aortic stenosis",
+    "surgical risk",
+    "high risk",
+    "intermediate risk",
+    "heart team"
+  ],
+  "TEER - secondary (functional) MR": [
+    "secondary mitral",
+    "functional mitral",
+    "transcatheter edge-to-edge",
+    "TEER",
+    "mitral regurgitation",
+    "heart failure"
+  ],
+  "TEER - primary (degenerative) MR": [
+    "primary mitral",
+    "degenerative mitral",
+    "transcatheter edge-to-edge",
+    "TEER",
+    "mitral regurgitation",
+    "mitral valve repair"
+  ],
+  "Transcatheter mitral valve replacement (TMVR)": [
+    "transcatheter mitral valve",
+    "mitral valve replacement",
+    "mitral prosthesis",
+    "mitral annular calcification"
+  ],
+  "LAAO / left atrial appendage occlusion": [
+    "left atrial appendage",
+    "appendage occlusion",
+    "appendage closure",
+    "anticoagulation",
+    "stroke prevention"
+  ],
+  "Transcatheter tricuspid valve (TEER/replacement)": [
+    "tricuspid regurgitation",
+    "tricuspid valve",
+    "transcatheter tricuspid",
+    "right heart"
+  ],
+  "PFO / ASD closure": [
+    "patent foramen ovale",
+    "atrial septal",
+    "shunt closure",
+    "cryptogenic stroke"
+  ],
+  "Paravalvular leak": [
+    "paravalvular",
+    "prosthetic valve",
+    "regurgitation",
+    "valve dehiscence"
+  ],
+  "Infective endocarditis": [
+    "endocarditis",
+    "infective endocarditis",
+    "vegetation",
+    "prosthetic valve endocarditis",
+    "antibiotic",
+    "blood culture",
+    "surgery for endocarditis",
+    "embolic"
+  ],
+  "Multivalvular disease": [
+    "multiple valve",
+    "multivalvular",
+    "combined valve",
+    "mixed valve disease"
+  ],
+  "Other": [
+    "valvular heart disease",
+    "valve intervention"
+  ]
+}

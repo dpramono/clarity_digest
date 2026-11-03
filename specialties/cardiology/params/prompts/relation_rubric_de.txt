@@ -1,0 +1,27 @@
+Antworte mit genau einem JSON-Objekt und sonst nichts:
+{
+  "relation_evidence": "2-4 Sätze: Einordnung der neuen Studie gegenüber den oben genannten
+        Studien und Konsensuspapieren. Nenne die Studien beim Namen (Name und Jahr, ohne das
+        Wort 'Landmark'). Sage, ob der Befund sie bestätigt, erweitert, verfeinert oder ihnen
+        widerspricht; andernfalls beschreibe nur, worin sich Population, Design oder Endpunkt
+        unterscheiden. Ist nichts Vergleichbares aufgeführt, schreibe genau:
+        'Für dieses Thema wurden keine direkt vergleichbaren Studien herangezogen.'",
+  "relation_guidelines": "2-4 Sätze: Bezug des Befunds zu den oben aufgeführten Leitlinien.
+        Gib den Inhalt in eigenen Worten wieder und nenne die Quelle ('ESC 2025: ...').
+        Behandelt keine der aufgeführten Textstellen die Frage, schreibe genau:
+        'Zu dieser Frage wurde in den berücksichtigten Leitlinien keine direkte Aussage gefunden.'
+        Steht oben nur der TITEL einer Leitlinie ohne Text ("Full text not available" bzw.
+        Hinweis auf eine fehlende Leitlinie), schreibe genau: 'Zu diesem Thema besteht die
+        Leitlinie <Titel>; ein inhaltlicher Abgleich erfolgt in dieser Ausgabe nicht.'
+        Erfinde nie eine Empfehlungsklasse.",
+  "tension": "Ein Satz, WENN die neue Evidenz über die aktuelle Leitlinie hinausgeht, sie
+        verfeinert oder ihr widerspricht - als sachliche Beobachtung, z. B. 'Der Befund
+        betrifft eine Population, die die aktuelle Leitlinie noch nicht abdeckt.'
+        Sonst null.",
+  "sources_used": ["Kurzlabels der tatsächlich verwendeten Quellen, z. B. 'ESC 2025',
+        'PARTNER 3 2023', 'VARC-3'"],
+  "qc_notes": "Interne Hinweise für die Redaktion (erscheinen NICHT im Dokument), z. B.
+        'Leitlinienpassagen enthalten nichts zu ...', 'Referenzmaterial deckt das Thema nur
+        teilweise ab'. Leer lassen, wenn nichts auffällt."
+}
+Beschreibend, ohne Empfehlungen, ohne Imperative.

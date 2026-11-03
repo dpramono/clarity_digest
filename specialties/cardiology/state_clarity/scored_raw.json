@@ -1,0 +1,3853 @@
+[
+ {
+  "pmid": "42963189",
+  "title": "The case for targeted heart failure case finding in obesity.",
+  "journal": "Eur J Prev Cardiol",
+  "journal_full": "European journal of preventive cardiology",
+  "pub_date": "2026 Oct 31",
+  "epub_date": "2026-10-31",
+  "authors": [
+   "van Dalen B.",
+   "Motiram P.",
+   "Chitu M.",
+   "Geersing G.",
+   "de Boer R.",
+   "Westenbrink B."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurjpc/zwag567",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42963189/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title ('The case for...') and journal type suggest a commentary or opinion piece arguing for heart failure case finding in people with obesity, not an original study with new outcome data.",
+   "bottom_line": "Treat this as an argument for targeted screening rather than new evidence; no change to practice should follow from it alone. Check the full text for whether it cites or summarises trial data on screening strategies.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42963127",
+  "title": "Baseline gradient, valve morphology and left ventricular recovery and survival after TAVR in reduced-ejection-fraction aortic stenosis: a retrospective cohort study.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Li F.",
+   "Pan W.",
+   "Zhou D.",
+   "Zhao Y.",
+   "Luo W.",
+   "Zhou J.",
+   "Xiao C.",
+   "Ge J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2026-328646",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42963127/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [
+    "Heart Failure / Cardiomyopathies"
+   ],
+   "structural_topic": "TAVR - intermediate/high risk",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This retrospective cohort examines how baseline gradient and valve morphology relate to LV recovery and survival after TAVR in reduced-ejection-fraction aortic stenosis, a question relevant to patient selection in a complex subgroup, though the design is observational and the sample size is not yet visible.",
+   "bottom_line": "Retrospective data cannot establish causal benefit, so treat any association between baseline gradient or morphology and post-TAVR LV recovery as hypothesis-generating until confirmed in prospective or larger registry studies. Full abstract and sample size are needed before weighting its findings in TAVR selection for reduced-EF patients.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42963126",
+  "title": "Haematological and iron-handling effects of SGLT2 inhibitors: a meta-analysis of randomised trials.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Asim M.",
+   "Sarwar F.",
+   "Shah O.",
+   "Zahir I.",
+   "Sawaira F.",
+   "Ishaque G.",
+   "Memon F.",
+   "Hamid S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2025-327603",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42963126/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "A pooled analysis of randomised trials on how SGLT2 inhibitors affect haemoglobin and iron indices could clarify a possible mechanism behind their benefit in heart failure with iron deficiency or anaemia, though the title alone does not show whether the effects are clinically meaningful.",
+   "bottom_line": "Pending the full abstract, this looks like a confirmatory meta-analysis of a secondary haematological effect of SGLT2 inhibitors. It is unlikely to change prescribing on its own but may inform iron and anaemia management in patients already taking these drugs.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42963030",
+  "title": "Atrial Leadless Pacemaker Implantation at the Superior Right Atrial Site.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Ogano M.",
+   "Tanabe J.",
+   "Kimura K.",
+   "Kokubun H.",
+   "Matsuda R.",
+   "Asai K.",
+   "Iwasaki Y."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Right atrial appendage (RAA) pacing may produce nonphysiological atrial activation.\nOBJECTIVES: To evaluate the feasibility, safety, and electrocardiographic characteristics of atrial leadless pacemaker implantation at the superior right atrium (RA).\nMETHODS: Sixty-eight consecutive patients undergoing dual-chamber leadless pacemaker implantation were studied. Procedural, device, electrocardiographic, and clinical outcomes were compared between superior RA and RAA base pacing.\nRESULTS: Superior RA implantation succeeded in 26/46 attempts (56.5%), increasing from 27.8% to 60.0% and 92.3% across sequential periods. In noncrossover cases, procedure (72.7±16.4 vs 76.8±27.2 minutes; P=0.533) and fluoroscopy times (15.4±5.8 vs 18.6±11.9 minutes; P=0.249) were comparable. P-wave duration remained unchanged with superior RA pacing (99.7±29.9 to 98.1±25.6 ms; P=0.543) but increased with RAA pacing (106.7±23.1 to 134.9±25.6 ms; P<0.001); P-wave terminal force in V1 changed from 3.6% to 3.6% versus 10.0% to 45.0%, respectively (P<0.001 for RAA). PR intervals increased from 228.4±72.8 to 229.7±77.5 ms (P=0.038) and from 205.5±72.0 to 234.4±72.6 ms (P<0.001), respectively; the increase was smaller with superior RA pacing (+5.7±11.7 vs +38.6±31.3 ms; P<0.001). At 3 months, sensing amplitudes (3.4±1.5 vs 2.4±1.1 mV; P=0.091) and pacing thresholds (0.8±0.5 vs 0.8±0.3 V; P=0.785) were comparable. No pericardial tamponade occurred. During 10.4±4.6 months, mortality, heart failure events, and atrial fibrillation incidence did not differ significantly.\nCONCLUSIONS: Superior RA pacing was feasible, showed a marked learning curve, and better preserved intrinsic atrial activation than RAA pacing.",
+  "doi": "10.1016/j.hrthm.2026.10.058",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42963030/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This single-centre, non-randomised series of 68 patients suggests superior right atrial leadless pacing may preserve more physiological atrial activation than right atrial appendage pacing, but the feasibility rate was low early on and the outcomes are short-term.",
+   "bottom_line": "Superior right atrial leadless pacing appears feasible and may better preserve intrinsic atrial conduction (smaller P-wave and PR changes) than RAA pacing, but success depended heavily on operator learning curve. Larger comparative studies with clinical endpoints are needed before changing site selection.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 4 < 6"
+ },
+ {
+  "pmid": "42963029",
+  "title": "Heterogeneity of Treatment Effect of ABC Pathway-Based Care in Older Atrial Fibrillation: Insights from the mAFA-II and MIRACLE-AF Trials Using a Causal Machine Learning Approach.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Chen Y.",
+   "Yu Q.",
+   "Gue Y.",
+   "Meng Y.",
+   "Zheng Y.",
+   "Li M.",
+   "Guo Y.",
+   "Chen M.",
+   "Lip G."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Integrated care based on the Atrial fibrillation Better Care (ABC) pathway improves outcomes in patients with atrial fibrillation (AF), but whether treatment effects differ across older patients remains unclear.\nOBJECTIVES: To evaluate heterogeneity of treatment effect (HTE) of ABC pathway-based care and assess its transportability across healthcare settings using causal machine learning (ML).\nMETHODS: Individual participant data from the cluster-randomised mAFA-II and MIRACLE-AF trials were analysed, including 3,209 patients aged ≥65 years. Three causal ML models were developed in mAFA-II and externally validated in MIRACLE-AF. The primary outcome was a composite of all-cause mortality, ischaemic stroke, intracranial haemorrhage, heart failure, acute coronary syndrome, or major bleeding.\nRESULTS: The uplift random forest demonstrated the best performance and identified meaningful HTE. In the mAFA-II testing cohort, ABC pathway-based care was associated with a lower risk of the primary outcome in patients predicted to benefit, whereas no benefit and possible harm were observed in those predicted to derive harm (P-interaction=0.002). In external validation, benefit was preserved in the predicted benefit group but not in the predicted harm group, although treatment discrimination was attenuated. Patients predicted to derive limited benefit had greater clinical complexity, including higher comorbidity burden and CHA2DS2-VASc scores. Sex, heart failure, and hypertension were the strongest predictors of treatment effect.\nCONCLUSIONS: ABC pathway-based integrated care demonstrates clinically meaningful treatment heterogeneity among older patients with AF. These findings support more personalised implementation of integrated care and highlight the potential of causal ML to guide precision management in AF.\nCLINICAL TRIAL REGISTRATION: MAFA-II trial (ChiCTR-OOC-17014138 || http://www.chictr.org.cn/, registered on 26 December 2017), MIRACLE-AF trial (NCT04622514 || https://clinicaltrials.gov/, registered on 10 November 2020).",
+  "doi": "10.1016/j.hrthm.2026.10.059",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42963029/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This post hoc causal machine learning analysis of two cluster-randomised trials suggests the ABC pathway's benefit may vary across older patients with AF, which could help target integrated care.",
+   "bottom_line": "The heterogeneity findings are exploratory and attenuated on external validation, so they should not yet change how individual patients are selected for ABC pathway care. They are best treated as hypothesis-generating pending prospective confirmation.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42961827",
+  "title": "A rare cause of syncope.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Liu Z.",
+   "Zhang X.",
+   "Jiang L."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag866",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961827/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title is generic and does not reveal the design or the cause, though its wording suggests a case report or clinical image rather than original research, so the clinical value cannot be judged without an abstract.",
+   "bottom_line": "No actionable change for practice can be drawn from the title alone. Review the full text once available to see whether the rare cause of syncope is a diagnostic lesson worth remembering.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [
+   [
+    "no_abstract_top",
+    "Eur Heart J"
+   ]
+  ],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42961821",
+  "title": "AI algorithms and external validation: promises, pitfalls, and a practical blueprint.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Thambiraj G.",
+   "Armoundas A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "External validation involving the testing of a frozen AI model on independent data from other sites, populations, time periods, or devices provides the clearest estimate of intended-use setting performance when those external data are deployment-representative of the expected population, measurement processes, and clinical workflow. It yields realistic estimates of discrimination and calibration, exposes shortcut learning and distribution shift, quantifies clinical utility through decision-analytic measures, and reveals subgroup disparities requiring mitigation. Yet common pitfalls undermine credibility: quasi-external splits with hidden relatedness; spectrum and prevalence mismatch; site, workflow, and hardware effects; label noise and reference-standard drift; analytic flexibility and selective reporting; small, underpowered samples; reliance only on the area under the curve; unreported threshold tuning; and leakage. A practical blueprint emphasizes pre-registration; representative, multi-site cohorts spanning geography, time, and acquisition; prevention of patient and temporal overlap; comprehensive evaluation of discrimination, calibration (including calibration-in-the-large, calibration slope, and calibration plots), and net benefit with confidence intervals; pre-specified subgroup and fairness audits; transparent labelling procedures and uncertainty analyses; principled sample-size calculations; and minimal, well-documented model updating (recalibration before revision). Finally, external validation should connect to post-deployment governance via drift detection, performance triggers, and change-control plans, complemented by site-specific local evaluation to ensure safety and reliability across diverse clinical environments. When executed to these standards, external validation transforms promising prototypes into dependable clinical tools, clarifying where a model performs, where it fails, and what adaptations are necessary for safe, equitable, and sustainable use. This framework links statistical evaluation to clinical use, model updating, and post-deployment monitoring.",
+  "doi": "10.1093/eurheartj/ehag816",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961821/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Other",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "It offers a methodological framework for judging whether cardiology AI models have been validated well enough to trust in new clinical settings.",
+   "bottom_line": "Treat AI models as unproven in your own setting until they have been externally validated on representative data with calibration and net-benefit analyses, and ask for local evaluation and drift monitoring before adoption. This paper sets out what that validation should look like but does not itself report new clinical evidence.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": null,
+  "_filled": false,
+  "_status": "outside_focus",
+  "_reason": "Other"
+ },
+ {
+  "pmid": "42961768",
+  "title": "Diagnostic Performance of a Dual Sensor System in Assessment of Coronary Calcification: An Ex Vivo Cadaveric Study.",
+  "journal": "Catheter Cardiovasc Interv",
+  "journal_full": "Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Nakayama T.",
+   "Tanaka T.",
+   "Sekimoto T.",
+   "Kawakami R.",
+   "Shiraki T.",
+   "Hamana T.",
+   "Fujiyoshi K.",
+   "Adachi Y.",
+   "Nakano T.",
+   "Madra A.",
+   "Grogan A.",
+   "Sakaguchi Y.",
+   "Onimura Y.",
+   "Watanabe R.",
+   "Katayanagi S.",
+   "Okajima N.",
+   "Virmani R.",
+   "Finn A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "BACKGROUND: Accurate assessment of coronary calcification informs procedural planning in percutaneous coronary intervention (PCI), yet neither optical frequency domain imaging (OFDI) nor intravascular ultrasound (IVUS) alone provides comprehensive diagnostic information. The dual sensor system (DSS) was developed to integrate and complement both imaging modalities.\nAIMS: To determine the diagnostic value of DSS for detecting and characterizing calcification compared with either modality alone.\nMETHODS: Twenty coronary arteries from 17 cadaver hearts underwent DSS pullbacks. Eighty-seven histological sections and their co-registered DSS images were analyzed, with histology serving as the reference standard. Four cardiologists blinded to histology independently assessed calcification using OFDI alone, IVUS alone, and DSS. OFDI signal attenuation and IVUS reverberation artifacts were examined as potential indicators of maximum calcification thickness.\nRESULTS: DSS demonstrated the highest sensitivity (DSS 98.0%; OFDI 85.5%, p < 0.001; IVUS 94.4%, p = 0.019) and accuracy (DSS, 97.7%; OFDI, 86.5%, p < 0.001; IVUS, 92.8%, p = 0.004) for detecting calcification. Inter-observer agreement was also highest in DSS (κ: DSS, 0.82; OFDI, 0.53; IVUS, 0.53). In subgroup analysis, sensitivity was significantly higher in DSS for sections with calcification arc < 180° (DSS, 98.6%; OFDI, 83.8%; IVUS, 94.0%), but not for those with ≥ 180°. Maximum calcification thickness was greater in calcifications only with OFDI attenuation than in those without (1423.8 [988.8-1994.1] vs. 686.4 [552.8-906.3] µm, p < 0.001).\nCONCLUSIONS: DSS provides accurate and consistent detection of coronary calcification and may help stratify calcification by thickness. Future studies should assess whether these advantages translate into clinical benefits.",
+  "doi": "10.1002/ccd.70964",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961768/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Diagnostic / Validation study",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "It is a preliminary ex vivo validation of a new intravascular imaging combination (DSS) for coronary calcification, with no clinical outcomes in patients.",
+   "bottom_line": "DSS detected calcification more sensitively than OFDI or IVUS alone in 20 cadaveric arteries, but this small ex vivo study does not show that it improves PCI planning or patient outcomes. Await in vivo and clinical outcome studies before changing practice.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 3 < 6"
+ },
+ {
+  "pmid": "42961442",
+  "title": "Systemic Hypertension and Survival in Pulmonary Hypertension.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Yogeswaran A.",
+   "Berger M.",
+   "De Bie E.",
+   "Kiely D.",
+   "Annis J.",
+   "Hassoun P.",
+   "Konswa Z.",
+   "Howard L.",
+   "Lawrie A.",
+   "Wilkins M.",
+   "Thenappan T.",
+   "Lichtblau M.",
+   "Ulrich S.",
+   "Klose H.",
+   "Pepke-Zaba J.",
+   "Kuronuma K.",
+   "Giannakoulas G.",
+   "Sweatt A.",
+   "Zamanian R.",
+   "Lavender M.",
+   "Zhai Z.",
+   "Zhang Z.",
+   "Anthi A.",
+   "Frauendorf M.",
+   "Williams P.",
+   "Elwing J.",
+   "Jose A.",
+   "Ghio S.",
+   "Anderson J.",
+   "Matsubara H.",
+   "Al Ghouleh I.",
+   "Chan S.",
+   "Grünig E.",
+   "Kovacs G.",
+   "Cajigas H.",
+   "Frantz R.",
+   "Sirenko Y.",
+   "Torbas O.",
+   "Sahay S.",
+   "Saleh K.",
+   "Majeed R.",
+   "Ghofrani H.",
+   "Toshner M.",
+   "Brittain E.",
+   "Tello K.",
+   "Seeger W."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: Pulmonary hypertension (PH), a progressive and life-threatening condition with rising prevalence among older adults, frequently coexists with systemic hypertension, the prognostic impact of which is poorly understood.\nOBJECTIVE: To evaluate the association between systemic hypertension and survival in patients with PH.\nDESIGN, SETTING, AND PARTICIPANTS: This multicenter cohort study analyzed data from the Pulmonary Vascular Research Institute GoDeep meta-registry, integrating global retrospective and prospective PH cohorts (n = 3238 in Europe, n = 3014 in North America, n = 96 in Africa, n = 802 in Asia, and n = 851 in Oceania). Survival was assessed using multivariable Cox proportional hazards models and adjusted for key confounders, with sensitivity analyses to validate robustness. Independent external validation was performed in a cohort in the UK. A total of 12 771 patients with incident PH (median [IQR] age, 65 [53-73] years; 7372 [58%] female) were diagnosed via right heart catheterization and comprehensive clinical data, encompassing PH groups 1-5 and all age categories. The study spans diagnosis decades from 1980 to 2020. Data were analyzed from February 2025 until September 2026.\nEXPOSURES: Center-reported diagnosis of systemic hypertension, baseline systolic systemic arterial pressure (sSAP), and heart rate as well as longitudinal sSAP and heart rate trajectories.\nMAIN OUTCOMES AND MEASURES: All-cause mortality, adjusted for confounding variables, including age, PH group, antihypertensive and PH-specific medications, and cardiac index.\nRESULTS: Higher baseline sSAP and preexisting systemic hypertension were independently associated with improved survival. Patients with hypertension exhibited a 26% reduced mortality hazard (hazard ratio [HR], 0.74; 95% CI, 0.68-0.79) compared to their counterparts without hypertension. Survival benefits correlated positively with increasing sSAP (80-180 mm Hg), remained consistent across PH groups and age groups, and were independent of antihypertensive and PH-specific medications. Elevated heart rate was associated with higher mortality. sSAP increments correlated with improved cardiac index and tricuspid annular plane systolic excursion. Decreased sSAP and higher heart rate during follow-up correlated with higher mortality. External validation in a separate UK cohort confirmed these findings.\nCONCLUSION AND RELEVANCE: In this global PH cohort, higher sSAP was associated with enhanced survival, while a higher baseline heart rate and declining systemic blood pressure during follow-up were significantly associated with increased mortality risk.",
+  "doi": "10.1001/jamacardio.2026.4834",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961442/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This large registry cohort suggests that systemic hypertension and higher systemic pressure are associated with better survival in pulmonary hypertension, which challenges the usual assumption that hypertension is harmful in this setting.",
+   "bottom_line": "This is an observational association in a large registry with likely confounding and reverse causation, so it should not change antihypertensive prescribing in PH. Higher baseline heart rate and falling systemic blood pressure during follow-up may be useful prognostic markers to monitor.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42961436",
+  "title": "N-Acetylgalactosamine-Conjugated Small Interfering RNA Targeting Hepatic Angiotensinogen in Hypertension: A Phase I Clinical Trial With Randomized Part A and Open-Label Part B.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Zhang J.",
+   "Wu J.",
+   "Liu Q.",
+   "Kong L.",
+   "Li X.",
+   "Gao Q.",
+   "Yin H.",
+   "Li J.",
+   "Shi A.",
+   "Zhang L.",
+   "Shen A.",
+   "Liang X.",
+   "Wang Y.",
+   "Dong R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: Angiotensinogen (AGT) is the precursor of angiotensin peptides and a key determinant of renin-angiotensin-aldosterone system activity. ART101 is an investigational N-acetylgalactosamine-conjugated small interfering RNA (GalNAc-siRNA) designed to durably suppress hepatic AGT synthesis.\nOBJECTIVE: To evaluate the safety, tolerability, pharmacokinetics, and pharmacodynamics of single ascending doses of the AGT-targeting GalNAc-siRNA in healthy volunteers and to provide an initial exploratory assessment of blood pressure effects in patients with hypertension.\nDESIGN, SETTING, AND PARTICIPANTS: This phase I study was conducted from January 2025 to April 2026 with 24-week follow-up. Part A was a double-blind, placebo-controlled, single ascending-dose trial; part B was an open-label, single-dose study. The study took place at Beijing Friendship Hospital, Capital Medical University, Beijing, China. Part A enrolled 40 healthy adults randomized 6:2 to receive the GalNAc-siRNA (25-600 mg) or placebo; 39 completed the study. Part B enrolled 8 patients with hypertension receiving the GalNAc-siRNA, 600 mg; all completed the study.\nINTERVENTIONS: A single subcutaneous injection of the AGT-targeting GalNAc-siRNA (25, 75, 150, 300, or 600 mg) or placebo in part A; a single open-label subcutaneous injection of GalNAc-siRNA, 600 mg, in part B.\nMAIN OUTCOMES AND MEASURES: The primary outcome was safety and tolerability; secondary outcomes included pharmacokinetics, pharmacodynamics, exploratory blood pressure assessments, and renin-angiotensin-aldosterone system biomarkers.\nRESULTS: Among 40 healthy volunteers (27 [67.5%] male; mean [SD] age, 40.4 [7.8] years) and 8 patients (6 [75.0%] male; mean [SD] age, 47.3 [10.3] years) with hypertension, the AGT-targeting GalNAc-siRNA was well tolerated. In part A, treatment-emergent adverse events (TEAEs) occurred in 23 of 30 active-treatment participants (76.7%) vs 7 of 10 placebo recipients (70.0%); in part B, 6 of 8 patients (75.0%) had TEAEs. No serious adverse events, injection site reactions, or hyperkalemia were observed; all TEAEs were mild to moderate. Plasma exposure (maximum plasma concentration [Cmax] and area under the plasma concentration-time curve [AUC]) increased with dose over the wide dose range from 25 mg to 600 mg. Mean maximum serum AGT reductions of 93% (at 600 mg) in healthy volunteers and 90% (at 600 mg) in patients with hypertension were observed. At 24 weeks after a single 600-mg dose, the placebo-corrected 24-hour ambulatory systolic blood pressure decreased by 12.9 mm Hg in healthy participants.\nCONCLUSION AND RELEVANCE: In this phase I study, no serious treatment-related safety signals were identified. Sustained, dose-dependent AGT reductions and exploratory blood pressure lowering were observed. These findings support further investigation of the AGT-targeting GalNAc-siRNA as a potential long-acting therapeutic for hypertension.\nTRIAL REGISTRATION: China Drug Clinical Registry Identifiers: CTR20250041 (part A) and CTR20253973 (part B).",
+  "doi": "10.1001/jamacardio.2026.4936",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961436/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This first-in-human trial shows that a single subcutaneous dose of an hepatic angiotensinogen-targeting siRNA can durably lower AGT, a potential route to long-acting blood pressure control in hypertension.",
+   "bottom_line": "The study is a small phase I safety and pharmacodynamic trial (40 healthy volunteers, 8 patients) with only exploratory, unpowered blood pressure data, so it does not change practice. Await phase II/III trials with prespecified blood pressure endpoints before considering clinical use.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [
+   [
+    "trial_below",
+    5
+   ]
+  ],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42961435",
+  "title": "RNAi Targeting Hepatic AGT to Block RAAS Pathway in Hypertension.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Saxena M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jamacardio.2026.5209",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961435/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Basic / Translational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests original work on an RNA-interference approach to hepatic angiotensinogen for hypertension, a potentially important new mechanism, but without an abstract the design (preclinical versus first-in-human) cannot be confirmed.",
+   "bottom_line": "Hepatic AGT silencing is a promising antihypertensive strategy, but no practice change is supported until the design, sample size and blood-pressure outcomes are known. Review the full text, particularly whether it reports human efficacy and safety data.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42961434",
+  "title": "Long-Term Steroid Use Tied to Adverse Cardiovascular Effects.",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Anderer S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jama.2026.20038",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961434/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests an observational association between long-term systemic steroid exposure and adverse cardiovascular outcomes, but with no abstract, design, sample size or effect estimates available, the strength of the evidence cannot be judged.",
+   "bottom_line": "Long-term steroid exposure may be associated with cardiovascular harm, which reinforces minimising steroid duration and dose where feasible. Await the abstract to confirm the design, population and effect size before changing practice.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42961427",
+  "title": "Intensive BP Lowering Reduces Cardiovascular Risk in Adults With CKD.",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Richmond S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jama.2026.20039",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961427/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests original research on intensive blood pressure lowering and cardiovascular outcomes in CKD, but with no abstract the design (trial, pooled trial analysis or meta-analysis) is unconfirmed, so the score is provisional and reflects the likely confirmatory nature of the finding.",
+   "bottom_line": "Pending the abstract, this appears to confirm that intensive BP lowering reduces cardiovascular events in CKD, which is consistent with existing guidance, so check the design and effect size before acting on it. It is unlikely to change practice on its own.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42961412",
+  "title": "Intensive vs More Intensive Lipid-Lowering Therapy and Plaque Regression in Statin-Naive Patients: Prespecified Analyses From the FLOWPROMOTE Randomized Clinical Trial.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Mortensen M.",
+   "Iraqi N.",
+   "Sand N.",
+   "Busk M.",
+   "Jensen J.",
+   "Madsen K.",
+   "Grove E.",
+   "Dey D.",
+   "Kanstrup H.",
+   "Pedersen K.",
+   "Mathiassen O.",
+   "Hosbond S.",
+   "Bøtker H.",
+   "Narula J.",
+   "Nørgaard B."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: Prior imaging studies (predominantly using intravascular ultrasound) have demonstrated modest plaque regression with lipid-lowering therapy in stable coronary artery disease (CAD). The effect of initiating intensive lipid-lowering therapy on coronary plaque regression across the entire coronary tree in treatment-naive patients remains uncertain.\nOBJECTIVE: To report the prespecified secondary imaging end points of the FLOWPROMOTE trial by comparing the effects of intensive vs more intensive lipid-lowering therapy on plaque regression in statin-naive patients with stable CAD and to assess the association between achieved low-density lipoprotein cholesterol (LDL-C) levels and plaque regression.\nDESIGN, SETTING, AND PARTICIPANTS: FLOWPROMOTE was a multicenter randomized clinical trial enrolling statin-naive patients with newly diagnosed stable CAD, defined by a coronary computed tomography angiography (CTA) stenosis greater than 50% and fractional flow reserve CT less than or equal to 0.80. Coronary CTA was performed at baseline and repeated at 9 and 18 months. Study data were analyzed from February 2025 to January 2026.\nINTERVENTIONS: Patients were randomized to intensive lipid-lowering therapy (atorvastatin 40 mg) or more intensive lipid-lowering therapy (rosuvastatin 40 mg plus ezetimibe 10 mg) for 18 months.\nMAIN OUTCOMES AND MEASURES: Prespecified secondary end points included changes in total plaque volume (TPV), noncalcified plaque volume (NCPV), and calcified plaque volume (CPV) across all coronary vessels at 9 and 18 months compared with baseline.\nRESULTS: A total of 104 patients (mean [SD] age, 64 [9] years; 82 male [79%]) were included in this analysis, with 52 patients in the intensive group and 52 patients in the more intensive group. LDL-C levels decreased from 119.7 to 69.5 mg/dL (-38%) with intensive therapy and from 127.4 to 42.5 mg/dL (-65%) with more intensive therapy (between-group P < .001). At 18 months, both TPV and NCPV decreased in both groups, with significantly greater regression in the more intensive-therapy group. TPV was reduced by -69.8 mm3 (-21.1%) with more intensive therapy vs -39.0 mm3 (-13.6%) with intensive therapy (between-group difference, -30.9 mm3; 95% CI, -57.2 to -4.5 mm3; P = .02), and NCPV was reduced by -82.3 mm3 (-28.2%) vs -53.5 mm3 (-20.0%), respectively (between-group difference, -28.9 mm3; 95% CI, -53.2 to -4.6 mm3; P = .02). CPV increased similarly in both groups. Regression of TPV occurred in 90% of patients receiving more intensive therapy compared with 76% receiving intensive therapy (47 of 52 [90%] vs 38 of 51 [75%]; P = .05), and regression of NCPV was observed in 98% vs 77% (51 of 52 [98%] vs 39 of 51 [77%]; P =.001). Lower achieved LDL-C levels were linearly associated with greater regression of TPV and NCPV.\nCONCLUSIONS AND RELEVANCE: This secondary analysis of the FLOWPROMOTE randomized clinical trial demonstrated that in statin-naive patients with CAD, more intensive lipid-lowering therapy was associated with significantly greater regression of total and noncalcified coronary plaque burden compared with intensive therapy. The extent of plaque regression was related to achieved LDL-C levels, supporting the potential for partial reversal of coronary atherosclerosis with intensive lipid reduction.\nTRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT04737408.",
+  "doi": "10.1001/jamacardio.2026.4788",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961412/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [
+    "Cardiac Imaging",
+    "Coronary Artery Disease / ACS"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "This prespecified secondary analysis of a randomized trial shows that adding ezetimibe and rosuvastatin 40 mg lowers LDL-C further and produces more coronary plaque regression on CTA than atorvastatin 40 mg in statin-naive patients with stable CAD.",
+   "bottom_line": "Greater LDL-C lowering with rosuvastatin plus ezetimibe was associated with modestly more total and noncalcified plaque regression over 18 months, but these are surrogate imaging endpoints in 104 patients, with no clinical outcome data. Current practice still rests on LDL-C targets and outcome trials, so this supports intensive lipid lowering without changing the indication for combination therapy.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "selected",
+  "_reason": "",
+  "sources": [
+   {
+    "journal": "JAMA Cardiol",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42961412/"
+   }
+  ],
+  "summary": {
+   "short": "In FLOWPROMOTE, 104 statin-naive patients with stable CAD were randomized to atorvastatin 40 mg or rosuvastatin 40 mg plus ezetimibe 10 mg for 18 months. Total plaque volume changed by -69.8 mm3 with more intensive therapy vs -39.0 mm3 with intensive therapy (P = .02). The authors conclude that more intensive therapy was associated with greater regression of total and noncalcified plaque.",
+   "headline": "More intensive lipid lowering gave greater TPV regression at 18 months: -69.8 mm3 vs -39.0 mm3 (P = .02)",
+   "design_tag": "Multicenter RCT · prespecified secondary analysis · N = 104",
+   "why_it_matters": "This prespecified secondary imaging analysis of the multicenter randomized FLOWPROMOTE trial compares intensive (atorvastatin 40 mg) with more intensive (rosuvastatin 40 mg plus ezetimibe 10 mg) lipid-lowering therapy on coronary plaque in statin-naive patients with stable CAD. Prior imaging studies, predominantly intravascular ultrasound, showed modest regression, and the effect of initiating intensive therapy across the entire coronary tree in treatment-naive patients was described as uncertain.",
+   "key_finding": "The analysis included 104 patients (52 intensive, 52 more intensive). LDL-C decreased from 119.7 to 69.5 mg/dL (-38%) with intensive therapy and from 127.4 to 42.5 mg/dL (-65%) with more intensive therapy (between-group P < .001). At 18 months, TPV was reduced by -69.8 mm3 (-21.1%) vs -39.0 mm3 (-13.6%) (between-group difference, -30.9 mm3; 95% CI, -57.2 to -4.5 mm3; P = .02), and NCPV by -82.3 mm3 (-28.2%) vs -53.5 mm3 (-20.0%) (difference, -28.9 mm3; 95% CI, -53.2 to -4.6 mm3; P = .02). CPV increased similarly in both groups. NCPV regression occurred in 98% vs 77% (P =.001), and lower achieved LDL-C was linearly associated with greater TPV and NCPV regression.",
+   "tiles": [
+    {
+     "value": "-21.1% vs -13.6%",
+     "label": "TPV change, 18 months",
+     "context": "More intensive vs intensive; P = .02"
+    },
+    {
+     "value": "98% vs 77%",
+     "label": "Patients with NCPV regression",
+     "context": "More intensive vs intensive; P =.001"
+    },
+    {
+     "value": "-65% vs -38%",
+     "label": "LDL-C change",
+     "context": "More intensive vs intensive; P < .001"
+    }
+   ],
+   "summary": "Prior imaging studies, predominantly using intravascular ultrasound, have shown modest plaque regression with lipid-lowering therapy in stable CAD, and the effect of initiating intensive therapy across the entire coronary tree in treatment-naive patients remained uncertain. This report presents the prespecified secondary imaging end points of the multicenter randomized FLOWPROMOTE trial. The trial enrolled statin-naive patients with newly diagnosed stable CAD, defined by a coronary CTA stenosis greater than 50% and fractional flow reserve CT less than or equal to 0.80. Patients were randomized for 18 months to intensive therapy (atorvastatin 40 mg) or more intensive therapy (rosuvastatin 40 mg plus ezetimibe 10 mg), with coronary CTA at baseline, 9 and 18 months. The analysis included 104 patients (mean age 64 [9] years; 82 male [79%]), 52 in each group. LDL-C decreased from 119.7 to 69.5 mg/dL (-38%) with intensive therapy and from 127.4 to 42.5 mg/dL (-65%) with more intensive therapy (between-group P < .001). At 18 months, TPV was reduced by -69.8 mm3 (-21.1%) with more intensive therapy vs -39.0 mm3 (-13.6%) with intensive therapy (between-group difference, -30.9 mm3; 95% CI, -57.2 to -4.5 mm3; P = .02). NCPV was reduced by -82.3 mm3 (-28.2%) vs -53.5 mm3 (-20.0%) (between-group difference, -28.9 mm3; 95% CI, -53.2 to -4.6 mm3; P = .02), while CPV increased similarly in both groups. TPV regression occurred in 47 of 52 (90%) vs 38 of 51 (75%) patients (P = .05), and NCPV regression in 51 of 52 (98%) vs 39 of 51 (77%) (P =.001). Lower achieved LDL-C levels were linearly associated with greater regression of TPV and NCPV. The authors conclude that more intensive therapy was associated with significantly greater regression of total and noncalcified coronary plaque burden, and that regression was related to achieved LDL-C.",
+   "relation_evidence": "No directly comparable studies were considered for this topic.",
+   "relation_guidelines": "No direct statement on this question was found in the guidelines considered.",
+   "authors_conclusion": "The authors conclude that in statin-naive patients with CAD, more intensive lipid-lowering therapy was associated with significantly greater regression of total and noncalcified coronary plaque burden than intensive therapy. They state that regression was related to achieved LDL-C levels, which they describe as supporting the potential for partial reversal of coronary atherosclerosis with intensive lipid reduction.",
+   "key_numbers": {
+    "design": "RCT, multicenter, secondary analysis",
+    "n": "104",
+    "followup": "18 months",
+    "primary_endpoint": {
+     "name": "Change in total plaque volume (prespecified secondary), 18 mo",
+     "arm1_label": "More intensive",
+     "arm1_value": "-69.8 mm3 (-21.1%)",
+     "arm2_label": "Intensive",
+     "arm2_value": "-39.0 mm3 (-13.6%)",
+     "effect": "Between-group difference -30.9 mm3 (95% CI -57.2 to -4.5 mm3); P = .02"
+    },
+    "secondary": [
+     {
+      "name": "NCPV change, 18 mo",
+      "arm1": "-82.3 mm3 (-28.2%)",
+      "arm2": "-53.5 mm3 (-20.0%)",
+      "effect": "-28.9 mm3 (95% CI -53.2 to -4.6 mm3); P = .02"
+     },
+     {
+      "name": "TPV regression, patients",
+      "arm1": "47 of 52 [90%]",
+      "arm2": "38 of 51 [75%]",
+      "effect": "P = .05"
+     },
+     {
+      "name": "NCPV regression, patients",
+      "arm1": "51 of 52 [98%]",
+      "arm2": "39 of 51 [77%]",
+      "effect": "P =.001"
+     },
+     {
+      "name": "LDL-C change",
+      "arm1": "127.4 to 42.5 mg/dL (-65%)",
+      "arm2": "119.7 to 69.5 mg/dL (-38%)",
+      "effect": "P < .001"
+     }
+    ],
+    "key_findings": [
+     {
+      "label": "Patients analysed",
+      "value": "104 (52 per group)"
+     },
+     {
+      "label": "Mean age",
+      "value": "64 [9] years"
+     },
+     {
+      "label": "Male patients",
+      "value": "82 (79%)"
+     },
+     {
+      "label": "CPV change",
+      "value": "Increased similarly in both groups"
+     },
+     {
+      "label": "Achieved LDL-C vs regression",
+      "value": "Linear association with TPV and NCPV regression"
+     }
+    ]
+   },
+   "qc_notes": "Abstract inconsistency: TPV regression in the intensive group is given as 76% in the text but as 38 of 51 [75%] in parentheses. Denominators of 52 and 51 (103) do not match the 104 patients analysed, and the reason is not explained. The abstract states TPV regression P = .05. The abstract's own description of the TPV and NCPV comparison refers to '-38%' LDL-C reduction etc. exactly as quoted. Abstract does not specify whether the 104 analysed patients are the full randomized population. Conclusion phrase 'supporting the potential for partial reversal' is the authors' wording and is attributed to them.",
+   "_meta": {
+    "lang": "en",
+    "v": "2.3",
+    "model": "claude-sonnet-5-5"
+   },
+   "sources_used": [],
+   "relation_qc_notes": "The only guideline excerpts supplied are from the ESC/EACTS 2025 Valvular Heart Disease Guidelines (coronary assessment before valve intervention, AF, antithrombotic therapy, radiation-induced VHD, and so on). None addresses lipid-lowering therapy, LDL-C targets, statin or ezetimibe use, or coronary plaque regression on CT angiography. No trials or consensus papers are listed, and the topic note reads 'No entries yet.' The FLOWPROMOTE analysis therefore could not be placed against any listed source, and no tension is recorded."
+  }
+ },
+ {
+  "pmid": "42961411",
+  "title": "Assessment of Ototoxicity in Patients With Heart Failure Receiving High-Dose IV Loop Diuretics.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Cox Z.",
+   "Rao V.",
+   "Ivey-Miranda J.",
+   "Myers S.",
+   "Manning K.",
+   "Imhoff B.",
+   "Jenkins C.",
+   "Shotwell M.",
+   "Miller K.",
+   "Storrow A.",
+   "Watson P.",
+   "Rivera-Sanchez A.",
+   "Wilson F.",
+   "Yamamoto Y.",
+   "Siddiqi H.",
+   "Schlendorf K.",
+   "Stevenson L.",
+   "Lindenfeld J.",
+   "Rybak L.",
+   "Collins S.",
+   "Testani J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: Concern for ototoxicity hinders loop diuretic (LD) dosing in heart failure (HF); given the mechanism by which LDs affect the ear, high-dose LDs should produce transient, not permanent, hearing changes.\nOBJECTIVE: To measure the association of LD dose with permanent and temporary ototoxicity.\nDESIGN, SETTING, AND PARTICIPANTS: Cohort 1 received a randomized sequence of LD doses (bumetanide, 1.25-10 mg) across study visits with serial audiometry assessments. Cohort 2 received serial LD up to furosemide 500-mg doses during a HF hospitalization with audiometry at baseline and prior to discharge. Cohort 3 retrospectively characterized clinically diagnosed ototoxicity in HF hospitalizations was defined using International Statistical Classification of Diseases and Related Health Problems, Tenth Revision (ICD-10) codes. Cohorts 1 and 2 were single center, while cohort 3 was multicenter. Cohort 1 studied outpatient participants with stable HF, while cohort 2 (n = 40) and cohort 3 studied hospitalized patients with acute HF.\nEXPOSURE: Intravenous LD.\nMAIN OUTCOMES AND MEASURES: The primary outcomes were clinically diagnosed ototoxicity and hearing changes via audiometry.\nRESULTS: Cohort 1 contained 50 participants, cohort 2 contained 40 participants, and cohort 3 contained 22 656 participants. In cohort 1, mean (SD) participant age was 63.2 (10.4) years, and 21 of 50 participants (42%) were women. In cohorts 1 and 2, clinically diagnosed ototoxicity was not observed. In cohort 1, at peak diuretic concentration, worsening hearing shifts were infrequent (24 ears of 400 doses [6%]) but were more common with higher doses (odds ratio [OR], 1.99; 95% CI, 1.21-3.28 per doubling dose; P = .007). Within hours, hearing shifts largely resolved and were absent in 98% of measurements (393 ears of 400 doses). No significant association between LD dose and hearing shifts was present at any time aside from peak LD concentration. In cohort 2, hearing shifts were not different across groups divided by the median daily LD dose and were not associated with LD dose (OR, 1.19; 95% CI, 0.71-1.98 per doubling dose; P = .52). In cohort 3, 608 HF hospitalizations (2.7%) had clinically diagnosed ototoxicity. In multivariable analyses, peak dose of 160 mg furosemide equivalents or greater (OR, 0.83; 95% CI, 0.52-1.31; P = .43) and 400 mg furosemide equivalents or greater (OR, 1.28; 95% CI, 0.71-2.31; P = .41) were not associated with greater clinically diagnosed ototoxicity risk relative to less than 160 mg.\nCONCLUSIONS AND RELEVANCE: In this analysis of 2 small HF cohorts, short-term exposure to high-dose LD was not associated with permanent ototoxicity, although concomitant ototoxin use was excluded. Future studies are needed to understand the risk of ototoxicity with repeated LD exposure and in broader HF populations.\nTRIAL REGISTRATION: ClinicalTrials.gov Identifiers: NCT04481919 and NCT05323487.",
+  "doi": "10.1001/jamacardio.2026.4913",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961411/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "Fear of ototoxicity often limits IV loop diuretic dosing in acute heart failure, so data on whether high doses cause lasting hearing loss bear directly on decongestion decisions.",
+   "bottom_line": "Two small cohorts (n=50 and n=40) found only transient, peak-concentration hearing shifts after high-dose loop diuretics, with no clinically diagnosed ototoxicity. A large multicenter ICD-10 analysis (n=22,656) found no dose association, but it relied on coded diagnoses and excluded concomitant ototoxins, so it does not settle risk with repeated exposure.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42961405",
+  "title": "Intersection of Patient and Hospital Rurality in Heart Failure Care and Outcomes.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Verma A.",
+   "Fan J.",
+   "Wei C.",
+   "O'Connell B.",
+   "Brownell N.",
+   "Tisdale R.",
+   "Kalwani N.",
+   "Ma I.",
+   "Ambrosy A.",
+   "Kohsaka S.",
+   "Heidenreich P.",
+   "Sandhu A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "IMPORTANCE: Rural-urban disparities in heart failure (HF) care delivery and outcomes are well documented. However, it remains unclear if differences in outcomes after HF hospitalization are primarily driven by patient rural residence, hospital resources, or both.\nOBJECTIVE: To evaluate associations of patient and hospital rurality with quality of care and postdischarge outcomes after hospitalization for HF with reduced ejection fraction (HFrEF).\nDESIGN, SETTING, AND PARTICIPANTS: This was a retrospective cohort study of Medicare beneficiaries in US hospitals with HFrEF with an index hospitalization from January 1, 2013, to December 31, 2021. Included were Medicare beneficiaries discharged alive after an index hospitalization for HFrEF. Participants were classified as rural patients hospitalized in rural hospitals (rural-rural), rural patients in urban hospitals (rural-urban), urban patients in urban hospitals (urban-urban), and urban patients in rural hospitals (urban-rural). Study data were analyzed from July to September 2026.\nEXPOSURES: Patient rural residence and hospital rurality.\nMAIN OUTCOMES AND MEASURES: Primary outcome was 90-day all-cause mortality after hospitalization. Secondary outcomes included inpatient cardiology consultation, 90-day postdischarge guideline-directed medical therapy (GDMT) use based on prescription fills, and HF readmission at 30 days, 90 days, and 1 year.\nRESULTS: Among 735 460 beneficiaries (median [IQR] age, 77 [70-85] years; 415 077 male [56.4%]), 69 061 (9.4%) were rural-rural, 65 510 (8.9%) rural-urban, 582 947 (79.3%) urban-urban, and 17 942 (2.4%) urban-rural. Compared with rural patients treated in rural hospitals, rural patients treated in urban hospitals were more likely to receive inpatient cardiology consultation (odds ratio [OR], 2.02; 95% CI, 1.84-2.22) and initiation of several GDMT classes, including β-blockers (OR, 1.20; 95% CI, 1.16-1.25), ARNIs (OR, 1.23; 95% CI, 1.13-1.34), MRAs (OR, 1.23; 95% CI, 1.15-1.31), and SGLT2Is (OR, 1.48; 95% CI, 1.32-1.67). They also had lower rates of HF readmission and mortality at all time points (HF readmission 1-year: OR, 0.85; 95% CI, 0.82-0.88; mortality 1-year: OR, 0.91; 95% CI, 0.89-0.94) than rural-rural patients. Compared with urban patients hospitalized at urban hospitals, rural patients hospitalized at urban hospitals more often received inpatient cardiology consultation (OR, 1.38; 95% CI, 1.31-1.44), whereas postdischarge GDMT differences were modest (absolute difference in GDMT score 0.09 points; 95% CI, 0.05-0.14). Rural patients also had lower HF readmission (1-year OR, 0.81; 95% CI, 0.79-0.82) but higher 30- and 90-day mortality than urban patients (30-day OR, 1.10; 95% CI, 1.06-1.14; 90-day OR, 1.05; 95% CI, 1.02-1.08).\nCONCLUSIONS AND RELEVANCE: Results suggest that hospital rurality was associated with lower odds of GDMT use and higher rates of all-cause mortality, whereas rural residence was associated with mortality differences despite treatment in urban hospitals. Interventions addressing both inpatient resource disparities and postdischarge transitions of care may reduce rural-urban inequities in HF outcomes.",
+  "doi": "10.1001/jamacardio.2026.4827",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961405/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This large Medicare cohort suggests that both patient rural residence and hospital rurality are associated with differences in HFrEF treatment and survival, which helps frame where system-level interventions might target rural-urban gaps.",
+   "bottom_line": "Rural patients treated at urban hospitals received more cardiology consultation and GDMT than those treated at rural hospitals, but rural residence was still linked to higher 30- and 90-day mortality than urban residence. Because this is a retrospective observational study, the associations are hypothesis-generating and do not by themselves change HFrEF management.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42961402",
+  "title": "Analysis Asks: Are GLP-1 Drugs Safe in People With Frailty?",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Bock A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "This Medical News article discusses an analysis of cardiovascular benefits and safety of semaglutide use in trial participants with frailty, defined by accumulated age-related health deficits.",
+  "doi": "10.1001/jama.2026.22482",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961402/",
+  "_origin": "new",
+  "abstract_source": "Crossref",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "It addresses whether semaglutide's cardiovascular benefits and safety extend to older adults with frailty, a group often under-represented in trials.",
+   "bottom_line": "This is a news report of a secondary analysis of semaglutide trial participants with frailty, so it is hypothesis-generating and should not by itself change prescribing. Frailty alone should not be the reason to withhold GLP-1 therapy, but the full analysis should be checked for the size of the frail subgroup and the safety signals before drawing firm conclusions.",
+   "failed": false,
+   "provisional": false
+  },
+  "_manual": [
+   [
+    "top_journal",
+    "JAMA",
+    5
+   ]
+  ],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "below_threshold",
+  "_reason": "score 5 < 6"
+ },
+ {
+  "pmid": "42958937",
+  "title": "Obesity and Atrial Fibrillation: Integrating Lifestyle, Pharmacotherapy and Ablation.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Ha F.",
+   "Kotschet E.",
+   "Nerlekar N."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag307",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42958937/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [
+    "Prevention, Lipids & Sports Cardiology"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a narrative review of how weight management, obesity pharmacotherapy and AF ablation fit together, a clinically relevant topic, but no abstract is available to confirm this or identify new evidence.",
+   "bottom_line": "Obesity is a modifiable AF risk factor, and weight reduction is central to AF management alongside rhythm control, but this record is a review-style title and should not change practice on its own. Check the full text for the evidence it synthesises before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42956818",
+  "title": "DPP3-positive circulatory shock: from targetable ICU endotype to Horizon Europe precision-therapy trial.",
+  "journal": "Eur J Heart Fail",
+  "journal_full": "European journal of heart failure",
+  "pub_date": "2026 Oct 30",
+  "epub_date": "2026-10-30",
+  "authors": [
+   "Karakas M.",
+   "Ziolkowska K.",
+   "Kovalenko O.",
+   "Zemskov S.",
+   "Blagaia A.",
+   "Zeller T.",
+   "Boos A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/ejhf/xuag328",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956818/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Basic / Translational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests translational work on a DPP3-defined circulatory shock endotype and a planned precision-therapy trial, but with no abstract the design and data cannot be verified, and no therapy is yet shown to work.",
+   "bottom_line": "Treat DPP3 as a hypothesis-generating biomarker for circulatory shock for now; await the Horizon Europe trial results before changing ICU or cardiogenic shock management.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42956795",
+  "title": "Faster troponin, same time in the emergency department: what is next for acute coronary syndrome assessment?",
+  "journal": "Lancet",
+  "journal_full": "Lancet (London, England)",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Cullen L.",
+   "Greenslade J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/S0140-6736(26)02097-0",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42956795/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-form title and 'what is next' framing suggest a Lancet commentary on high-sensitivity troponin pathways rather than an original trial, though the subject (faster rule-out of acute coronary syndrome) is clinically important.",
+   "bottom_line": "No abstract is available, so this cannot be appraised for design or results; if it accompanies a primary trial of faster troponin-based rule-out, check that paper directly before changing ED chest-pain pathways.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42955936",
+  "title": "Acquired ventricular septal defect in the setting of a catecholaminergic storm.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Griné M.",
+   "Borges-Rosa J.",
+   "Oliveira-Santos M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag845",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955936/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a rare complication (acquired ventricular septal defect) in catecholaminergic storm, likely a case report or small series, so the evidence base is limited even though the mechanism is clinically instructive.",
+   "bottom_line": "Consider an acquired VSD as a rare but possible complication when a patient with catecholaminergic storm deteriorates unexpectedly, and check for it with echocardiography. Single or few cases should not change routine management; the full abstract is needed to confirm the design.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42955049",
+  "title": "Pulmonary Hypertension and Its Association With Cardiac Transplant Outcomes: Does Pulmonary Artery Systolic Pressure Matter?",
+  "journal": "JACC Heart Fail",
+  "journal_full": "JACC. Heart failure",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Airewele E.",
+   "Ali A.",
+   "Cajigas H.",
+   "Ramani M.",
+   "Bryner B.",
+   "Harap R.",
+   "Medina M.",
+   "Pham D.",
+   "Raza Y.",
+   "Tibrewala A.",
+   "Wu T.",
+   "Wilcox J.",
+   "Youmans Q.",
+   "Okwuosa I."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jchf.2026.103480",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955049/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests an association study of pulmonary hypertension and post-transplant outcomes, but the question-style title and missing abstract make the design and strength of evidence unclear, so this is a provisional score.",
+   "bottom_line": "Whether pulmonary artery systolic pressure independently predicts outcomes after cardiac transplant is unresolved from the title alone; check the full abstract for cohort size, design and effect estimates before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42954926",
+  "title": "The weight of evidence: does obesity really not matter for atrial fibrillation ablation? Lessons from CABANA.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 01",
+  "epub_date": "",
+  "authors": [
+   "Defaye P.",
+   "Mansour M.",
+   "Di Biase L."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag290",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954926/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title is a question-style commentary that reflects on CABANA's findings on obesity and AF ablation outcomes rather than reporting new data, so it adds interpretation rather than evidence.",
+   "bottom_line": "This appears to be a commentary on CABANA, not a new trial; the underlying evidence is the original CABANA analysis, so read the primary publication for the actual data on obesity and ablation outcomes.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42954105",
+  "title": "Malignant Ventricular Arrhythmias following Pulsed Field Ablation for Atrial Fibrillation: A systematic review of published cases and mechanistic insights.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Papakonstantinou P.",
+   "Charitos D.",
+   "Fitzpatrick N.",
+   "O'Brien J.",
+   "Bolao J.",
+   "Szeplaki G.",
+   "Boveda S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag303",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954105/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Meta-analysis / Systematic review",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "A systematic review of published case reports on malignant ventricular arrhythmias after pulsed field ablation for AF flags a relevant procedural safety signal, though case-level data cannot establish incidence or causality.",
+   "bottom_line": "Treat this as hypothesis-generating safety information about pulsed field ablation; it does not by itself change ablation technique or monitoring, and the full abstract should be checked for the number of cases and any proposed mechanism or precautions.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42950959",
+  "title": "Upright Treadmill versus Supine Bicycle Exercise in Rheumatic Mitral Stenosis: Exercise Capacity and Hemodynamic Responses.",
+  "journal": "J Am Soc Echocardiogr",
+  "journal_full": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Lee J.",
+   "Kim J.",
+   "Yang J.",
+   "Choi K.",
+   "Kim E.",
+   "Chang S.",
+   "Park S.",
+   "Lee S.",
+   "Park S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.echo.2026.10.004",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950959/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": "Other",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This comparison of upright treadmill and supine bicycle exercise echocardiography in rheumatic mitral stenosis addresses a narrow protocol question that is unlikely to change routine valve assessment.",
+   "bottom_line": "Exercise echocardiography in rheumatic mitral stenosis may be protocol-dependent, so the choice of exercise modality could affect measured haemodynamic responses. Treat this as hypothesis-generating until larger studies confirm the findings.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42950084",
+  "title": "Extensive type B aortic dissection with Michels type IX hepatic arterial anatomy causing acalculous gangrenous cholecystitis.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Liao J.",
+   "Wu H."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag804",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42950084/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 2,
+   "practice_changing": false,
+   "why_it_matters": "The title describes a single-patient style case report of an unusual vascular anatomy complicating type B aortic dissection, with no abstract to show any broader evidence or intervention data.",
+   "bottom_line": "This is a rare anatomical case report (Michels IX hepatic arterial variant with acalculous gangrenous cholecystitis in type B dissection) that is unlikely to change practice, though it may prompt awareness that visceral ischaemia can present as gallbladder necrosis in dissection.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 2"
+ },
+ {
+  "pmid": "42949716",
+  "title": "Parental Diabetes and Risk of Cardiovascular Disease in Offspring.",
+  "journal": "JAMA Cardiol",
+  "journal_full": "JAMA cardiology",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Fan J.",
+   "Wang Z.",
+   "He Y."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jamacardio.2026.4531",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949716/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "A title-only record suggests an observational cohort linking parental diabetes to offspring cardiovascular disease, a plausible familial risk-stratification question, but design size and effect estimates cannot be judged without the abstract.",
+   "bottom_line": "Parental diabetes history may be a useful signal for offspring cardiovascular risk assessment, but this is an observational association and should not change management until the abstract and effect sizes are reviewed.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42949704",
+  "title": "Left Bundle-Branch Area Pacing vs Right Ventricular Pacing for Atrioventricular Block and Preserved Left Ventricular Function: Research Summary.",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jama.2026.19090",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949704/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "RCT",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a comparison of left bundle-branch area pacing with right ventricular pacing in AV block with preserved LV function, a question of direct device-selection relevance, but the missing abstract and the 'Research Summary' label leave the design and results unclear.",
+   "bottom_line": "Pending the full abstract, LBBAP versus RV pacing is a relevant device-strategy question for AV block with preserved LV function; practice impact depends on the trial's endpoints and effect size, which cannot be verified from this record.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42949691",
+  "title": "Redefining Noninvasive Post-Transplant Surveillance: A Bayesian Decision Framework for Donor-Derived Cell-Free DNA in Heart Transplantation.",
+  "journal": "JACC Heart Fail",
+  "journal_full": "JACC. Heart failure",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "John J.",
+   "Henna F.",
+   "Waseem F.",
+   "Hassan M.",
+   "Bacha Z.",
+   "Mukhlis M.",
+   "Mohammed B.",
+   "Cheema S.",
+   "Shah K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jchf.2026.103483",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949691/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Diagnostic / Validation study",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a Bayesian decision framework for donor-derived cell-free DNA surveillance after heart transplantation, which could refine noninvasive rejection monitoring, but no abstract is available to confirm the design, sample size, or validation.",
+   "bottom_line": "Potentially useful for heart transplant surveillance strategy, but the data supporting it cannot be assessed until the abstract is available. Await the full paper before changing how donor-derived cell-free DNA is used to monitor patients.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42949681",
+  "title": "Revisiting the Ischemic Cascade Using the Lens of Generative Artificial Intelligence.",
+  "journal": "JACC Clin Electrophysiol",
+  "journal_full": "JACC. Clinical electrophysiology",
+  "pub_date": "2026 Oct 24",
+  "epub_date": "2026-10-24",
+  "authors": [
+   "Corsi D.",
+   "Jamthikar A.",
+   "Furst J.",
+   "Yanamala N.",
+   "Sengupta P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jacep.2026.09.012",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949681/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title reads as a conceptual perspective on the ischemic cascade through a generative AI lens, not an original clinical study, and no abstract is available to confirm its design.",
+   "bottom_line": "No clinical action is indicated from the title alone; the ischemic cascade concept (ischemia as the sequence from perfusion change to symptoms) is still standard, so await the full text before judging any AI-related implications.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42949678",
+  "title": "Severe Atrial Compression Detected During Electroanatomical Mapping.",
+  "journal": "JACC Clin Electrophysiol",
+  "journal_full": "JACC. Clinical electrophysiology",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Barczak K.",
+   "Futyma P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jacep.2026.10.005",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949678/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests an electrophysiology observation of severe atrial compression during electroanatomical mapping, but with no abstract and no design term, the study type and sample size cannot be judged.",
+   "bottom_line": "Atrial compression during electroanatomical mapping may be a procedural safety observation worth noting when mapping, but practice relevance depends on the abstract, which is not yet available. Recheck once the abstract is posted.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42949675",
+  "title": "Beyond HFmrEF: New Classification, Unchanged Treatment Evidence.",
+  "journal": "J Am Coll Cardiol",
+  "journal_full": "Journal of the American College of Cardiology",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Riccardi M.",
+   "Savarese G.",
+   "Butler J.",
+   "Lombardi C.",
+   "Solomon S.",
+   "Inciardi R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jacc.2026.10.002",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42949675/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a commentary or perspective on the heart failure classification of HFmrEF, but with no abstract and no design word the record is ambiguous, so it could be an original analysis and is scored in the middle range.",
+   "bottom_line": "The title signals that a new HF classification has not yet been matched by new treatment evidence, so current guideline-directed therapy for HFmrEF should stay unchanged until trial data are available. Verify the paper type and content once the abstract is posted.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42948892",
+  "title": "Beyond the Guidelines: The Cardiovascular Questions We Still Need to Ask in South Asians.",
+  "journal": "Eur J Prev Cardiol",
+  "journal_full": "European journal of preventive cardiology",
+  "pub_date": "2026 Oct 28",
+  "epub_date": "2026-10-28",
+  "authors": [
+   "Purighalla U."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurjpc/zwag570",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42948892/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title frames this as a perspective on unanswered cardiovascular questions in South Asian populations, which may be useful for research agenda-setting but is unlikely to change clinical practice on its own.",
+   "bottom_line": "Treat this as a commentary on evidence gaps in South Asian cardiovascular care rather than new data. Consider it only if you want to see where ethnicity-specific prevention research is heading, and check the full text for specific recommendations.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42946480",
+  "title": "Integrating pregnancy as a cardiovascular stress test: long-term maternal cardiovascular risk and mechanistic insights.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Torosyan N.",
+   "Hameed A."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2026-328576",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42946480/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This narrative review proposes pregnancy as a physiological cardiovascular stress test for identifying women at later risk, a useful framing for prevention but not yet supported by practice-changing evidence.",
+   "bottom_line": "Pregnancy complications such as hypertensive disorders are worth recording as part of long-term cardiovascular risk assessment in women, but this review does not by itself change management. Confirm against the full text and any subsequent primary data before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42946479",
+  "title": "Obstructive sleep apnoea and cardiovascular risk in atrial fibrillation: a health system-based cohort study.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Wang J.",
+   "Antza C.",
+   "Shen X.",
+   "Gooden T.",
+   "Tahrani A.",
+   "Lane D.",
+   "Subramanian A.",
+   "Gokhale K.",
+   "Adderley N.",
+   "Surenthirakumaran R.",
+   "Lotufo P.",
+   "Guo Y.",
+   "Wang H.",
+   "Thomas G.",
+   "Lip G.",
+   "Nirantharakumar K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2025-327476",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42946479/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "It asks whether obstructive sleep apnoea is linked to adverse cardiovascular outcomes in people with atrial fibrillation, a question relevant to AF risk assessment and sleep apnoea screening, though the abstract is not yet available to confirm design size or effect magnitude.",
+   "bottom_line": "This is an observational health-system cohort, so it can show association but not causation; it should not change AF management until the abstract and effect sizes are reviewed and whether treating sleep apnoea improves outcomes is tested in trials.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42945408",
+  "title": "Coronary micro- and nanoplastics in ST-segment elevation myocardial infarction: antecedent exposure or post-thrombotic enrichment?",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Qin J.",
+   "Chen T.",
+   "Qu L."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag800",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42945408/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This exploratory question on micro- and nanoplastics in STEMI coronary material is hypothesis-generating, and without an abstract its sample size and design cannot be judged.",
+   "bottom_line": "No change to clinical practice is warranted; environmental exposure and plastics in coronary thrombi are not yet actionable. Await the abstract and replication before weighing any association with infarction.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42945404",
+  "title": "Defining cardiovascular-kidney-metabolic progression by a cardiovascular endpoint: a built-in circularity.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Kazory A.",
+   "Koratala A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag857",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42945404/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a critical commentary on how cardiovascular-kidney-metabolic (CKM) progression is defined, arguing that using a cardiovascular endpoint to define it is circular, which matters for research methodology more than for bedside decisions.",
+   "bottom_line": "No change to clinical practice is indicated from the title alone; the piece is a methodological critique of CKM progression definitions, so read it for how future studies define staging and endpoints.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42945399",
+  "title": "Micro- and nanoplastics in acute coronary thrombosis: exposure, enrichment, or a dual mechanism?",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Marfella R.",
+   "Barbato E.",
+   "Paolisso G."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag803",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42945399/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-style title and the absence of an abstract suggest a commentary on micro- and nanoplastics in coronary thrombi, a hypothesis-generating topic with no established link to acute coronary syndrome management, though the score would rise if this turns out to be an original study.",
+   "bottom_line": "No change to current antithrombotic or ACS management can be drawn from this title alone; revisit once the abstract and design are available to confirm whether this is primary research or a commentary.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42945398",
+  "title": "Clonal haematopoiesis and the cardiovascular-kidney-metabolic continuum.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Chang A.",
+   "Honigberg M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag858",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42945398/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a topic-level review of clonal haematopoiesis (CHIP) as a link across cardiovascular, kidney and metabolic disease, which is a useful framing but not a new clinical result.",
+   "bottom_line": "No abstract is available, so this is triaged from the title alone as a probable review; it is unlikely to change practice now, though CHIP is an emerging cardiovascular risk marker worth tracking. Check the full text for whether it presents primary data.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42945397",
+  "title": "Giant aortic aneurysm in a child with a lethal arteriopathy due to a novel mutation in the FBLN4 gene.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Gopal K.",
+   "Kappanayil M.",
+   "Varma P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag864",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42945397/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 2,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be a single-patient case report of a paediatric genetic arteriopathy from a novel FBLN4 variant, which is of niche diagnostic interest and unlikely to change practice.",
+   "bottom_line": "Clinicians managing children with giant aortic aneurysms or early-onset arteriopathy should consider FBLN4-related disease in the genetic differential, but this single case does not establish management recommendations. The abstract was not yet available, so this triage rests on the title and publication type alone.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 2"
+ },
+ {
+  "pmid": "42937405",
+  "title": "Proteomic Signatures Associated With Life-Threatening Arrhythmic Events in Brugada Syndrome.",
+  "journal": "JACC Clin Electrophysiol",
+  "journal_full": "JACC. Clinical electrophysiology",
+  "pub_date": "2026 Oct",
+  "epub_date": "",
+  "authors": [
+   "Furutani M.",
+   "Nakashima M.",
+   "Miyamoto S.",
+   "Miyauchi S.",
+   "Okamura S.",
+   "Okubo Y.",
+   "Tokuyama T.",
+   "Oda N.",
+   "Shigemizu D.",
+   "Nakano Y."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jacep.2026.06.027",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42937405/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "A proteomic biomarker study in Brugada syndrome could eventually help refine arrhythmic risk, but as an exploratory association study it is unlikely to alter current risk stratification (ICD decisions rest on clinical risk factors and guidelines).",
+   "bottom_line": "No abstract is available yet, so the design and sample size are unknown; treat this as hypothesis-generating until validated in independent cohorts. Current management should continue to follow established risk-stratification guidance.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42936926",
+  "title": "Remote Blood Pressure Monitoring for Post-Acute Care and Secondary Prevention After Aortic Dissection.",
+  "journal": "Eur J Prev Cardiol",
+  "journal_full": "European journal of preventive cardiology",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-27",
+  "authors": [
+   "Lagache S.",
+   "Hakimi M.",
+   "Schoenenberger-Berzins R.",
+   "Attigah N.",
+   "Messerli F.",
+   "Jung G."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurjpc/zwag557",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42936926/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [
+    "General Cardiology"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a study of remote blood pressure monitoring for secondary prevention after aortic dissection, a niche but clinically relevant population, though the design cannot be confirmed without an abstract.",
+   "bottom_line": "Remote home BP monitoring after aortic dissection is a plausible way to support long-term BP control, but a single study of this kind is unlikely to change practice until the design, sample size and outcomes are known. Check the full text before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42933927",
+  "title": "Snare-Guided Repositioning of a Vascular Plug Device for Device-Related Hemolytic Anemia.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Hajj J.",
+   "Alqahtani M.",
+   "Brahier E.",
+   "Dugan E.",
+   "Krishnaswamy A.",
+   "Miyasaka R.",
+   "Harb S.",
+   "Kapadia S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.06.032",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933927/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [
+    "Structural Heart Disease"
+   ],
+   "structural_topic": "Other",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This appears to describe a niche percutaneous rescue technique for a rare complication (hemolysis from a misplaced vascular plug device), likely a case report or small series with limited generalisability.",
+   "bottom_line": "Useful as a technical reference if you manage a malpositioned vascular plug causing device-related hemolysis, but it is unlikely to change routine practice. Confirm the device indication and case numbers from the full text.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42933926",
+  "title": "Dynamic Common Iliac Vein Compression by the Adjacent Intestine Revealed by Intravascular Ultrasound.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Kobayashi S.",
+   "Tsuji A.",
+   "Tsuji Y.",
+   "Sato T.",
+   "Ogihara Y.",
+   "Dohi K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.025",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933926/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be an original imaging study showing that adjacent bowel can dynamically compress the common iliac vein, a finding that may help explain some venous obstruction seen in catheter-lab practice but is likely to be a narrow, descriptive report.",
+   "bottom_line": "Intravascular ultrasound may reveal dynamic extrinsic common iliac vein compression by adjacent intestine that is not apparent on static venography. Confirmation in larger cohorts and assessment of whether it changes treatment decisions are needed before practice changes.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42933925",
+  "title": "Pulmonary Artery Dissection Identified by Optical Coherence Tomography in Takayasu Arteritis.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Long J.",
+   "Lin J.",
+   "Guo W.",
+   "Wu X.",
+   "Hong C."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.08.020",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933925/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Cardiac Imaging",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be a niche imaging report describing pulmonary artery dissection in Takayasu arteritis detected by OCT, with no abstract available to judge sample size or clinical outcomes.",
+   "bottom_line": "Likely a small case-based or imaging observation in a rare vasculitis; it is unlikely to change practice, though it may prompt awareness of pulmonary artery involvement in Takayasu arteritis. Review the full text if managing these patients.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Cardiac Imaging",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42933924",
+  "title": "ROBIN to the Rescue: Balloon Laceration for LVOT Obstruction After Incomplete LAMPOON in Valve-in-Ring TMVR.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Andrews T.",
+   "Patel R.",
+   "Fram G.",
+   "Lee J.",
+   "Dawdy J.",
+   "Zweig B.",
+   "Gonzalez P.",
+   "Villablanca P.",
+   "O'Neill B.",
+   "Frisoli T."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.045",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933924/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Transcatheter mitral valve replacement (TMVR)",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title describes a niche rescue technique (balloon laceration of the septum) for left ventricular outflow tract obstruction after incomplete LAMPOON in valve-in-ring TMVR, a rare complication with a likely small case-level evidence base.",
+   "bottom_line": "Pending the abstract, this looks like a case series or technical report of a rescue strategy for LVOT obstruction after valve-in-ring TMVR; it is useful for operators managing this complication but is unlikely to change routine practice.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [
+   [
+    "canary",
+    "LAMPOON"
+   ]
+  ],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42933923",
+  "title": "Cerebral Embolism in Transfemoral Carotid Artery Stenting Using Proximal Protection and MicroNet-Covered Stents: PROXGUARD Study.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Karpenko A.",
+   "Castrucci T.",
+   "Partyka L.",
+   "Mazurek A.",
+   "Tekieli L.",
+   "Sciarra A.",
+   "Bugurov S.",
+   "Urbanczyk-Zawadzka M.",
+   "Banys R.",
+   "Musialek P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.048",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933923/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This is a no-abstract record for a study of cerebral embolism during transfemoral carotid stenting with proximal protection and MicroNet-covered stents, a niche but relevant question for stroke prevention in carotid disease.",
+   "bottom_line": "Without the abstract, the design and sample size cannot be judged, so the embolic-protection and stent-technology findings should be checked against the full paper before any change in practice. Current carotid stenting decisions should still rest on established trial evidence.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42933922",
+  "title": "Pulmonary Index of Microcirculatory Resistance: A Novel Hemodynamic Index for Invasively Assessing the Pulmonary Microvasculature.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "",
+  "authors": [
+   "Parikh R.",
+   "Klomhaus A.",
+   "Chen J.",
+   "Assi A.",
+   "Bassam K.",
+   "Channick R.",
+   "Fearon W.",
+   "Aboulhosn J.",
+   "Saggar R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.043",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933922/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Diagnostic / Validation study",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a new invasive haemodynamic index for pulmonary microvascular function, a potentially useful diagnostic concept, but without an abstract its validation, clinical outcomes and added value over existing measures cannot be judged.",
+   "bottom_line": "Early-stage invasive haemodynamic work on pulmonary microvascular resistance; it does not yet change how pulmonary hypertension or pulmonary vascular disease is assessed or managed. Await validation data and outcome-linked studies before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42933802",
+  "title": "Acute exacerbation of chronic chest pain in a middle-aged man.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Li X.",
+   "Su Y.",
+   "Shen J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2026-328693",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933802/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title reads like a clinical vignette or case report (possibly a teaching or image piece) rather than original research, so its design and clinical weight cannot be judged without an abstract.",
+   "bottom_line": "A single case of chronic chest pain with an acute exacerbation is unlikely to change practice on its own; check the full text for any broader data or teaching value before acting on it.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42933520",
+  "title": "Chronic Retrieval Experience of Atrial Leadless Pacemakers in US IDE Patients.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Ip J.",
+   "Callahan T.",
+   "Lo M.",
+   "Matthew D.",
+   "Rashtian M.",
+   "Sundaram S.",
+   "Nevo J.",
+   "Badie N.",
+   "Ganz L.",
+   "Doshi R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.hrthm.2026.10.051",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933520/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be an original analysis of chronic retrieval outcomes for atrial leadless pacemakers from US IDE trial patients, a niche device-safety question with likely limited sample size, though the abstract is not yet available to confirm design or numbers.",
+   "bottom_line": "Retrieval of leadless atrial pacemakers is a relevant safety consideration for device-specialist practice, but the title alone does not show a change in management. Await the abstract to judge the retrieval rates, complications and sample size before applying any findings.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42932412",
+  "title": "Optimizing US Prehospital Care of ST-Segment-Elevation Myocardial Infarction Because Time Is Life, Not Just Muscle.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Coller B.",
+   "Mehran R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.081889",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42932412/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Coronary Artery Disease / ACS",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a perspective or commentary on US prehospital STEMI system-of-care delivery (time-to-reperfusion), though the study type cannot be confirmed without an abstract and it could be original research.",
+   "bottom_line": "Prehospital STEMI system improvements matter, but this title reads as an opinion or perspective piece rather than new trial evidence, so check the full text before acting. Verify whether it reports original data on field triage, pre-hospital ECG, or direct-to-cath-lab pathways.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Coronary Artery Disease / ACS",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42932411",
+  "title": "Cardiac Allograft Vasculopathy Demonstrated by Coronary Angiography and Histopathological Correlates.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 27",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Jonas E.",
+   "Stitziel N.",
+   "Hyacinth S.",
+   "Kopecky B."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.082229",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42932411/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests an angiography-pathology correlation study of cardiac allograft vasculopathy, a niche but clinically relevant complication of heart transplantation, though the design and sample size cannot be judged without an abstract.",
+   "bottom_line": "Without an abstract, the design and sample size are unknown, so this is best treated as a niche imaging-pathology study; it is unlikely to change practice unless it is a large validation cohort.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [
+   [
+    "no_abstract_top",
+    "Circulation"
+   ]
+  ],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42929193",
+  "title": "Of bicuspid aortic stenosis, women, and fibrosis: At last, new computed tomography-derived insights into 2-sinus bicuspid aortic valve stenosis.",
+  "journal": "Eur Heart J Cardiovasc Imaging",
+  "journal_full": "European heart journal. Cardiovascular Imaging",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Michelena H.",
+   "Dweck M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/ehjci/jeag295",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929193/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [
+    "Cardiac Imaging"
+   ],
+   "structural_topic": "Other",
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title reads like an editorial on a CT study of sex differences and fibrosis in two-sinus bicuspid aortic stenosis, which is a mechanistic and imaging insight rather than a change in management.",
+   "bottom_line": "No change to practice is indicated from this record alone; the underlying CT study should be read in full before drawing conclusions about fibrosis or sex-specific risk in bicuspid aortic stenosis.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42929192",
+  "title": "Where the Differences Lie: Sex and Plaque Burden.",
+  "journal": "Eur Heart J Cardiovasc Imaging",
+  "journal_full": "European heart journal. Cardiovascular Imaging",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Kwiecinski J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/ehjci/jeag297",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929192/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Cardiac Imaging",
+   "secondary_subgroups": [
+    "Coronary Artery Disease / ACS"
+   ],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title's commentary-style phrasing ('Where the Differences Lie') with no design word suggests an editorial on sex differences in coronary plaque burden, though the record has no abstract to confirm this.",
+   "bottom_line": "Without an abstract, the design and findings cannot be verified; treat as a low-priority editorial on sex-related differences in plaque burden and check the accompanying primary study if one exists.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Cardiac Imaging",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42929155",
+  "title": "Women's Cardiovascular Health: From Recognition to Action.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Pabon M.",
+   "Honigberg M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.083237",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929155/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title reads like a review or commentary on sex-specific cardiovascular care, with no abstract or design words to show new original data.",
+   "bottom_line": "Treat this as a likely review or perspective piece; it does not by itself change practice, so check the full text before acting on any recommendations.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42929154",
+  "title": "Promises to Keep: Closing the Gaps in Women's Cardiovascular Health.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Lundberg G.",
+   "Sharma G.",
+   "Mehta L.",
+   "Volgman A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.083230",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929154/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a broad perspective or commentary on sex disparities in cardiovascular care, with no abstract to show any new data, trial, or guideline recommendation.",
+   "bottom_line": "This appears to be a perspective piece on closing gaps in women's cardiovascular health rather than new evidence, so it is unlikely to change clinical decisions. Read it for context on sex-based disparities, not as a source of practice recommendations.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42929150",
+  "title": "Women's Cardiovascular Health Begins in Childhood.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Shim J.",
+   "DiVasta A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.083234",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929150/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title reads as a perspective or review on sex-specific cardiovascular risk beginning in childhood, which may usefully frame prevention but is unlikely to change practice on its own.",
+   "bottom_line": "Treat this as background reading on early-life cardiovascular risk in women rather than new evidence; the abstract is not yet available, so no quantitative findings can be assessed.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42929143",
+  "title": "One Life Course, Many Specialties: Building a System for Cardiovascular Health in Girls and Women.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Florio K.",
+   "Goldstein A.",
+   "Spertus J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.083235",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929143/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a perspective or policy-oriented piece on cardiovascular health across the female life course, but with no abstract the design cannot be confirmed, so this triage is provisional. The title does not indicate a new trial or guideline.",
+   "bottom_line": "Relevant to women's cardiovascular prevention across the life course, but unlikely to change individual clinical decisions on its own. Review the full text if it is a formal society statement with specific recommendations.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42929106",
+  "title": "Mainstreaming Cardiovascular Care for Women: From Special Population to Standard Practice.",
+  "journal": "Circulation",
+  "journal_full": "Circulation",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Wang T."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/CIRCULATIONAHA.126.083236",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929106/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title reads as a perspective or position piece on sex-specific cardiovascular care rather than an original study, and with no abstract its specific recommendations cannot be assessed.",
+   "bottom_line": "No clinical change can be drawn from the title alone; check the full text if it is a formal society statement on women's cardiovascular care, otherwise treat it as background reading.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42928697",
+  "title": "From mechanism to medicine: lumacaftor for trafficking-deficient long QT syndrome type 2.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 26",
+  "epub_date": "2026-10-26",
+  "authors": [
+   "Nimani S.",
+   "Odening K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag795",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42928697/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Basic / Translational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a translational study repurposing the CFTR corrector lumacaftor for trafficking-deficient KCNH2 (LQT2) variants, but without an abstract the design and patient numbers cannot be verified, so this is provisionally a mechanistic or early-stage step rather than practice-changing evidence.",
+   "bottom_line": "Not actionable for clinical practice today; a potential future pharmacological option for select LQT2 trafficking-deficient variants that would need clinical trial evidence before any change in management.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42924835",
+  "title": "Baseline Characteristics, Geriatric Syndromes, and Clinical Outcomes During Implementation of a Cardiovascular Center on Aging.",
+  "journal": "J Am Heart Assoc",
+  "journal_full": "Journal of the American Heart Association",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Alexandrino F.",
+   "Chagas G.",
+   "Hashmi A.",
+   "Karthikeyan N.",
+   "Ancheta O.",
+   "Reno J.",
+   "Alfaraidy M.",
+   "Kapadia S.",
+   "Menon V.",
+   "Damluji A."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1161/JAHA.126.052060",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42924835/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be a descriptive cohort from a new cardiovascular aging center, reporting baseline geriatric syndromes and early outcomes, which is useful for service planning but unlikely to change treatment decisions.",
+   "bottom_line": "Geriatric syndromes such as frailty and cognitive impairment are relevant to older cardiac patients, but this implementation-phase report offers limited evidence on whether a dedicated cardiology-aging model improves outcomes. Read the full abstract before drawing conclusions.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42921973",
+  "title": "Concomitant Balloon-in-Basket Pulsed Field Ablation and Next-Generation Left Atrial Appendage Occlusion: Acute Procedural Success and Early Safety and Effectiveness results from the Prospective Multicenter CLEAR Study.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Nair D.",
+   "Reddy V.",
+   "Neuzil P.",
+   "Tondo C.",
+   "Jacobsen P.",
+   "Petrů J.",
+   "De Backer O.",
+   "Marinskis G.",
+   "Mazzone P.",
+   "Chun K.",
+   "Boldt L.",
+   "Tilz R.",
+   "Hatahet S.",
+   "Ellis C.",
+   "Lakkireddy D.",
+   "Schmidt B.",
+   "Madbouly A.",
+   "Račkauskas G."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag299",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42921973/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [
+    "Structural Heart Disease"
+   ],
+   "structural_topic": "LAAO / left atrial appendage occlusion",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "This prospective multicenter study reports early acute success and safety of same-session balloon-in-basket pulsed field ablation with next-generation left atrial appendage occlusion, a combined strategy of growing interest but with only early, likely uncontrolled data.",
+   "bottom_line": "Early feasibility data suggest that combining balloon-based pulsed field ablation with LAAO in one session is achievable with acceptable early safety. Without a comparator or long-term follow-up, it should not yet change routine practice and needs confirmation in larger, longer-term studies.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42921970",
+  "title": "Safety, Efficacy and Cost of Same-Day Discharge after Pulsed Field Ablation for Atrial Fibrillation: A Sub-study of the Multicentre SENTINEL Registry.",
+  "journal": "Europace",
+  "journal_full": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Ha F.",
+   "Sindone J.",
+   "Virk S.",
+   "Ng A.",
+   "Law C.",
+   "Brienesse S.",
+   "Puvrez A.",
+   "Ferreira D.",
+   "Scardamaglia Kistler B.",
+   "Zhou J.",
+   "Li J.",
+   "Witting T.",
+   "Bhat V.",
+   "Mackin G.",
+   "Govender K.",
+   "Kilborn M.",
+   "Thomas S.",
+   "Chik W.",
+   "McGuire M.",
+   "Chan K.",
+   "Neven K.",
+   "Samie R.",
+   "Singarayar S.",
+   "Qian P.",
+   "Healy S.",
+   "O'Connor M.",
+   "Stiles M.",
+   "Wilsmore B.",
+   "Jackson N.",
+   "Kistler P.",
+   "Kotschet E.",
+   "Sanders P.",
+   "Sy R."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/europace/euag298",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42921970/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "This registry sub-study addresses a practical, increasingly common question about whether patients can safely go home the same day after pulsed field ablation for atrial fibrillation, with cost as an added consideration.",
+   "bottom_line": "Same-day discharge after pulsed field ablation may be feasible and safe in selected patients, but this is an observational sub-study with no abstract available yet, so it should be checked against the full text before changing pathways. It is unlikely to change practice on its own.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42921651",
+  "title": "When platelets are under pressure: an angiotensin II-TGF-β axis in hypertensive patients leads to receptor PAR4 overexpression.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 24",
+  "epub_date": "2026-10-24",
+  "authors": [
+   "Navarro S.",
+   "Nieswandt B."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag723",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42921651/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This mechanistic study suggests that angiotensin II and TGF-β signalling upregulate platelet PAR4 in hypertensive patients, which may help explain heightened platelet reactivity, but it does not yet show any clinical outcome or treatment implication.",
+   "bottom_line": "No change to practice. The finding is hypothesis-generating; it would need clinical validation (for example, whether PAR4 expression or PAR4 inhibition alters thrombotic events in hypertension) before it could inform management.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42920295",
+  "title": "A decade-long device-valve interaction: severe aortic regurgitation after residual ventricular septal defect closure.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 24",
+  "epub_date": "2026-10-24",
+  "authors": [
+   "Liu H.",
+   "Zhou R.",
+   "Hua Z."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag862",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42920295/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [
+    "Structural Heart Disease"
+   ],
+   "structural_topic": "TAVR - intermediate/high risk",
+   "structural_topics_extra": [
+    "TAVR - low risk"
+   ],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a single-patient or small case report of severe aortic regurgitation developing years after device closure of a residual ventricular septal defect, a rare complication with limited generalisable evidence.",
+   "bottom_line": "This is likely a case-level observation of a rare device-valve complication after VSD closure, so it may prompt awareness of late aortic regurgitation after septal occluder devices but should not change routine practice until the full abstract and design are available.",
+   "topic_guessed": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42920285",
+  "title": "Heart failure management and outcomes: what can we learn from Japan?",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 24",
+  "epub_date": "2026-10-24",
+  "authors": [
+   "Lindberg F.",
+   "Savarese G."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag838",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42920285/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a commentary or review of Japanese heart failure care and registry data, but with no abstract the design cannot be confirmed and it may be an original cohort study, so it is triaged as ambiguous.",
+   "bottom_line": "Without the abstract, treat this as a low-priority regional perspective; check the full text before acting on any lessons it draws about heart failure management.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42920268",
+  "title": "Beyond tetramer stability: wild-type ATTR-CM as a disease of the ageing myocardium.",
+  "journal": "Eur Heart J",
+  "journal_full": "European heart journal",
+  "pub_date": "2026 Oct 24",
+  "epub_date": "2026-10-24",
+  "authors": [
+   "Benz D."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurheartj/ehag748",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42920268/",
+  "_origin": "new",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a conceptual piece on wild-type ATTR cardiomyopathy as an ageing-related disease beyond transthyretin tetramer stability, though with no abstract the design cannot be confirmed and it may be a review or perspective rather than original research.",
+   "bottom_line": "Likely a conceptual or review article reframing wild-type ATTR-CM pathogenesis around myocardial ageing; it is unlikely to change current management directly but may inform future mechanistic and therapeutic thinking. Read the full text before relying on it.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42919662",
+  "title": "Infective endocarditis after transcatheter aortic valve replacement in patients receiving dialysis: risks, outcomes and management.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 29",
+  "epub_date": "2026-10-29",
+  "authors": [
+   "Inan B.",
+   "Tagliafierro M.",
+   "Nickles J.",
+   "Kuno T.",
+   "Hosseini K.",
+   "Kofler M.",
+   "Fatehi Hassanabad A."
+  ],
+  "pub_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2026-328856",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42919662/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Infective endocarditis",
+   "structural_topics_extra": [
+    "TAVR - intermediate/high risk"
+   ],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This review addresses a niche but clinically relevant complication, endocarditis after TAVR in dialysis patients, a group at high baseline risk.",
+   "bottom_line": "Dialysis patients undergoing TAVR appear to carry elevated endocarditis risk, so prosthetic valve endocarditis should stay on the differential when they present with fever or bacteraemia. The record has no abstract and is labelled a review, so it is unlikely to change practice without original data.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42914505",
+  "title": "Post-discharge care after adult cardiac surgery: a national survey of UK National Health Service centres.",
+  "journal": "Heart",
+  "journal_full": "Heart (British Cardiac Society)",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Gibbison B.",
+   "Lumley E.",
+   "O'Cathain A.",
+   "Angelini G.",
+   "Hopkins E.",
+   "Baquedano M.",
+   "Chan J.",
+   "Fudulu D.",
+   "King C.",
+   "Pufulete M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1136/heartjnl-2026-328810",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42914505/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "General Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "This national survey describes how UK NHS centres organise post-discharge care after adult cardiac surgery, which is a service-level question rather than a clinical efficacy result.",
+   "bottom_line": "Service-delivery survey data only; it does not establish whether any post-discharge model improves patient outcomes, so it should not change individual clinical management on its own.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "General Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42913984",
+  "title": "Undiagnosed Arrhythmogenic Cardiomyopathy Hidden in Explanted Hearts: Insights from a Single Tertiary Center.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Ezzeddine F.",
+   "Tseng A.",
+   "Bois M.",
+   "Maleszewski J.",
+   "Baudhuin L.",
+   "Zhang K.",
+   "Leiner T.",
+   "Ahmed E.",
+   "Giudicessi J.",
+   "Ackerman M.",
+   "Asirvatham S.",
+   "Cooper L.",
+   "Lutgens E."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.hrthm.2026.10.047",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913984/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "A single-centre study of explanted hearts suggests that arrhythmogenic cardiomyopathy may go unrecognised until end-stage disease, which bears on how often it is screened for in heart failure and transplant populations.",
+   "bottom_line": "Without an abstract, the design, sample size and diagnostic criteria are unknown, so this is hypothesis-generating. Consider ACM in unexplained cardiomyopathy with arrhythmias, and await the full text before changing practice.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42913983",
+  "title": "Mitral Valve Prolapse and Ventricular Arrhythmia Risk in TTN-Mediated Cardiomyopathy: A Single Center Experience.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Coderre R.",
+   "Swain W.",
+   "Castrichini M.",
+   "Garmany R.",
+   "Lopes Neves R.",
+   "Bos J.",
+   "Ackerman M.",
+   "Giudicessi J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.hrthm.2026.10.048",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913983/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [
+    "Electrophysiology & Devices",
+    "Structural Heart Disease"
+   ],
+   "structural_topic": "TEER - primary (degenerative) MR",
+   "structural_topics_extra": [
+    "TEER - secondary (functional) MR"
+   ],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "A single-center observational report on whether mitral valve prolapse raises ventricular arrhythmia risk in TTN-related cardiomyopathy, a question of interest for arrhythmic risk stratification in this subgroup.",
+   "bottom_line": "Single-center data are hypothesis-generating and cannot establish whether MVP independently increases arrhythmic risk in TTN cardiomyopathy. Await multicentre cohorts before changing arrhythmic risk assessment or device decisions on this basis.",
+   "topic_guessed": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42913980",
+  "title": "Bench Evaluation of Pulsed Field Ablation Interference With Left Atrial Appendage Closure Devices.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Fukunaga M.",
+   "Isotani A.",
+   "Shirai S.",
+   "Hiroshima K.",
+   "Ando K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.hrthm.2026.10.033",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913980/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [
+    "Structural Heart Disease"
+   ],
+   "structural_topic": "LAAO / left atrial appendage occlusion",
+   "structural_topics_extra": [],
+   "study_type": "Basic / Translational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "A bench study asking whether pulsed field ablation energy can interfere with left atrial appendage closure devices, which matters mainly for patients who may undergo both procedures in the same session.",
+   "bottom_line": "This is a bench-only evaluation with no patient outcomes, so it does not change practice yet. It is worth noting if you plan combined pulsed field ablation and LAAO, pending clinical data.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42913968",
+  "title": "A Technique for Slack Formation During Proximal Left Bundle Branch Pacing With a Lumenless Defibrillation Lead.",
+  "journal": "Heart Rhythm",
+  "journal_full": "Heart rhythm",
+  "pub_date": "2026 Oct 22",
+  "epub_date": "2026-10-22",
+  "authors": [
+   "Okubo Y.",
+   "Miyamoto S.",
+   "Nakano Y."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.hrthm.2026.10.041",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913968/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be a procedural technique paper on lead slack management during proximal left bundle branch pacing, a niche implant-technique question with no abstract available to judge its evidence.",
+   "bottom_line": "Operators performing proximal LBBP with a lumenless defibrillation lead may find a described slack-formation technique useful, but its benefit and safety should be confirmed against the full text before adoption.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42913477",
+  "title": "Statin cascade of care in people with HIV: current gaps in primary and secondary prevention.",
+  "journal": "Eur J Prev Cardiol",
+  "journal_full": "European journal of preventive cardiology",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Papaioannu Borjesson R.",
+   "Capra N.",
+   "Lolatto R.",
+   "Muccini C.",
+   "Torkjazi G.",
+   "Nozza S.",
+   "Canetti D.",
+   "Clemente T.",
+   "Bruzzesi E.",
+   "Hasson H.",
+   "Castagna A.",
+   "Spagnuolo V."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1093/eurjpc/zwag566",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42913477/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Prevention, Lipids & Sports Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 5,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a review or analysis of statin prescribing gaps across the care pathway for people with HIV, a high-risk group with a clear need for lipid-lowering, but the design cannot be confirmed without an abstract.",
+   "bottom_line": "Statin use in people with HIV remains suboptimal for both primary and secondary prevention, so cardiologists should check lipid-lowering therapy in this population. Re-triage once the abstract confirms the design and sample.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Prevention, Lipids & Sports Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 5"
+ },
+ {
+  "pmid": "42912386",
+  "title": "Global Heart Failure Burden Increased Between 1990 and 2023.",
+  "journal": "JAMA",
+  "journal_full": "JAMA",
+  "pub_date": "2026 Oct 23",
+  "epub_date": "2026-10-23",
+  "authors": [
+   "Richmond S."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1001/jama.2026.20030",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42912386/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Heart Failure / Cardiomyopathies",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "A 1990-2023 global burden-of-disease analysis showing rising heart failure prevalence, incidence and mortality informs health-system planning and resource allocation rather than individual clinical decisions.",
+   "bottom_line": "Heart failure burden has grown worldwide over three decades, which strengthens the case for prevention and HF service capacity, but it does not by itself change bedside management. The abstract is not yet available, so the design and effect sizes are unverified.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Heart Failure / Cardiomyopathies",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42911159",
+  "title": "Embolic Myocardial Infarction From Delayed Left Bundle Lead Perforation.",
+  "journal": "JACC Clin Electrophysiol",
+  "journal_full": "JACC. Clinical electrophysiology",
+  "pub_date": "2026 Oct 16",
+  "epub_date": "2026-10-16",
+  "authors": [
+   "Fleischman E.",
+   "Cassidy C.",
+   "Gomaa M.",
+   "Abughofah Y.",
+   "Lilly S.",
+   "Augostini R.",
+   "Houmsse M."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jacep.2026.09.022",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42911159/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Electrophysiology & Devices",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title describes a rare complication of left bundle branch area pacing (delayed lead perforation causing embolic MI), which is clinically relevant to conduction-system pacing operators but likely based on a case report or small series, so the design and frequency cannot be judged from the title alone.",
+   "bottom_line": "Delayed lead perforation after left bundle lead implantation can cause embolic myocardial infarction, so consider it in patients with new ischaemic symptoms after conduction-system pacing. The absence of an abstract prevents judging how common or generalisable this is.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Electrophysiology & Devices",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42910980",
+  "title": "Coronary revascularisation in patients undergoing transcatheter aortic valve implantation: from anatomy to physiology guidance?",
+  "journal": "EuroIntervention",
+  "journal_full": "EuroIntervention : journal of EuroPCR in collaboration with the Working Group on Interventional Cardiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Stähli B."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.4244/EIJ-D-26-01199",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42910980/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [
+    "Coronary Artery Disease / ACS"
+   ],
+   "structural_topic": "TAVR - intermediate/high risk",
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-form title and lack of an abstract suggest a commentary or narrative piece on whether coronary revascularisation before TAVI should be guided by physiology rather than anatomy, a debated but not yet settled issue.",
+   "bottom_line": "No new trial or guideline evidence is evident from the title alone, so this does not change practice; the topic (physiology-guided versus anatomy-guided coronary revascularisation before TAVI) is worth revisiting if the full text presents new data.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42910979",
+  "title": "Reproducible haemodynamics, unresolved indication: where does thrombectomy for acute pulmonary embolism stand?",
+  "journal": "EuroIntervention",
+  "journal_full": "EuroIntervention : journal of EuroPCR in collaboration with the Working Group on Interventional Cardiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Salinas P."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.4244/EIJ-D-26-01104",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42910979/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Review / Editorial",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The question-style title and 'where does ... stand?' framing suggest a commentary on catheter-based thrombectomy for acute pulmonary embolism, where the indication remains unresolved and the evidence is not yet decisive.",
+   "bottom_line": "No new trial or guideline is evident from the title, and the indication for PE thrombectomy remains unresolved, so routine practice should not change on the basis of this piece. Check the full text for any new data before acting on it.",
+   "commentary_guess": true,
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract; the title reads like a commentary (kept in the retry queue, re-checked each run)"
+ },
+ {
+  "pmid": "42910978",
+  "title": "Prolonged inflation instead of a double tap: pursuing the optimal deployment strategy for the SAPIEN 3 Ultra RESILIA.",
+  "journal": "EuroIntervention",
+  "journal_full": "EuroIntervention : journal of EuroPCR in collaboration with the Working Group on Interventional Cardiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Tang G.",
+   "Onishi T."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.4244/EIJ-D-26-01011",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42910978/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "TAVR - intermediate/high risk",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 4,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a technique-focused comparison of balloon deployment strategies for the SAPIEN 3 Ultra RESILIA valve, which may inform operator practice but is unlikely to change outcomes-based guidance on its own. The abstract is not yet available, so the design and sample size cannot be confirmed, and the risk population is also unknown.",
+   "bottom_line": "Prolonged inflation may be a reasonable alternative to a double-tap balloon deployment for this valve, but this should be checked against the full paper's sample size and outcomes (valve positioning, paravalvular leak, annular injury) before any change in practice. The title alone does not justify altering routine technique.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 4"
+ },
+ {
+  "pmid": "42910976",
+  "title": "Life expectancy after aortic valve replacement: a nationwide analysis.",
+  "journal": "EuroIntervention",
+  "journal_full": "EuroIntervention : journal of EuroPCR in collaboration with the Working Group on Interventional Cardiology of the European Society of Cardiology",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Petersen J.",
+   "Østergaard L.",
+   "Bieliauskas G.",
+   "Køber L.",
+   "De Backer O.",
+   "Fosbøl E."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.4244/EIJ-D-26-00334",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42910976/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Other",
+   "structural_topics_extra": [],
+   "study_type": "Large observational / Registry",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "Nationwide survival data after aortic valve replacement could inform patient counselling and benchmarking, though the title does not specify whether the cohort is TAVR, SAVR, or both, and no abstract is available to confirm design or effect size.",
+   "bottom_line": "Without an abstract, this appears to be a nationwide registry-based survival analysis of aortic valve replacement. Review the full text for the TAVR versus SAVR split, the comparator, and the absolute life-expectancy gains before applying it to practice.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42909423",
+  "title": "Intact En Bloc Percutaneous Extraction of a Chronically Implanted Aorto-Ostial Right Coronary Artery Stent.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Sep 24",
+  "epub_date": "2026-09-24",
+  "authors": [
+   "Kumar S.",
+   "Abdou A.",
+   "Nakhle A.",
+   "Alaswad K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.031",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42909423/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Interventional Cardiology",
+   "secondary_subgroups": [],
+   "structural_topic": null,
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "The title describes a technical percutaneous extraction of a chronically implanted coronary stent, which appears to be a single-case or small technical report of a rare complication-management scenario, with no abstract available to show a larger series.",
+   "bottom_line": "Useful mainly as a niche technical reference for operators facing a chronically embedded aorto-ostial coronary stent; it does not change routine practice, and the design and sample size cannot be assessed from the title alone.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Interventional Cardiology",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ },
+ {
+  "pmid": "42909421",
+  "title": "First Experience of a New Transfemoral Transcatheter Mitral Valve Replacement System.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Oct 19",
+  "epub_date": "2026-10-19",
+  "authors": [
+   "Frerker C.",
+   "Marquetand C.",
+   "Bedogni F.",
+   "Byrne J.",
+   "Estévez-Loureiro R.",
+   "Labinaz M.",
+   "Lim S.",
+   "Melica B.",
+   "Eitel I.",
+   "Schmidt T."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.09.007",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42909421/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Transcatheter mitral valve replacement (TMVR)",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "This early-experience report of a new transfemoral TMVR system is relevant to the evolving transcatheter mitral replacement field, but a first-experience series is unlikely on its own to change practice.",
+   "bottom_line": "Early feasibility data for a transfemoral TMVR system are of interest for device development, but no practice change should follow until larger series or comparative studies confirm safety and efficacy. The abstract is not yet available, so this rating is based on the title and article type only.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42909420",
+  "title": "Prehabilitation of Patients With Severe Tricuspid Regurgitation Before Transcatheter Edge-to-Edge Repair.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Aug 03",
+  "epub_date": "2026-08-03",
+  "authors": [
+   "Stolz L.",
+   "Berschiminski K.",
+   "Kempton H.",
+   "Weckbach L.",
+   "Stocker T.",
+   "Doldi P.",
+   "Novotny J.",
+   "Näbauer M.",
+   "Massberg S.",
+   "Hausleiter J."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.06.017",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42909420/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Transcatheter tricuspid valve (TEER/replacement)",
+   "structural_topics_extra": [],
+   "study_type": "Other",
+   "statement_type": "Primary study or other",
+   "interventional": false,
+   "relevance_score": 6,
+   "practice_changing": false,
+   "why_it_matters": "The title suggests a pre-procedural exercise or rehabilitation strategy for patients with severe tricuspid regurgitation awaiting TEER, but the design is unclear without an abstract, so its evidence strength cannot be judged.",
+   "bottom_line": "Without an abstract, the design and effect size of prehabilitation before tricuspid TEER cannot be assessed. If it is a randomised trial with functional or clinical endpoints, it would be a useful addition to the emerging evidence on optimising patients before tricuspid transcatheter therapy; otherwise treat it as hypothesis-generating until the full text is reviewed.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "pending",
+  "_reason": "no abstract yet (title-based triage)"
+ },
+ {
+  "pmid": "42909419",
+  "title": "One-Lung Ventilation to Facilitate Transcatheter Tricuspid Edge-to-Edge Repair Under Transesophageal Echocardiographic Imaging.",
+  "journal": "JACC Cardiovasc Interv",
+  "journal_full": "JACC. Cardiovascular interventions",
+  "pub_date": "2026 Sep 11",
+  "epub_date": "2026-09-11",
+  "authors": [
+   "Arakawa M.",
+   "Kataoka A.",
+   "Honjo I.",
+   "Omiya J.",
+   "Kito K.",
+   "Honjo T.",
+   "Miura M.",
+   "Watanabe Y.",
+   "Yasuda A.",
+   "Kozuma K."
+  ],
+  "pub_types": [
+   "Journal Article"
+  ],
+  "abstract": "",
+  "doi": "10.1016/j.jcin.2026.07.024",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42909419/",
+  "_origin": "queue",
+  "score": {
+   "subgroup": "Structural Heart Disease",
+   "secondary_subgroups": [],
+   "structural_topic": "Transcatheter tricuspid valve (TEER/replacement)",
+   "structural_topics_extra": [],
+   "study_type": "Small observational",
+   "statement_type": "Primary study or other",
+   "interventional": true,
+   "relevance_score": 3,
+   "practice_changing": false,
+   "why_it_matters": "This appears to be a technique or feasibility report on anesthetic management (one-lung ventilation) to facilitate transcatheter tricuspid edge-to-edge repair under TEE, a niche procedural approach rather than a change in indications or outcomes.",
+   "bottom_line": "Unless the full paper shows a large comparative cohort with clear patient-important outcomes, this is a niche anesthetic/technique report that is unlikely to change routine tricuspid TEER practice. Watch for the full abstract to confirm sample size and design.",
+   "failed": false,
+   "provisional": true
+  },
+  "_manual": [],
+  "_display_group": "Structural Heart Disease",
+  "_filled": false,
+  "_status": "no_abstract_low",
+  "_reason": "no abstract, title-based score 3"
+ }
+]

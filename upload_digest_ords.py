@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
-Durchsucht automatisch alle Fachgebiets-Ordner (*_digest) im Verzeichnis 'specialties/',
-ermittelt jeweils das neueste Output-Verzeichnis mit der passenden .docx-Datei 
-und lädt die extrahierten Studien via ORDS REST API in die Oracle Cloud DB.
+Durchsucht automatisch alle Fachgebiets-Ordner im Verzeichnis 'specialties/',
+ermittelt jeweils das neueste Output-Verzeichnis mit der Datei studies.json
+(von clarity_digest.py geschrieben) und lädt die Studien via ORDS REST API in die Oracle Cloud DB.
+
+Nutzung:
+  python3 upload_digest_ords.py                       alle Fachgebiete hochladen
+  python3 upload_digest_ords.py cardiology            nur dieses Fachgebiet
+  python3 upload_digest_ords.py --dry-run             nur anzeigen, nichts senden
 """
 
-import os
-import re
-import docx
+import json
 import requests
 import argparse
 from pathlib import Path
@@ -15,125 +18,57 @@ from pathlib import Path
 # ORDS REST API Endpoint
 ORDS_URL = "https://gf45d602cd77ce9-dbmonty.adb.eu-zurich-1.oraclecloudapps.com/ords/vernetzer/cl_pubmed_digest_studies/"
 
+STUDIES_FILE = "studies.json"
+
+# Spalten der Tabelle; weitere Felder in studies.json (pmid, headline, ...) werden nicht gesendet
+DB_FIELDS = ("specialty", "subspecialty", "study_order", "title", "journal", "pub_date",
+             "authors", "study_type", "design_info", "summary", "authors_conclusion",
+             "pubmed_url", "doi")
+
+
 def get_all_specialty_dirs(base_path="specialties"):
     """
-    Findet alle Verzeichnisse unter 'specialties/', die auf '_digest' enden.
+    Findet alle Fachgebiets-Verzeichnisse unter 'specialties/' (mit Unterordner 'output').
     """
     base = Path(base_path)
     if not base.exists() or not base.is_dir():
         raise FileNotFoundError(f"Das Basis-Verzeichnis '{base_path}' wurde nicht gefunden.")
-    
-    # Filtert alle Ordner, die auf '_digest' enden
-    digest_dirs = [d for d in base.iterdir() if d.is_dir() and d.name.endswith("_digest")]
+
+    # Filtert alle Ordner, die einen 'output'-Unterordner haben (z. B. cardiology, dermatology)
+    digest_dirs = [d for d in base.iterdir() if d.is_dir() and (d / "output").is_dir()]
     return sorted(digest_dirs, key=lambda x: x.name)
 
 
-def get_latest_docx_from_specialty(specialty_dir_path):
+def get_latest_studies_from_specialty(specialty_dir_path):
     """
-    Ermittelt im Ordner 'output' des übergebenen Fachgebiets
-    das neueste Unterverzeichnis und gibt den Pfad zur .docx-Datei zurück.
+    Ermittelt im Ordner 'output' des übergebenen Fachgebiets das neueste
+    Unterverzeichnis mit einer studies.json und gibt deren Pfad zurück.
     """
     output_path = specialty_dir_path / "output"
-    
+
     if not output_path.exists() or not output_path.is_dir():
         print(f"⚠️ Kein 'output'-Verzeichnis in '{specialty_dir_path}' gefunden. Überspringe...")
         return None
-    
-    # Alle Unterverzeichnisse im output-Ordner ermitteln
-    subdirs = [d for d in output_path.iterdir() if d.is_dir() and not d.name.startswith(".")]
+
+    # Unterordner heissen <fach>_digest_<JJJJMMTT_HHMMSS>: nach Zeitstempel sortieren, neuester zuerst
+    subdirs = [d for d in output_path.iterdir()
+               if d.is_dir() and not d.name.startswith(".") and (d / STUDIES_FILE).exists()]
     if not subdirs:
-        print(f"⚠️ Keine Output-Unterordner in '{output_path}' gefunden. Überspringe...")
+        print(f"⚠️ Keine {STUDIES_FILE} in den Unterordnern von '{output_path}' gefunden "
+              f"(erst nach einem produktiven Lauf von clarity_digest.py). Überspringe...")
         return None
-    
-    # Neuestes Verzeichnis nach Änderungszeitpunkt (mtime) auswählen
-    latest_dir = max(subdirs, key=lambda d: d.stat().st_mtime)
-    
-    # .docx-Dateien im neuesten Verzeichnis suchen
-    docx_files = list(latest_dir.glob("*.docx"))
-    if not docx_files:
-        print(f"⚠️ Keine .docx-Datei im Ordner '{latest_dir}' gefunden. Überspringe...")
-        return None
-    
-    # Bevorzugt Dateien wählen, die mit 'clarity_' beginnen
-    for docx_file in docx_files:
-        if docx_file.name.startswith("clarity_"):
-            return docx_file
-            
-    return docx_files[0]
+
+    latest_dir = max(subdirs, key=lambda d: d.name[-15:])
+    return latest_dir / STUDIES_FILE
 
 
-def parse_docx_to_studies(docx_path, specialty_name):
+def load_studies(studies_path):
     """
-    Parst das Word-Dokument und extrahiert die einzelnen Studienblöcke.
+    Liest studies.json und behält pro Studie nur die Spalten der Datenbank.
     """
-    doc = docx.Document(docx_path)
-    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
-    
-    studies = []
-    current_subspecialty = "General"
-    current_study = None
-    
-    # RegEx zur Erkennung von Studien-Headern (z. B. "1  Yield of Atrial...")
-    study_header_re = re.compile(r"^(\d+)\s+(.+)$")
-    
-    for p in paragraphs:
-        # Erkennung von Sub-Kategorien (z. B. ELECTROPHYSIOLOGY & DEVICES)
-        if p.isupper() and len(p) < 60 and not p.startswith("CLARITY"):
-            current_subspecialty = p.title()
-            continue
-            
-        # Prüfen, ob ein neuer Studienblock beginnt
-        match = study_header_re.match(p)
-        if match:
-            if current_study:
-                studies.append(current_study)
-            
-            study_order = int(match.group(1))
-            title = match.group(2)
-            
-            current_study = {
-                "specialty": specialty_name,
-                "subspecialty": current_subspecialty,
-                "study_order": study_order,
-                "title": title,
-                "journal": "",
-                "pub_date": "",
-                "authors": "",
-                "study_type": "",
-                "design_info": "",
-                "summary": "",
-                "authors_conclusion": "",
-                "pubmed_url": "",
-                "doi": ""
-            }
-            continue
-        
-        # Details innerhalb der aktuellen Studie befüllen
-        if current_study:
-            if " · " in p and not current_study["journal"]:
-                parts = p.split(" · ")
-                if len(parts) >= 2:
-                    current_study["journal"] = parts[0]
-                    current_study["pub_date"] = parts[1]
-                if len(parts) >= 3:
-                    current_study["authors"] = parts[2]
-            elif p.startswith("●"):
-                current_study["study_type"] = p.replace("●", "").strip()
-            elif p.startswith("SUMMARY"):
-                current_study["summary"] = p.replace("SUMMARY", "").strip()
-            elif p.startswith("AUTHORS' CONCLUSION"):
-                current_study["authors_conclusion"] = p.replace("AUTHORS' CONCLUSION (AS REPORTED)", "").strip()
-            elif "DOI:" in p:
-                doi_match = re.search(r"DOI:\s*(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)", p)
-                if doi_match:
-                    current_study["doi"] = doi_match.group(1)
-            elif "pubmed.ncbi.nlm.nih.gov" in p:
-                current_study["pubmed_url"] = p
-
-    if current_study:
-        studies.append(current_study)
-        
-    return studies
+    with open(studies_path, encoding="utf-8") as f:
+        rows = json.load(f)
+    return [{k: row.get(k, "") for k in DB_FIELDS} for row in rows]
 
 
 def upload_to_ords(studies):
@@ -142,7 +77,7 @@ def upload_to_ords(studies):
     """
     headers = {"Content-Type": "application/json"}
     success_count = 0
-    
+
     for idx, study in enumerate(studies, 1):
         try:
             response = requests.post(ORDS_URL, json=study, headers=headers, timeout=15)
@@ -153,31 +88,35 @@ def upload_to_ords(studies):
                 print(f"  [{idx}/{len(studies)}] Fehler {response.status_code}: {response.text}")
         except Exception as e:
             print(f"  [{idx}/{len(studies)}] HTTP-Fehler: {e}")
-            
+
     return success_count
 
 
-def process_all_specialties(base_path="specialties"):
+def process_all_specialties(base_path="specialties", only=None, dry_run=False):
     specialty_dirs = get_all_specialty_dirs(base_path)
+    if only:
+        specialty_dirs = [d for d in specialty_dirs if d.name in only]
     print(f"Gefundene Fachgebiets-Verzeichnisse ({len(specialty_dirs)}): {[d.name for d in specialty_dirs]}\n" + "-"*60)
-    
+
     total_uploaded = 0
 
     for spec_dir in specialty_dirs:
-        # Fachgebietsname ableiten (z. B. 'cardiology_digest' -> 'Cardiology')
-        specialty_db_name = spec_dir.name.replace("_digest", "").capitalize()
-        print(f"\n📁 Verarbeite Fachgebiet: {spec_dir.name} ({specialty_db_name})")
-        
-        docx_file = get_latest_docx_from_specialty(spec_dir)
-        if not docx_file:
+        print(f"\n📁 Verarbeite Fachgebiet: {spec_dir.name}")
+
+        studies_file = get_latest_studies_from_specialty(spec_dir)
+        if not studies_file:
             continue
-            
-        print(f"  📄 Neueste Datei: {docx_file}")
-        
-        # Studien parsen & hochladen
-        studies = parse_docx_to_studies(docx_file, specialty_name=specialty_db_name)
-        print(f"  🔍 {len(studies)} Studien extrahiert. Starte Upload...")
-        
+
+        print(f"  📄 Neueste Datei: {studies_file}")
+
+        studies = load_studies(studies_file)
+        if dry_run:
+            print(f"  🔍 {len(studies)} Studien (--dry-run, nichts gesendet):")
+            for s in studies:
+                print(f"    {s['study_order']:>2}. [{s['subspecialty'][:28]}] {s['title'][:60]}")
+            continue
+        print(f"  🔍 {len(studies)} Studien gelesen. Starte Upload...")
+
         uploaded = upload_to_ords(studies)
         total_uploaded += uploaded
 
@@ -186,4 +125,8 @@ def process_all_specialties(base_path="specialties"):
 
 
 if __name__ == "__main__":
-    process_all_specialties()
+    ap = argparse.ArgumentParser(description="Lädt die Studien des neuesten Laufs pro Fachgebiet in die DB.")
+    ap.add_argument("specialties", nargs="*", help="nur diese Fachgebiete (Standard: alle)")
+    ap.add_argument("--dry-run", action="store_true", help="nur anzeigen, nichts senden")
+    args = ap.parse_args()
+    process_all_specialties(only=args.specialties or None, dry_run=args.dry_run)

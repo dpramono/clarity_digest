@@ -1,0 +1,26 @@
+[
+ {
+  "specialty": "Cardiology",
+  "subspecialty": "Prevention, Lipids & Sports Cardiology",
+  "study_order": 1,
+  "title": "Intensive vs More Intensive Lipid-Lowering Therapy and Plaque Regression in Statin-Naive Patients: Prespecified Analyses From the FLOWPROMOTE Randomized Clinical Trial",
+  "journal": "JAMA Cardiol",
+  "pub_date": "2026 Oct 30",
+  "authors": "Mortensen M., Iraqi N., Sand N., Busk M., Jensen J., Madsen K., Grove E., Dey D., Kanstrup H., Pedersen K., Mathiassen O., Hosbond S., Bøtker H., Narula J., Nørgaard B.",
+  "study_type": "RCT",
+  "design_info": "Multicenter RCT · prespecified secondary analysis · N = 104",
+  "summary": "Prior imaging studies, predominantly using intravascular ultrasound, have shown modest plaque regression with lipid-lowering therapy in stable CAD, and the effect of initiating intensive therapy across the entire coronary tree in treatment-naive patients remained uncertain. This report presents the prespecified secondary imaging end points of the multicenter randomized FLOWPROMOTE trial. The trial enrolled statin-naive patients with newly diagnosed stable CAD, defined by a coronary CTA stenosis greater than 50% and fractional flow reserve CT less than or equal to 0.80. Patients were randomized for 18 months to intensive therapy (atorvastatin 40 mg) or more intensive therapy (rosuvastatin 40 mg plus ezetimibe 10 mg), with coronary CTA at baseline, 9 and 18 months. The analysis included 104 patients (mean age 64 [9] years; 82 male [79%]), 52 in each group. LDL-C decreased from 119.7 to 69.5 mg/dL (-38%) with intensive therapy and from 127.4 to 42.5 mg/dL (-65%) with more intensive therapy (between-group P < .001). At 18 months, TPV was reduced by -69.8 mm3 (-21.1%) with more intensive therapy vs -39.0 mm3 (-13.6%) with intensive therapy (between-group difference, -30.9 mm3; 95% CI, -57.2 to -4.5 mm3; P = .02). NCPV was reduced by -82.3 mm3 (-28.2%) vs -53.5 mm3 (-20.0%) (between-group difference, -28.9 mm3; 95% CI, -53.2 to -4.6 mm3; P = .02), while CPV increased similarly in both groups. TPV regression occurred in 47 of 52 (90%) vs 38 of 51 (75%) patients (P = .05), and NCPV regression in 51 of 52 (98%) vs 39 of 51 (77%) (P =.001). Lower achieved LDL-C levels were linearly associated with greater regression of TPV and NCPV. The authors conclude that more intensive therapy was associated with significantly greater regression of total and noncalcified coronary plaque burden, and that regression was related to achieved LDL-C.",
+  "authors_conclusion": "The authors conclude that in statin-naive patients with CAD, more intensive lipid-lowering therapy was associated with significantly greater regression of total and noncalcified coronary plaque burden than intensive therapy. They state that regression was related to achieved LDL-C levels, which they describe as supporting the potential for partial reversal of coronary atherosclerosis with intensive lipid reduction.",
+  "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42961412/",
+  "doi": "10.1001/jamacardio.2026.4788",
+  "pmid": "42961412",
+  "headline": "More intensive lipid lowering gave greater TPV regression at 18 months: -69.8 mm3 vs -39.0 mm3 (P = .02)",
+  "why_it_matters": "This prespecified secondary imaging analysis of the multicenter randomized FLOWPROMOTE trial compares intensive (atorvastatin 40 mg) with more intensive (rosuvastatin 40 mg plus ezetimibe 10 mg) lipid-lowering therapy on coronary plaque in statin-naive patients with stable CAD. Prior imaging studies, predominantly intravascular ultrasound, showed modest regression, and the effect of initiating intensive therapy across the entire coronary tree in treatment-naive patients was described as uncertain.",
+  "key_finding": "The analysis included 104 patients (52 intensive, 52 more intensive). LDL-C decreased from 119.7 to 69.5 mg/dL (-38%) with intensive therapy and from 127.4 to 42.5 mg/dL (-65%) with more intensive therapy (between-group P < .001). At 18 months, TPV was reduced by -69.8 mm3 (-21.1%) vs -39.0 mm3 (-13.6%) (between-group difference, -30.9 mm3; 95% CI, -57.2 to -4.5 mm3; P = .02), and NCPV by -82.3 mm3 (-28.2%) vs -53.5 mm3 (-20.0%) (difference, -28.9 mm3; 95% CI, -53.2 to -4.6 mm3; P = .02). CPV increased similarly in both groups. NCPV regression occurred in 98% vs 77% (P =.001), and lower achieved LDL-C was linearly associated with greater TPV and NCPV regression.",
+  "bottom_line": "Greater LDL-C lowering with rosuvastatin plus ezetimibe was associated with modestly more total and noncalcified plaque regression over 18 months, but these are surrogate imaging endpoints in 104 patients, with no clinical outcome data. Current practice still rests on LDL-C targets and outcome trials, so this supports intensive lipid lowering without changing the indication for combination therapy.",
+  "relevance_score": 6,
+  "practice_changing": false,
+  "lang": "en",
+  "digest_date": "2026-10-31"
+ }
+]

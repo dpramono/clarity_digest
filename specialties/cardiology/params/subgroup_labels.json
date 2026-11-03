@@ -1,0 +1,15 @@
+{
+  "de": {
+    "General Cardiology": "Allgemeine Kardiologie",
+    "Heart Failure / Cardiomyopathies": "Herzinsuffizienz / Kardiomyopathien",
+    "Electrophysiology & Devices": "Elektrophysiologie & Devices",
+    "Interventional Cardiology": "Interventionelle Kardiologie",
+    "Structural Heart Disease": "Strukturelle Kardiologie",
+    "Coronary Artery Disease / ACS": "Koronare Herzkrankheit / ACS",
+    "Cardiac Imaging": "Kardiale Bildgebung",
+    "Prevention, Lipids & Sports Cardiology": "Prävention, Lipide & Sportkardiologie"
+  },
+  "en": {
+    "Structural Heart Disease": "Structural Cardiology"
+  }
+}

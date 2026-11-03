@@ -1,0 +1,26 @@
+Return a single JSON object and nothing else:
+{
+  "relation_evidence": "2-4 sentences placing the new study against the trials and
+        consensus papers above. Name the trials you refer to (name and year, without the word
+        'landmark'). State whether the finding confirms, extends, refines or contradicts them;
+        otherwise describe only how population, design or endpoint differ. If nothing
+        comparable is listed, write exactly:
+        'No directly comparable studies were considered for this topic.'",
+  "relation_guidelines": "2-4 sentences on how the finding relates to the guidelines listed
+        above. Give the substance in your own words and name the source ('ESC 2025: ...').
+        If none of the listed passages addresses the question, write exactly:
+        'No direct statement on this question was found in the guidelines considered.'
+        If only the TITLE of a guideline is listed without text ('Full text not available' or a
+        note about a missing guideline), write exactly: 'For this topic the guideline <title>
+        exists; no comparison of content is made in this edition.'
+        Never invent a class of recommendation.",
+  "tension": "One sentence IF the new evidence goes beyond, refines or contradicts the
+        current guideline - stated as a factual observation, e.g. 'The finding addresses a
+        population the current guideline does not yet cover.' Otherwise null.",
+  "sources_used": ["short labels of what you actually relied on, e.g. 'ESC 2025',
+        'PARTNER 3 2023', 'VARC-3'"],
+  "qc_notes": "Internal notes for the editor (NOT shown in the document), e.g. 'guideline
+        passages contain nothing on ...', 'reference material covers the topic only in
+        part'. Leave empty if nothing stands out."
+}
+Descriptive register throughout. No recommendations, no imperatives.

@@ -1,0 +1,12 @@
+# Python 3.13 (Mac und OCI gleich halten)
+# Installation:  python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+requests==2.34.2
+anthropic==0.116.0
+google-genai==2.24.0
+pypdf==6.21.4
+python-docx==1.2.0
+reportlab==5.1.0
+matplotlib==3.11.2
+Markdown==3.11.2
+# nur für db_oracle/test_db_connection.py (direkte DB-Verbindung):
+# oracledb

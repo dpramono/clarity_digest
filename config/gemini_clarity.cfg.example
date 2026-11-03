@@ -1,0 +1,15 @@
+[GENERAL]
+dry_run = false
+min_score = 6
+doc_min_score = 6
+max_per_subgroup = 5
+
+
+[NCBI]
+email = <eintragen>
+tool = ClarityDigest
+
+[GEMINI]
+api_key = <eintragen>
+llm_model = gemini-3.7-flash
+summary_model = gemini-3.7-flash

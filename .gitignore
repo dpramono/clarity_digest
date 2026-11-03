@@ -4,6 +4,10 @@ __pycache__/
 .env
 *.md
 config/*.cfg
-specialties/cardiology_digest/output/*.*
-specialties/cardiology_digest/output/*/*.*
+specialties/*/output/
+specialties/*/test_state/
+logs/
 test_state/
+.DS_Store
+.venv/
+*.pyc

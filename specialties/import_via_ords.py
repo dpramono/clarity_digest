@@ -8,14 +8,14 @@ ORDS_URL = "https://gf45d602cd77ce9-dbmonty.adb.eu-zurich-1.oraclecloudapps.com/
 
 def get_latest_md_files():
     """
-    Sucht für jedes Fachgebiet unter '*_digest/output/' 
+    Sucht für jedes Fachgebiet unter '<fach>/output/' 
     den alphabetisch/zeitlich neuesten Datumsordner 
     und gibt den Pfad zur darin liegenden .md-Datei zurück.
     """
     latest_files = []
     
-    # 1. Alle Fachgebiet-Ordner suchen (z. B. cardiology_digest, dermatology_digest)
-    specialty_dirs = glob.glob("*_digest")
+    # 1. Alle Fachgebiet-Ordner suchen (z. B. cardiology, dermatology)
+    specialty_dirs = [os.path.dirname(p.rstrip("/")) for p in glob.glob("*/output/")]
     
     for spec_dir in specialty_dirs:
         output_path = os.path.join(spec_dir, "output")

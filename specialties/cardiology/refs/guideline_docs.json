@@ -1,0 +1,50 @@
+[
+  {
+    "match": [
+      "valv",
+      "vhd",
+      "klappen"
+    ],
+    "label": "ESC/EACTS 2025 Valvular Heart Disease Guidelines",
+    "topics": "ALL"
+  },
+  {
+    "match": [
+      "_hf",
+      "hf_",
+      "heartfailure",
+      "heart_failure",
+      "herzinsuffizienz"
+    ],
+    "label": "ESC Heart Failure Guidelines",
+    "topics": [
+      "TEER - secondary (functional) MR",
+      "Transcatheter mitral valve replacement (TMVR)",
+      "Transcatheter tricuspid valve (TEER/replacement)",
+      "Multivalvular disease"
+    ]
+  },
+  {
+    "match": [
+      "_af",
+      "af_",
+      "atrial",
+      "vorhofflimmern"
+    ],
+    "label": "ESC Atrial Fibrillation Guidelines",
+    "topics": [
+      "LAAO / left atrial appendage occlusion"
+    ]
+  },
+  {
+    "match": [
+      "endocard",
+      "endokard"
+    ],
+    "label": "ESC 2023 Endocarditis Guidelines",
+    "topics": [
+      "Infective endocarditis",
+      "Paravalvular leak"
+    ]
+  }
+]

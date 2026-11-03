@@ -54,37 +54,44 @@ What is new in v2.1 - made from the first real output:
   * Fewer false alarms in the editorial-review list (trial name only counted in the
     title or in primary studies; case-report titles and trivial scores skipped).
 
-Tune these (the actual product IP):
-  - JOURNALS_SPEC / JOURNALS_GENERAL / JOURNALS_ADJACENT   (coverage vs. noise)
-  - TIAB_KEYWORDS                        (recall in general journals)
-  - SCORING_SYSTEM / SCORING_RUBRIC      (what "relevant" means)
+Everything specialty-specific lives in the specialty folder specialties/<name>/ (chosen
+with --specialty <name>, default cardiology; or --specialty-dir PATH / SPECIALTY_DIR) -
+a new specialty is a new folder, not new code:
+  params/*.lst, *.json        journals, keywords, subgroups (+ labels, aliases), noise titles,
+                              top journals, trial names, journal names, branding, disclaimer_{de,en}
+  params/prompts/*.txt        all model prompts (score_*, summary_*_{de,en}, relation_*_{de,en})
+  params/focus_topic.json     optional focus topic (cardiology: structural heart disease)
+  refs/                       reference base, guideline mapping, guideline PDFs, key_findings.json
+  state_clarity/              state + outputs (override with STATE_DIR=...)
+Provider, keys and models: config/anthropic_clarity.cfg, config/gemini_clarity.cfg
+([GENERAL] min_score, doc_min_score, max_per_subgroup, dry_run, llm_provider; [NCBI]).
+Check what is loaded (free, no model calls):  python clarity_digest.py --check-params
 
 Run:
-  pip install requests anthropic pypdf python-docx reportlab matplotlib markdown
-  export NCBI_EMAIL="you@example.com"      # NCBI asks callers to identify
-  export NCBI_API_KEY="..."                # optional, raises rate limit 3->10/s
-  export ANTHROPIC_API_KEY="..."
-  export STATE_DIR=/content/drive/MyDrive/clarity
-  export SUMMARY_MODEL=claude-sonnet-5-5   # summaries / relation text (triage: LLM_MODEL)
+  pip install requests anthropic google-genai pypdf python-docx reportlab matplotlib markdown
 
   # weekly production run: both editions as PDF and Word
-  python cardio_digest.py --days 7 --pdf --docx --only "Strukturelle Kardiologie"
+  python clarity_digest.py --provider anthropic --days 7 --pdf --docx --only "Strukturelle Kardiologie"
   # test run (does not touch seen_pmids / retry queue / history):
-  python cardio_digest.py --days 30 --no-dedup --pdf --docx --only "Strukturelle Kardiologie" --top 8
+  python clarity_digest.py --provider gemini --days 30 --no-dedup --pdf --docx --top 8
   # only the short edition, German:
-  python cardio_digest.py --pdf --edition short --lang de
+  python clarity_digest.py --pdf --edition short --lang de
   # what did we miss?  (no model calls)
-  python cardio_digest.py --days 60 --recall-check
+  python clarity_digest.py --days 60 --recall-check
 
-Files written to STATE_DIR (read these after every run):
+Files written to STATE_DIR (read these after every run; <slug> from branding.json):
   clarity_cardio_long.pdf/.docx   long edition        clarity_cardio_short.pdf/.docx   short edition
                      (German edition: clarity_cardio_lang / clarity_cardio_kurz)
   funnel_report.md   what happened to every paper (counts per status + manual-review list)
   dropped.csv        every paper WITHOUT a study page, with status and reason (this run)
   dropped_history.csv  the same, all runs      qc_report.md   editor notes per featured paper
   retry_queue.json   papers waiting for an abstract / retry   recall_report.md  from --recall-check
+  studies.json       featured studies as records for the DB (upload_digest_ords.py)
+  A productive run (not --no-dedup / dry_run) also copies digest .md, studies.json and the
+  documents to specialties/<fach>/output/<fach>_digest_<timestamp>/ - the upload reads from there.
 Flags: --lang en|de  --edition long|short|both  --top N (max, default 10)  --min N (default 0 = off)  --only X  --workers N  --no-manual
        --no-dedup  --rebuild  --limit N  --no-grounding  --email  --build-refs  --refs-docx
+       --provider anthropic|gemini  --check-params  --live (overrides dry_run)
 """
 
 import os
@@ -102,9 +109,6 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 import requests
 
-from google import genai
-from google.genai import types as genai_types
-
 VERSION = "2.2"
 
 # ---------------------------------------------------------------------------
@@ -112,7 +116,7 @@ VERSION = "2.2"
 # ---------------------------------------------------------------------------
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-CONFIG_FILE = SCRIPT_DIR / "config" / "gemini_clarity.cfg"
+GEMINI_CONFIG_FILE = SCRIPT_DIR / "config" / "gemini_clarity.cfg"
 ANTHROPIC_CONFIG_FILE = SCRIPT_DIR / "config" / "anthropic_clarity.cfg"
 
 def read_config(path):
@@ -130,42 +134,60 @@ def _cfg2env(cfg, section, option, envname):
         if val:
             os.environ[envname] = val
 
-def apply_config(cfg, llm_section):
-    """Gemeinsame Abschnitte plus den Abschnitt des LLM-Anbieters (GEMINI / ANTHROPIC)."""
+def apply_config(cfg):
+    """Gemeinsame Abschnitte (NCBI, GENERAL) in die Umgebung uebernehmen."""
     _cfg2env(cfg, "NCBI", "email", "NCBI_EMAIL")
     _cfg2env(cfg, "NCBI", "api_key", "NCBI_API_KEY")
     _cfg2env(cfg, "NCBI", "tool", "NCBI_TOOL")
-    _cfg2env(cfg, llm_section, "api_key", f"{llm_section}_API_KEY")
-    _cfg2env(cfg, llm_section, "llm_model", "LLM_MODEL")
-    _cfg2env(cfg, llm_section, "summary_model", "SUMMARY_MODEL")
+    _cfg2env(cfg, "GENERAL", "llm_provider", "LLM_PROVIDER")
     _cfg2env(cfg, "GENERAL", "dry_run", "DRY_RUN_DEFAULT")
     _cfg2env(cfg, "GENERAL", "min_score", "MIN_SCORE")
     _cfg2env(cfg, "GENERAL", "doc_min_score", "DOC_MIN_SCORE")
     _cfg2env(cfg, "GENERAL", "max_per_subgroup", "MAX_PER_SUBGROUP")
 
-# Anthropic zuletzt: die Pipeline ruft die Anthropic-API auf, deshalb gewinnen deren Modellnamen.
-apply_config(read_config(CONFIG_FILE), "GEMINI")
-apply_config(read_config(ANTHROPIC_CONFIG_FILE), "ANTHROPIC")
-
 # ---------------------------------------------------------------------------
-# Globale Konstanten / API-Clients
+# Globale Konstanten / KI-Anbieter
 # ---------------------------------------------------------------------------
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-
-# was tut die Funktion _clean_model?
- 
 def _clean_model(name, default):
+    """Modellname bereinigen: Gedankenstriche -> '-', Pr\u00e4fix 'models/' (Gemini) entfernen."""
     n = (name or "").strip().replace("\u2013", "-").replace("\u2014", "-")
     if n.startswith("models/"):
         n = n[len("models/"):]
     return n or default
 
-LLM_MODEL = _clean_model(os.environ.get("LLM_MODEL"), "gemini-3.7-flash")
-# Modul 2 laeuft nur auf wenigen Papers - ein staerkeres Modell lohnt sich hier.
-SUMMARY_MODEL = _clean_model(os.environ.get("SUMMARY_MODEL"), LLM_MODEL)
+# Pro Anbieter: Config-Datei, Abschnitt und Default-Modelle. Die Werte aus der Config
+# (api_key, llm_model, summary_model) \u00fcberschreiben die Defaults; ohne api_key in der
+# Config gilt die Umgebungsvariable ANTHROPIC_API_KEY bzw. GEMINI_API_KEY.
+PROVIDERS = {
+    "anthropic": {"cfg": ANTHROPIC_CONFIG_FILE, "section": "ANTHROPIC",
+                  "llm_model": "claude-haiku-5-5", "summary_model": "claude-sonnet-5-5"},
+    "gemini":    {"cfg": GEMINI_CONFIG_FILE, "section": "GEMINI",
+                  "llm_model": "gemini-3.7-flash", "summary_model": "gemini-3.7-flash"},
+}
 
-client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
+for _name, _p in PROVIDERS.items():
+    _cfg = read_config(_p["cfg"])
+    apply_config(_cfg)
+    _sec = (_cfg[_p["section"]] if _cfg is not None and _cfg.has_section(_p["section"]) else {})
+    _p["api_key"] = (_sec.get("api_key", "").strip()
+                     or os.environ.get(f"{_p['section']}_API_KEY", ""))
+    _p["llm_model"] = _clean_model(_sec.get("llm_model"), _p["llm_model"])
+    _p["summary_model"] = _clean_model(_sec.get("summary_model"), _p["llm_model"])
+
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "anthropic").strip().lower()
+if LLM_PROVIDER not in PROVIDERS:
+    LLM_PROVIDER = "anthropic"
+LLM_MODEL = PROVIDERS[LLM_PROVIDER]["llm_model"]          # Triage (Modul 1)
+SUMMARY_MODEL = PROVIDERS[LLM_PROVIDER]["summary_model"]  # Module 2 + 3
+
+
+def select_provider(name):
+    """Anbieter f\u00fcr diesen Lauf festlegen (setzt LLM_PROVIDER, LLM_MODEL, SUMMARY_MODEL)."""
+    global LLM_PROVIDER, LLM_MODEL, SUMMARY_MODEL
+    LLM_PROVIDER = name
+    LLM_MODEL = PROVIDERS[name]["llm_model"]
+    SUMMARY_MODEL = PROVIDERS[name]["summary_model"]
 
 NCBI_EMAIL = os.environ.get("NCBI_EMAIL", "you@example.com")
 NCBI_TOOL = os.environ.get("NCBI_TOOL", "ClarityDigest")
@@ -182,20 +204,57 @@ JOURNALS_SPEC_FILE_DEFAULT = "params/journals_spec.lst"
 JOURNALS_GEN_FILE_DEFAULT = SCRIPT_DIR / "journals_general.lst"   # Ausnahme: im Programmverzeichnis
 JOURNALS_ADJ_FILE_DEFAULT = "params/journals_adjacent.lst"
 TIAB_KEYWORDS_FILE_DEFAULT = "params/tiab_keywords.lst"
-SCORING_SYSTEM_FILE_DEFAULT = "params/score_sys.txt"
-SCORING_RUBRIC_FILE_DEFAULT = "params/score_rubric.txt"
-SUMMARY_SYSTEM_FILE_DEFAULT = "params/summary_sys.txt"
-SUMMARY_RUBRIC_FILE_DEFAULT = "params/summary_rubric.txt"
+TOP_JOURNALS_FILE_DEFAULT = "params/top_journals.lst"
+CANARY_FILE_DEFAULT = "params/canary_trials.lst"
 NOISE_FILE_DEFAULT = "params/noise_titles.lst"
 ALIASES_FILE_DEFAULT = "params/subgroup_aliases.json"
+SUBGROUP_LABELS_FILE_DEFAULT = "params/subgroup_labels.json"
+JOURNAL_DISPLAY_FILE_DEFAULT = "params/journal_display.json"
+FOCUS_TOPIC_FILE_DEFAULT = "params/focus_topic.json"        # optional
 BRANDING_FILE_DEFAULT = "params/branding.json"
-DISCLAIMER_FILE_DEFAULT = "params/disclaimer.txt"
-STATE_DIR_DEFAULT = "state"
+DISCLAIMER_FILE_DEFAULT = "params/disclaimer_{lang}.txt"
+# Prompts ({lang} = de / en)
+SCORING_SYSTEM_FILE_DEFAULT = "params/prompts/score_sys.txt"
+SCORING_NO_ABSTRACT_FILE_DEFAULT = "params/prompts/score_no_abstract.txt"
+SCORING_RUBRIC_FILE_DEFAULT = "params/prompts/score_rubric.txt"
+SUMMARY_SYSTEM_FILE_DEFAULT = "params/prompts/summary_sys_{lang}.txt"
+SUMMARY_RUBRIC_FILE_DEFAULT = "params/prompts/summary_rubric_{lang}.txt"
+RELATION_SYSTEM_FILE_DEFAULT = "params/prompts/relation_sys_{lang}.txt"
+RELATION_RUBRIC_FILE_DEFAULT = "params/prompts/relation_rubric_{lang}.txt"
+REF_KEYFINDING_FILE_DEFAULT = "params/prompts/ref_keyfinding_sys.txt"
+# Referenzbasis und Leitlinien
+STRUCT_REFS_FILE_DEFAULT = "refs/structural_references.json"
+GUIDELINE_DOCS_FILE_DEFAULT = "refs/guideline_docs.json"
+TOPIC_TERMS_FILE_DEFAULT = "refs/topic_search_terms.json"
+STATE_DIR_DEFAULT = "state_clarity"
 
-SPECIALTY_DIR = Path(os.environ.get("SPECIALTY_DIR",
-                                    SCRIPT_DIR / "specialties" / "cardiology_digest"))
+SPECIALTIES_DIR = SCRIPT_DIR / "specialties"
+DEFAULT_SPECIALTY = "cardiology"
+
+
+def _early_specialty_dir():
+    """Fachordner vor dem Laden der Parameterdateien bestimmen (die werden beim Import
+    gelesen, also bevor main() die Argumente auswertet). Vorrang:
+    --specialty-dir PFAD > --specialty NAME (= specialties/NAME) > SPECIALTY_DIR > cardiology."""
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--specialty")
+    pre.add_argument("--specialty-dir")
+    a, _ = pre.parse_known_args(sys.argv[1:] if __name__ == "__main__" else [])
+    if a.specialty_dir:
+        return Path(a.specialty_dir).expanduser().resolve()
+    if a.specialty:
+        return SPECIALTIES_DIR / a.specialty
+    return Path(os.environ.get("SPECIALTY_DIR", SPECIALTIES_DIR / DEFAULT_SPECIALTY))
+
+
+SPECIALTY_DIR = _early_specialty_dir()
+if not SPECIALTY_DIR.is_dir():
+    _known = sorted(d.name for d in SPECIALTIES_DIR.iterdir() if d.is_dir()) if SPECIALTIES_DIR.is_dir() else []
+    sys.exit(f"Fachordner nicht gefunden: {SPECIALTY_DIR}\n"
+             f"Vorhandene Fachgebiete unter {SPECIALTIES_DIR}: {', '.join(_known) or '-'}")
 
 PARAM_SOURCES = {}          # Pfad -> Anzahl Einträge (für --check-params)
+LANGS = ("de", "en")
 
 def load_list_param(relpath, allow_empty=False):
     """Eine .lst-Parameterdatei relativ zu SPECIALTY_DIR (ein absoluter Pfad gilt direkt):
@@ -213,26 +272,73 @@ def load_list_param(relpath, allow_empty=False):
     PARAM_SOURCES[str(path)] = len(items)
     return items
 
-# !---------------------------------------------------------------------------!
-# Ab hier original code, not config file 
 
-# An API key raises the E-utilities limit from 3 to 10 requests/sec.
-# Get one at https://www.ncbi.nlm.nih.gov/account/ -> Settings -> API Key.
-NCBI_EMAIL = os.environ.get("NCBI_EMAIL", "you@example.com")
-NCBI_TOOL = "CardioDigest"
-NCBI_API_KEY = os.environ.get("NCBI_API_KEY", "")
+def _open_param(relpath, optional=False):
+    """Pfad einer Parameterdatei relativ zu SPECIALTY_DIR; None, wenn optional und nicht vorhanden."""
+    path = SPECIALTY_DIR / relpath
+    if not path.is_file():
+        if optional:
+            return None
+        sys.exit(f"Parameterdatei fehlt: {path}")
+    return path
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-# Haiku is cheap and good enough for triage; switch to a Sonnet/Opus-class model
-# for sharper judgement. Check current model names at https://docs.claude.com
-LLM_MODEL = os.environ.get("LLM_MODEL", "claude-haiku-4-5")
 
-EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+def load_text_param(relpath):
+    """Eine Textdatei (Prompt, Disclaimer) unverändert; nur EIN abschliessender
+    Zeilenumbruch wird entfernt, den Editoren gerne anhängen."""
+    path = _open_param(relpath)
+    with open(path, encoding="utf-8-sig") as f:
+        text = f.read()
+    text = text[:-1] if text.endswith("\n") else text
+    if not text.strip():
+        sys.exit(f"Parameterdatei ist leer: {path}")
+    PARAM_SOURCES[str(path)] = len(text)
+    return text
+
+
+def load_lang_param(relpath):
+    """{lang}-Datei für jede Sprache: {"de": ..., "en": ...}."""
+    return {lg: load_text_param(relpath.format(lang=lg)) for lg in LANGS}
+
+
+def load_json_param(relpath, optional=False):
+    """Eine JSON-Parameterdatei; optional=True: fehlende Datei ergibt None."""
+    path = _open_param(relpath, optional)
+    if path is None:
+        return None
+    try:
+        with open(path, encoding="utf-8-sig") as f:
+            data = json.load(f)
+    except ValueError as e:
+        sys.exit(f"Parameterdatei ist kein gültiges JSON: {path}\n  {e}")
+    PARAM_SOURCES[str(path)] = len(data)
+    return data
+
+
+# Branding (params/branding.json): brand, field name, file names, colour palette.
+BRANDING = load_json_param(BRANDING_FILE_DEFAULT)
+_P = {k: str(v).lstrip("#").upper() for k, v in BRANDING["palette"].items()}   # hex without '#'
+FILE_SLUG = BRANDING.get("file_slug", "digest")            # output names: clarity_<slug>_long.pdf
+DIGEST_TITLE = BRANDING.get("digest_title", "Digest")      # Markdown digest / e-mail subject
+
+
+def _env_int(name, default):
+    """Ganzzahl aus der Umgebung ([GENERAL] in der Config), sonst der Default."""
+    try:
+        return int(os.environ.get(name, default))
+    except ValueError:
+        sys.exit(f"{name} muss eine ganze Zahl sein, nicht {os.environ.get(name)!r}")
+
+# Provider and model names (LLM_PROVIDER, LLM_MODEL, SUMMARY_MODEL) come from
+# config/anthropic_clarity.cfg / config/gemini_clarity.cfg - see PROVIDERS above.
+# NCBI_EMAIL / NCBI_TOOL / NCBI_API_KEY come from [NCBI] (see above).
 
 RELDATE_DAYS = 7          # "added to PubMed in the last N days"
-MIN_SCORE = 6             # drop anything below this (quality > quantity)
-PDF_MIN_SCORE = 6         # relevance floor for the CLARITY PDF (avoid padding weak subgroups)
-MAX_PER_SUBGROUP = 5      # cap for the Markdown digest only
+# Thresholds: [GENERAL] min_score / doc_min_score / max_per_subgroup in the config
+MIN_SCORE = _env_int("MIN_SCORE", 6)             # drop anything below this (quality > quantity)
+PDF_MIN_SCORE = _env_int("DOC_MIN_SCORE", 6)     # relevance floor for the CLARITY documents
+MAX_PER_SUBGROUP = _env_int("MAX_PER_SUBGROUP", 5)   # cap for the Markdown digest only
+DRY_RUN_DEFAULT = os.environ.get("DRY_RUN_DEFAULT", "").strip().lower() in ("1", "true", "yes", "ja")
 MAX_STUDIES = 10          # study pages per subgroup (--top)
 MIN_STUDIES = 0           # off by default; >0 fills up to this number ... (--min)
 FALLBACK_SCORE = 5        # ... with the best studies scoring at least this
@@ -271,7 +377,7 @@ def _jnorm(j):
 # Journals whose new original articles must never vanish without a trace.
 TOP_JOURNALS_GENERAL = {_jnorm(j) for j in JOURNALS_GENERAL}
 TOP_JOURNALS_ALL = TOP_JOURNALS_GENERAL | {
-    _jnorm(j) for j in ("Eur Heart J", "Circulation", "J Am Coll Cardiol", "JAMA Cardiol")}
+    _jnorm(j) for j in load_list_param(TOP_JOURNALS_FILE_DEFAULT, allow_empty=True)}
 
 def is_top_general(journal):
     return _jnorm(journal) in TOP_JOURNALS_GENERAL
@@ -280,16 +386,7 @@ def is_top_any(journal):
     return _jnorm(journal) in TOP_JOURNALS_ALL
 
 # Errata, retractions, letters, replies, comments, journal-scan columns.
-NOISE_TITLE_PATTERNS = [
-    r"^correction to\b", r"^corrigendum\b", r"^erratum\b", r"^author correction\b",
-    r"^retraction\b", r"^retracted:", r"^withdrawn:", r"^expression of concern\b",
-    r"^reply to\b", r"^response to\b", r"^reply\b", r"^response by\b",
-    r"^letters?\b", r"^comments? on\b", r"\bregarding article\b",
-    r"\bto the editor\b",
-    r"(?:^|[\s\.\-–:])reply\.?$",            # '... Atrial Fibrillation. Reply.'
-    r"^weekly journal scan\b", r"^journal scan\b", r"^in this issue\b",
-    r"^this week in\b", r"^editor'?s? (?:note|choice|comment)\b",
-]
+NOISE_TITLE_PATTERNS = load_list_param(NOISE_FILE_DEFAULT)      # one regex per line
 _NOISE_RE = re.compile("|".join(NOISE_TITLE_PATTERNS), re.IGNORECASE)
 
 # PubMed publication types that are never research. (A paper that ALSO carries a
@@ -324,21 +421,20 @@ def noise_reason(p):
         return "pubtype:" + sorted(hit)[0]
     return ""
 
-# Structural heart disease keywords in the TITLE. Used as a second, deterministic
-# vote: a valve study in an imaging or EP journal must still reach the structural
-# section even if the model routed it elsewhere.
-STRUCTURAL_RE = re.compile(
-    r"\b(TAVR|TAVI|TMVR|TTVR|TEER|M-TEER|T-TEER|MitraClip|TriClip|PASCAL|"
-    r"transcatheter\s+(?:aortic|mitral|tricuspid|pulmonary|valve|edge)|"
-    r"aortic\s+(?:stenosis|valve|regurgitation|bioprosthe\w*)|"
-    r"mitral\s+(?:regurgitation|valve|stenosis|annul\w*|leaflet\w*)|"
-    r"tricuspid|paravalvular|valve[\s\-]in[\s\-](?:valve|ring)|TAV[\s\-]in[\s\-]\w+|"
-    r"bioprosthe\w*|valvular|valve\s+(?:replacement|repair|disease|durability)|"
-    r"left\s+atrial\s+appendage|LAAO|LAAC|appendage\s+(?:closure|occlusion)|"
-    r"patent\s+foramen|PFO|atrial\s+septal|endocarditis)\b", re.IGNORECASE)
+# Optional focus topic of the specialty (cardiology: structural heart disease) from
+# params/focus_topic.json: its subgroup, sub-topics, a title rule and recall keywords.
+# Without the file the focus logic is off (STRUCT = None, no title rule).
+FOCUS_TOPIC = load_json_param(FOCUS_TOPIC_FILE_DEFAULT, optional=True)
+STRUCT = FOCUS_TOPIC["subgroup"] if FOCUS_TOPIC else None
+STRUCT_TOPICS = FOCUS_TOPIC["topics"] if FOCUS_TOPIC else ["Other"]
+
+# Focus keywords in the TITLE. Used as a second, deterministic vote: a valve study in an
+# imaging or EP journal must still reach the structural section even if the model
+# routed it elsewhere.
+STRUCTURAL_RE = re.compile(FOCUS_TOPIC["title_regex"], re.IGNORECASE) if FOCUS_TOPIC else None
 
 def looks_structural(title):
-    return bool(STRUCTURAL_RE.search(title or ""))
+    return bool(STRUCTURAL_RE and STRUCTURAL_RE.search(title or ""))
 
 # A title WITHOUT any design / outcome word that is a question or opens like a commentary
 # is an editorial, not a study. Used only for records that have no abstract (an abstract,
@@ -373,12 +469,7 @@ def looks_like_case_report(title):
 # Trial names that must always reach a human if they show up. Matched case-sensitively
 # (OPTION, CLOSE, REDUCE ... are only trial names when written in capitals). The list
 # is extended at run time with the all-caps trial names found in the reference base.
-_CANARY_STATIC = [
-    "CHAMPION-AF", "CLOSURE-AF", "PARTNER", "EVOLUT", "SURTAVI", "NOTION", "DEDICATE",
-    "RHEIA", "COAPT", "RESHAPE-HF2", "MATTERHORN", "CLASP", "TRILUMINATE", "TRISCEND",
-    "Tri.Fr", "PRAGUE-17", "OPTION", "SWISS-APERO", "CHOICE-MI", "SUMMIT", "LAMPOON",
-    "PLUGinTAVI", "CLOSE", "REDUCE", "RESPECT", "MITRA-FR", "MITRA-PRO",
-]
+_CANARY_STATIC = load_list_param(CANARY_FILE_DEFAULT, allow_empty=True)
 _canary_cache = {}
 
 def build_canary_regex():
@@ -593,10 +684,10 @@ def fetch_crossref_abstract(doi):
     if not doi:
         return ""
     try:
-        params, headers = {}, {"User-Agent": "CardioDigest"}
+        params, headers = {}, {"User-Agent": NCBI_TOOL}
         if NCBI_EMAIL and "@" in NCBI_EMAIL:      # Crossref "polite pool"
             params["mailto"] = NCBI_EMAIL
-            headers["User-Agent"] = f"CardioDigest (mailto:{NCBI_EMAIL})"
+            headers["User-Agent"] = f"{NCBI_TOOL} (mailto:{NCBI_EMAIL})"
         r = requests.get(CROSSREF + doi, params=params, headers=headers, timeout=30)
         if r.status_code >= 300:
             return ""
@@ -709,6 +800,61 @@ def _try_json(text):
 
 _FATAL_HTTP = {400, 401, 402, 403, 404, 413, 422}      # retrying cannot help
 
+# One interface for both providers: complete(model, system, user, max_tokens, json_mode)
+# -> (text, stop_reason). stop_reason is "max_tokens" when the reply was cut off; API
+# errors carry the HTTP code in .status_code so llm_json can tell fatal from transient.
+
+class AnthropicLLM:
+    name = "anthropic"
+
+    def __init__(self, api_key):
+        import anthropic
+        self._c = anthropic.Anthropic(api_key=api_key)
+
+    def complete(self, model, system, user, max_tokens, json_mode=False):
+        kw = {"system": system} if system else {}
+        msg = self._c.messages.create(model=model, max_tokens=max_tokens,
+                                      messages=[{"role": "user", "content": user}], **kw)
+        text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+        return text, getattr(msg, "stop_reason", None)
+
+
+GEMINI_THINKING_HEADROOM = 2048   # Gemini counts its thinking tokens against max_output_tokens
+
+class GeminiLLM:
+    name = "gemini"
+
+    def __init__(self, api_key):
+        from google import genai
+        from google.genai import types, errors
+        self._c, self._types, self._errors = genai.Client(api_key=api_key), types, errors
+
+    def complete(self, model, system, user, max_tokens, json_mode=False):
+        cfg = self._types.GenerateContentConfig(
+            system_instruction=system or None,
+            max_output_tokens=max_tokens + GEMINI_THINKING_HEADROOM,
+            response_mime_type="application/json" if json_mode else None,
+            automatic_function_calling=self._types.AutomaticFunctionCallingConfig(disable=True))
+        try:
+            r = self._c.models.generate_content(model=model, contents=user, config=cfg)
+        except self._errors.APIError as e:
+            e.status_code = getattr(e, "code", None)
+            raise
+        cand = (r.candidates or [None])[0]
+        fr = getattr(cand, "finish_reason", None)
+        fr = str(getattr(fr, "name", fr) or "")                 # enum FinishReason.STOP -> "STOP"
+        return (r.text or ""), ("max_tokens" if fr == "MAX_TOKENS" else (fr.lower() or None))
+
+
+def make_llm(provider):
+    """Client for the chosen provider; exits with a clear message when the key is missing."""
+    p = PROVIDERS[provider]
+    if not p["api_key"]:
+        sys.exit(f"Kein API-Key für {provider}: [{p['section']}] api_key in {p['cfg']} "
+                 f"eintragen oder {p['section']}_API_KEY setzen.")
+    return (AnthropicLLM if provider == "anthropic" else GeminiLLM)(p["api_key"])
+
+
 def llm_json(client, model, system, user, max_tokens, retries=None, tag=""):
     """Call the model and return (dict, "") or (None, reason). Retries transient API
     errors and unparsable / truncated replies. Never raises, never invents a result."""
@@ -716,8 +862,7 @@ def llm_json(client, model, system, user, max_tokens, retries=None, tag=""):
     last = ""
     for attempt in range(1, retries + 1):
         try:
-            msg = client.messages.create(model=model, max_tokens=max_tokens, system=system,
-                                         messages=[{"role": "user", "content": user}])
+            text, stop = client.complete(model, system, user, max_tokens, json_mode=True)
         except Exception as e:
             last = f"{type(e).__name__}: {str(e)[:160]}"
             if getattr(e, "status_code", None) in _FATAL_HTTP:
@@ -725,11 +870,9 @@ def llm_json(client, model, system, user, max_tokens, retries=None, tag=""):
             if attempt < retries:
                 time.sleep(min(2 ** attempt, 15))
             continue
-        text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
         obj = _try_json(text)
         if obj is not None:
             return obj, ""
-        stop = getattr(msg, "stop_reason", None)
         last = f"unparsable reply (stop_reason={stop!r}): {text[:100]!r}"
         if stop == "max_tokens":
             max_tokens = int(max_tokens * 1.5)          # truncated: give it more room
@@ -774,16 +917,7 @@ def save_json(name, obj, **kw):
 # 2d. Triage (Module 1)
 # ---------------------------------------------------------------------------
 
-STRUCT = "Structural Heart Disease"
 
-STRUCT_TOPICS = [
-    "TAVR - low risk", "TAVR - intermediate/high risk",
-    "TEER - secondary (functional) MR", "TEER - primary (degenerative) MR",
-    "Transcatheter mitral valve replacement (TMVR)",
-    "LAAO / left atrial appendage occlusion",
-    "Transcatheter tricuspid valve (TEER/replacement)", "PFO / ASD closure",
-    "Paravalvular leak", "Infective endocarditis", "Multivalvular disease", "Other",
-]
 
 STUDY_TYPES = ["RCT", "Meta-analysis / Systematic review", "Guideline / Consensus",
                "Large observational / Registry", "Small observational",
@@ -791,121 +925,12 @@ STUDY_TYPES = ["RCT", "Meta-analysis / Systematic review", "Guideline / Consensu
                "Review / Editorial", "Other"]
 STATEMENT_TYPES = ["Major guideline", "Practical statement", "Primary study or other"]
 
-SCORING_SYSTEM = (
-    "You are a senior academic cardiologist and evidence-based-medicine expert "
-    "triaging brand-new literature for busy practicing cardiologists. Be rigorous "
-    "and skeptical: the large majority of papers do NOT change practice. Reward "
-    "strong designs (RCTs, guidelines, large trials) and genuine clinical impact; "
-    "penalise small, preliminary, or purely mechanistic work. Judge ONLY from the "
-    "text provided. A missing abstract says NOTHING about the quality of a paper - it "
-    "only means the PubMed record is brand new."
-)
-
-SCORING_NO_ABSTRACT_NOTE = (
-    "\n\nTHIS RECORD HAS NO ABSTRACT YET. Triage from title, journal and publication "
-    "type only, and do NOT let the missing abstract lower the score. If the title "
-    "indicates original research (randomised trial, large registry, meta-analysis) on a "
-    "clinically important question, score it at least 6. Commentaries, editorials, "
-    "letters, replies, news items and 'what this trial means' pieces are "
-    "'Review / Editorial' and score 1-3. Typical commentary titles: a question ('What does "
-    "FFR measure after TAVI?'), 'Interpreting ...', 'Reflections on ...', 'How to ...', "
-    "'The case for ...', or a trial name plus a topic without any design word. If the title "
-    "is genuinely ambiguous, score 5-6 and say so in why_it_matters - never 2."
-)
-
-SCORING_RUBRIC = """Return a single JSON object and nothing else:
-{
-  "subgroup": one of __SUBGROUPS__ or "Other",
-     Routing note for "Structural Heart Disease": this category is for ADULT
-     structural/valvular heart disease and its catheter-based or surgical treatment -
-     aortic, mitral, tricuspid and pulmonary valve disease, TAVR/TAVI, TEER, TMVR/TTVR,
-     LAAO, PFO/ASD closure in adults, paravalvular leak, prosthetic valve dysfunction,
-     endocarditis of a valve or prosthesis.
-     ROUTE BY CLINICAL SUBJECT, NEVER BY JOURNAL. A study of a valve or a structural
-     intervention stays in this category even when it appears in an imaging or
-     electrophysiology journal, even when the outcome measure is echocardiographic, and
-     even when the data come from a registry. Examples that DO belong here:
-     echocardiographic outcomes after transcatheter tricuspid valve replacement; a meta-analysis of
-     left atrial appendage closure versus anticoagulation; registry outcomes of
-     antithrombotic strategy after valve-in-valve TAVR; natural history of quantified
-     mitral regurgitation.
-     It is NOT for: paediatric or congenital heart disease and its risk factors or
-     epidemiology (the word "structural" in "structural congenital heart disease" does NOT
-     make it this category), pregnancy/obstetric risk studies, health-policy or
-     reimbursement studies, and papers whose SUBJECT is database linkage or surveillance
-     methodology rather than a clinical result. Route those to "General Cardiology" or
-     "Other".
-  "secondary_subgroups": a list (usually empty, at most 2) of OTHER subgroups from the same
-                list that the paper ALSO clearly belongs to, e.g. an AI echocardiography
-                model for aortic stenosis: subgroup "Cardiac Imaging", secondary
-                ["Structural Heart Disease"]. Use [] when there is no genuine second home.
-  "structural_topic": if subgroup is "Structural Heart Disease" OR it is listed in
-                secondary_subgroups, pick the single best match from __STRUCT_TOPICS__ ;
-                otherwise null.
-                Choose by the clinical subject, not by wording of the title. A tricuspid
-                device study belongs to the tricuspid topic; aortic prosthesis outcomes to
-                the matching TAVR topic; paravalvular leak and prosthetic valve dysfunction
-                to "Paravalvular leak"; infective endocarditis (native OR prosthetic valve,
-                including risk scores and imaging of endocarditis) to "Infective
-                endocarditis"; anything else to "Other".
-  "structural_topics_extra": a list (usually empty) of further topics from the same list
-                when the study clearly covers more than one, e.g. a registry of degenerative
-                AND functional mitral regurgitation: structural_topic "TEER - primary
-                (degenerative) MR" and extra ["TEER - secondary (functional) MR"].
-  "study_type": "RCT" | "Meta-analysis / Systematic review" | "Guideline / Consensus"
-                | "Large observational / Registry" | "Small observational"
-                | "Diagnostic / Validation study" | "Basic / Translational"
-                | "Review / Editorial" | "Other",
-  "statement_type": "Major guideline" | "Practical statement" | "Primary study or other",
-  "interventional": true or false,
-  "relevance_score": integer 1-10,
-  "practice_changing": true or false,
-  "why_it_matters": one sentence,
-  "bottom_line": one or two sentences, concrete clinical takeaway
-}
-
-statement_type - how to classify:
-  "Major guideline"      = ONLY a COMPLETE clinical practice guideline or a universal
-                           disease DEFINITION from a major society (ESC/ACC/AHA/etc.),
-                           e.g. "2026 ACC/AHA Guideline on ..." or "Universal Definition
-                           of ...". These are broadly disseminated, long, and hard to
-                           summarise faithfully, so we only NAME them.
-                           NOT a Major guideline: a Scientific Statement, an expert
-                           consensus / position paper, a best-practices document, an
-                           erratum/correction, or a journal editorial/authorship policy
-                           (e.g. ICMJE recommendations). Do not use this label for those.
-  "Practical statement"  = a document issued by a society, task force or named expert
-                           panel: Scientific Statement, expert consensus, position paper,
-                           or a focused best-practices / step-by-step technical document
-                           (e.g. an AHA Scientific Statement, an EACTS Expert Consensus
-                           Document, a standardised-definitions paper). It is NOT a narrative
-                           review, state-of-the-art review, editorial, commentary or opinion
-                           piece written by individual authors - those are "Primary study or
-                           other" with study_type "Review / Editorial", even when they discuss
-                           guidelines or recommendations.
-  "Primary study or other" = original research (RCT, registry, cohort, meta-analysis),
-                           narrative reviews, editorials, epidemiology papers, methods
-                           papers, case reports, and any journal editorial/publishing
-                           policy document. Anything that is not a guideline or a society
-                           statement. Score pure publishing-policy or non-clinical
-                           documents very low (1-2).
-
-interventional - set true ONLY if the paper itself evaluates, compares or reports the
-  outcomes, technique or complications of a CATHETER-BASED / percutaneous cardiac
-  intervention (PCI, stents, FFR/OCT/IVUS-guided PCI, TAVR/TAVI, valve-in-valve,
-  transcatheter mitral or tricuspid repair/replacement incl. TEER, left atrial appendage
-  occlusion, PFO/ASD closure, paravalvular leak closure, mechanical circulatory support in
-  the cath lab) - also in comparison with surgery or medical therapy.
-  Set FALSE for: imaging or diagnostic studies, AI models, risk scores, natural history
-  and epidemiology, medical therapy, studies of patients explicitly WITHOUT an
-  intervention, pure surgery, and electrophysiology ablation/device procedures (own category).
-
-Score anchors:
-  9-10  practice-changing RCT / new guideline in a major journal
-  7-8   important; strong evidence likely to influence practice or debate
-  4-6   incremental, confirmatory, or narrow relevance
-  1-3   preliminary, niche, mechanistic, or low clinical relevance
-""".replace("__SUBGROUPS__", json.dumps(SUBGROUPS)).replace(
+# Prompts of Module 1 (params/prompts/score_*.txt)
+SCORING_SYSTEM = load_text_param(SCORING_SYSTEM_FILE_DEFAULT)
+SCORING_NO_ABSTRACT_NOTE = load_text_param(SCORING_NO_ABSTRACT_FILE_DEFAULT)
+# __SUBGROUPS__ / __STRUCT_TOPICS__ in the template are filled from the parameter files
+SCORING_RUBRIC = load_text_param(SCORING_RUBRIC_FILE_DEFAULT).replace(
+    "__SUBGROUPS__", json.dumps(SUBGROUPS)).replace(
     "__STRUCT_TOPICS__", json.dumps(STRUCT_TOPICS))
 
 
@@ -1032,14 +1057,16 @@ def score_cached(paper, client, cache):
     """(score, from_cache). A cached title-only verdict is replaced as soon as the
     abstract is available; changing LLM_MODEL or SCORING_VERSION invalidates the cache."""
     pmid, has_abs = paper["pmid"], bool(paper.get("abstract"))
-    c = cache.get(pmid)
-    if (c and c.get("v") == SCORING_VERSION and c.get("model") == LLM_MODEL
-            and (c.get("has_abstract") or not has_abs)):
-        return normalize_score(c["score"], paper), True
+    # one entry per (paper, model), so alternating providers reuses both; the old
+    # key (plain PMID) is still read when it was made by the same model
+    for c in (cache.get(f"{pmid}|{LLM_MODEL}"), cache.get(pmid)):
+        if (c and c.get("v") == SCORING_VERSION and c.get("model") == LLM_MODEL
+                and (c.get("has_abstract") or not has_abs)):
+            return normalize_score(c["score"], paper), True
     sc = score_paper(paper, client)
     if not sc.get("failed"):
-        cache[pmid] = {"v": SCORING_VERSION, "model": LLM_MODEL,
-                       "has_abstract": has_abs, "score": sc}
+        cache[f"{pmid}|{LLM_MODEL}"] = {"v": SCORING_VERSION, "model": LLM_MODEL,
+                                        "has_abstract": has_abs, "score": sc}
     return sc, False
 
 # ---------------------------------------------------------------------------
@@ -1048,283 +1075,10 @@ def score_cached(paper, client, cache):
 # A stronger model is worth it here: it runs on a handful of papers, not hundreds.
 # Set SUMMARY_MODEL to a Sonnet/Opus-class model for better summaries.
 # One call produces BOTH editions: "short" (2-3 sentences) and "summary" (long).
-SUMMARY_MODEL = os.environ.get("SUMMARY_MODEL", LLM_MODEL)
+# SUMMARY_MODEL is set per provider (see PROVIDERS / select_provider).
 
-_SUMMARY_SYSTEM = {
-"de": (
-    "Du bist ein erfahrener Kardiologe und schreibst präzise, streng faktentreue "
-    "deutschsprachige Zusammenfassungen neuer Studien für Fachkolleginnen und "
-    "Fachkollegen. Schweizer Rechtschreibung (ss statt ß). "
-    "\n\nREGEL 1 - KEINE HALLUZINATIONEN. Jede Tatsachenaussage (Zahlen, Endpunkte, "
-    "Population, Ergebnisse) stammt AUSSCHLIESSLICH aus dem vorliegenden Abstract. Was "
-    "nicht im Abstract steht, wird weder erfunden noch erwähnt. Erfinde nie Studiennamen, "
-    "Effektgrössen, p-Werte oder Leitlinienempfehlungen. Fachbegriffe, Studiennamen, "
-    "Abkürzungen und Zahlen werden unverändert übernommen (z. B. TAVI, TEER, MitraScore, "
-    "'non-inferior'); englische Fachbegriffe ohne gebräuchliche deutsche Entsprechung "
-    "bleiben englisch. "
-    "\n\nREGEL 2 - KEINE KLINISCHEN RATSCHLÄGE. Du beschreibst, was eine Arbeit berichtet; "
-    "du rätst niemandem, was zu tun ist. Das ist eine rechtliche Vorgabe, keine "
-    "Stilfrage. Verboten sind Empfehlungen, Vorschläge und Handlungsaufforderungen, "
-    "insbesondere: 'sollte', 'sollten', 'sollen', 'empfohlen', 'wir empfehlen', 'ist zu "
-    "erwägen', 'ist indiziert', 'muss', 'müssen', 'spricht für den Einsatz', 'rechtfertigt "
-    "die Anwendung' und jede Aufforderung an die Leserschaft. Schreibe stattdessen in der "
-    "dritten Person und ordne jede Schlussfolgerung ihrer Quelle zu: 'Die Autoren "
-    "schliessen, dass ...', 'Die Studie fand ...', 'Gemäss den Autoren ...'. "
-    "\n\nREGEL 3 - KEINE EIGENEN BEWERTUNGEN. Bewerte weder Qualität noch Aussagekraft der "
-    "Studie. Gib nur Einschränkungen wieder, die der Abstract selbst nennt, oder reine "
-    "Designfakten ('beobachtend', 'ohne Kontrollgruppe'). Schreibe keine Sätze darüber, was "
-    "im Abstract FEHLT (z. B. 'Der Abstract nennt keine Sicherheitsdaten'); solche Hinweise "
-    "gehören ausschliesslich in 'qc_notes'."
-),
-"en": (
-    "You are an experienced cardiologist writing concise, strictly factual English "
-    "summaries of new studies for fellow specialists. "
-    "\n\nRULE 1 - NO HALLUCINATIONS. Every factual statement (numbers, endpoints, "
-    "population, results) must come EXCLUSIVELY from the abstract provided. If "
-    "information is not in the abstract, do not invent it and do not state it. Never "
-    "invent trial names, effect sizes, p-values or guideline recommendations. Keep the "
-    "original terminology of the source; do not translate. "
-    "\n\nRULE 2 - NO CLINICAL ADVICE. You describe what a paper reports; you never "
-    "advise anyone what to do. This is a legal requirement, not a style preference. "
-    "Never write recommendations, suggestions or calls to action. Specifically forbidden: "
-    "'should', 'should be considered', 'recommend', 'is recommended', 'clinicians should', "
-    "'consider using', 'warrants adoption', 'supports the use of', 'is indicated', 'must', "
-    "'we advise', and any imperative addressed to the reader. Attribute every conclusion "
-    "to its source instead: 'the authors conclude that ...', 'the trial reported ...', "
-    "'the study found ...', 'according to the authors ...'. Describe findings and their "
-    "stated implications in the third person, as reported. Do not tell the reader what "
-    "to do with the information. "
-    "\n\nRULE 3 - NO OWN JUDGEMENTS. Do not evaluate the quality or strength of the study. "
-    "Report only limitations the abstract itself states, or plain design facts "
-    "('observational', 'no control group'). Do not write sentences about what the abstract "
-    "LACKS (e.g. 'the abstract reports no safety data'); such remarks belong exclusively "
-    "in 'qc_notes'."
-),
-}
-
-_KEYNUM_SCHEMA = """  "key_numbers": {
-    "design": "keyword(s), at most 6 words, e.g. 'RCT, double-blind, multicentre' or 'Registry' (or null)",
-    "n": "total participants as a string, e.g. '4321'  (or null)",
-    "followup": "e.g. '12 months'  (or null)",
-    "primary_endpoint": {
-      "name": "name + timepoint, e.g. 'Target lesion failure, 12 mo'",
-      "arm1_label": "short label, e.g. 'DCB'", "arm1_value": "e.g. '6.1%'",
-      "arm2_label": "short label, e.g. 'DES'", "arm2_value": "e.g. '7.0%'",
-      "effect": "e.g. 'Risk difference -0.9% (95% CI -2.1 to 0.3), non-inferior'  (or null)"
-    },
-    "secondary": [
-      {"name": "e.g. 'Cardiac death'", "arm1": "1.6%", "arm2": "1.8%", "effect": "-0.2%"}
-    ],
-    "key_findings": [
-      {"label": "e.g. 'Operative mortality'", "value": "e.g. '0.4% (n=2)'"}
-    ]
-  }"""
-
-_KEYNUM_SCHEMA_DE = """  "key_numbers": {
-    "design": "Stichwörter auf Deutsch, höchstens 6 Wörter, z. B. 'RCT, doppelblind, multizentrisch' oder 'Register, prospektiv' (oder null)",
-    "n": "EINE einzelne Zahl als String, z. B. '4321' (oder null)",
-    "followup": "z. B. '12 Monate' oder 'Median 3.2 Jahre'  (oder null)",
-    "primary_endpoint": {
-      "name": "Name + Zeitpunkt auf Deutsch, z. B. 'Versagen der Zielläsion, 12 Monate'",
-      "arm1_label": "Kurzlabel, z. B. 'DCB'", "arm1_value": "z. B. '6.1%'",
-      "arm2_label": "Kurzlabel, z. B. 'DES'", "arm2_value": "z. B. '7.0%'",
-      "effect": "nur Masszahlen, z. B. 'Risikodifferenz -0.9% (95% CI -2.1 bis 0.3), nicht unterlegen'  (oder null)"
-    },
-    "secondary": [
-      {"name": "z. B. 'Kardialer Tod'", "arm1": "1.6%", "arm2": "1.8%", "effect": "-0.2%"}
-    ],
-    "key_findings": [
-      {"label": "z. B. 'Operative Mortalität'", "value": "z. B. '0.4% (n=2)'"}
-    ]
-  }"""
-
-_SUMMARY_RUBRIC = {
-"de": """Antworte mit genau einem JSON-Objekt und sonst nichts:
-{
-  "short": "Kurzfassung in 2-3 Sätzen, höchstens 60 Wörter, ausschliesslich aus dem Abstract:
-              Design und Population (mit n, falls genannt), das zentrale Ergebnis mit der
-              wichtigsten Zahl und zuletzt, was die Autoren daraus schliessen. Rein
-              beschreibend, ohne Rat. Muss ohne den Rest der Zusammenfassung verständlich sein.",
-  "headline": "EINE Zeile, höchstens 20 Wörter: das zentrale Ergebnis mit der wichtigsten
-              Zahl, rein beschreibend (z. B. 'TAVI nach 5 Jahren nicht unterlegen: Tod/Schlaganfall
-              20.1% vs 22.3%'). Kein Rat.",
-  "design_tag": "Designbezeichnung plus Grösse für den Studienkopf, höchstens 10 Wörter, z. B.
-              'Internationales Register · N = 5605', 'Systematische Übersicht & Meta-Analyse · 57
-              Studien · N = 73588'. Nur Fakten aus dem Abstract.",
-  "why_it_matters": "2 Sätze (35-60 Wörter): (1) was die Studie macht - Design, Population und
-              Fragestellung, mit Studien- oder Registername; (2) der klinische Kontext aus dem
-              Hintergrund des Abstracts: welche Lücke oder Unsicherheit sie adressiert.
-              Beschreibend, ohne Lob, ohne Rat, ohne Qualitätsurteil.",
-  "key_finding": "3-4 Sätze (60-110 Wörter) mit den Zahlen genau wie im Abstract: (1) Grösse und
-              Aufbau der Population; (2) primäres Ergebnis mit beiden Gruppenwerten und
-              Effektmass mit CI oder p-Wert; (3) wichtigstes sekundäres, Subgruppen- oder
-              Validierungsergebnis mit Zahlen; (4) falls genannt, ein weiteres Kernergebnis. Nie
-              nur ein Satz. Rein beschreibend; die Schlussfolgerung der Autoren wird hier NICHT
-              wiederholt.",
-  "tiles": [{"value": "kurze Zahl genau wie im Abstract, z. B. '55.1% vs. 67.7%' oder 'aHR
-              2.01'", "label": "2-4 Wörter, z. B. '5-Jahres-Mortalität'", "context": "kurze
-              Präzisierung, z. B. 'MitraScore <=3 vs. >=4' oder '95% CI 1.35-3.00'"}],
-              GENAU 3 Kacheln mit den drei aussagekräftigsten Zahlen des Abstracts. Jede Zahl in
-              value und context muss WÖRTLICH im Abstract stehen - nie rechnen, runden oder
-              kombinieren. Weniger als 3 nur, wenn der Abstract weniger Zahlen enthält.
-  "summary": "8-12 Sätze, ausschliesslich aus dem Abstract. Abdecken: Hintergrund/
-              Fragestellung, Studiendesign, Population und Einschluss, Intervention und
-              Vergleich, primärer Endpunkt mit Zahlen, wichtige sekundäre Endpunkte mit
-              Zahlen, Sicherheit/unerwünschte Ereignisse (nur wenn im Abstract genannt),
-              vom Abstract genannte Limitationen und die Schlussfolgerung der Autoren. Rein
-              beschreibend - berichte, was die Arbeit sagt, nie, was die Leserschaft tun
-              soll. Keine Sätze darüber, was im Abstract fehlt.",
-  "relation_evidence": "1-3 Sätze, die die Studie beschreibend in die bestehende Evidenz
-              einordnen. NUR allgemein gesichertes Wissen. Erfinde keine konkreten Studien,
-              Zahlen oder Ergebnisse. Kein Rat. Ist keine sichere Einordnung möglich,
-              schreibe genau: 'Aus dem Abstract allein nicht einzuordnen.'",
-  "relation_guidelines": "1-3 Sätze, die BESCHREIBEN, wie die Befunde zu aktuellen Leitlinien
-              (z. B. ESC/ACC/AHA) stehen - etwa dass sie mit deren Aussagen vereinbar sind,
-              sie in Frage stellen oder verfeinern. Erfinde NIE eine konkrete Empfehlungs-
-              klasse oder ein Evidenzlevel und fordere NIE auf, etwas zu befolgen,
-              zu übernehmen oder zu ändern. Bei Unsicherheit schreibe genau:
-              'Kein klarer Leitlinienbezug ableitbar.'",
-  "authors_conclusion": "1-2 Sätze, was DIE AUTOREN schliessen, ausdrücklich ihnen zugeordnet
-              (beginne mit 'Die Autoren schliessen, dass ...' o. ä.). Rein beschreibend.
-              Kein Rat, keine Empfehlung, kein Imperativ.",
-""" + _KEYNUM_SCHEMA_DE + """,
-  "qc_notes": "Interne Hinweise für die Redaktion (erscheinen NICHT im Dokument), z. B.
-              fehlende Angaben im Abstract, unklare Zahlen. Leer lassen, wenn nichts auffällt."
-}
-WICHTIG zu key_numbers:
-- Nimm nur Werte, die WÖRTLICH im Abstract stehen. Fehlt ein Wert, setze null. Erfinde nie
-  Zahlen, Endpunkte, Gruppen oder Konfidenzintervalle. Höchstens 5 Zeilen unter 'secondary'.
-- Nennt der Abstract für den primären Endpunkt Werte für zwei Gruppen, MUSS
-  'primary_endpoint' vollständig befüllt sein (name, arm1/arm2 mit Label und Wert, effect).
-- Jede Endpunkt-Zahl, die du in 'summary' nennst, gehört - sofern sie in eine der Strukturen
-  passt - auch in key_numbers (primary_endpoint, secondary oder key_findings).
-- Gibt es nur EIN Kollektiv (gepoolte Metaanalyse, Einzelarm, Register): arm2_label und
-  arm2_value = null und den Gesamtwert in arm1 eintragen. Keine leeren Strings und keine
-  Platzhalter wie '-', 'n/a' oder 'nicht angegeben' - nutze immer null.
-- 'design': höchstens 6 Wörter, Stichwort statt Satz ('Register', 'RCT, doppelblind,
-  multizentrisch', 'Narrative Übersichtsarbeit').
-- SPRACHE: Alle Textfelder von key_numbers (design, followup, Endpunkt-Namen, Gruppen- und
-  Zeilenbezeichnungen, effect, Labels) stehen auf DEUTSCH, z. B. 'Gesamtmortalität, 30 Tage',
-  'Median 24 Monate', 'Gruppe ohne Operationsindikation', 'Systematische Übersicht,
-  Meta-Analyse'. Unverändert bleiben nur Studien- und Registernamen, etablierte Abkürzungen
-  (TAVI, HR, CI, AUC, ERO, SMD) und Zahlen. Keine englischen Wörter wie 'months', 'Group',
-  'All-cause', 'Significantly', 'Pooled'.
-- 'n': EINE Zahl (Gesamtzahl der ausgewerteten Teilnehmenden bzw. Patienten; bei mehreren
-  Kohorten die Hauptkohorte), ohne Text und ohne Klammern.
-- 'primary_endpoint' ist der im Abstract genannte primäre Endpunkt bzw. das Hauptergebnis -
-  KEIN Baseline-Merkmal. Bei deskriptiven Studien ohne definierten Endpunkt das zentrale
-  Ergebnis, auf das sich die Schlussfolgerung der Autoren stützt; gibt es kein Ergebnis mit
-  Zahl: null.
-- 'effect' nur, wenn der Abstract eine Masszahl nennt (HR, OR, RR, Differenz, SMD, p-Wert,
-  Konfidenzintervall); nie ein Satz in Worten wie 'signifikant niedriger'. Nennt der Abstract
-  nur die Gruppenwerte, trage diese in arm1/arm2 ein und setze effect = null.
-- 'effect' nur, wenn der Abstract ihn nennt, sonst null.
-- key_findings ist PFLICHT: 3-6 Zeilen, sobald der Abstract irgendwelche quantitativen oder
-  konkreten Tatsachen enthält (Raten, Zahlen, Gradienten, Dauern, Prävalenzen, Schwellen,
-  Umfang). Jede Zeile: kurzes Label plus Wert genau wie im Abstract. Für Dokumente ganz ohne
-  Zahlen (z. B. Technik-Konsensus) konkrete Sachangaben verwenden, z. B.
-  {"label": "Adressierte Komplikation", "value": "LVOT-Obstruktion nach TMVR"}.
-  Leer lassen nur, wenn der Abstract gar nichts Konkretes enthält.
-
-Schreibe sachlich, klinisch, beschreibend. Keine Werbesprache, kein Rat.
-""",
-"en": """Return a single JSON object and nothing else:
-{
-  "short": "Short edition in 2-3 sentences, at most 60 words, based EXCLUSIVELY on the
-              abstract: design and population (with n if stated), the central result with
-              its most important number, and finally what the authors conclude. Purely
-              descriptive, no advice. Must be understandable without the rest of the summary.",
-  "headline": "ONE line, at most 20 words: the central result with its most important
-              number, purely descriptive (e.g. 'TAVR non-inferior at 5 years: death/stroke 20.1%
-              vs 22.3%'). No advice.",
-  "design_tag": "Design label plus size for the study header, at most 10 words, e.g.
-              'International registry · N = 5,605', 'Systematic review & meta-analysis · 57
-              studies · N = 73,588', 'Multicenter AI'. Only facts from the abstract.",
-  "why_it_matters": "2 sentences (35-60 words): (1) what the study does - design, population
-              and the question it answers, naming the trial or registry; (2) the clinical
-              context from the abstract's background: which gap or uncertainty it addresses.
-              Descriptive; no praise, no advice, no judgement of quality.",
-  "key_finding": "3-4 sentences (60-110 words), dense with the numbers exactly as in the
-              abstract: (1) population size and structure (cohorts, groups); (2) the primary
-              result with both group values and the effect measure with its CI or p-value;
-              (3) the most important secondary, subgroup or validation result with numbers;
-              (4) if stated, a further key result. Never only a single sentence. Purely
-              descriptive; the authors' conclusion is NOT repeated here.",
-  "tiles": [{"value": "short figure exactly as in the abstract, e.g. '55.1% vs. 67.7%' or
-              'aHR 2.01'", "label": "2-4 words, e.g. '5-year mortality'", "context": "short
-              qualifier, e.g. 'MitraScore <=3 vs. >=4' or '95% CI 1.35-3.00'"}],
-              EXACTLY 3 tiles with the three most informative figures of the abstract. Every
-              number in value and context must appear VERBATIM in the abstract - never compute,
-              round or combine numbers. Fewer than 3 only if the abstract has fewer figures.
-  "summary": "8-12 sentences, based EXCLUSIVELY on the abstract. Cover: background/
-              research question, study design, population and inclusion, intervention
-              and comparator, primary endpoint with numbers, key secondary endpoints
-              with numbers, safety/adverse events (only if stated), limitations stated in
-              the abstract, and what the authors conclude. Purely descriptive - report
-              what the paper says, never what the reader should do. No sentences about
-              what the abstract lacks.",
-  "relation_evidence": "1-3 sentences placing the study in the context of existing
-              evidence, descriptively. ONLY broadly established knowledge. Do NOT invent
-              specific trials, numbers or results. No advice. If no confident placement
-              is possible, write exactly: 'Cannot be placed in context from the abstract
-              alone.'",
-  "relation_guidelines": "1-3 sentences DESCRIBING how the findings relate to current
-              guidelines (e.g. ESC/ACC/AHA) - for example that they are consistent with,
-              challenge, or refine what current guidelines state. NEVER invent a specific
-              class of recommendation or level of evidence, and NEVER tell the reader to
-              follow, adopt or change anything. If uncertain, write exactly: 'No clear
-              guideline link can be derived.'",
-  "authors_conclusion": "1-2 sentences stating what THE AUTHORS conclude, explicitly
-              attributed to them (start with 'The authors conclude that ...' or similar).
-              Strictly descriptive. No advice, no recommendation, no imperative.",
-""" + _KEYNUM_SCHEMA + """,
-  "qc_notes": "Internal notes for the editor (NOT shown in the document), e.g. information
-              missing from the abstract, unclear numbers. Leave empty if nothing stands out."
-}
-IMPORTANT for key_numbers:
-- Only take values stated VERBATIM in the abstract. If a value is missing, set it to null.
-  Never invent numbers, endpoints, arms or confidence intervals. Max 5 secondary rows.
-- If the abstract gives values for two groups for the primary endpoint, 'primary_endpoint'
-  MUST be filled completely (name, arm1/arm2 with label and value, effect).
-- Every endpoint number you cite in 'summary' must also appear in key_numbers
-  (primary_endpoint, secondary or key_findings) whenever it fits one of those structures.
-- With only ONE cohort (pooled meta-analysis, single arm, registry): arm2_label and
-  arm2_value = null and put the overall value in arm1. No empty strings and no
-  placeholders such as '-', 'n/a' or 'not stated' - always use null.
-- 'design': at most 6 words, a keyword rather than a sentence.
-- 'n': ONE number (total participants analysed; with several cohorts the main cohort),
-  no text and no brackets.
-- 'primary_endpoint' is the primary endpoint or main result named in the abstract - NOT a
-  baseline characteristic. For descriptive studies without a defined endpoint use the
-  central result the authors' conclusion rests on; if there is none with a number: null.
-- 'effect' only if the abstract states a measure (HR, OR, RR, difference, SMD, p-value,
-  confidence interval); never a sentence in words such as 'significantly lower'. If the
-  abstract gives only the group values, fill arm1/arm2 and set effect = null.
-- 'effect' only if the abstract states it, otherwise null.
-- key_findings is REQUIRED: 3-6 rows whenever the abstract contains any quantitative or
-  concrete factual statements (rates, counts, gradients, durations, prevalences, thresholds,
-  scope items). Each row is a short label plus the value exactly as stated in the abstract.
-  For a document with no numbers at all (e.g. a technique consensus) use concrete factual
-  descriptors, such as {"label": "Complication addressed", "value": "LVOT obstruction after
-  TMVR"}. Leave it empty only if the abstract contains nothing concrete.
-
-Write in a factual, clinical, descriptive register. No marketing language, no advice.
-
-STYLE EXAMPLES for why_it_matters / key_finding (from the approved CLARITY short edition -
-match this length and density, never copy their content):
-  why_it_matters: "The 5-year MITRA-PRO follow-up quantifies the association between residual
-    mitral regurgitation after M-TEER and long-term mortality, including how that association
-    changes over time. Earlier analyses of the registry covered only 1- and 3-year outcomes."
-  key_finding: "Five-year mortality was 55.1% with MitraScore <=3 versus 67.7% with MitraScore
-    >=4. In degenerative MR, the corresponding mortality rates were 53.1% and 73.2%; in
-    functional MR, they were 55.0% and 64.6%. Residual MR became prognostic after 30 days and
-    remained associated with excess long-term mortality."
-  key_finding: "The registry enrolled 2,171 patients; 2,140 entered the final analysis and 254
-    (11.9%) died within 30 days. The model achieved an AUROC of 0.763 with good calibration. In
-    the external cohort of 377 patients, 48 (12.7%) died within 30 days and the AUROC was 0.799
-    (95% CI 0.730-0.868)."
-""",
-}
+_SUMMARY_SYSTEM = load_lang_param(SUMMARY_SYSTEM_FILE_DEFAULT)
+_SUMMARY_RUBRIC = load_lang_param(SUMMARY_RUBRIC_FILE_DEFAULT)
 
 
 _PLACEHOLDER_WORDS = {"", "none", "null", "n/a", "na", "nan", "-", "—", "–",
@@ -1499,176 +1253,10 @@ def _too_short(s):
 # one-sentence key finding, cached to STATE_DIR so it is never re-paid. The
 # enriched base is what later grounds "Relation to existing evidence / guidelines".
 
-def _R(pmid, year, title):
-    return {"pmid": str(pmid), "year": year, "title": title}
-
-# shared references (cited under several topics - defined once)
-_ESC_VHD = _R(40878295, 2025, "2025 ESC/EACTS Guidelines for the management of valvular heart disease")
-_EAPCI_CORE = _R(39207816, 2024, "Percutaneous Valvular and Structural Heart Disease Interventions: 2024 EAPCI Core Curriculum")
-_VARC3 = _R(33871579, 2021, "Valve Academic Research Consortium 3: Updated Endpoint Definitions for Aortic Valve Clinical Research")
-_EAPCI_SVD = _R(29020344, 2017, "Standardized definitions of structural deterioration and valve failure in transcatheter and surgical aortic bioprosthetic valves: EAPCI consensus statement")
-_MMI_STRUCT = _R(37283275, 2023, "Multimodality imaging for patient selection, procedural guidance and follow-up of transcatheter interventions for structural heart disease - Part 1")
-_MMI_REGURG = _R(35292799, 2022, "Multi-modality imaging assessment of native valvular regurgitation: EACVI/ESC Council of Valvular Heart Disease position paper")
-_TMV_DESIGN = _R(26184622, 2015, "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 1")
-_TMV_ENDPT = _R(26184623, 2015, "Clinical trial design principles and endpoint definitions for transcatheter mitral valve repair and replacement - Part 2: Endpoint definitions")
-
-_EMBEDDED_STRUCTURAL_REFERENCES = {
-    "topic_order": [
-        "TAVR - low risk", "TAVR - intermediate/high risk",
-        "TEER - secondary (functional) MR", "TEER - primary (degenerative) MR",
-        "Transcatheter mitral valve replacement (TMVR)",
-        "LAAO / left atrial appendage occlusion",
-        "Transcatheter tricuspid valve (TEER/replacement)",
-        "PFO / ASD closure", "Paravalvular leak", "Infective endocarditis",
-        "Multivalvular disease", "Other",
-    ],
-    "topics": {
-        "TAVR - low risk": {
-            "esc_guideline": [_ESC_VHD],
-            "consensus": [_EAPCI_CORE, _VARC3, _EAPCI_SVD, _MMI_STRUCT],
-            "landmark_trials": [
-                _R(37874020, 2023, "Transcatheter Aortic-Valve Replacement in Low-Risk Patients at Five Years (PARTNER 3)"),
-                _R(41144631, 2025, "Transcatheter or Surgical Aortic-Valve Replacement in Low-Risk Patients at 7 Years (PARTNER 3)"),
-                _R(40158212, 2025, "5-Year Outcomes After TAVR or SAVR in Low-Risk Patients With Aortic Stenosis (Evolut Low Risk)"),
-                _R(38588025, 2024, "Transcatheter or Surgical Treatment of Aortic-Valve Stenosis (DEDICATE-DZHK6)"),
-                _R(38747246, 2024, "TAVI in low-risk tricuspid or bicuspid aortic stenosis: the NOTION-2 trial"),
-                _R(40884768, 2025, "Three-Year Follow-Up of the NOTION-2 Trial: TAVR Versus SAVR in Younger Low-Risk Patients"),
-                _R(38321820, 2024, "Transcatheter or surgical aortic valve implantation: 10-year outcomes of the NOTION trial"),
-                _R(40171878, 2025, "Transcatheter vs. surgical aortic valve replacement in women: the RHEIA trial"),
-            ],
-        },
-        "TAVR - intermediate/high risk": {
-            "esc_guideline": [_ESC_VHD],
-            "consensus": [_EAPCI_CORE, _VARC3, _EAPCI_SVD, _MMI_STRUCT],
-            "landmark_trials": [
-                _R(36001335, 2022, "5-Year Outcomes of the SURTAVI Randomized Clinical Trial"),
-                _R(35579641, 2022, "TAVI vs SAVR on All-Cause Mortality in Patients Aged 70+ With Severe Aortic Stenosis: The UK TAVI Trial"),
-                _R(38588025, 2024, "Transcatheter or Surgical Treatment of Aortic-Valve Stenosis (DEDICATE-DZHK6)"),
-            ],
-        },
-        "TEER - secondary (functional) MR": {
-            "esc_guideline": [_ESC_VHD],
-            "additional_guidelines": [
-                _R(34447992, 2021, "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure"),
-                _R(37622666, 2023, "2023 Focused Update of the 2021 ESC Guidelines for acute and chronic heart failure"),
-            ],
-            "consensus": [
-                _R(33734354, 2021, "Management of secondary mitral regurgitation in heart failure: HFA/EACVI/EHRA/EAPCI joint position statement"),
-                _MMI_REGURG, _MMI_STRUCT, _TMV_DESIGN, _TMV_ENDPT,
-            ],
-            "landmark_trials": [
-                _R(36876756, 2023, "Five-Year Follow-up after Transcatheter Repair of Secondary Mitral Regurgitation (COAPT)"),
-                _R(39216092, 2024, "Transcatheter Valve Repair in Heart Failure with Moderate to Severe Mitral Regurgitation (RESHAPE-HF2)"),
-                _R(39216093, 2024, "Transcatheter Repair versus Mitral-Valve Surgery for Secondary Mitral Regurgitation (MATTERHORN)"),
-            ],
-        },
-        "TEER - primary (degenerative) MR": {
-            "esc_guideline": [_ESC_VHD],
-            "consensus": [_MMI_REGURG, _MMI_STRUCT, _TMV_DESIGN, _TMV_ENDPT],
-            "landmark_trials": [
-                _R(36121247, 2022, "Randomized Comparison of TEER for Degenerative MR in Prohibitive Surgical Risk Patients (CLASP IID)"),
-                _R(37962288, 2023, "One-Year Outcomes from the CLASP IID Randomized Trial for Degenerative MR"),
-                _R(41093456, 2025, "CLASP IID Trial and Registry: 2-Year Outcomes of TEER for Degenerative MR"),
-            ],
-        },
-        "Transcatheter mitral valve replacement (TMVR)": {
-            "esc_guideline": [_ESC_VHD],
-            "consensus": [_EAPCI_CORE, _MMI_STRUCT, _TMV_DESIGN, _TMV_ENDPT,
-                          _R(26481845, 2015, "Multimodality Imaging in Transcatheter Mitral Valve Replacement")],
-            "landmark_trials": [
-                _R(34736561, 2021, "2-Year Outcomes of TMVR in Patients With Severe Symptomatic MR (Tendyne)"),
-                _R(35338542, 2022, "Clinical outcomes of TMVR: 1-year results from the CHOICE-MI registry"),
-                _R(37235388, 2023, "Clinical outcomes of TMVR: 2-year results of the CHOICE-MI registry"),
-                _R(37758379, 2023, "Five-Year Evaluation of Mitral Valve-in-Valve, Valve-in-Ring, and Valve-in-MAC: MITRAL Trial"),
-                _R(39243268, 2024, "5-Year Outcomes of Anterior Mitral Leaflet Laceration to Prevent Outflow Obstruction (LAMPOON) During TMVR"),
-                _R(41194751, 2025, "TMVR for Severe Mitral Annular Calcification: Primary Outcomes From SUMMIT-MAC"),
-            ],
-        },
-        "LAAO / left atrial appendage occlusion": {
-            "esc_guideline": [_ESC_VHD],
-            "additional_guidelines": [_R(39210723, 2024, "2024 ESC Guidelines for the management of atrial fibrillation")],
-            "consensus": [
-                _R(31504441, 2020, "EHRA/EAPCI expert consensus statement on catheter-based left atrial appendage occlusion - an update"),
-                _R(38291925, 2024, "Practical guide on left atrial appendage closure for the non-implanting physician: an international consensus paper"),
-                _R(39812172, 2025, "The role of multi-modality imaging for the assessment of left atrium and left atrial appendage: EACVI clinical consensus statement"),
-            ],
-            "landmark_trials": [
-                _R(34459659, 2021, "Amplatzer Amulet LAA Occluder Versus Watchman Device for Stroke Prophylaxis (Amulet IDE)"),
-                _R(34748929, 2022, "4-Year Outcomes After LAA Closure Versus Nonwarfarin Oral Anticoagulation for AF (PRAGUE-17)"),
-                _R(34747186, 2022, "Amulet or Watchman Device for Percutaneous LAA Closure: SWISS-APERO Randomized Trial"),
-                _R(39555822, 2025, "Left Atrial Appendage Closure after Ablation for Atrial Fibrillation (OPTION)"),
-                _R(41910347, 2026, "Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation (CHAMPION-AF)"),
-                _R(41849741, 2026, "Left Atrial Appendage Closure or Medical Therapy in Atrial Fibrillation (CLOSURE-AF)"),
-            ],
-        },
-        "Transcatheter tricuspid valve (TEER/replacement)": {
-            "esc_guideline": [_ESC_VHD],
-            "additional_guidelines": [_R(34455430, 2021, "2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy")],
-            "consensus": [
-                _R(38131233, 2024, "Chronic right-sided heart failure and tricuspid regurgitation: HFA/EAPCI clinical consensus statement"),
-                _R(40163675, 2025, "Management of patients with transvalvular RV leads undergoing transcatheter tricuspid valve interventions: EHRA/EAPCI scientific statement"),
-                _R(37793121, 2023, "Tricuspid Valve Academic Research Consortium Definitions for Tricuspid Regurgitation and Trial Endpoints"),
-                _MMI_REGURG,
-            ],
-            "landmark_trials": [
-                _R(36876753, 2023, "Transcatheter Repair for Patients with Tricuspid Regurgitation (TRILUMINATE Pivotal)"),
-                _R(39471883, 2024, "One-Year Outcomes From the TRILUMINATE Randomized Cohort"),
-                _R(40159089, 2025, "Two-Year Outcomes From the TRILUMINATE Pivotal Trial"),
-                _R(39602173, 2024, "TEER for Severe Isolated Tricuspid Regurgitation: The Tri.Fr Randomized Clinical Trial"),
-                _R(39475399, 2024, "Transcatheter Valve Replacement in Severe Tricuspid Regurgitation (TRISCEND II)"),
-                _R(39480380, 2024, "One-Year Outcomes After Transcatheter Tricuspid Valve Replacement (TRISCEND II)"),
-            ],
-        },
-        "PFO / ASD closure": {
-            "esc_guideline": [_ESC_VHD],
-            "additional_guidelines": [
-                _R(32860028, 2020, "2020 ESC Guidelines for the management of adult congenital heart disease"),
-                _R(38752755, 2024, "European Stroke Organisation Guidelines on the diagnosis and management of patent foramen ovale after stroke"),
-            ],
-            "consensus": [
-                _R(30141306, 2019, "European position paper on the management of patients with patent foramen ovale: Part I"),
-                _R(33507260, 2021, "European position paper on the management of patients with patent foramen ovale - Part II"),
-                _EAPCI_CORE,
-            ],
-            "landmark_trials": [
-                _R(28902593, 2017, "Patent Foramen Ovale Closure or Anticoagulation versus Antiplatelets after Stroke (CLOSE)"),
-                _R(28902580, 2017, "Patent Foramen Ovale Closure or Antiplatelet Therapy for Cryptogenic Stroke (REDUCE)"),
-                _R(28902590, 2017, "Long-Term Outcomes of Patent Foramen Ovale Closure or Medical Therapy after Stroke (RESPECT)"),
-            ],
-            "notes": "ASD: no new landmark RCT primary publication in the period 31.07.2021-31.07.2026.",
-        },
-        "Paravalvular leak": {
-            "esc_guideline": [_ESC_VHD],
-            "additional_guidelines": [_R(37622656, 2023, "2023 ESC Guidelines for the management of endocarditis")],
-            "consensus": [_EAPCI_CORE, _MMI_STRUCT, _VARC3],
-            "landmark_trials": [
-                _R(38156599, 2024, "Transcatheter Closure or Surgery for Symptomatic Paravalvular Leaks: The Multicenter KISS Registry"),
-                _R(36256693, 2022, "Predictors of Clinical Success After Transcatheter Paravalvular Leak Closure: An International Prospective Registry"),
-                _R(37128805, 2023, "Percutaneous Paravalvular Leak Closure After TAVI: The International PLUGinTAVI Registry"),
-            ],
-        },
-        "Infective endocarditis": {
-            "esc_guideline": [_R(37622656, 2023, "2023 ESC Guidelines for the management of endocarditis")],
-            "additional_guidelines": [_ESC_VHD],
-            "notes": "The dedicated guideline for this topic is the 2023 ESC Guidelines for the "
-                     "management of endocarditis. If no excerpt of it appears above, its content "
-                     "is NOT available: do not describe or guess it, and state in "
-                     "relation_guidelines only that this guideline exists for the topic.",
-        },
-        "Multivalvular disease": {
-            "esc_guideline": [_ESC_VHD],
-            "consensus": [
-                _R(39874243, 2025, "The role of multi-modality imaging in multiple valvular heart disease: EACVI expert consensus document"),
-                _MMI_REGURG, _EAPCI_CORE,
-            ],
-            "notes": "No standalone landmark RCT primary publication in the period 31.07.2021-31.07.2026.",
-        },
-        "Other": {
-            "esc_guideline": [_ESC_VHD],
-            "notes": "No entries yet.",
-        },
-    },
-}
+# Curated reference base (per topic: ESC guideline -> consensus -> landmark trials) from
+# refs/structural_references.json; empty when the specialty has none.
+_EMBEDDED_STRUCTURAL_REFERENCES = (load_json_param(STRUCT_REFS_FILE_DEFAULT, optional=True)
+                                   or {"topic_order": [], "topics": {}})
 
 _REF_TIERS = ("esc_guideline", "additional_guidelines", "consensus", "landmark_trials")
 
@@ -1688,37 +1276,24 @@ def merge_new_topics(base):
 
 
 def load_structural_references():
-    """Prefer an editable JSON in STATE_DIR (so the base can be maintained without
-    touching code); fall back to the embedded copy and write it out once."""
+    """The base is maintained in refs/structural_references.json of the specialty. An
+    older copy in STATE_DIR (from earlier versions) still wins, merged with new topics."""
     path = _sp("structural_references.json")
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             return merge_new_topics(json.load(f))
     except FileNotFoundError:
-        try:
-            with open(path, "w") as f:
-                json.dump(_EMBEDDED_STRUCTURAL_REFERENCES, f, indent=2, ensure_ascii=False)
-        except Exception:
-            pass
         return _EMBEDDED_STRUCTURAL_REFERENCES
 
-REF_KEYFINDING_SYSTEM = (
-    "You extract ONE factual English sentence from the provided abstract. For a trial: "
-    "state the population, the comparison, and the main result (with the key number if "
-    "stated). For a guideline / consensus / definitions document: state in one line what "
-    "it covers. Strictly from the abstract - no invented numbers, no advice, no "
-    "recommendations, no imperative. Output only the sentence, nothing else."
-)
+REF_KEYFINDING_SYSTEM = load_text_param(REF_KEYFINDING_FILE_DEFAULT)
 
 def extract_key_finding(title, abstract, client):
     if not abstract:
         return ""
-    msg = client.messages.create(
-        model=LLM_MODEL, max_tokens=200, system=REF_KEYFINDING_SYSTEM,
-        messages=[{"role": "user", "content":
-                   f"Title: {title}\n\nAbstract:\n{abstract}\n\nOne-sentence key finding:"}],
-    )
-    return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
+    text, _ = client.complete(
+        LLM_MODEL, REF_KEYFINDING_SYSTEM,
+        f"Title: {title}\n\nAbstract:\n{abstract}\n\nOne-sentence key finding:", 200)
+    return text.strip()
 
 def build_reference_base(client, refresh=False):
     """Fetch every referenced abstract once, extract a one-line key finding, cache to
@@ -1819,72 +1394,13 @@ def build_reference_base(client, refresh=False):
 
 REFERENCES_DIRNAME = "References"
 
-# Which guideline PDF applies to which topics. Filenames are matched
-# case-insensitively and partially, so minor renaming is tolerated.
-# Matched on filename KEYWORDS, not exact names, so typos and renaming are
-# tolerated (e.g. "ESC_Valvur_Guidelines.pdf" still registers as the VHD guideline).
-GUIDELINE_DOCS = [
-    {
-        "match": ["valv", "vhd", "klappen"],
-        "label": "ESC/EACTS 2025 Valvular Heart Disease Guidelines",
-        "topics": "ALL",          # anchor document for every structural topic
-    },
-    {
-        "match": ["_hf", "hf_", "heartfailure", "heart_failure", "herzinsuffizienz"],
-        "label": "ESC Heart Failure Guidelines",
-        "topics": [
-            "TEER - secondary (functional) MR",
-            "Transcatheter mitral valve replacement (TMVR)",
-            "Transcatheter tricuspid valve (TEER/replacement)",
-            "Multivalvular disease",
-        ],
-    },
-    {
-        "match": ["_af", "af_", "atrial", "vorhofflimmern"],
-        "label": "ESC Atrial Fibrillation Guidelines",
-        "topics": ["LAAO / left atrial appendage occlusion"],
-    },
-    {
-        # optional: drop the ESC 2023 endocarditis guideline PDF into the References folder
-        "match": ["endocard", "endokard"],
-        "label": "ESC 2023 Endocarditis Guidelines",
-        "topics": ["Infective endocarditis", "Paravalvular leak"],
-    },
-]
+# Which guideline PDF applies to which topics (refs/guideline_docs.json). Matched on
+# filename KEYWORDS, case-insensitively, so typos and renaming are tolerated
+# (e.g. "ESC_Valvur_Guidelines.pdf" still registers as the VHD guideline).
+GUIDELINE_DOCS = load_json_param(GUIDELINE_DOCS_FILE_DEFAULT, optional=True) or []
 
 # Search terms per topic, used to pull the relevant passages out of a long PDF.
-TOPIC_SEARCH_TERMS = {
-    "TAVR - low risk": ["transcatheter aortic", "TAVI", "TAVR", "aortic stenosis",
-                        "surgical aortic valve", "SAVR", "low risk", "low surgical risk"],
-    "TAVR - intermediate/high risk": ["transcatheter aortic", "TAVI", "TAVR",
-                                      "aortic stenosis", "surgical risk", "high risk",
-                                      "intermediate risk", "heart team"],
-    "TEER - secondary (functional) MR": ["secondary mitral", "functional mitral",
-                                         "transcatheter edge-to-edge", "TEER",
-                                         "mitral regurgitation", "heart failure"],
-    "TEER - primary (degenerative) MR": ["primary mitral", "degenerative mitral",
-                                         "transcatheter edge-to-edge", "TEER",
-                                         "mitral regurgitation", "mitral valve repair"],
-    "Transcatheter mitral valve replacement (TMVR)": [
-        "transcatheter mitral valve", "mitral valve replacement", "mitral prosthesis",
-        "mitral annular calcification"],
-    "LAAO / left atrial appendage occlusion": [
-        "left atrial appendage", "appendage occlusion", "appendage closure",
-        "anticoagulation", "stroke prevention"],
-    "Transcatheter tricuspid valve (TEER/replacement)": [
-        "tricuspid regurgitation", "tricuspid valve", "transcatheter tricuspid",
-        "right heart"],
-    "PFO / ASD closure": ["patent foramen ovale", "atrial septal", "shunt closure",
-                          "cryptogenic stroke"],
-    "Paravalvular leak": ["paravalvular", "prosthetic valve", "regurgitation",
-                          "valve dehiscence"],
-    "Infective endocarditis": ["endocarditis", "infective endocarditis", "vegetation",
-                               "prosthetic valve endocarditis", "antibiotic", "blood culture",
-                               "surgery for endocarditis", "embolic"],
-    "Multivalvular disease": ["multiple valve", "multivalvular", "combined valve",
-                              "mixed valve disease"],
-    "Other": ["valvular heart disease", "valve intervention"],
-}
+TOPIC_SEARCH_TERMS = load_json_param(TOPIC_TERMS_FILE_DEFAULT, optional=True) or {}
 
 PDF_CACHE_FILE = "guideline_text_cache.json"
 CHUNK_WORDS = 220          # small enough to separate guidance from bibliography
@@ -1893,7 +1409,7 @@ CHUNKS_PER_DOC = 6         # passages handed to the model per guideline
 
 def _references_dir():
     """Find the references folder, tolerating case and a couple of plausible spots."""
-    candidates = [STATE_DIR, os.path.dirname(STATE_DIR) or ".",
+    candidates = [STATE_DIR, str(SPECIALTY_DIR), os.path.dirname(STATE_DIR) or ".",
                   os.path.join(os.path.dirname(STATE_DIR) or ".", "MyDrive")]
     names = (REFERENCES_DIRNAME, "references", "Referenzen", "referenzen", "refs")
     for base in candidates:
@@ -2147,159 +1663,9 @@ def build_reference_context(topic, paper_title, guideline_texts, ref_base, overr
     return "\n\n".join(parts)
 
 
-_RELATION_SYSTEM = {
-"de": (
-    "Du bist ein erfahrener Kardiologe und ordnest eine NEUE Studie anhand des "
-    "mitgelieferten Referenzmaterials ein. Antworte auf Deutsch (Schweizer "
-    "Rechtschreibung); Studiennamen, Fachbegriffe und Zahlen bleiben unverändert. "
-    "\n\nHINWEIS ZU DEN LEITLINIENAUSZÜGEN: Es sind automatisch abgerufene Passagen, die "
-    "unvollständig sein können. Enthalten sie relevante Aussagen, nutze und benenne sie. "
-    "Enthalten sie zur Frage nichts, schreibe im Lesertext nur die vorgegebene "
-    "Standardformulierung und halte die Beobachtung zusätzlich in 'qc_notes' fest; "
-    "spekuliere nicht über den restlichen Inhalt der Leitlinie. "
-    "\n\nREGEL 1 - NUR VERWENDEN, WAS GELIEFERT WIRD. Stütze jede Aussage auf das "
-    "Referenzmaterial im Prompt und auf den Abstract der neuen Studie. Verlasse dich nie "
-    "auf dein Gedächtnis für konkrete Leitlinienempfehlungen, Empfehlungsklassen, "
-    "Evidenzlevel, Studiennamen, Zahlen oder Ergebnisse. Deckt das Material die Frage nicht "
-    "ab, sage das schlicht. Erfinde nie eine Empfehlungsklasse. "
-    "\n\nREGEL 2 - HIERARCHIE BEACHTEN. Gehe die Stufen der Reihe nach durch: aktuelle "
-    "Leitlinien zuerst, dann Konsensus-/Positionspapiere, dann einzelne Studien. Nenne die "
-    "Quelle jeder Aussage, z. B. 'ESC 2025: ...', 'Konsensus (VARC-3, 2021): ...', "
-    "'COAPT (2023): ...' (Studien mit Namen und Jahr, nie mit dem Wort 'Landmark'). "
-    "\n\nREGEL 3 - SPANNUNG SICHTBAR MACHEN, NICHT AUFLÖSEN. Erweitert, verfeinert oder "
-    "widerspricht die neue Studie dem, was die Leitlinie sagt, benenne das ausdrücklich und "
-    "sachlich - etwa dass der Befund über das hinausgeht, was die aktuelle Leitlinie "
-    "behandelt, oder in eine andere Richtung zeigt. Diese Beobachtung ist das wertvollste "
-    "Ergebnis; sie bleibt aber eine BEOBACHTUNG. "
-    "\n\nREGEL 4 - KEINE KLINISCHEN RATSCHLÄGE. Du beschreibst Beziehungen zwischen "
-    "Dokumenten und rätst niemandem, was zu tun ist. Verboten: 'sollte', 'sollten', "
-    "'empfohlen' (ausser als Wiedergabe dessen, was ein genanntes Dokument ausdrücklich "
-    "festhält), 'ist zu erwägen', 'muss', 'rechtfertigt' und jeder Imperativ an die "
-    "Leserschaft. Schreibe in der dritten Person darüber, was die Dokumente festhalten und "
-    "wie sie zueinander stehen. "
-    "\n\nREGEL 5 - LESERTEXT OHNE INTERNE BEGRIFFE. 'relation_evidence', "
-    "'relation_guidelines' und 'tension' werden von der Leserschaft gelesen. Verwende dort "
-    "NIE Begriffe der Verarbeitung: 'Auszüge', 'Auszug', 'excerpts', 'Tier', 'Referenzbasis', "
-    "'Referenzmaterial', 'Referenzstudie', 'kuratiert', 'hier gehalten', 'im Prompt', "
-    "'abgerufen', 'Passagen', 'Leitlinientext', 'Landmark', 'vorliegendes Material', "
-    "'vorliegende Angaben'. Sprich von 'der Leitlinie' bzw. 'den Leitlinien'. Hinweise zur "
-    "Datengrundlage (z. B. 'Die Auszüge enthalten nichts zu X') gehören ausschliesslich in "
-    "'qc_notes'. "
-    "\n\nREGEL 5b - NIE ÜBER DIE LÜCKEN DES MATERIALS SCHREIBEN. Behaupte im Lesertext nie, "
-    "etwas sei 'im Material', 'in den Passagen', 'in den Angaben' oder 'im Text' nicht "
-    "enthalten, weder bei einer Leitlinie noch bei einer Studie. Wenn ein Vergleich nicht "
-    "möglich ist, beschreibe nur den sachlichen Unterschied (andere Population, anderes "
-    "Design, anderer Endpunkt) oder verwende die vorgegebene Standardformulierung. "
-    "\n\nREGEL 6 - KEINE EIGENEN BEWERTUNGEN DER STUDIE ('hypothesengenerierend', "
-    "'wegweisend', 'schwach' o. ä.). Zulässig sind reine Designfakten ('beobachtend, nicht "
-    "randomisiert') und der Vergleich berichteter Ergebnisse. "
-    "\n\nREGEL 7 - ZAHLEN EINER QUELLE ZUORDNEN. Jede Zahl gehört zu genau einer genannten "
-    "Studie oder Leitlinie. Fasse nie die Ergebnisse zweier Studien in einem Satz mit einem "
-    "gemeinsamen Zahlenpaar zusammen. Verwende nur Zahlen, die im gelieferten Material "
-    "stehen."
-),
-"en": (
-    "You are an experienced cardiologist placing a NEW study in the context of the "
-    "reference material provided. "
-    "\n\nNOTE ON THE GUIDELINE EXCERPTS: these are automatically retrieved passages and may "
-    "be incomplete. If they contain relevant guidance, use it and name it. If they contain "
-    "nothing on the question, write only the prescribed standard sentence in the reader "
-    "text and record the observation in 'qc_notes'; do not speculate about the wider "
-    "content of the guideline. "
-    "\n\nRULE 1 - USE ONLY WHAT IS PROVIDED. Base every statement on the reference "
-    "material in the prompt and on the new study's abstract. Never rely on memory for "
-    "specific guideline recommendations, classes of recommendation, levels of evidence, "
-    "trial names, numbers or results. If the reference material does not cover the "
-    "question, say so plainly. Never invent a class of recommendation. "
-    "\n\nRULE 2 - RESPECT THE HIERARCHY. Work through the tiers in order: current "
-    "guidelines first, then consensus/position papers, then landmark trials. Name the "
-    "source of every statement, e.g. 'ESC 2025: ...', 'Consensus (VARC-3, 2021): ...', "
-    "'COAPT (2023): ...' (trials by name and year, never with the word 'Landmark'). "
-    "\n\nRULE 3 - SURFACE TENSION, DO NOT RESOLVE IT. If the new study extends, refines "
-    "or conflicts with what the guideline states, say so explicitly and factually - for "
-    "example that the finding goes beyond what the current guideline addresses, or points "
-    "in a different direction. This observation is the most valuable output. But it stays "
-    "an OBSERVATION. "
-    "\n\nRULE 4 - NO CLINICAL ADVICE. You describe relationships between documents; you "
-    "never advise anyone what to do. Forbidden: 'should', 'is recommended' (except to "
-    "report what a named document explicitly states), 'clinicians should', 'consider', "
-    "'warrants', and any imperative addressed to the reader. Write in the third person "
-    "about what the documents state and how they relate. "
-    "\n\nRULE 5 - READER TEXT WITHOUT INTERNAL TERMS. 'relation_evidence', "
-    "'relation_guidelines' and 'tension' are read by the audience. NEVER use processing "
-    "terms there: 'excerpts', 'tier', 'reference base', 'reference material', 'curated', "
-    "'held here', 'in the prompt', 'retrieved', 'passages', 'landmark', 'provided material'. "
-    "Say 'the guideline' / 'the guidelines'. Remarks about the data basis (e.g. 'the "
-    "excerpts contain nothing on X') belong exclusively in 'qc_notes'. "
-    "\n\nRULE 5b - NEVER WRITE ABOUT GAPS IN THE MATERIAL. In the reader text never claim "
-    "that something is 'not contained in the material / the passages / the provided "
-    "information' - neither for a guideline nor for a study. If a comparison is not "
-    "possible, describe only the factual difference (other population, design, endpoint) "
-    "or use the prescribed standard sentence. "
-    "\n\nRULE 6 - NO OWN JUDGEMENTS OF THE STUDY ('hypothesis-generating', 'landmark', "
-    "'weak' and the like). Plain design facts ('observational, not randomised') and the "
-    "comparison of reported results are fine. "
-    "\n\nRULE 7 - ATTRIBUTE NUMBERS TO ONE SOURCE. Every number belongs to exactly one named "
-    "study or guideline. Never merge the results of two studies into one sentence with a "
-    "shared pair of numbers. Use only numbers that appear in the material provided."
-),
-}
-
-_RELATION_RUBRIC = {
-"de": """Antworte mit genau einem JSON-Objekt und sonst nichts:
-{
-  "relation_evidence": "2-4 Sätze: Einordnung der neuen Studie gegenüber den oben genannten
-        Studien und Konsensuspapieren. Nenne die Studien beim Namen (Name und Jahr, ohne das
-        Wort 'Landmark'). Sage, ob der Befund sie bestätigt, erweitert, verfeinert oder ihnen
-        widerspricht; andernfalls beschreibe nur, worin sich Population, Design oder Endpunkt
-        unterscheiden. Ist nichts Vergleichbares aufgeführt, schreibe genau:
-        'Für dieses Thema wurden keine direkt vergleichbaren Studien herangezogen.'",
-  "relation_guidelines": "2-4 Sätze: Bezug des Befunds zu den oben aufgeführten Leitlinien.
-        Gib den Inhalt in eigenen Worten wieder und nenne die Quelle ('ESC 2025: ...').
-        Behandelt keine der aufgeführten Textstellen die Frage, schreibe genau:
-        'Zu dieser Frage wurde in den berücksichtigten Leitlinien keine direkte Aussage gefunden.'
-        Steht oben nur der TITEL einer Leitlinie ohne Text (\"Full text not available\" bzw.
-        Hinweis auf eine fehlende Leitlinie), schreibe genau: 'Zu diesem Thema besteht die
-        Leitlinie <Titel>; ein inhaltlicher Abgleich erfolgt in dieser Ausgabe nicht.'
-        Erfinde nie eine Empfehlungsklasse.",
-  "tension": "Ein Satz, WENN die neue Evidenz über die aktuelle Leitlinie hinausgeht, sie
-        verfeinert oder ihr widerspricht - als sachliche Beobachtung, z. B. 'Der Befund
-        betrifft eine Population, die die aktuelle Leitlinie noch nicht abdeckt.'
-        Sonst null.",
-  "sources_used": ["Kurzlabels der tatsächlich verwendeten Quellen, z. B. 'ESC 2025',
-        'PARTNER 3 2023', 'VARC-3'"],
-  "qc_notes": "Interne Hinweise für die Redaktion (erscheinen NICHT im Dokument), z. B.
-        'Leitlinienpassagen enthalten nichts zu ...', 'Referenzmaterial deckt das Thema nur
-        teilweise ab'. Leer lassen, wenn nichts auffällt."
-}
-Beschreibend, ohne Empfehlungen, ohne Imperative.""",
-"en": """Return a single JSON object and nothing else:
-{
-  "relation_evidence": "2-4 sentences placing the new study against the trials and
-        consensus papers above. Name the trials you refer to (name and year, without the word
-        'landmark'). State whether the finding confirms, extends, refines or contradicts them;
-        otherwise describe only how population, design or endpoint differ. If nothing
-        comparable is listed, write exactly:
-        'No directly comparable studies were considered for this topic.'",
-  "relation_guidelines": "2-4 sentences on how the finding relates to the guidelines listed
-        above. Give the substance in your own words and name the source ('ESC 2025: ...').
-        If none of the listed passages addresses the question, write exactly:
-        'No direct statement on this question was found in the guidelines considered.'
-        If only the TITLE of a guideline is listed without text ('Full text not available' or a
-        note about a missing guideline), write exactly: 'For this topic the guideline <title>
-        exists; no comparison of content is made in this edition.'
-        Never invent a class of recommendation.",
-  "tension": "One sentence IF the new evidence goes beyond, refines or contradicts the
-        current guideline - stated as a factual observation, e.g. 'The finding addresses a
-        population the current guideline does not yet cover.' Otherwise null.",
-  "sources_used": ["short labels of what you actually relied on, e.g. 'ESC 2025',
-        'PARTNER 3 2023', 'VARC-3'"],
-  "qc_notes": "Internal notes for the editor (NOT shown in the document), e.g. 'guideline
-        passages contain nothing on ...', 'reference material covers the topic only in
-        part'. Leave empty if nothing stands out."
-}
-Descriptive register throughout. No recommendations, no imperatives.""",
-}
+# Prompts of Module 3 (params/prompts/relation_*_{de,en}.txt)
+_RELATION_SYSTEM = load_lang_param(RELATION_SYSTEM_FILE_DEFAULT)
+_RELATION_RUBRIC = load_lang_param(RELATION_RUBRIC_FILE_DEFAULT)
 
 # Words that betray the pipeline instead of describing the science. They must never
 # reach the reader; they belong in qc_notes.
@@ -2481,8 +1847,8 @@ def build_reference_docx(out_path=None):
     from docx.oxml import OxmlElement
     from docx.opc.constants import RELATIONSHIP_TYPE as RT
 
-    TEAL, TEAL_D, MINT = "0F3D3A", "0A2C2A", "2FB89A"
-    MINT_BG, CREAM, INK, MUTE, PANEL = "E8F5EF", "F7F4ED", "16302E", "5C7370", "F0F6F3"
+    TEAL, TEAL_D, MINT = _P["TEAL"], _P["TEAL_D"], _P["MINT"]
+    MINT_BG, CREAM, INK, MUTE, PANEL = _P["MINT_BG"], _P["CREAM"], _P["INK"], _P["MUTE"], _P["PANEL"]
 
     out_path = out_path or _sp("reference_base_review.docx")
     with open(_sp("reference_base.json")) as f:
@@ -2656,11 +2022,11 @@ def build_reference_docx(out_path=None):
 # ---------------------------------------------------------------------------
 # Dedup across weeks + persistence
 # ---------------------------------------------------------------------------
-# All state and outputs live under STATE_DIR. Point it at Google Drive
-# (STATE_DIR=/content/drive/MyDrive/clarity) so results survive Colab restarts
-# and expensive results are never recomputed. Every state file is written
-# atomically (see save_json) and a corrupt file is moved aside, never overwritten.
-STATE_DIR = os.environ.get("STATE_DIR", ".")
+# All state and outputs live under STATE_DIR - by default the folder state_clarity/
+# in the specialty folder, so every specialty keeps its own state. Point it elsewhere
+# with STATE_DIR=... (e.g. Google Drive, so results survive Colab restarts). Every state
+# file is written atomically (see save_json) and a corrupt file is moved aside.
+STATE_DIR = os.environ.get("STATE_DIR") or str(SPECIALTY_DIR / STATE_DIR_DEFAULT)
 
 def _sp(name):
     return os.path.join(STATE_DIR, name)
@@ -2673,6 +2039,8 @@ DROPPED_FILE = "dropped.csv"               # this run: every paper without a stu
 DROPPED_HISTORY_FILE = "dropped_history.csv"   # all runs (append only)
 FUNNEL_FILE = "funnel_report.md"
 QC_FILE = "qc_report.md"
+STUDIES_FILE = "studies.json"              # featured studies as records for the DB upload
+OUTPUT_DIR = SPECIALTY_DIR / "output"      # one sub-folder per productive run (upload_digest_ords.py)
 
 def load_seen():
     return set(load_json(SEEN_FILE, []))
@@ -2683,6 +2051,16 @@ def save_seen(seen):
 def summ_key(pmid, lang):
     """German keeps the plain PMID (older caches stay valid); every other language gets its own."""
     return str(pmid) if lang == "de" else f"{pmid}|{lang}"
+
+
+def summ_model_key(pmid, lang):
+    """Cache key per (paper, language, model), so alternating providers reuses both."""
+    return f"{summ_key(pmid, lang)}|{SUMMARY_MODEL}"
+
+
+def summ_cache_get(cache, pmid, lang):
+    """Summary for the current model; falls back to the old key (summary_cache_ok checks the model)."""
+    return cache.get(summ_model_key(pmid, lang)) or cache.get(summ_key(pmid, lang))
 
 
 def load_summ_cache():
@@ -2848,7 +2226,7 @@ def build_digest(scored, include_abstract=True):
     include_abstract=False produces the email-safe version (summaries + links,
     no abstracts; zone D is internal and left out)."""
     today = dt.date.today().isoformat()
-    lines = [f"# CardioDigest - week of {today}", ""]
+    lines = [f"# {DIGEST_TITLE} - week of {today}", ""]
     ok = [p for p in scored if not (p.get("score") or {}).get("failed")]
 
     guidelines = [p for p in ok if is_guideline_doc(p)]
@@ -3263,7 +2641,7 @@ def build_qc_report(papers, lang, today):
 # e.g. "CardioDigest <digest@yourdomain.com>").
 
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
-EMAIL_FROM = os.environ.get("EMAIL_FROM", "CardioDigest <onboarding@resend.dev>")
+EMAIL_FROM = os.environ.get("EMAIL_FROM", f"{DIGEST_TITLE} <onboarding@resend.dev>")
 EMAIL_TO = [a.strip() for a in os.environ.get("EMAIL_TO", "").split(",") if a.strip()]
 
 def markdown_to_html(md_text):
@@ -3315,7 +2693,7 @@ def send_email(subject, html_body):
 #   "abstract pending", "further relevant studies", "guidelines & consensus" and
 #   (long edition) "for editorial review".
 
-BRAND = "CLARITY"
+BRAND = BRANDING.get("brand", "CLARITY")
 _FIELD_NAME_ENV = os.environ.get("FIELD_NAME", "").strip()
 
 
@@ -3324,19 +2702,13 @@ def field_name(lang, focus=None):
         return _FIELD_NAME_ENV
     if focus:
         return group_label(focus, lang)
-    return "Kardiologie" if lang == "de" else "Cardiology"
+    en = BRANDING.get("field_name", "")
+    return (BRANDING.get("field_name_de") or en) if lang == "de" else en
 
 
-GROUP_DE = {
-    "General Cardiology": "Allgemeine Kardiologie",
-    "Heart Failure / Cardiomyopathies": "Herzinsuffizienz / Kardiomyopathien",
-    "Electrophysiology & Devices": "Elektrophysiologie & Devices",
-    "Interventional Cardiology": "Interventionelle Kardiologie",
-    "Structural Heart Disease": "Strukturelle Kardiologie",
-    "Coronary Artery Disease / ACS": "Koronare Herzkrankheit / ACS",
-    "Cardiac Imaging": "Kardiale Bildgebung",
-    "Prevention, Lipids & Sports Cardiology": "Prävention, Lipide & Sportkardiologie",
-}
+# German / English display names of the subgroups (params/subgroup_labels.json)
+_SUBGROUP_LABELS = load_json_param(SUBGROUP_LABELS_FILE_DEFAULT)
+GROUP_DE = _SUBGROUP_LABELS.get("de", {})
 
 TYPE_DE = {
     "RCT": "Randomisierte kontrollierte Studie",
@@ -3351,7 +2723,7 @@ TYPE_DE = {
 }
 
 
-GROUP_EN_DISPLAY = {"Structural Heart Disease": "Structural Cardiology"}
+GROUP_EN_DISPLAY = _SUBGROUP_LABELS.get("en", {})
 
 
 def group_label(g, lang):
@@ -3485,27 +2857,7 @@ def manual_reason_text(reason, lang):
 
 
 # Accept German aliases / partial names for --only and map to an internal subgroup.
-_SUBGROUP_ALIASES = {
-    "strukturelle kardiologie": "Structural Heart Disease",
-    "strukturell": "Structural Heart Disease",
-    "structural": "Structural Heart Disease",
-    "structural cardiology": "Structural Heart Disease",
-    "interventionelle kardiologie": "Interventional Cardiology",
-    "interventionell": "Interventional Cardiology",
-    "elektrophysiologie": "Electrophysiology & Devices",
-    "rhythmologie": "Electrophysiology & Devices",
-    "herzinsuffizienz": "Heart Failure / Cardiomyopathies",
-    "kardiomyopathie": "Heart Failure / Cardiomyopathies",
-    "bildgebung": "Cardiac Imaging",
-    "prävention": "Prevention, Lipids & Sports Cardiology",
-    "praevention": "Prevention, Lipids & Sports Cardiology",
-    "sportkardiologie": "Prevention, Lipids & Sports Cardiology",
-    "lipide": "Prevention, Lipids & Sports Cardiology",
-    "koronar": "Coronary Artery Disease / ACS",
-    "khk": "Coronary Artery Disease / ACS",
-    "acs": "Coronary Artery Disease / ACS",
-    "allgemein": "General Cardiology",
-}
+_SUBGROUP_ALIASES = load_json_param(ALIASES_FILE_DEFAULT)
 
 
 def resolve_subgroup(name):
@@ -3524,25 +2876,9 @@ def resolve_subgroup(name):
     return None
 
 
-DISCLAIMER = (
-    "CLARITY is an independent literature curation service and is not affiliated with, "
-    "endorsed by, or associated with the journals or societies named herein. This "
-    "document is a factual summary of published research, provided for information and "
-    "continuing-education purposes only. It does not constitute medical advice, a "
-    "treatment recommendation or clinical guidance, and must not be used as a basis for "
-    "patient care decisions. Summaries are AI-generated and may contain errors; always "
-    "consult the original publication and the applicable clinical guidelines."
-)
-DISCLAIMER_DE = (
-    "CLARITY ist ein unabhängiger Dienst zur Kuratierung von Fachliteratur und steht in keiner "
-    "Verbindung zu den genannten Fachzeitschriften oder Fachgesellschaften; diese unterstützen oder "
-    "empfehlen CLARITY nicht. Dieses Dokument ist eine sachliche Zusammenfassung veröffentlichter "
-    "Forschung und dient ausschliesslich der Information und Fortbildung. Es stellt keine "
-    "medizinische Beratung, Behandlungsempfehlung oder klinische Handlungsanleitung dar und darf "
-    "nicht als Grundlage für Entscheidungen in der Patientenversorgung verwendet werden. Die "
-    "Zusammenfassungen werden von einer KI erstellt und können Fehler enthalten; massgeblich sind "
-    "stets die Originalpublikation und die geltenden klinischen Leitlinien."
-)
+_DISCLAIMERS = load_lang_param(DISCLAIMER_FILE_DEFAULT)
+DISCLAIMER = _DISCLAIMERS["en"]
+DISCLAIMER_DE = _DISCLAIMERS["de"]
 
 
 def disclaimer(lang):
@@ -3583,15 +2919,16 @@ def advisory_flags(summary):
     return hits
 
 
-# palette (from the CLARITY deck: deep petrol-teal, mint, cream)
-_TEAL   = "#0F3D3A"
-_TEAL_D = "#0A2C2A"
-_MINT   = "#2FB89A"
-_MINT_BG = "#E8F5EF"
-_CREAM  = "#F7F4ED"
-_INK    = "#16302E"
-_MUTE   = "#5C7370"
-_HAIR   = "#DCE7E3"
+# palette from params/branding.json (CLARITY deck: deep petrol-teal, mint, cream)
+_TEAL   = "#" + _P["TEAL"]
+_TEAL_D = "#" + _P["TEAL_D"]
+_MINT   = "#" + _P["MINT"]
+_MINT_BG = "#" + _P["MINT_BG"]
+_CREAM  = "#" + _P["CREAM"]
+_INK    = "#" + _P["INK"]
+_MUTE   = "#" + _P["MUTE"]
+_HAIR   = "#" + _P["HAIR"]
+_PANEL  = "#" + _P["PANEL"]
 
 # Characters the PDF base fonts can show: everything in cp1252 plus the Greek / math signs
 # reportlab takes from its Symbol fallback. Anything else would print as an empty box.
@@ -4052,32 +3389,7 @@ def appendix_model(scored, lang, top=None, with_manual=True):
 # "Also on our radar" (max 5) and a short source-standards box at the end. A4.
 # ---------------------------------------------------------------------------
 
-JOURNAL_DISPLAY = {
-    "circulation": "Circulation", "j am coll cardiol": "Journal of the American College of Cardiology",
-    "eur heart j": "European Heart Journal", "jama cardiol": "JAMA Cardiology",
-    "nat rev cardiol": "Nature Reviews Cardiology", "eur j heart fail": "European Journal of Heart Failure",
-    "circ heart fail": "Circulation: Heart Failure", "jacc heart fail": "JACC: Heart Failure",
-    "circ arrhythm electrophysiol": "Circulation: Arrhythmia and Electrophysiology",
-    "europace": "EP Europace", "heart rhythm": "Heart Rhythm",
-    "jacc clin electrophysiol": "JACC: Clinical Electrophysiology", "eurointervention": "EuroIntervention",
-    "circ cardiovasc interv": "Circulation: Cardiovascular Interventions",
-    "jacc cardiovasc interv": "JACC: Cardiovascular Interventions",
-    "circ cardiovasc imaging": "Circulation: Cardiovascular Imaging",
-    "eur heart j cardiovasc imaging": "European Heart Journal - Cardiovascular Imaging",
-    "jacc cardiovasc imaging": "JACC: Cardiovascular Imaging",
-    "j am heart assoc": "Journal of the American Heart Association", "heart": "Heart",
-    "n engl j med": "New England Journal of Medicine", "lancet": "The Lancet", "jama": "JAMA",
-    "bmj": "BMJ", "ann intern med": "Annals of Internal Medicine", "nat med": "Nature Medicine",
-    "eur j cardiothorac surg": "European Journal of Cardio-Thoracic Surgery",
-    "j thorac cardiovasc surg": "Journal of Thoracic and Cardiovascular Surgery",
-    "ann thorac surg": "The Annals of Thoracic Surgery",
-    "interact cardiovasc thorac surg": "Interactive CardioVascular and Thoracic Surgery",
-    "j am soc echocardiogr": "Journal of the American Society of Echocardiography",
-    "catheter cardiovasc interv": "Catheterization and Cardiovascular Interventions",
-    "cardiovasc revasc med": "Cardiovascular Revascularization Medicine",
-    "struct heart": "Structural Heart", "j cardiovasc magn reson": "Journal of Cardiovascular Magnetic Resonance",
-    "eur j prev cardiol": "European Journal of Preventive Cardiology",
-}
+JOURNAL_DISPLAY = load_json_param(JOURNAL_DISPLAY_FILE_DEFAULT)
 
 _MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
            "September", "October", "November", "December"]
@@ -4367,7 +3679,8 @@ def build_short_docx(items, date_str, days, out_path, lang="en", appendices=None
     from docx.opc.constants import RELATIONSHIP_TYPE as RT
 
     L, S = LABELS[lang], SHORT_L[lang]
-    TEAL, TEAL_D, MINT, MINT_BG, CREAM, INK, MUTE = "0F3D3A", "0A2C2A", "2FB89A", "E8F5EF", "F7F4ED", "16302E", "5C7370"
+    TEAL, TEAL_D, MINT, MINT_BG, CREAM, INK, MUTE = (_P[k] for k in (
+        "TEAL", "TEAL_D", "MINT", "MINT_BG", "CREAM", "INK", "MUTE"))
     fname = field_name(lang, focus)
     fm = front_matter(items, lang, days, focus)
     ordered = [p for _g, ps_ in group_items(items) for p in ps_]
@@ -4651,11 +3964,11 @@ def build_pdf(items, date_str, days, out_path, lang=None, edition="lang", append
             return []
         t = Table([cells], colWidths=[FULLW / len(cells)] * len(cells))
         t.setStyle(TableStyle([
-            ("BACKGROUND", (0, 0), (-1, -1), C("#F0F6F3")),
+            ("BACKGROUND", (0, 0), (-1, -1), C(_PANEL)),
             ("LEFTPADDING", (0, 0), (-1, -1), 9), ("RIGHTPADDING", (0, 0), (-1, -1), 9),
             ("TOPPADDING", (0, 0), (-1, -1), 7), ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
             ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("ROUNDEDCORNERS", [5, 5, 5, 5]),
-            ("LINEAFTER", (0, 0), (-2, -1), 0.5, C("#DCE7E3")),
+            ("LINEAFTER", (0, 0), (-2, -1), 0.5, C(_HAIR)),
         ]))
         return [Spacer(1, 6), t]
 
@@ -4931,8 +4244,8 @@ def build_docx(items, date_str, days, out_path, lang=None, edition="lang", appen
     appendices = appendices or []
 
     # brand palette without the leading '#'
-    TEAL, TEAL_D, MINT = "0F3D3A", "0A2C2A", "2FB89A"
-    MINT_BG, CREAM, INK, MUTE, PANEL = "E8F5EF", "F7F4ED", "16302E", "5C7370", "F0F6F3"
+    TEAL, TEAL_D, MINT = _P["TEAL"], _P["TEAL_D"], _P["MINT"]
+    MINT_BG, CREAM, INK, MUTE, PANEL = _P["MINT_BG"], _P["CREAM"], _P["INK"], _P["MUTE"], _P["PANEL"]
 
     groups = group_items(items)
     total = sum(len(ps) for _, ps in groups)
@@ -5026,7 +4339,7 @@ def build_docx(items, date_str, days, out_path, lang=None, edition="lang", appen
         pbdr = OxmlElement("w:pBdr")
         top_ = OxmlElement("w:top")
         top_.set(qn("w:val"), "single"); top_.set(qn("w:sz"), "4")
-        top_.set(qn("w:space"), "1"); top_.set(qn("w:color"), "DCE7E3")
+        top_.set(qn("w:space"), "1"); top_.set(qn("w:color"), _P["HAIR"])
         pbdr.append(top_)
         hr._p.get_or_add_pPr().append(pbdr)
 
@@ -5037,7 +4350,7 @@ def build_docx(items, date_str, days, out_path, lang=None, edition="lang", appen
             matplotlib.use("Agg")
             import matplotlib.pyplot as plt
             fig, ax = plt.subplots(figsize=(3.4, 1.85), dpi=220)
-            bars = ax.bar([l1, l2], [v1, v2], color=["#0F3D3A", "#2FB89A"], width=0.5)
+            bars = ax.bar([l1, l2], [v1, v2], color=[_TEAL, _MINT], width=0.5)
             for b, disp in zip(bars, [d1, d2]):
                 ax.text(b.get_x() + b.get_width() / 2, b.get_height(), disp,
                         ha="center", va="bottom", fontsize=8.5,
@@ -5045,7 +4358,7 @@ def build_docx(items, date_str, days, out_path, lang=None, edition="lang", appen
             ax.set_ylim(0, (max(v1, v2) or 1) * 1.3)
             for s_ in ("top", "right", "left"):
                 ax.spines[s_].set_visible(False)
-            ax.spines["bottom"].set_color("#DCE7E3")
+            ax.spines["bottom"].set_color(_HAIR)
             ax.get_yaxis().set_visible(False)
             ax.tick_params(axis="x", length=0, labelsize=8.5, colors="#5C7370")
             fig.patch.set_alpha(0)
@@ -5318,12 +4631,7 @@ def build_docx(items, date_str, days, out_path, lang=None, edition="lang", appen
 # 8. Recall check - how much of the relevant literature does the pipeline see?
 # ---------------------------------------------------------------------------
 RECALL_FILE = "recall_report.md"
-_RECALL_TIAB = [
-    "TAVR", "TAVI", "TEER", "TMVR", "transcatheter aortic", "transcatheter mitral",
-    "transcatheter tricuspid", "aortic stenosis", "aortic valve", "mitral valve",
-    "tricuspid valve", "mitral regurgitation", "tricuspid regurgitation", "edge-to-edge",
-    "left atrial appendage", "patent foramen ovale", "paravalvular", "valve-in-valve",
-]
+_RECALL_TIAB = FOCUS_TOPIC["recall_tiab"] if FOCUS_TOPIC else []
 
 
 def _whitelist_norm():
@@ -5338,7 +4646,7 @@ def recall_check(days, lang="de", focus=None):
     (1) journals the query never looks at, (2) whitelisted papers that never arrived,
     (3) papers that arrived but were not featured. Writes recall_report.md.
     Note: PubMed assigns publication types with a delay, so use a window of 30+ days."""
-    terms = _RECALL_TIAB if focus in (None, STRUCT) else TIAB_KEYWORDS
+    terms = _RECALL_TIAB if _RECALL_TIAB and focus in (None, STRUCT) else TIAB_KEYWORDS
     term = (f"(({_or(f'{k}[tiab]' for k in terms)}) AND "
             f"(randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt]))")
     print(f"Recall check: PubMed ground truth for the last {days} days ...")
@@ -5385,7 +4693,8 @@ def recall_check(days, lang="de", focus=None):
                 + (f" {extra} |" if extra != "" else ""))
 
     out = [f"# Recall-Check - {dt.date.today().isoformat()}", "",
-           f"Fenster: {days} Tage · Thema: {'Strukturelle Kardiologie' if terms is _RECALL_TIAB else 'Kardiologie allgemein'} · "
+           f"Fenster: {days} Tage · Thema: "
+           f"{FOCUS_TOPIC['label_de'] if terms is _RECALL_TIAB else field_name('de') + ' allgemein'} · "
            f"Typen: RCT, Meta-Analyse, Systematische Übersicht", "",
            "| Gruppe | Anzahl |", "|---|---:|",
            f"| Gefunden (Ground Truth) | {len(papers)} |",
@@ -5555,7 +4864,7 @@ def stage_summaries(ranked, target_subs, top, client, lang, workers):
     stats = {"new": 0, "reused": 0, "failed": 0}
 
     def one(p):
-        e = cache.get(summ_key(p["pmid"], lang))
+        e = summ_cache_get(cache, p["pmid"], lang)
         if summary_cache_ok(e, lang):
             return p, e, True
         return p, summarize_paper(p, client, lang), False
@@ -5575,7 +4884,7 @@ def stage_summaries(ranked, target_subs, top, client, lang, workers):
                 if was_cached:
                     stats["reused"] += 1
                 else:
-                    cache[summ_key(p["pmid"], lang)] = s
+                    cache[summ_model_key(p["pmid"], lang)] = s
                     stats["new"] += 1
                     dirty = True
                 p["summary"] = copy.deepcopy(s)
@@ -5701,13 +5010,14 @@ def dump_scored(scored):
 def stage_documents(args, lang, selected, scored, focus, today):
     ed_key = {"long": "lang", "short": "kurz", "both": "beide"}.get(args.edition, args.edition)
     editions = ["lang", "kurz"] if ed_key == "beide" else [ed_key]     # internal keys stay lang / kurz
-    failures = []
+    written, failures = [], []
     adapt_labels_to_window(args.days)
     shown = [display_paper(p, lang) for p in selected]       # cleaned copies; stored data untouched
     for ed in editions:
         apps = appendix_model(scored, lang, top=args.top,
                               with_manual=(ed == "lang" and not args.no_manual))
-        base = "clarity_cardio_" + (ed if lang == "de" else {"lang": "long", "kurz": "short"}[ed])
+        base = (f"{BRAND.lower()}_{FILE_SLUG}_"
+                + (ed if lang == "de" else {"lang": "long", "kurz": "short"}[ed]))
         for ext, fn in (("docx", build_docx), ("pdf", build_pdf)):
             if not getattr(args, ext):
                 continue
@@ -5716,11 +5026,58 @@ def stage_documents(args, lang, selected, scored, focus, today):
                 fn(shown, today, args.days, path, lang=lang, edition=ed, appendices=apps,
                    focus=focus, top=args.top)
                 print(f"Wrote {path}")
+                written.append(path)
             except Exception as e:
                 import traceback
                 traceback.print_exc()
                 failures.append(f"{base}.{ext}: {type(e).__name__}: {e}")
-    return failures
+    return written, failures
+
+
+def build_studies(selected, lang, today):
+    """The featured studies as flat records (one per study, in document order) for the DB
+    upload. Texts are the cleaned document versions; subspecialty is the canonical English name."""
+    rows = []
+    for i, p in enumerate(selected, start=1):
+        q = display_paper(p, lang)
+        s, sc = q["summary"], p.get("score") or {}
+        rows.append({
+            "specialty": BRANDING.get("field_name") or SPECIALTY_DIR.name.capitalize(),
+            "subspecialty": p.get("_display_group") or sc.get("subgroup", ""),
+            "study_order": i,
+            "title": q["title"],
+            "journal": p.get("journal", ""),
+            "pub_date": p.get("pub_date", ""),
+            "authors": ", ".join(p.get("authors") or []),
+            "study_type": sc.get("study_type", ""),
+            "design_info": s.get("design_tag", ""),
+            "summary": s.get("summary", ""),
+            "authors_conclusion": s.get("authors_conclusion", ""),
+            "pubmed_url": p.get("url", ""),
+            "doi": p.get("doi", ""),
+            # extra fields (not DB columns today; upload_digest_ords.py sends only DB_FIELDS)
+            "pmid": p.get("pmid", ""),
+            "headline": s.get("headline", ""),
+            "why_it_matters": s.get("why_it_matters", ""),
+            "key_finding": s.get("key_finding", ""),
+            "bottom_line": sc.get("bottom_line", ""),
+            "relevance_score": sc.get("relevance_score"),
+            "practice_changing": sc.get("practice_changing", False),
+            "lang": lang,
+            "digest_date": str(today),
+        })
+    return rows
+
+
+def archive_run(paths):
+    """Copy this run's outputs to output/<fach>_digest_<timestamp>/ (read by the DB upload)."""
+    import shutil
+    run_dir = OUTPUT_DIR / f"{SPECIALTY_DIR.name}_digest_{dt.datetime.now():%Y%m%d_%H%M%S}"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    for path in paths:
+        if os.path.exists(path):
+            shutil.copy2(path, run_dir)
+    print(f"Archived to {run_dir}")
 
 
 def _pubmed_count(term, reldate):
@@ -5745,6 +5102,12 @@ def check_params(days):
     Keine Modellaufrufe, kein State, keine Dateien."""
     print(f"SPECIALTY_DIR: {SPECIALTY_DIR}")
     print(f"STATE_DIR:     {STATE_DIR}\n")
+    print("KI-Anbieter:")
+    for name, p in PROVIDERS.items():
+        mark = "  <-- dieser Lauf" if name == LLM_PROVIDER else ""
+        print(f"  {name:<10} key {'gesetzt' if p['api_key'] else 'FEHLT  '} · "
+              f"triage {p['llm_model']} · summary {p['summary_model']} ({p['cfg'].name}){mark}")
+    print()
     print("Gelesene Parameterdateien:")
     for path, n in PARAM_SOURCES.items():
         print(f"  {n:>4}  {path}")
@@ -5795,9 +5158,9 @@ def check_params(days):
 # ---------------------------------------------------------------------------
 
 def main():
-    ap = argparse.ArgumentParser(description=f"CardioDigest v{VERSION} - weekly PubMed triage (CLARITY)")
+    ap = argparse.ArgumentParser(description=f"{DIGEST_TITLE} v{VERSION} - weekly PubMed triage ({BRAND})")
     ap.add_argument("--days", type=int, default=RELDATE_DAYS)
-    ap.add_argument("--out", default="cardio_digest.md")
+    ap.add_argument("--out", default=f"{FILE_SLUG}_digest.md")
     ap.add_argument("--no-dedup", action="store_true",
                     help="test mode: ignore seen_pmids.json and do NOT change seen / retry queue / history")
     ap.add_argument("--limit", type=int, default=0, help="cap papers fetched (testing)")
@@ -5838,13 +5201,28 @@ def main():
     ap.add_argument("--check-params", action="store_true",
                     help="Parameterdateien laden und anzeigen, Journalnamen bei PubMed prüfen; "
                          "keine Modellaufrufe, kein State")
+    # read before the import-time parameter loading (see _early_specialty_dir); listed for --help
+    ap.add_argument("--specialty", default=None,
+                    help=f"Fachgebiet = Ordner unter specialties/ (default {DEFAULT_SPECIALTY})")
+    ap.add_argument("--specialty-dir", default=None, help="Fachordner als Pfad (statt --specialty)")
+    ap.add_argument("--provider", choices=sorted(PROVIDERS), default=LLM_PROVIDER,
+                    help=f"KI-Anbieter für diesen Lauf (Default: LLM_PROVIDER bzw. "
+                         f"[GENERAL] llm_provider, sonst anthropic; aktuell {LLM_PROVIDER})")
+    ap.add_argument("--live", action="store_true",
+                    help="ignore dry_run = true from [GENERAL] for this run (state is updated)")
     args = ap.parse_args()
+    select_provider(args.provider)
+    if DRY_RUN_DEFAULT and not args.live and not args.no_dedup:
+        args.no_dedup = True
+        print("dry_run = true ([GENERAL]): test mode like --no-dedup - seen / retry queue / "
+              "history stay unchanged (--live overrides)")
     if args.check_params:
         check_params(args.days)
         return
     lang = args.lang
-    print(f"CardioDigest v{VERSION} - short edition in the CLARITY 'week at a glance' format "
+    print(f"{DIGEST_TITLE} v{VERSION} - short edition in the {BRAND} 'week at a glance' format "
           f"(file: {os.path.abspath(__file__)})")
+    print(f"Provider: {LLM_PROVIDER} · triage {LLM_MODEL} · summary {SUMMARY_MODEL}")
     today = dt.date.today().isoformat()
 
     os.makedirs(STATE_DIR, exist_ok=True)
@@ -5873,22 +5251,18 @@ def main():
         recall_check(args.days, lang, focus)
         return
 
-    if not ANTHROPIC_API_KEY:
-        sys.exit("Set ANTHROPIC_API_KEY (and ideally NCBI_API_KEY / NCBI_EMAIL).")
-    import anthropic
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    client = make_llm(LLM_PROVIDER)
 
     # Verify both models answer before doing any work - a wrong model name or a wrong key
     # would otherwise fail on every paper.
     for label, name in (("triage", LLM_MODEL), ("summary", SUMMARY_MODEL)):
         try:
-            client.messages.create(model=name, max_tokens=8,
-                                   messages=[{"role": "user", "content": "ok"}])
+            client.complete(name, "", "ok", 8)
             print(f"model check: {label} model {name!r} OK")
         except Exception as e:
-            sys.exit(f"\nMODEL CHECK FAILED for the {label} model {name!r}:\n  {e}\n"
-                     f"If the message says 'invalid x-api-key' the KEY is wrong, not the model. "
-                     f"Otherwise fix the model name or unset the environment variable.")
+            sys.exit(f"\nMODEL CHECK FAILED for the {label} model {name!r} ({LLM_PROVIDER}):\n  {e}\n"
+                     f"If the message mentions an invalid API key, the KEY is wrong, not the model. "
+                     f"Otherwise fix the model name in {PROVIDERS[LLM_PROVIDER]['cfg'].name}.")
 
     if args.build_refs or args.refresh_refs:
         build_reference_base(client, refresh=args.refresh_refs)
@@ -5989,13 +5363,18 @@ def main():
         f.write(digest)
     print(f"\nWrote {_sp(args.out)}, {_sp(SCORED_FILE)}"
           f"{', ' + _sp(FUNNEL_FILE) + ', ' + _sp(DROPPED_FILE) if not args.rebuild else ''}")
+    if selected:
+        save_json(STUDIES_FILE, build_studies(selected, lang, today), indent=1)
+        print(f"Wrote {_sp(STUDIES_FILE)} ({len(selected)} studies)")
 
     if args.email:
-        send_email(f"CardioDigest - {today}", markdown_to_html(build_digest(scored, include_abstract=False)))
+        send_email(f"{DIGEST_TITLE} - {today}", markdown_to_html(build_digest(scored, include_abstract=False)))
 
-    failures = []
+    written, failures = [], []
     if build_docs:
-        failures = stage_documents(args, lang, selected, scored, focus, today)
+        written, failures = stage_documents(args, lang, selected, scored, focus, today)
+    if selected and not args.no_dedup:            # test runs never reach the upload folder
+        archive_run([_sp(args.out), _sp(STUDIES_FILE)] + written)
 
     # ---- the one-screen answer to "what happened to the papers?" --------------------------
     print("\nWhat happened to the papers:")

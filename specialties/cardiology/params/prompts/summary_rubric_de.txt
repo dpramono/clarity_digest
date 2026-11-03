@@ -1,0 +1,105 @@
+Antworte mit genau einem JSON-Objekt und sonst nichts:
+{
+  "short": "Kurzfassung in 2-3 Sätzen, höchstens 60 Wörter, ausschliesslich aus dem Abstract:
+              Design und Population (mit n, falls genannt), das zentrale Ergebnis mit der
+              wichtigsten Zahl und zuletzt, was die Autoren daraus schliessen. Rein
+              beschreibend, ohne Rat. Muss ohne den Rest der Zusammenfassung verständlich sein.",
+  "headline": "EINE Zeile, höchstens 20 Wörter: das zentrale Ergebnis mit der wichtigsten
+              Zahl, rein beschreibend (z. B. 'TAVI nach 5 Jahren nicht unterlegen: Tod/Schlaganfall
+              20.1% vs 22.3%'). Kein Rat.",
+  "design_tag": "Designbezeichnung plus Grösse für den Studienkopf, höchstens 10 Wörter, z. B.
+              'Internationales Register · N = 5605', 'Systematische Übersicht & Meta-Analyse · 57
+              Studien · N = 73588'. Nur Fakten aus dem Abstract.",
+  "why_it_matters": "2 Sätze (35-60 Wörter): (1) was die Studie macht - Design, Population und
+              Fragestellung, mit Studien- oder Registername; (2) der klinische Kontext aus dem
+              Hintergrund des Abstracts: welche Lücke oder Unsicherheit sie adressiert.
+              Beschreibend, ohne Lob, ohne Rat, ohne Qualitätsurteil.",
+  "key_finding": "3-4 Sätze (60-110 Wörter) mit den Zahlen genau wie im Abstract: (1) Grösse und
+              Aufbau der Population; (2) primäres Ergebnis mit beiden Gruppenwerten und
+              Effektmass mit CI oder p-Wert; (3) wichtigstes sekundäres, Subgruppen- oder
+              Validierungsergebnis mit Zahlen; (4) falls genannt, ein weiteres Kernergebnis. Nie
+              nur ein Satz. Rein beschreibend; die Schlussfolgerung der Autoren wird hier NICHT
+              wiederholt.",
+  "tiles": [{"value": "kurze Zahl genau wie im Abstract, z. B. '55.1% vs. 67.7%' oder 'aHR
+              2.01'", "label": "2-4 Wörter, z. B. '5-Jahres-Mortalität'", "context": "kurze
+              Präzisierung, z. B. 'MitraScore <=3 vs. >=4' oder '95% CI 1.35-3.00'"}],
+              GENAU 3 Kacheln mit den drei aussagekräftigsten Zahlen des Abstracts. Jede Zahl in
+              value und context muss WÖRTLICH im Abstract stehen - nie rechnen, runden oder
+              kombinieren. Weniger als 3 nur, wenn der Abstract weniger Zahlen enthält.
+  "summary": "8-12 Sätze, ausschliesslich aus dem Abstract. Abdecken: Hintergrund/
+              Fragestellung, Studiendesign, Population und Einschluss, Intervention und
+              Vergleich, primärer Endpunkt mit Zahlen, wichtige sekundäre Endpunkte mit
+              Zahlen, Sicherheit/unerwünschte Ereignisse (nur wenn im Abstract genannt),
+              vom Abstract genannte Limitationen und die Schlussfolgerung der Autoren. Rein
+              beschreibend - berichte, was die Arbeit sagt, nie, was die Leserschaft tun
+              soll. Keine Sätze darüber, was im Abstract fehlt.",
+  "relation_evidence": "1-3 Sätze, die die Studie beschreibend in die bestehende Evidenz
+              einordnen. NUR allgemein gesichertes Wissen. Erfinde keine konkreten Studien,
+              Zahlen oder Ergebnisse. Kein Rat. Ist keine sichere Einordnung möglich,
+              schreibe genau: 'Aus dem Abstract allein nicht einzuordnen.'",
+  "relation_guidelines": "1-3 Sätze, die BESCHREIBEN, wie die Befunde zu aktuellen Leitlinien
+              (z. B. ESC/ACC/AHA) stehen - etwa dass sie mit deren Aussagen vereinbar sind,
+              sie in Frage stellen oder verfeinern. Erfinde NIE eine konkrete Empfehlungs-
+              klasse oder ein Evidenzlevel und fordere NIE auf, etwas zu befolgen,
+              zu übernehmen oder zu ändern. Bei Unsicherheit schreibe genau:
+              'Kein klarer Leitlinienbezug ableitbar.'",
+  "authors_conclusion": "1-2 Sätze, was DIE AUTOREN schliessen, ausdrücklich ihnen zugeordnet
+              (beginne mit 'Die Autoren schliessen, dass ...' o. ä.). Rein beschreibend.
+              Kein Rat, keine Empfehlung, kein Imperativ.",
+  "key_numbers": {
+    "design": "Stichwörter auf Deutsch, höchstens 6 Wörter, z. B. 'RCT, doppelblind, multizentrisch' oder 'Register, prospektiv' (oder null)",
+    "n": "EINE einzelne Zahl als String, z. B. '4321' (oder null)",
+    "followup": "z. B. '12 Monate' oder 'Median 3.2 Jahre'  (oder null)",
+    "primary_endpoint": {
+      "name": "Name + Zeitpunkt auf Deutsch, z. B. 'Versagen der Zielläsion, 12 Monate'",
+      "arm1_label": "Kurzlabel, z. B. 'DCB'", "arm1_value": "z. B. '6.1%'",
+      "arm2_label": "Kurzlabel, z. B. 'DES'", "arm2_value": "z. B. '7.0%'",
+      "effect": "nur Masszahlen, z. B. 'Risikodifferenz -0.9% (95% CI -2.1 bis 0.3), nicht unterlegen'  (oder null)"
+    },
+    "secondary": [
+      {"name": "z. B. 'Kardialer Tod'", "arm1": "1.6%", "arm2": "1.8%", "effect": "-0.2%"}
+    ],
+    "key_findings": [
+      {"label": "z. B. 'Operative Mortalität'", "value": "z. B. '0.4% (n=2)'"}
+    ]
+  },
+  "qc_notes": "Interne Hinweise für die Redaktion (erscheinen NICHT im Dokument), z. B.
+              fehlende Angaben im Abstract, unklare Zahlen. Leer lassen, wenn nichts auffällt."
+}
+WICHTIG zu key_numbers:
+- Nimm nur Werte, die WÖRTLICH im Abstract stehen. Fehlt ein Wert, setze null. Erfinde nie
+  Zahlen, Endpunkte, Gruppen oder Konfidenzintervalle. Höchstens 5 Zeilen unter 'secondary'.
+- Nennt der Abstract für den primären Endpunkt Werte für zwei Gruppen, MUSS
+  'primary_endpoint' vollständig befüllt sein (name, arm1/arm2 mit Label und Wert, effect).
+- Jede Endpunkt-Zahl, die du in 'summary' nennst, gehört - sofern sie in eine der Strukturen
+  passt - auch in key_numbers (primary_endpoint, secondary oder key_findings).
+- Gibt es nur EIN Kollektiv (gepoolte Metaanalyse, Einzelarm, Register): arm2_label und
+  arm2_value = null und den Gesamtwert in arm1 eintragen. Keine leeren Strings und keine
+  Platzhalter wie '-', 'n/a' oder 'nicht angegeben' - nutze immer null.
+- 'design': höchstens 6 Wörter, Stichwort statt Satz ('Register', 'RCT, doppelblind,
+  multizentrisch', 'Narrative Übersichtsarbeit').
+- SPRACHE: Alle Textfelder von key_numbers (design, followup, Endpunkt-Namen, Gruppen- und
+  Zeilenbezeichnungen, effect, Labels) stehen auf DEUTSCH, z. B. 'Gesamtmortalität, 30 Tage',
+  'Median 24 Monate', 'Gruppe ohne Operationsindikation', 'Systematische Übersicht,
+  Meta-Analyse'. Unverändert bleiben nur Studien- und Registernamen, etablierte Abkürzungen
+  (TAVI, HR, CI, AUC, ERO, SMD) und Zahlen. Keine englischen Wörter wie 'months', 'Group',
+  'All-cause', 'Significantly', 'Pooled'.
+- 'n': EINE Zahl (Gesamtzahl der ausgewerteten Teilnehmenden bzw. Patienten; bei mehreren
+  Kohorten die Hauptkohorte), ohne Text und ohne Klammern.
+- 'primary_endpoint' ist der im Abstract genannte primäre Endpunkt bzw. das Hauptergebnis -
+  KEIN Baseline-Merkmal. Bei deskriptiven Studien ohne definierten Endpunkt das zentrale
+  Ergebnis, auf das sich die Schlussfolgerung der Autoren stützt; gibt es kein Ergebnis mit
+  Zahl: null.
+- 'effect' nur, wenn der Abstract eine Masszahl nennt (HR, OR, RR, Differenz, SMD, p-Wert,
+  Konfidenzintervall); nie ein Satz in Worten wie 'signifikant niedriger'. Nennt der Abstract
+  nur die Gruppenwerte, trage diese in arm1/arm2 ein und setze effect = null.
+- 'effect' nur, wenn der Abstract ihn nennt, sonst null.
+- key_findings ist PFLICHT: 3-6 Zeilen, sobald der Abstract irgendwelche quantitativen oder
+  konkreten Tatsachen enthält (Raten, Zahlen, Gradienten, Dauern, Prävalenzen, Schwellen,
+  Umfang). Jede Zeile: kurzes Label plus Wert genau wie im Abstract. Für Dokumente ganz ohne
+  Zahlen (z. B. Technik-Konsensus) konkrete Sachangaben verwenden, z. B.
+  {"label": "Adressierte Komplikation", "value": "LVOT-Obstruktion nach TMVR"}.
+  Leer lassen nur, wenn der Abstract gar nichts Konkretes enthält.
+
+Schreibe sachlich, klinisch, beschreibend. Keine Werbesprache, kein Rat.
+

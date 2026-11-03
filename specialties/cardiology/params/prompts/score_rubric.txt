@@ -1,0 +1,93 @@
+Return a single JSON object and nothing else:
+{
+  "subgroup": one of __SUBGROUPS__ or "Other",
+     Routing note for "Structural Heart Disease": this category is for ADULT
+     structural/valvular heart disease and its catheter-based or surgical treatment -
+     aortic, mitral, tricuspid and pulmonary valve disease, TAVR/TAVI, TEER, TMVR/TTVR,
+     LAAO, PFO/ASD closure in adults, paravalvular leak, prosthetic valve dysfunction,
+     endocarditis of a valve or prosthesis.
+     ROUTE BY CLINICAL SUBJECT, NEVER BY JOURNAL. A study of a valve or a structural
+     intervention stays in this category even when it appears in an imaging or
+     electrophysiology journal, even when the outcome measure is echocardiographic, and
+     even when the data come from a registry. Examples that DO belong here:
+     echocardiographic outcomes after transcatheter tricuspid valve replacement; a meta-analysis of
+     left atrial appendage closure versus anticoagulation; registry outcomes of
+     antithrombotic strategy after valve-in-valve TAVR; natural history of quantified
+     mitral regurgitation.
+     It is NOT for: paediatric or congenital heart disease and its risk factors or
+     epidemiology (the word "structural" in "structural congenital heart disease" does NOT
+     make it this category), pregnancy/obstetric risk studies, health-policy or
+     reimbursement studies, and papers whose SUBJECT is database linkage or surveillance
+     methodology rather than a clinical result. Route those to "General Cardiology" or
+     "Other".
+  "secondary_subgroups": a list (usually empty, at most 2) of OTHER subgroups from the same
+                list that the paper ALSO clearly belongs to, e.g. an AI echocardiography
+                model for aortic stenosis: subgroup "Cardiac Imaging", secondary
+                ["Structural Heart Disease"]. Use [] when there is no genuine second home.
+  "structural_topic": if subgroup is "Structural Heart Disease" OR it is listed in
+                secondary_subgroups, pick the single best match from __STRUCT_TOPICS__ ;
+                otherwise null.
+                Choose by the clinical subject, not by wording of the title. A tricuspid
+                device study belongs to the tricuspid topic; aortic prosthesis outcomes to
+                the matching TAVR topic; paravalvular leak and prosthetic valve dysfunction
+                to "Paravalvular leak"; infective endocarditis (native OR prosthetic valve,
+                including risk scores and imaging of endocarditis) to "Infective
+                endocarditis"; anything else to "Other".
+  "structural_topics_extra": a list (usually empty) of further topics from the same list
+                when the study clearly covers more than one, e.g. a registry of degenerative
+                AND functional mitral regurgitation: structural_topic "TEER - primary
+                (degenerative) MR" and extra ["TEER - secondary (functional) MR"].
+  "study_type": "RCT" | "Meta-analysis / Systematic review" | "Guideline / Consensus"
+                | "Large observational / Registry" | "Small observational"
+                | "Diagnostic / Validation study" | "Basic / Translational"
+                | "Review / Editorial" | "Other",
+  "statement_type": "Major guideline" | "Practical statement" | "Primary study or other",
+  "interventional": true or false,
+  "relevance_score": integer 1-10,
+  "practice_changing": true or false,
+  "why_it_matters": one sentence,
+  "bottom_line": one or two sentences, concrete clinical takeaway
+}
+
+statement_type - how to classify:
+  "Major guideline"      = ONLY a COMPLETE clinical practice guideline or a universal
+                           disease DEFINITION from a major society (ESC/ACC/AHA/etc.),
+                           e.g. "2026 ACC/AHA Guideline on ..." or "Universal Definition
+                           of ...". These are broadly disseminated, long, and hard to
+                           summarise faithfully, so we only NAME them.
+                           NOT a Major guideline: a Scientific Statement, an expert
+                           consensus / position paper, a best-practices document, an
+                           erratum/correction, or a journal editorial/authorship policy
+                           (e.g. ICMJE recommendations). Do not use this label for those.
+  "Practical statement"  = a document issued by a society, task force or named expert
+                           panel: Scientific Statement, expert consensus, position paper,
+                           or a focused best-practices / step-by-step technical document
+                           (e.g. an AHA Scientific Statement, an EACTS Expert Consensus
+                           Document, a standardised-definitions paper). It is NOT a narrative
+                           review, state-of-the-art review, editorial, commentary or opinion
+                           piece written by individual authors - those are "Primary study or
+                           other" with study_type "Review / Editorial", even when they discuss
+                           guidelines or recommendations.
+  "Primary study or other" = original research (RCT, registry, cohort, meta-analysis),
+                           narrative reviews, editorials, epidemiology papers, methods
+                           papers, case reports, and any journal editorial/publishing
+                           policy document. Anything that is not a guideline or a society
+                           statement. Score pure publishing-policy or non-clinical
+                           documents very low (1-2).
+
+interventional - set true ONLY if the paper itself evaluates, compares or reports the
+  outcomes, technique or complications of a CATHETER-BASED / percutaneous cardiac
+  intervention (PCI, stents, FFR/OCT/IVUS-guided PCI, TAVR/TAVI, valve-in-valve,
+  transcatheter mitral or tricuspid repair/replacement incl. TEER, left atrial appendage
+  occlusion, PFO/ASD closure, paravalvular leak closure, mechanical circulatory support in
+  the cath lab) - also in comparison with surgery or medical therapy.
+  Set FALSE for: imaging or diagnostic studies, AI models, risk scores, natural history
+  and epidemiology, medical therapy, studies of patients explicitly WITHOUT an
+  intervention, pure surgery, and electrophysiology ablation/device procedures (own category).
+
+Score anchors:
+  9-10  practice-changing RCT / new guideline in a major journal
+  7-8   important; strong evidence likely to influence practice or debate
+  4-6   incremental, confirmatory, or narrow relevance
+  1-3   preliminary, niche, mechanistic, or low clinical relevance
+
