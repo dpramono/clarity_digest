@@ -46,9 +46,11 @@ STATE_DIR=test_state python3 clarity_digest.py --provider gemini --days 7 --no-d
 # Code kommt NUR über Git auf den Server (Mac: git push, OCI: git pull).
 #
 # Einmalig auf OCI:
-#   sudo dnf install -y git python3.13        # gleiche Python-Version wie auf dem Mac
+#   sudo dnf install -y git python3.14 python3.14-pip   # gleiche Python-Version wie auf dem Mac
 #   git clone <repo-url> clarity_digest && cd clarity_digest
-#   python3.13 -m venv .venv && . .venv/bin/activate
+#   python3.14 -m venv .venv && . .venv/bin/activate
+#   (System-Python 3.9 NICHT entfernen/ersetzen – dnf, oci-utils u. a. brauchen es;
+#    das Programm läuft ausschließlich in der .venv mit 3.14)
 #   pip install -r requirements.txt
 #   cp config/anthropic_clarity.cfg.example config/anthropic_clarity.cfg   # Keys eintragen
 #   cp config/gemini_clarity.cfg.example    config/gemini_clarity.cfg

@@ -1,5 +1,5 @@
-# Python 3.13 (Mac und OCI gleich halten)
-# Installation:  python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+# Python 3.14 (Mac und OCI gleich halten)
+# Installation:  python3.14 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
 requests==2.34.2
 anthropic==0.116.0
 google-genai==2.24.0
