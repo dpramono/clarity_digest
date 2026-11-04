@@ -20,6 +20,11 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SPECIALTIES_DIR="$SCRIPT_DIR/specialties"
+# Python-Interpreter: explizit gesetztes $PYTHON hat Vorrang, sonst die
+# Projekt-venv (.venv), sonst das System-python3.
+if [ -z "${PYTHON:-}" ] && [ -x "$SCRIPT_DIR/.venv/bin/python" ]; then
+    PYTHON="$SCRIPT_DIR/.venv/bin/python"
+fi
 PYTHON="${PYTHON:-python3}"
 
 show_usage() {
