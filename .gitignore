@@ -6,6 +6,8 @@ __pycache__/
 config/*.cfg
 specialties/*/output/
 specialties/*/test_state/
+specialties/*/state_clarity/
+state_clarity/
 logs/
 test_state/
 .DS_Store
