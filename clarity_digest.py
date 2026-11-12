@@ -80,7 +80,8 @@ Run:
   python clarity_digest.py --days 60 --recall-check
 
 Files written to STATE_DIR (read these after every run; <slug> from branding.json):
-  clarity_cardio_long.pdf/.docx   long edition        clarity_cardio_short.pdf/.docx   short edition
+  clarity_cardio_long.pdf/.docx/.md   long edition    clarity_cardio_short.pdf/.docx/.md   short edition
+                     (.md only with --md)
                      (German edition: clarity_cardio_lang / clarity_cardio_kurz)
   funnel_report.md   what happened to every paper (counts per status + manual-review list)
   dropped.csv        every paper WITHOUT a study page, with status and reason (this run)
@@ -4219,6 +4220,155 @@ def build_pdf(items, date_str, days, out_path, lang=None, edition="lang", append
 
 
 # ---------------------------------------------------------------------------
+# 6b. CLARITY Markdown (.md) - same content and order as the PDF (flag --md)
+# ---------------------------------------------------------------------------
+
+def _md(s):
+    """One line of reader text: whitespace collapsed (a line break would end a paragraph)."""
+    return re.sub(r"\s+", " ", str(s or "")).strip()
+
+
+def _md_cell(s):
+    return _md(_cell(s) if s is not None else "").replace("|", "\\|") or "–"
+
+
+def _md_table(header, rows):
+    out = ["| " + " | ".join(_md_cell(h) for h in header) + " |",
+           "|" + "|".join("---" for _ in header) + "|"]
+    out += ["| " + " | ".join(_md_cell(c) for c in r) + " |" for r in rows]
+    return out
+
+
+def _md_appendices(appendices, L):
+    out = []
+    for _key, title, intro, es in appendices:
+        out += [f"## {_md(title)}", "", f"*{_md(intro)}*", ""]
+        for e in es:
+            out.append(f"- **{_md(e['title'])}**  ")
+            line = f"  {_md(e['meta'])} · [{L['pubmed']}]({e['url']})"
+            if e.get("note"):
+                line += "  \n  *" + _md(e["note"]) + "*"
+            out.append(line)
+        out.append("")
+    return out
+
+
+def build_md(items, date_str, days, out_path, lang=None, edition="lang", appendices=None,
+             focus=None, top=None):
+    """Markdown version of the CLARITY document. Uses the same view helpers as build_pdf /
+    build_short_pdf, so text, numbers and order match the PDF (the bar chart becomes the
+    arm values as text)."""
+    lang = lang or OUTPUT_LANG
+    L = LABELS[lang]
+    fname = field_name(lang, focus)
+    appendices = appendices or []
+    groups = group_items(items)
+    fm = front_matter(items, lang, days, focus)
+    out = []
+
+    if edition == "kurz":
+        S = SHORT_L[lang]
+        ordered = [p for _g, ps in groups for p in ps]
+        glance = S["glance"] if days <= 8 else S["glance_days"].format(days=days)
+        count = (S["count"] if len(ordered) == 1 else S["count_n"]).format(n=len(ordered))
+        out += [f"# {BRAND}", "", f"*{S['tagline']}*", "", f"**{glance}**", "",
+                f"## {_md(fname)}", "", f"{long_date(date_str, lang)} · {count}", ""]
+        if fm["quiet"]:
+            out += [f"*{_md(fm['quiet'])}*", ""]
+        if not ordered:
+            out += [f"**{_md(L['none_title'])}**", "", _md(L["none_text"]), ""]
+        for i, p in enumerate(ordered, 1):
+            v = short_view(p, lang)
+            out += ["---", "", f"### {i:02d} · {_md(v['title'])}", "", f"**{_md(v['tag'])}**  ",
+                    _md(v["meta"]), ""]
+            if v["why"]:
+                out += [f"**{S['why']}**  ", _md(v["why"]), ""]
+            if v["key"]:
+                out += [f"**{S['key']}**  ", _md(v["key"]), ""]
+            if v["tiles"]:
+                out += _md_table([str(t.get("label") or "").upper() for t in v["tiles"]],
+                                 [[t.get("value") for t in v["tiles"]],
+                                  [t.get("context") or "" for t in v["tiles"]]]) + [""]
+            out += [f"PMID {v['pmid']} · [{S['view']}]({v['url']})", ""]
+        radar = radar_entries(appendices, lang)
+        if radar:
+            out += ["---", "", f"## {S['radar']}", "", f"*{_md(S['radar_sub'])}*", ""]
+            for e in radar:
+                out += [f"- **{_md(e['title'])}**  ",
+                        f"  {_md(e['tag'])} · {_md(e.get('jdate') or e['meta'])} · [PubMed]({e['url']})"]
+            out.append("")
+        out += ["---", "", f"**{S['source']}**", "", f"*{_md(SHORT_DISCLAIMER[lang])}*", ""]
+    else:
+        total = sum(len(ps) for _, ps in groups)
+        out += [f"# {BRAND}", "", f"*{_md(L['tagline'])}*", "",
+                f"**{_md(L['cover_lang'])}**  ",
+                f"{_md(fname)} · {date_str} · {count_text(total, len(groups), lang)}  ",
+                f"*{_md(L['edition_lang'])}*", "", "---", "",
+                f"## {_md(L['contents'])}", "", f"*{_md(L['contents_sub'].format(days=days))}*", ""]
+        if fm["quiet"]:
+            out += [_md(fm["quiet"]), ""]
+        if fm["picks"]:
+            out += [f"**{_md(L['picks'])}**", ""]
+            for num, title, head in fm["picks"]:
+                out.append(f"{num}. **{_md(title)}**" + (f"  \n   {_md(head)}" if head else ""))
+            out.append("")
+        for g, ps in groups:
+            out.append(f"- {_md(group_label(g, lang))} — {len(ps)} "
+                       f"{L['study'] if len(ps) == 1 else L['studies']}")
+        if not groups:
+            out.append(_md(L["none_text"]))
+        for _key, title, _intro, es in appendices:
+            out.append(f"- {_md(title)} — {len(es)}")
+        out.append("")
+
+        for g, ps in groups:
+            out += ["---", "", f"## {_md(group_label(g, lang))}", ""]
+            for i, p in enumerate(ps, 1):
+                s = p.get("summary", {}) or {}
+                kn = s.get("key_numbers") or {}
+                meta = " · ".join(x for x in (journals_text(p), p.get("pub_date", ""), authors_text(p)) if x)
+                out += [f"### {i}. {_md(p['title'])}", "", f"*{_md(meta)}*", "",
+                        f"**{_md(kicker_text(p, lang)).upper()}**", ""]
+                cells = stat_cells(kn, lang)
+                if cells:
+                    out += _md_table([lab for _v, lab in cells], [[v for v, _lab in cells]]) + [""]
+                pv = primary_view(kn.get("primary_endpoint"), lang)
+                if pv:
+                    out += [f"#### {_md(L['primary'])} — {_md(pv['name'])}", ""]
+                    if pv["arms"]:
+                        out += ["   ·   ".join(f"**{_md(lab)}:** {_md(val)}" if lab else f"**{_md(val)}**"
+                                               for lab, val in pv["arms"]), ""]
+                    if pv["effect"]:
+                        out += [_md(pv["effect"]), ""]
+                sv = secondary_view(kn, lang)
+                if sv:
+                    cols, rows = sv
+                    out += [f"#### {_md(L['other_ep'])}", ""]
+                    out += _md_table([h for _k, h, _w in cols],
+                                     [[r.get(k) for k, _h, _w in cols] for r in rows]) + [""]
+                else:
+                    fv = findings_view(kn)
+                    if fv:
+                        out += [f"#### {_md(L['key_figures'])}", ""]
+                        out += ["| | |", "|---|---|"]
+                        out += [f"| {_md_cell(a)} | **{_md_cell(b)}** |" for a, b in fv]
+                        out.append("")
+                for lab, txt in text_sections(p, lang):
+                    out += [f"#### {_md(lab)}", "", _md(txt), ""]
+                concl = conclusion_text(p)
+                if concl:
+                    out += [f"> **{_md(L['concl'])}**  ", f"> {_md(concl)}", ""]
+                out += [f"[{L['view']}]({paper_url(p)}) · {L['doi']}: {p.get('doi') or 'n/a'}", ""]
+        if appendices:
+            out += ["---", ""]
+        out += _md_appendices(appendices, L)
+        out += ["---", "", f"*{_md(disclaimer(lang))}*", ""]
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(out))
+
+
+# ---------------------------------------------------------------------------
 # 7. CLARITY Word document (.docx)
 # ---------------------------------------------------------------------------
 
@@ -5018,7 +5168,7 @@ def stage_documents(args, lang, selected, scored, focus, today):
                               with_manual=(ed == "lang" and not args.no_manual))
         base = (f"{BRAND.lower()}_{FILE_SLUG}_"
                 + (ed if lang == "de" else {"lang": "long", "kurz": "short"}[ed]))
-        for ext, fn in (("docx", build_docx), ("pdf", build_pdf)):
+        for ext, fn in (("docx", build_docx), ("pdf", build_pdf), ("md", build_md)):
             if not getattr(args, ext):
                 continue
             path = _sp(f"{base}.{ext}")
@@ -5168,6 +5318,7 @@ def main():
                     help="also send the digest by email (needs RESEND_API_KEY, EMAIL_TO)")
     ap.add_argument("--pdf", action="store_true", help="build the CLARITY PDF(s)")
     ap.add_argument("--docx", action="store_true", help="build the CLARITY Word document(s)")
+    ap.add_argument("--md", action="store_true", help="build the CLARITY document(s) as Markdown (.md)")
     ap.add_argument("--lang", choices=["de", "en"], default=OUTPUT_LANG if OUTPUT_LANG in ("de", "en") else "en",
                     help="language of the documents (default: OUTPUT_LANG, else en)")
     ap.add_argument("--edition", choices=["long", "short", "both", "lang", "kurz", "beide"], default="both",
@@ -5298,7 +5449,7 @@ def main():
             _set(p, "queue_expired",
                  f"no abstract after more than {MAX_QUEUE_DAYS} days in the retry queue")
 
-    build_docs = args.pdf or args.docx
+    build_docs = args.pdf or args.docx or args.md
     selected = []
     if build_docs:
         n_guide = sum(1 for p in scored if p.get("_status") == "guideline_listed")

@@ -6,7 +6,7 @@
 # Modi:
 #   check   Parameterdateien prüfen, Journalnamen bei PubMed testen (kostenlos, kein State)
 #   test    kleiner Lauf in specialties/<fach>/test_state, State bleibt unverändert (Standard)
-#   prod    produktiver Wochenlauf: PDF + Word, State wird fortgeschrieben
+#   prod    produktiver Wochenlauf: PDF + Word + Markdown, State wird fortgeschrieben
 #   rebuild Dokumente aus dem letzten Lauf neu bauen (keine PubMed-Abfrage, keine Bewertung)
 #
 # Beispiele:
@@ -61,13 +61,13 @@ case "$MODE" in
     test)
         export STATE_DIR="$SPECIALTIES_DIR/$SPECIALTY/test_state"
         exec "$PYTHON" clarity_digest.py --specialty "$SPECIALTY" \
-            --days 7 --no-dedup --limit 40 --pdf --docx "$@"
+            --days 7 --no-dedup --limit 40 --pdf --docx --md "$@"
         ;;
     prod)
         exec "$PYTHON" clarity_digest.py --specialty "$SPECIALTY" \
-            --days 7 --pdf --docx --live "$@"
+            --days 7 --pdf --docx --md --live "$@"
         ;;
     rebuild)
-        exec "$PYTHON" clarity_digest.py --specialty "$SPECIALTY" --rebuild --pdf --docx "$@"
+        exec "$PYTHON" clarity_digest.py --specialty "$SPECIALTY" --rebuild --pdf --docx --md "$@"
         ;;
 esac
