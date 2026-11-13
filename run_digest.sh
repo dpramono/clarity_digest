@@ -20,7 +20,14 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SPECIALTIES_DIR="$SCRIPT_DIR/specialties"
-PYTHON="${PYTHON:-python3}"
+# Python: $PYTHON falls gesetzt, sonst die venv des Projekts, sonst python3 aus dem PATH
+if [ -z "${PYTHON:-}" ]; then
+    if [ -x "$SCRIPT_DIR/.venv/bin/python" ]; then
+        PYTHON="$SCRIPT_DIR/.venv/bin/python"
+    else
+        PYTHON="python3"
+    fi
+fi
 
 show_usage() {
     sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'
@@ -52,7 +59,7 @@ case "${1:-}" in
 esac
 
 cd "$SCRIPT_DIR"
-echo "Fachgebiet: $SPECIALTY · Modus: $MODE"
+echo "Fachgebiet: $SPECIALTY · Modus: $MODE · Python: $PYTHON ($("$PYTHON" -V 2>&1))"
 
 case "$MODE" in
     check)

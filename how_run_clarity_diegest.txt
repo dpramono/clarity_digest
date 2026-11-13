@@ -15,6 +15,21 @@
 #   ./run_digest.sh cardiology prod --lang de --only "Strukturelle Kardiologie"
 #   ./run_digest.sh dermatology check
 
+# ---------------------------------------------------------------
+# Starten mit Gemini
+# Zuerst die virtuelle Umgebung aktivieren. Dort ist google-genai installiert, und run_digest.sh ruft einfach python3 auf.
+# ---------------------------------------------------------------
+cd ~/clarity_digest
+. .venv/bin/activate
+
+# 1. Kostenlose Prüfung: Parameter, Journale, Key und Modellnamen
+./run_digest.sh cardiology check --provider gemini
+
+# 2. Testlauf: eigener test_state, max. 40 Paper, PDF + Word, echter State bleibt unverändert
+./run_digest.sh cardiology test --provider gemini
+
+# 3. Produktiver Wochenlauf: State wird fortgeschrieben
+./run_digest.sh cardiology prod --provider gemini
 
 # Lauf startest, kostenlos, Anbieter gemini
 python3 clarity_digest.py --check-params --provider gemini
